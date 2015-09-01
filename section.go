@@ -1,6 +1,8 @@
 package main
 
 import (
+	"fmt"
+	"github.com/blevesearch/bleve"
 	"github.com/russross/blackfriday"
 	"sort"
 	"strings"
@@ -11,6 +13,7 @@ type Wiki struct {
 	Slug     string
 	Sections []*Section
 	Articles []*Article
+	Index    bleve.Index
 }
 
 func (self *Wiki) Find(path string) (*Section, *Article) {
@@ -49,6 +52,33 @@ func (self *Wiki) Sort() {
 	if self.Articles != nil {
 		sort.Sort(ByArticleWeight(self.Articles))
 	}
+}
+
+func (self *Wiki) IndexArticle(path string, article *Article) {
+	self.Index.Index(path, ArticleData{Name: article.Name, Content: string(article.Content)})
+}
+
+func (self *Wiki) Search(queryString string) ([]*SearchResult, error) {
+	query := bleve.NewMatchQuery(queryString)
+	search := bleve.NewSearchRequest(query)
+	searchResult, err := self.Index.Search(search)
+	if err != nil {
+		return nil, err
+	}
+	results := []*SearchResult{}
+	for _, result := range searchResult.Hits {
+		_, article := self.Find(result.ID)
+		if article == nil {
+			return nil, fmt.Errorf("%v article not found", result.ID)
+		}
+		results = append(results, &SearchResult{Path: result.ID, Name: article.Name})
+	}
+	return results, nil
+}
+
+type SearchResult struct {
+	Path string
+	Name string
 }
 
 type Section struct {
@@ -92,6 +122,11 @@ func (self *Section) Find(path string) (*Section, *Article) {
 		}
 	}
 	return nil, nil
+}
+
+type ArticleData struct {
+	Name    string
+	Content string
 }
 
 type Article struct {

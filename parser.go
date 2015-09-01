@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"github.com/blevesearch/bleve"
 	"io/ioutil"
 	"os"
 	"path/filepath"
@@ -11,23 +12,32 @@ import (
 
 func ParseWiki(dirpath string) (*Wiki, error) {
 	wiki := &Wiki{}
-	err := filepath.Walk(dirpath, func(path string, f os.FileInfo, err error) error {
+	mapping := bleve.NewIndexMapping()
+	index, err := bleve.New("", mapping)
+	if err != nil {
+		return nil, err
+	}
+	wiki.Index = index
+	err = filepath.Walk(dirpath, func(path string, f os.FileInfo, err error) error {
 		if !f.IsDir() {
 			parts := strings.Split(path, "/")
 			var section *Section
 			var foundSection *Section
 			var article *Article
+			pathParts := []string{}
 			for i, part := range parts {
+				name, slug, weight := ParseSlug(part)
 				if i == 0 {
 					if wiki.Slug == "" {
-						name, slug, _ := ParseSlug(part)
 						wiki.Name = name
 						wiki.Slug = slug
 					}
 					continue
 				}
+				pathParts = append(pathParts, slug)
 				if i == len(parts)-1 {
 					article, err = ParseArticle(path, part)
+					wiki.IndexArticle(strings.Join(pathParts, "/"), article)
 					if err != nil {
 						return err
 					}
@@ -44,7 +54,6 @@ func ParseWiki(dirpath string) (*Wiki, error) {
 					}
 					continue
 				}
-				name, slug, weight := ParseSlug(part)
 				if section == nil {
 					foundSection, article = wiki.Find(slug)
 					if article != nil {

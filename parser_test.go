@@ -27,6 +27,20 @@ func TestParseWiki(t *testing.T) {
 	}
 }
 
+func TestWikiSearch(t *testing.T) {
+	wiki, err := ParseWiki("wiki_test")
+	if err != nil {
+		t.Errorf("Unexpected error while parsing wiki content: %v", err)
+	}
+	results, err := wiki.Search("text")
+	if err != nil {
+		t.Errorf("Not expected to get error while searching thorough wiki, but got %v", err)
+	}
+	if len(results) != 1 {
+		t.Errorf("Expected to get 1 search result while searching on wiki, but got %v", len(results))
+	}
+}
+
 func TestParseSlug(t *testing.T) {
 	name, slug, weight := ParseSlug("12_some_article")
 	if name != "Some article" {
