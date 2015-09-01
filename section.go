@@ -4,15 +4,25 @@ import (
 	"github.com/russross/blackfriday"
 )
 
+type Wiki struct {
+	Name     string
+	Slug     string
+	Sections []*Section
+}
+
 type Section struct {
-	Name string
+	Name        string
+	Slug        string
 	Subsections []*Section
-	Article *Article
+	Article     *Article
+	Weight      int
 }
 
 type Article struct {
-	Name string
+	Name    string
+	Slug    string
 	Content []byte
+	Weight  int
 }
 
 func (self *Article) GetHtml() (string, error) {

@@ -2,7 +2,6 @@ package main
 
 import (
 	"testing"
-	"fmt"
 )
 
 func TestArticleGetHtml(t *testing.T) {
@@ -17,5 +16,11 @@ First *markdown* article
 	if err != nil {
 		t.Errorf("Unexpected error while getting article html content: %v", err)
 	}
-	fmt.Println(html)
+	expected := `<h1>Article 1</h1>
+
+<p>First <em>markdown</em> article</p>
+`
+	if html != expected {
+		t.Errorf("Expected to get:\n%v, but got:\n%v\n", expected, html)
+	}
 }
