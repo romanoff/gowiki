@@ -42,14 +42,18 @@ type Section struct {
 	Name        string
 	Slug        string
 	Subsections []*Section
-	Article     *Article
+	Articles    []*Article
 	Weight      int
 }
 
 func (self *Section) Find(path string) (*Section, *Article) {
 	parts := strings.Split(path, "/")
-	if len(parts) == 1 && self.Article != nil && self.Article.Slug == parts[0] {
-		return nil, self.Article
+	if len(parts) == 1 && self.Articles != nil {
+		for _, article := range self.Articles {
+			if article.Slug == parts[0] {
+				return nil, article
+			}
+		}
 	}
 	if self.Subsections == nil {
 		return nil, nil

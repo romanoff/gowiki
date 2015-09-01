@@ -37,7 +37,10 @@ func ParseWiki(dirpath string) (*Wiki, error) {
 						}
 						wiki.Articles = append(wiki.Articles, article)
 					} else {
-						section.Article = article
+						if section.Articles == nil {
+							section.Articles = make([]*Article, 0, 0)
+						}
+						section.Articles = append(section.Articles, article)
 					}
 					continue
 				}

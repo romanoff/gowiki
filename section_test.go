@@ -29,7 +29,7 @@ func TestFind(t *testing.T) {
 	wiki := &Wiki{}
 	wiki.Sections = []*Section{
 		{Slug: "some", Subsections: []*Section{{Slug: "section"}}},
-		{Slug: "new_some", Article: &Article{Slug: "article"}},
+		{Slug: "new_some", Articles: []*Article{{Slug: "article"}}},
 	}
 	s, a := wiki.Find("some")
 	if a != nil {
