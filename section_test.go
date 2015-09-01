@@ -53,3 +53,18 @@ func TestFind(t *testing.T) {
 		t.Errorf("Expected to find article, but found section")
 	}
 }
+
+func TestSort(t *testing.T) {
+	wiki := &Wiki{}
+	wiki.Sections = []*Section{
+		{Slug: "some", Weight: 10, Subsections: []*Section{{Slug: "section", Weight: 9}, {Slug: "abc", Weight: 1}}},
+		{Slug: "new_some", Weight: 1, Articles: []*Article{{Slug: "article"}}},
+	}
+	wiki.Sort()
+	if wiki.Sections[0].Slug != "new_some" {
+		t.Error("Expected wiki sections to be sorted, but got unsorted")
+	}
+	if wiki.Sections[1].Subsections[0].Slug != "abc" {
+		t.Error("Expected wiki sections to be sorted, but got unsorted")
+	}
+}
