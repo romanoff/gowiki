@@ -24,3 +24,32 @@ First *markdown* article
 		t.Errorf("Expected to get:\n%v, but got:\n%v\n", expected, html)
 	}
 }
+
+func TestFind(t *testing.T) {
+	wiki := &Wiki{}
+	wiki.Sections = []*Section{
+		{Slug: "some", Subsections: []*Section{{Slug: "section"}}},
+		{Slug: "new_some", Article: &Article{Slug: "article"}},
+	}
+	s, a := wiki.Find("some")
+	if a != nil {
+		t.Errorf("Expected to find section, but found article")
+	}
+	if s == nil {
+		t.Errorf("Expected to find section, but found nil")
+	}
+	s, a = wiki.Find("some/section")
+	if a != nil {
+		t.Errorf("Expected to find section, but found article")
+	}
+	if s == nil {
+		t.Errorf("Expected to find section, but found nil")
+	}
+	s, a = wiki.Find("new_some/article")
+	if a == nil {
+		t.Errorf("Expected to find article, but got nil")
+	}
+	if s != nil {
+		t.Errorf("Expected to find article, but found section")
+	}
+}
