@@ -18,6 +18,13 @@ func TestParseWiki(t *testing.T) {
 	if wiki.Sections[1].Name != "Section 2" {
 		t.Errorf("Expected section name to be 'Section 2', but got '%v'", wiki.Sections[1].Name)
 	}
+	_, article := wiki.Find("section_1/about")
+	if article == nil {
+		t.Error("Expected to find about article, but got nil")
+	}
+	if len(article.Content) == 0 {
+		t.Error("Expected to get about article content, but was empty")
+	}
 }
 
 func TestParseSlug(t *testing.T) {
