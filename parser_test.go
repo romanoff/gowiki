@@ -1,7 +1,6 @@
 package main
 
 import (
-	"fmt"
 	"testing"
 )
 
@@ -10,8 +9,14 @@ func TestParseWiki(t *testing.T) {
 	if err != nil {
 		t.Errorf("Unexpected error while parsing wiki content: %v", err)
 	}
-	if wiki != nil {
-		fmt.Println(len(wiki.Sections))
+	if len(wiki.Sections) != 2 {
+		t.Errorf("Expected wiki to have 2 sections, but got %v", len(wiki.Sections))
+	}
+	if wiki.Sections[0].Name != "Section 1" {
+		t.Errorf("Expected section name to be 'Section 1', but got '%v'", wiki.Sections[0].Name)
+	}
+	if wiki.Sections[1].Name != "Section 2" {
+		t.Errorf("Expected section name to be 'Section 2', but got '%v'", wiki.Sections[1].Name)
 	}
 }
 

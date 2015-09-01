@@ -9,10 +9,21 @@ type Wiki struct {
 	Name     string
 	Slug     string
 	Sections []*Section
+	Articles []*Article
 }
 
 func (self *Wiki) Find(path string) (*Section, *Article) {
 	parts := strings.Split(path, "/")
+	if self.Sections == nil && self.Articles == nil {
+		return nil, nil
+	}
+	if self.Articles != nil && len(parts) == 1 {
+		for _, article := range self.Articles {
+			if article.Slug == parts[0] {
+				return nil, article
+			}
+		}
+	}
 	if self.Sections == nil {
 		return nil, nil
 	}
