@@ -2,6 +2,7 @@ package main
 
 type PageData struct {
 	QueryString   string
+	Breadcrumbs   []*Link
 	Sections      []*Link
 	Articles      []*Link
 	SearchResults []*Result
@@ -19,8 +20,7 @@ type Link struct {
 }
 
 type Result struct {
-	Name    string
-	Path    string
-	Current bool
-	Text    string
+	Name string
+	Path string
+	Text string
 }

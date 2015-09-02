@@ -135,7 +135,7 @@ type Article struct {
 	Slug    string
 	Content []byte
 	Weight  int
-	Parent      *Section
+	Parent  *Section
 }
 
 func (self *Article) GetHtml() (string, error) {
