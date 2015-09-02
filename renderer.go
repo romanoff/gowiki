@@ -1,5 +1,11 @@
 package main
 
+import (
+	"fmt"
+	"net/http"
+	"text/template"
+)
+
 type PageData struct {
 	QueryString   string
 	Breadcrumbs   []*Link
@@ -9,8 +15,14 @@ type PageData struct {
 	Html          string
 }
 
-func (self *PageData) Render() string {
-	return self.Html
+func (self *PageData) Render(w http.ResponseWriter) {
+	content := GetAsset("templates/article.tmpl")
+	tmpl, err := template.New("article").Parse(string(content))
+	if err != nil {
+		fmt.Fprint(w, err.Error())
+		return
+	}
+	tmpl.Execute(w, self)
 }
 
 type Link struct {
@@ -23,4 +35,12 @@ type Result struct {
 	Name string
 	Path string
 	Text string
+}
+
+func GetAsset(path string) []byte {
+	data, err := Asset(path)
+	if err != nil {
+		panic(err)
+	}
+	return data
 }

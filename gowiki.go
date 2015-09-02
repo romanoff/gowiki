@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"github.com/elazarl/go-bindata-assetfs"
 	"log"
 	"net/http"
 	"os"
@@ -9,6 +10,7 @@ import (
 	"strings"
 )
 
+//go:generate go-bindata templates static
 var wiki *Wiki
 
 func handler(w http.ResponseWriter, r *http.Request) {
@@ -29,13 +31,13 @@ func handler(w http.ResponseWriter, r *http.Request) {
 				pageData.SearchResults = append(pageData.SearchResults, &Result{Name: article.Name, Path: r.Path})
 			}
 		}
-		fmt.Fprintf(w, pageData.Render())
+		pageData.Render(w)
 		return
 	}
 	// Index page
 	if r.URL.Path[1:] == "" {
 		handleIndex(pageData, nil)
-		fmt.Fprintf(w, pageData.Render())
+		pageData.Render(w)
 		return
 	}
 	section, article := wiki.Find(r.URL.Path[1:])
@@ -52,7 +54,7 @@ func handler(w http.ResponseWriter, r *http.Request) {
 			handleSection(pageData, article.Parent, article)
 		}
 	}
-	fmt.Fprintf(w, pageData.Render())
+	pageData.Render(w)
 }
 
 func handleIndex(pageData *PageData, currentArticle *Article) {
@@ -144,6 +146,8 @@ func main() {
 		fmt.Println(err)
 		os.Exit(1)
 	}
+	fs := http.FileServer(&assetfs.AssetFS{Asset: Asset, AssetDir: AssetDir, Prefix: "static"})
+	http.Handle("/static/", http.StripPrefix("/static/", fs))
 	http.HandleFunc("/", handler)
 	http.ListenAndServe(":8080", nil)
 }
