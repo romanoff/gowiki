@@ -11,6 +11,10 @@ import (
 )
 
 func ParseWiki(dirpath string) (*Wiki, error) {
+	dirpath, err := filepath.Abs(dirpath)
+	if err != nil {
+		return nil, err
+	}
 	wiki := &Wiki{}
 	mapping := bleve.NewIndexMapping()
 	index, err := bleve.New("", mapping)
@@ -18,9 +22,21 @@ func ParseWiki(dirpath string) (*Wiki, error) {
 		return nil, err
 	}
 	wiki.Index = index
+	currentPath, err := filepath.Abs(dirpath + "/../")
+	if err != nil {
+		return nil, err
+	}
 	err = filepath.Walk(dirpath, func(path string, f os.FileInfo, err error) error {
 		if !f.IsDir() {
-			parts := strings.Split(path, "/")
+			absPath, err := filepath.Abs(path)
+			if err != nil {
+				return err
+			}
+			absPath = strings.Replace(absPath, currentPath, "", 1)
+			if absPath[0] == '/' {
+				absPath = strings.Replace(absPath, "/", "", 1)
+			}
+			parts := strings.Split(absPath, "/")
 			var section *Section
 			var foundSection *Section
 			var article *Article
