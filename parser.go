@@ -66,6 +66,7 @@ func ParseWiki(dirpath string) (*Wiki, error) {
 						if section.Articles == nil {
 							section.Articles = make([]*Article, 0, 0)
 						}
+						article.Parent = section
 						section.Articles = append(section.Articles, article)
 					}
 					continue
@@ -94,6 +95,9 @@ func ParseWiki(dirpath string) (*Wiki, error) {
 						}
 						section.Subsections = append(section.Subsections, foundSection)
 					}
+				}
+				if section != nil {
+					foundSection.Parent = section
 				}
 				section = foundSection
 			}

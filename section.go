@@ -84,6 +84,7 @@ type SearchResult struct {
 type Section struct {
 	Name        string
 	Slug        string
+	Parent      *Section
 	Subsections []*Section
 	Articles    []*Article
 	Weight      int
@@ -134,6 +135,7 @@ type Article struct {
 	Slug    string
 	Content []byte
 	Weight  int
+	Parent      *Section
 }
 
 func (self *Article) GetHtml() (string, error) {
