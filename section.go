@@ -55,6 +55,7 @@ func (self *Wiki) Sort() {
 }
 
 func (self *Wiki) IndexArticle(path string, article *Article) {
+	fmt.Println(string(article.Content))
 	self.Index.Index(path, ArticleData{Name: article.Name, Content: string(article.Content)})
 }
 

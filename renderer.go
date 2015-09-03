@@ -17,8 +17,12 @@ type PageData struct {
 }
 
 func (self *PageData) Render(w http.ResponseWriter) {
-	content := GetAsset("templates/article.tmpl")
-	tmpl, err := template.New("article").Parse(string(content))
+	templateName := "article"
+	if self.SearchResults != nil {
+		templateName = "search"
+	}
+	content := GetAsset("templates/"+templateName+".tmpl")
+	tmpl, err := template.New(templateName).Parse(string(content))
 	if err != nil {
 		fmt.Fprint(w, err.Error())
 		return
