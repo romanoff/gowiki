@@ -125,6 +125,16 @@ func (self *Section) Find(path string) (*Section, *Article) {
 	return nil, nil
 }
 
+func (self *Section) GetPath() string {
+	slugs := []string{self.Slug}
+	section := self
+	for section.Parent != nil {
+		slugs = append(slugs, section.Slug)
+	}
+	sort.Reverse(sort.StringSlice(slugs))
+	return strings.Join(slugs, "/")
+}
+
 type ArticleData struct {
 	Name    string
 	Content string
@@ -141,6 +151,13 @@ type Article struct {
 func (self *Article) GetHtml() (string, error) {
 	output := blackfriday.MarkdownBasic(self.Content)
 	return string(output), nil
+}
+
+func (self *Article) GetPath() string {
+	if self.Parent == nil {
+		return self.Slug
+	}
+	return self.Parent.GetPath() + "/" + self.Slug
 }
 
 type BySectionWeight []*Section

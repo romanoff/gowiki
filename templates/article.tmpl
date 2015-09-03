@@ -1,1 +1,50 @@
-{{.Html}}
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/static/styles.css">
+  </head>
+  <body>
+    <div class="header-wrapper">
+      <div class="header">
+	<input class="header-search" type="text" placeholder="Search"/>
+      </div>
+    </div>
+    <div class="main-header-wrapper">
+      <div class="main-header">
+	<ul class="main-header-breadcrumbs">
+	  {{ range .Breadcrumbs }}
+	  <li class="main-header-breadcrumbs-item"><a class="main-header-breadcrumbs-item-link" href="/{{.Path}}">{{.Name}}</a></li>
+ 	  {{ end }}
+	</ul>
+	<h2>{{.Name}}</h2>
+	{{ if .Articles }}
+	<ul class="main-header-sections">
+	  {{ range .Articles }}
+	  <li class="main-header-sections-item {{ if .Current}}main-header-sections-item-current{{end}}"><a class="main-header-sections-item-link" href="/{{.Path}}">{{.Name}}</a></li>
+	  {{ end }}
+	</ul>
+	{{ end }}
+      </div>
+    </div>
+    <div class="sections-wrapper">
+      {{ if .Sections }}
+      <div class="sections">
+        {{ range .Sections}}
+	<div class="section">
+	  <a class="section_link" href="/{{.Path}}">
+	  <img class="section_img" src="https://www.gstatic.com/images/icons/material/system/svg/lock_48px.svg">
+	  <h3 class="section_name">{{.Name}}</h3>
+	  </a>
+	</div>
+        {{ end }}
+      </div>
+      {{ end }}
+    </div>
+    <div class="body">
+      {{.Html}}
+    </div>
+  </body>
+</html>

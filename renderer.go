@@ -7,6 +7,7 @@ import (
 )
 
 type PageData struct {
+	Name string
 	QueryString   string
 	Breadcrumbs   []*Link
 	Sections      []*Link

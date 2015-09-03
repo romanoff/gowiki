@@ -58,6 +58,7 @@ func handler(w http.ResponseWriter, r *http.Request) {
 }
 
 func handleIndex(pageData *PageData, currentArticle *Article) {
+	pageData.Name = wiki.Name
 	if wiki.Sections != nil {
 		if pageData.Sections == nil {
 			pageData.Sections = make([]*Link, 0, 0)
@@ -89,12 +90,13 @@ func handleIndex(pageData *PageData, currentArticle *Article) {
 
 func handleSection(pageData *PageData, section *Section, currentArticle *Article) {
 	addBreadcrumbs(pageData, section)
+	pageData.Name = section.Name
 	if section.Subsections != nil {
 		if pageData.Sections == nil {
 			pageData.Sections = make([]*Link, 0, 0)
 		}
 		for _, section := range section.Subsections {
-			pageData.Sections = append(pageData.Sections, &Link{Name: section.Name, Path: section.Slug})
+			pageData.Sections = append(pageData.Sections, &Link{Name: section.Name, Path: section.GetPath()})
 		}
 	}
 	if section.Articles != nil {
@@ -102,7 +104,7 @@ func handleSection(pageData *PageData, section *Section, currentArticle *Article
 			pageData.Articles = make([]*Link, 0, 0)
 		}
 		for i, article := range section.Articles {
-			pageData.Articles = append(pageData.Articles, &Link{Name: article.Name, Path: article.Slug, Current: (currentArticle == nil && i == 0) || (currentArticle == article)})
+			pageData.Articles = append(pageData.Articles, &Link{Name: article.Name, Path: article.GetPath(), Current: (currentArticle == nil && i == 0) || (currentArticle == article)})
 		}
 		if currentArticle == nil && len(section.Articles) > 0 {
 			currentArticle = section.Articles[0]
@@ -132,6 +134,7 @@ func addBreadcrumbs(pageData *PageData, section *Section) {
 	if pageData.Breadcrumbs == nil {
 		pageData.Breadcrumbs = make([]*Link, 0, 0)
 	}
+	pageData.Breadcrumbs = append(pageData.Breadcrumbs, &Link{Name: wiki.Name, Path: ""})
 	pageData.Breadcrumbs = append(pageData.Breadcrumbs, &Link{Name: section.Name, Path: strings.Join(slugs, "/")})
 	loopSection = section
 	for i := 0; loopSection.Parent != nil; i++ {
