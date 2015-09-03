@@ -42,7 +42,7 @@ func ParseWiki(dirpath string) (*Wiki, error) {
 			var article *Article
 			pathParts := []string{}
 			for i, part := range parts {
-				name, slug, weight := ParseSlug(part)
+				name, slug, weight, icon := ParseSlug(part)
 				if i == 0 {
 					if wiki.Slug == "" {
 						wiki.Name = name
@@ -83,7 +83,7 @@ func ParseWiki(dirpath string) (*Wiki, error) {
 					}
 				}
 				if foundSection == nil {
-					foundSection = &Section{Name: name, Slug: slug, Weight: weight}
+					foundSection = &Section{Name: name, Slug: slug, Weight: weight, Icon: icon}
 					if section == nil {
 						if wiki.Sections == nil {
 							wiki.Sections = make([]*Section, 0, 0)
@@ -110,8 +110,13 @@ func ParseWiki(dirpath string) (*Wiki, error) {
 	return wiki, nil
 }
 
-func ParseSlug(pathname string) (name string, slug string, weight int) {
-	parts := strings.Split(pathname, "_")
+func ParseSlug(pathname string) (name string, slug string, weight int, icon string) {
+	parts := strings.Split(pathname, "__")
+	if len(parts) == 2 {
+		icon = parts[1]
+		pathname = parts[0]
+	}
+	parts = strings.Split(pathname, "_")
 	var err error
 	weight, err = strconv.Atoi(parts[0])
 	if err == nil {
@@ -130,7 +135,7 @@ func ParseArticle(pathname, part string) (*Article, error) {
 	if err != nil {
 		return nil, err
 	}
-	name, slug, weight := ParseSlug(part)
+	name, slug, weight, _ := ParseSlug(part)
 	article := &Article{
 		Name:    name,
 		Slug:    slug,

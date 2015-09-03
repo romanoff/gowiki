@@ -10,7 +10,7 @@ import (
 	"strings"
 )
 
-//go:generate go-bindata templates static
+//go:generate go-bindata templates static materialicons
 var wiki *Wiki
 
 func handler(w http.ResponseWriter, r *http.Request) {
@@ -64,7 +64,7 @@ func handleIndex(pageData *PageData, currentArticle *Article) {
 			pageData.Sections = make([]*Link, 0, 0)
 		}
 		for _, section := range wiki.Sections {
-			pageData.Sections = append(pageData.Sections, &Link{Name: section.Name, Path: section.Slug})
+			pageData.Sections = append(pageData.Sections, &Link{Name: section.Name, Path: section.Slug, Icon: section.GetIcon()})
 		}
 	}
 	if wiki.Articles != nil {
@@ -96,7 +96,7 @@ func handleSection(pageData *PageData, section *Section, currentArticle *Article
 			pageData.Sections = make([]*Link, 0, 0)
 		}
 		for _, section := range section.Subsections {
-			pageData.Sections = append(pageData.Sections, &Link{Name: section.Name, Path: section.GetPath()})
+			pageData.Sections = append(pageData.Sections, &Link{Name: section.Name, Path: section.GetPath(), Icon: section.GetIcon()})
 		}
 	}
 	if section.Articles != nil {
@@ -149,6 +149,8 @@ func main() {
 		fmt.Println(err)
 		os.Exit(1)
 	}
+	materialFs := http.FileServer(&assetfs.AssetFS{Asset: Asset, AssetDir: AssetDir, Prefix: "materialicons"})
+	http.Handle("/materialicons/", http.StripPrefix("/materialicons/", materialFs))
 	fs := http.FileServer(&assetfs.AssetFS{Asset: Asset, AssetDir: AssetDir, Prefix: "static"})
 	http.Handle("/static/", http.StripPrefix("/static/", fs))
 	http.HandleFunc("/", handler)

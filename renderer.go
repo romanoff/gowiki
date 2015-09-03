@@ -7,7 +7,7 @@ import (
 )
 
 type PageData struct {
-	Name string
+	Name          string
 	QueryString   string
 	Breadcrumbs   []*Link
 	Sections      []*Link
@@ -28,6 +28,7 @@ func (self *PageData) Render(w http.ResponseWriter) {
 
 type Link struct {
 	Name    string
+	Icon    string
 	Path    string
 	Current bool
 }

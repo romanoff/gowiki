@@ -136,6 +136,7 @@ body {
 }
 
 .section {
+    vertical-align: top;
     display: inline-block;
     width: 158px;
     height: 158px;

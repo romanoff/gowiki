@@ -83,6 +83,7 @@ type SearchResult struct {
 
 type Section struct {
 	Name        string
+	Icon        string
 	Slug        string
 	Parent      *Section
 	Subsections []*Section
@@ -133,6 +134,13 @@ func (self *Section) GetPath() string {
 	}
 	sort.Reverse(sort.StringSlice(slugs))
 	return strings.Join(slugs, "/")
+}
+
+func (self *Section) GetIcon() string {
+	if self.Icon == "" {
+		return "subject"
+	}
+	return self.Icon
 }
 
 type ArticleData struct {
