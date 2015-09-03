@@ -55,13 +55,13 @@ func (self *Wiki) Sort() {
 }
 
 func (self *Wiki) IndexArticle(path string, article *Article) {
-	fmt.Println(string(article.Content))
 	self.Index.Index(path, ArticleData{Name: article.Name, Content: string(article.Content)})
 }
 
 func (self *Wiki) Search(queryString string) ([]*SearchResult, error) {
 	query := bleve.NewMatchQuery(queryString)
 	search := bleve.NewSearchRequest(query)
+	search.Highlight = bleve.NewHighlight()
 	searchResult, err := self.Index.Search(search)
 	if err != nil {
 		return nil, err
@@ -72,7 +72,13 @@ func (self *Wiki) Search(queryString string) ([]*SearchResult, error) {
 		if article == nil {
 			return nil, fmt.Errorf("%v article not found", result.ID)
 		}
-		results = append(results, &SearchResult{Path: result.ID, Name: article.Name})
+		text := ""
+		for _, values := range result.Fragments {
+			for _, value := range values {
+				text += value
+			}
+		}
+		results = append(results, &SearchResult{Path: result.ID, Name: article.Name, Text: text})
 	}
 	return results, nil
 }
@@ -80,6 +86,7 @@ func (self *Wiki) Search(queryString string) ([]*SearchResult, error) {
 type SearchResult struct {
 	Path string
 	Name string
+	Text string
 }
 
 type Section struct {

@@ -18,6 +18,10 @@ func handler(w http.ResponseWriter, r *http.Request) {
 	// Search page
 	if r.URL.Path[1:] == "search" {
 		query := r.URL.Query().Get("q")
+		if query == "" {
+			http.Redirect(w, r, "/", http.StatusFound)
+			return
+		}
 		pageData.QueryString = query
 		results, err := wiki.Search(query)
 		if err != nil {
@@ -28,7 +32,12 @@ func handler(w http.ResponseWriter, r *http.Request) {
 		for _, r := range results {
 			_, article := wiki.Find(r.Path)
 			if article != nil {
-				pageData.SearchResults = append(pageData.SearchResults, &Result{Name: article.Name, Path: r.Path})
+				pageData.SearchResults = append(pageData.SearchResults,
+					&Result{
+						Name: article.Name,
+						Path: r.Path,
+						Text: r.Text,
+					})
 			}
 		}
 		pageData.Render(w)

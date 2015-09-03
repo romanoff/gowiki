@@ -21,7 +21,7 @@ func (self *PageData) Render(w http.ResponseWriter) {
 	if self.SearchResults != nil {
 		templateName = "search"
 	}
-	content := GetAsset("templates/"+templateName+".tmpl")
+	content := GetAsset("templates/" + templateName + ".tmpl")
 	tmpl, err := template.New(templateName).Parse(string(content))
 	if err != nil {
 		fmt.Fprint(w, err.Error())

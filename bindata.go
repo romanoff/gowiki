@@ -810,11 +810,11 @@ import (
 	"compress/gzip"
 	"fmt"
 	"io"
-	"strings"
-	"os"
-	"time"
 	"io/ioutil"
+	"os"
 	"path/filepath"
+	"strings"
+	"time"
 )
 
 func bindataRead(data []byte, name string) ([]byte, error) {
@@ -843,9 +843,9 @@ type asset struct {
 }
 
 type bindataFileInfo struct {
-	name string
-	size int64
-	mode os.FileMode
+	name    string
+	size    int64
+	mode    os.FileMode
 	modTime time.Time
 }
 
@@ -884,7 +884,7 @@ func templatesArticleTmpl() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "templates/article.tmpl", size: 1539, mode: os.FileMode(436), modTime: time.Unix(1441306979, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -904,7 +904,7 @@ func templatesSearchTmpl() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "templates/search.tmpl", size: 790, mode: os.FileMode(436), modTime: time.Unix(1441306936, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -924,7 +924,7 @@ func staticBreadcrumbSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "static/breadcrumb.svg", size: 166, mode: os.FileMode(416), modTime: time.Unix(1441299421, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -944,7 +944,7 @@ func staticStylesCss() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "static/styles.css", size: 3012, mode: os.FileMode(436), modTime: time.Unix(1441306458, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -964,7 +964,7 @@ func materialicons3d_rotationSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/3d_rotation.svg", size: 1766, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -984,7 +984,7 @@ func materialiconsAccess_alarmSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/access_alarm.svg", size: 443, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -1004,7 +1004,7 @@ func materialiconsAccess_alarmsSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/access_alarms.svg", size: 432, mode: os.FileMode(509), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -1024,7 +1024,7 @@ func materialiconsAccess_timeSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/access_time.svg", size: 400, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -1044,7 +1044,7 @@ func materialiconsAccessibilitySvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/accessibility.svg", size: 249, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -1064,7 +1064,7 @@ func materialiconsAccount_balanceSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/account_balance.svg", size: 241, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -1084,7 +1084,7 @@ func materialiconsAccount_balance_walletSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/account_balance_wallet.svg", size: 365, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -1104,7 +1104,7 @@ func materialiconsAccount_boxSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/account_box.svg", size: 350, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -1124,7 +1124,7 @@ func materialiconsAccount_circleSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/account_circle.svg", size: 397, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -1144,7 +1144,7 @@ func materialiconsAdbSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/adb.svg", size: 502, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -1164,7 +1164,7 @@ func materialiconsAddSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/add.svg", size: 191, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -1184,7 +1184,7 @@ func materialiconsAdd_alarmSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/add_alarm.svg", size: 436, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -1204,7 +1204,7 @@ func materialiconsAdd_alertSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/add_alert.svg", size: 426, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -1224,7 +1224,7 @@ func materialiconsAdd_boxSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/add_box.svg", size: 278, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -1244,7 +1244,7 @@ func materialiconsAdd_circleSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/add_circle.svg", size: 255, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -1264,7 +1264,7 @@ func materialiconsAdd_circle_outlineSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/add_circle_outline.svg", size: 324, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -1284,7 +1284,7 @@ func materialiconsAdd_shopping_cartSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/add_shopping_cart.svg", size: 587, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -1304,7 +1304,7 @@ func materialiconsAdd_to_photosSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/add_to_photos.svg", size: 317, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -1324,7 +1324,7 @@ func materialiconsAdjustSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/adjust.svg", size: 345, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -1344,7 +1344,7 @@ func materialiconsAirline_seat_flatSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/airline_seat_flat.svg", size: 338, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -1364,7 +1364,7 @@ func materialiconsAirline_seat_flat_angledSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/airline_seat_flat_angled.svg", size: 423, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -1384,7 +1384,7 @@ func materialiconsAirline_seat_individual_suiteSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/airline_seat_individual_suite.svg", size: 258, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -1404,7 +1404,7 @@ func materialiconsAirline_seat_legroom_extraSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/airline_seat_legroom_extra.svg", size: 386, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -1424,7 +1424,7 @@ func materialiconsAirline_seat_legroom_normalSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/airline_seat_legroom_normal.svg", size: 309, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -1444,7 +1444,7 @@ func materialiconsAirline_seat_legroom_reducedSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/airline_seat_legroom_reduced.svg", size: 347, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -1464,7 +1464,7 @@ func materialiconsAirline_seat_recline_extraSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/airline_seat_recline_extra.svg", size: 619, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -1484,7 +1484,7 @@ func materialiconsAirline_seat_recline_normalSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/airline_seat_recline_normal.svg", size: 557, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -1504,7 +1504,7 @@ func materialiconsAirplanemode_activeSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/airplanemode_active.svg", size: 273, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -1524,7 +1524,7 @@ func materialiconsAirplanemode_inactiveSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/airplanemode_inactive.svg", size: 343, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -1544,7 +1544,7 @@ func materialiconsAirplaySvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/airplay.svg", size: 617, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -1564,7 +1564,7 @@ func materialiconsAlarmSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/alarm.svg", size: 443, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -1584,7 +1584,7 @@ func materialiconsAlarm_addSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/alarm_add.svg", size: 436, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -1604,7 +1604,7 @@ func materialiconsAlarm_offSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/alarm_off.svg", size: 700, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -1624,7 +1624,7 @@ func materialiconsAlarm_onSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/alarm_on.svg", size: 476, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -1644,7 +1644,7 @@ func materialiconsAlbumSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/album.svg", size: 325, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -1664,7 +1664,7 @@ func materialiconsAndroidSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/android.svg", size: 705, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -1684,7 +1684,7 @@ func materialiconsAnnouncementSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/announcement.svg", size: 265, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -1704,7 +1704,7 @@ func materialiconsAppsSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/apps.svg", size: 291, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -1724,7 +1724,7 @@ func materialiconsArchiveSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/archive.svg", size: 393, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -1744,7 +1744,7 @@ func materialiconsArrow_backSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/arrow_back.svg", size: 216, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -1764,7 +1764,7 @@ func materialiconsArrow_drop_downSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/arrow_drop_down.svg", size: 169, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -1784,7 +1784,7 @@ func materialiconsArrow_drop_down_circleSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/arrow_drop_down_circle.svg", size: 237, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -1804,7 +1804,7 @@ func materialiconsArrow_drop_upSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/arrow_drop_up.svg", size: 169, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -1824,7 +1824,7 @@ func materialiconsArrow_forwardSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/arrow_forward.svg", size: 210, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -1844,7 +1844,7 @@ func materialiconsAspect_ratioSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/aspect_ratio.svg", size: 311, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -1864,7 +1864,7 @@ func materialiconsAssessmentSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/assessment.svg", size: 290, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -1884,7 +1884,7 @@ func materialiconsAssignmentSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/assignment.svg", size: 389, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -1904,7 +1904,7 @@ func materialiconsAssignment_indSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/assignment_ind.svg", size: 460, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -1924,7 +1924,7 @@ func materialiconsAssignment_lateSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/assignment_late.svg", size: 374, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -1944,7 +1944,7 @@ func materialiconsAssignment_returnSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/assignment_return.svg", size: 369, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -1964,7 +1964,7 @@ func materialiconsAssignment_returnedSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/assignment_returned.svg", size: 369, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -1984,7 +1984,7 @@ func materialiconsAssignment_turned_inSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/assignment_turned_in.svg", size: 395, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -2004,7 +2004,7 @@ func materialiconsAssistantSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/assistant.svg", size: 327, mode: os.FileMode(509), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -2024,7 +2024,7 @@ func materialiconsAssistant_photoSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/assistant_photo.svg", size: 191, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -2044,7 +2044,7 @@ func materialiconsAttach_fileSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/attach_file.svg", size: 372, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -2064,7 +2064,7 @@ func materialiconsAttach_moneySvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/attach_money.svg", size: 492, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -2084,7 +2084,7 @@ func materialiconsAttachmentSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/attachment.svg", size: 366, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -2104,7 +2104,7 @@ func materialiconsAudiotrackSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/audiotrack.svg", size: 250, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -2124,7 +2124,7 @@ func materialiconsAutorenewSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/autorenew.svg", size: 404, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -2144,7 +2144,7 @@ func materialiconsAv_timerSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/av_timer.svg", size: 515, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -2164,7 +2164,7 @@ func materialiconsBackspaceSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/backspace.svg", size: 391, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -2184,7 +2184,7 @@ func materialiconsBackupSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/backup.svg", size: 346, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -2204,7 +2204,7 @@ func materialiconsBattery_20Svg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/battery_20.svg", size: 349, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -2224,7 +2224,7 @@ func materialiconsBattery_30Svg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/battery_30.svg", size: 350, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -2244,7 +2244,7 @@ func materialiconsBattery_50Svg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/battery_50.svg", size: 350, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -2264,7 +2264,7 @@ func materialiconsBattery_60Svg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/battery_60.svg", size: 350, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -2284,7 +2284,7 @@ func materialiconsBattery_80Svg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/battery_80.svg", size: 350, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -2304,7 +2304,7 @@ func materialiconsBattery_90Svg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/battery_90.svg", size: 350, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -2324,7 +2324,7 @@ func materialiconsBattery_alertSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/battery_alert.svg", size: 329, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -2344,7 +2344,7 @@ func materialiconsBattery_charging_20Svg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/battery_charging_20.svg", size: 387, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -2364,7 +2364,7 @@ func materialiconsBattery_charging_30Svg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/battery_charging_30.svg", size: 384, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -2384,7 +2384,7 @@ func materialiconsBattery_charging_50Svg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/battery_charging_50.svg", size: 462, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -2404,7 +2404,7 @@ func materialiconsBattery_charging_60Svg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/battery_charging_60.svg", size: 387, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -2424,7 +2424,7 @@ func materialiconsBattery_charging_80Svg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/battery_charging_80.svg", size: 388, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -2444,7 +2444,7 @@ func materialiconsBattery_charging_90Svg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/battery_charging_90.svg", size: 389, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -2464,7 +2464,7 @@ func materialiconsBattery_charging_fullSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/battery_charging_full.svg", size: 325, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -2484,7 +2484,7 @@ func materialiconsBattery_fullSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/battery_full.svg", size: 296, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -2504,7 +2504,7 @@ func materialiconsBattery_stdSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/battery_std.svg", size: 296, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -2524,7 +2524,7 @@ func materialiconsBattery_unknownSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/battery_unknown.svg", size: 532, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -2544,7 +2544,7 @@ func materialiconsBeenhereSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/beenhere.svg", size: 343, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -2564,7 +2564,7 @@ func materialiconsBlockSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/block.svg", size: 395, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -2584,7 +2584,7 @@ func materialiconsBluetoothSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/bluetooth.svg", size: 339, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -2604,7 +2604,7 @@ func materialiconsBluetooth_audioSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/bluetooth_audio.svg", size: 557, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -2624,7 +2624,7 @@ func materialiconsBluetooth_connectedSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/bluetooth_connected.svg", size: 386, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -2644,7 +2644,7 @@ func materialiconsBluetooth_disabledSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/bluetooth_disabled.svg", size: 360, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -2664,7 +2664,7 @@ func materialiconsBluetooth_searchingSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/bluetooth_searching.svg", size: 557, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -2684,7 +2684,7 @@ func materialiconsBlur_circularSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/blur_circular.svg", size: 902, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -2704,7 +2704,7 @@ func materialiconsBlur_linearSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/blur_linear.svg", size: 802, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -2724,7 +2724,7 @@ func materialiconsBlur_offSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/blur_off.svg", size: 1388, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -2744,7 +2744,7 @@ func materialiconsBlur_onSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/blur_on.svg", size: 1391, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -2764,7 +2764,7 @@ func materialiconsBookSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/book.svg", size: 262, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -2784,7 +2784,7 @@ func materialiconsBookmarkSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/bookmark.svg", size: 221, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -2804,7 +2804,7 @@ func materialiconsBookmark_borderSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/bookmark_border.svg", size: 251, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -2824,7 +2824,7 @@ func materialiconsBorder_allSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/border_all.svg", size: 239, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -2844,7 +2844,7 @@ func materialiconsBorder_bottomSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/border_bottom.svg", size: 412, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -2864,7 +2864,7 @@ func materialiconsBorder_clearSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/border_clear.svg", size: 473, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -2884,7 +2884,7 @@ func materialiconsBorder_colorSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/border_color.svg", size: 328, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -2904,7 +2904,7 @@ func materialiconsBorder_horizontalSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/border_horizontal.svg", size: 411, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -2924,7 +2924,7 @@ func materialiconsBorder_innerSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/border_inner.svg", size: 373, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -2944,7 +2944,7 @@ func materialiconsBorder_leftSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/border_left.svg", size: 418, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -2964,7 +2964,7 @@ func materialiconsBorder_outerSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/border_outer.svg", size: 264, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -2984,7 +2984,7 @@ func materialiconsBorder_rightSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/border_right.svg", size: 413, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -3004,7 +3004,7 @@ func materialiconsBorder_styleSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/border_style.svg", size: 282, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -3024,7 +3024,7 @@ func materialiconsBorder_topSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/border_top.svg", size: 419, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -3044,7 +3044,7 @@ func materialiconsBorder_verticalSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/border_vertical.svg", size: 413, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -3064,7 +3064,7 @@ func materialiconsBrightness_1Svg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/brightness_1.svg", size: 170, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -3084,7 +3084,7 @@ func materialiconsBrightness_2Svg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/brightness_2.svg", size: 285, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -3104,7 +3104,7 @@ func materialiconsBrightness_3Svg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/brightness_3.svg", size: 288, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -3124,7 +3124,7 @@ func materialiconsBrightness_4Svg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/brightness_4.svg", size: 386, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -3144,7 +3144,7 @@ func materialiconsBrightness_5Svg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/brightness_5.svg", size: 331, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -3164,7 +3164,7 @@ func materialiconsBrightness_6Svg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/brightness_6.svg", size: 306, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -3184,7 +3184,7 @@ func materialiconsBrightness_7Svg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/brightness_7.svg", size: 389, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -3204,7 +3204,7 @@ func materialiconsBrightness_autoSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/brightness_auto.svg", size: 343, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -3224,7 +3224,7 @@ func materialiconsBrightness_highSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/brightness_high.svg", size: 389, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -3244,7 +3244,7 @@ func materialiconsBrightness_lowSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/brightness_low.svg", size: 331, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -3264,7 +3264,7 @@ func materialiconsBrightness_mediumSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/brightness_medium.svg", size: 306, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -3284,7 +3284,7 @@ func materialiconsBroken_imageSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/broken_image.svg", size: 812, mode: os.FileMode(509), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -3304,7 +3304,7 @@ func materialiconsBrushSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/brush.svg", size: 350, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -3324,7 +3324,7 @@ func materialiconsBug_reportSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/bug_report.svg", size: 543, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -3344,7 +3344,7 @@ func materialiconsBuildSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/build.svg", size: 380, mode: os.FileMode(509), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -3364,7 +3364,7 @@ func materialiconsBusinessSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/business.svg", size: 365, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -3384,7 +3384,7 @@ func materialiconsCachedSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/cached.svg", size: 398, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -3404,7 +3404,7 @@ func materialiconsCakeSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/cake.svg", size: 732, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -3424,7 +3424,7 @@ func materialiconsCallSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/call.svg", size: 403, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -3444,7 +3444,7 @@ func materialiconsCall_endSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/call_end.svg", size: 576, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -3464,7 +3464,7 @@ func materialiconsCall_madeSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/call_made.svg", size: 199, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -3484,7 +3484,7 @@ func materialiconsCall_mergeSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/call_merge.svg", size: 249, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -3504,7 +3504,7 @@ func materialiconsCall_missedSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/call_missed.svg", size: 209, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -3524,7 +3524,7 @@ func materialiconsCall_receivedSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/call_received.svg", size: 198, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -3544,7 +3544,7 @@ func materialiconsCall_splitSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/call_split.svg", size: 257, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -3564,7 +3564,7 @@ func materialiconsCameraSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/camera.svg", size: 595, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -3584,7 +3584,7 @@ func materialiconsCamera_altSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/camera_alt.svg", size: 370, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -3604,7 +3604,7 @@ func materialiconsCamera_frontSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/camera_front.svg", size: 407, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -3624,7 +3624,7 @@ func materialiconsCamera_rearSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/camera_rear.svg", size: 352, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -3644,7 +3644,7 @@ func materialiconsCamera_rollSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/camera_roll.svg", size: 385, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -3664,7 +3664,7 @@ func materialiconsCancelSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/cancel.svg", size: 336, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -3684,7 +3684,7 @@ func materialiconsCard_giftcardSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/card_giftcard.svg", size: 599, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -3704,7 +3704,7 @@ func materialiconsCard_membershipSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/card_membership.svg", size: 285, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -3724,7 +3724,7 @@ func materialiconsCard_travelSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/card_travel.svg", size: 356, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -3744,7 +3744,7 @@ func materialiconsCastSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/cast.svg", size: 423, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -3764,7 +3764,7 @@ func materialiconsCast_connectedSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/cast_connected.svg", size: 478, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -3784,7 +3784,7 @@ func materialiconsCenter_focus_strongSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/center_focus_strong.svg", size: 365, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -3804,7 +3804,7 @@ func materialiconsCenter_focus_weakSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/center_focus_weak.svg", size: 423, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -3824,7 +3824,7 @@ func materialiconsChange_historySvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/change_history.svg", size: 264, mode: os.FileMode(509), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -3844,7 +3844,7 @@ func materialiconsChatSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/chat.svg", size: 285, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -3864,7 +3864,7 @@ func materialiconsChat_bubbleSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/chat_bubble.svg", size: 224, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -3884,7 +3884,7 @@ func materialiconsChat_bubble_outlineSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/chat_bubble_outline.svg", size: 248, mode: os.FileMode(509), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -3904,7 +3904,7 @@ func materialiconsCheckSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/check.svg", size: 201, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -3924,7 +3924,7 @@ func materialiconsCheck_boxSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/check_box.svg", size: 297, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -3944,7 +3944,7 @@ func materialiconsCheck_box_outline_blankSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/check_box_outline_blank.svg", size: 258, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -3964,7 +3964,7 @@ func materialiconsCheck_circleSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/check_circle.svg", size: 299, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -3984,7 +3984,7 @@ func materialiconsChevron_leftSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/chevron_left.svg", size: 200, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -4004,7 +4004,7 @@ func materialiconsChevron_rightSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/chevron_right.svg", size: 200, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -4024,7 +4024,7 @@ func materialiconsChrome_reader_modeSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/chrome_reader_mode.svg", size: 309, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -4044,7 +4044,7 @@ func materialiconsClassSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/class.svg", size: 262, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -4064,7 +4064,7 @@ func materialiconsClearSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/clear.svg", size: 259, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -4084,7 +4084,7 @@ func materialiconsClear_allSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/clear_all.svg", size: 201, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -4104,7 +4104,7 @@ func materialiconsCloseSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/close.svg", size: 259, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -4124,7 +4124,7 @@ func materialiconsClosed_captionSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/closed_caption.svg", size: 442, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -4144,7 +4144,7 @@ func materialiconsCloudSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/cloud.svg", size: 313, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -4164,7 +4164,7 @@ func materialiconsCloud_circleSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/cloud_circle.svg", size: 340, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -4184,7 +4184,7 @@ func materialiconsCloud_doneSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/cloud_done.svg", size: 372, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -4204,7 +4204,7 @@ func materialiconsCloud_downloadSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/cloud_download.svg", size: 343, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -4224,7 +4224,7 @@ func materialiconsCloud_offSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/cloud_off.svg", size: 532, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -4244,7 +4244,7 @@ func materialiconsCloud_queueSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/cloud_queue.svg", size: 438, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -4264,7 +4264,7 @@ func materialiconsCloud_uploadSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/cloud_upload.svg", size: 346, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -4284,7 +4284,7 @@ func materialiconsCodeSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/code.svg", size: 253, mode: os.FileMode(509), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -4304,7 +4304,7 @@ func materialiconsCollectionsSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/collections.svg", size: 316, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -4324,7 +4324,7 @@ func materialiconsColor_lensSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/color_lens.svg", size: 553, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -4344,7 +4344,7 @@ func materialiconsColorizeSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/colorize.svg", size: 375, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -4364,7 +4364,7 @@ func materialiconsCommentSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/comment.svg", size: 285, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -4384,7 +4384,7 @@ func materialiconsCompareSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/compare.svg", size: 299, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -4404,7 +4404,7 @@ func materialiconsComputerSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/computer.svg", size: 277, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -4424,7 +4424,7 @@ func materialiconsConfirmation_numberSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/confirmation_number.svg", size: 548, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -4444,7 +4444,7 @@ func materialiconsContact_mailSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/contact_mail.svg", size: 455, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -4464,7 +4464,7 @@ func materialiconsContact_phoneSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/contact_phone.svg", size: 545, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -4484,7 +4484,7 @@ func materialiconsContactsSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/contacts.svg", size: 443, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -4504,7 +4504,7 @@ func materialiconsContent_copySvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/content_copy.svg", size: 296, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -4524,7 +4524,7 @@ func materialiconsContent_cutSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/content_cut.svg", size: 726, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -4544,7 +4544,7 @@ func materialiconsContent_pasteSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/content_paste.svg", size: 364, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -4564,7 +4564,7 @@ func materialiconsControl_pointSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/control_point.svg", size: 324, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -4584,7 +4584,7 @@ func materialiconsControl_point_duplicateSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/control_point_duplicate.svg", size: 439, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -4604,7 +4604,7 @@ func materialiconsCreateSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/create.svg", size: 293, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -4624,7 +4624,7 @@ func materialiconsCredit_cardSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/credit_card.svg", size: 281, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -4644,7 +4644,7 @@ func materialiconsCropSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/crop.svg", size: 250, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -4664,7 +4664,7 @@ func materialiconsCrop_16_9Svg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/crop_16_9.svg", size: 260, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -4684,7 +4684,7 @@ func materialiconsCrop_3_2Svg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/crop_3_2.svg", size: 259, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -4704,7 +4704,7 @@ func materialiconsCrop_5_4Svg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/crop_5_4.svg", size: 260, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -4724,7 +4724,7 @@ func materialiconsCrop_7_5Svg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/crop_7_5.svg", size: 260, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -4744,7 +4744,7 @@ func materialiconsCrop_dinSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/crop_din.svg", size: 259, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -4764,7 +4764,7 @@ func materialiconsCrop_freeSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/crop_free.svg", size: 305, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -4784,7 +4784,7 @@ func materialiconsCrop_landscapeSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/crop_landscape.svg", size: 260, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -4804,7 +4804,7 @@ func materialiconsCrop_originalSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/crop_original.svg", size: 312, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -4824,7 +4824,7 @@ func materialiconsCrop_portraitSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/crop_portrait.svg", size: 259, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -4844,7 +4844,7 @@ func materialiconsCrop_squareSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/crop_square.svg", size: 259, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -4864,7 +4864,7 @@ func materialiconsDashboardSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/dashboard.svg", size: 218, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -4884,7 +4884,7 @@ func materialiconsData_usageSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/data_usage.svg", size: 450, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -4904,7 +4904,7 @@ func materialiconsDehazeSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/dehaze.svg", size: 198, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -4924,7 +4924,7 @@ func materialiconsDeleteSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/delete.svg", size: 237, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -4944,7 +4944,7 @@ func materialiconsDescriptionSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/description.svg", size: 289, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -4964,7 +4964,7 @@ func materialiconsDesktop_macSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/desktop_mac.svg", size: 275, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -4984,7 +4984,7 @@ func materialiconsDesktop_windowsSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/desktop_windows.svg", size: 276, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -5004,7 +5004,7 @@ func materialiconsDetailsSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/details.svg", size: 196, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -5024,7 +5024,7 @@ func materialiconsDeveloper_boardSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/developer_board.svg", size: 343, mode: os.FileMode(509), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -5044,7 +5044,7 @@ func materialiconsDeveloper_modeSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/developer_mode.svg", size: 432, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -5064,7 +5064,7 @@ func materialiconsDevicesSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/devices.svg", size: 296, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -5084,7 +5084,7 @@ func materialiconsDialer_sipSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/dialer_sip.svg", size: 489, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -5104,7 +5104,7 @@ func materialiconsDialpadSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/dialpad.svg", size: 733, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -5124,7 +5124,7 @@ func materialiconsDirectionsSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/directions.svg", size: 343, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -5144,7 +5144,7 @@ func materialiconsDirections_bikeSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/directions_bike.svg", size: 811, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -5164,7 +5164,7 @@ func materialiconsDirections_boatSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/directions_boat.svg", size: 630, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -5184,7 +5184,7 @@ func materialiconsDirections_busSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/directions_bus.svg", size: 446, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -5204,7 +5204,7 @@ func materialiconsDirections_carSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/directions_car.svg", size: 452, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -5224,7 +5224,7 @@ func materialiconsDirections_railwaySvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/directions_railway.svg", size: 318, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -5244,7 +5244,7 @@ func materialiconsDirections_runSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/directions_run.svg", size: 583, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -5264,7 +5264,7 @@ func materialiconsDirections_subwaySvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/directions_subway.svg", size: 403, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -5284,7 +5284,7 @@ func materialiconsDirections_transitSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/directions_transit.svg", size: 403, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -5304,7 +5304,7 @@ func materialiconsDirections_walkSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/directions_walk.svg", size: 552, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -5324,7 +5324,7 @@ func materialiconsDisc_fullSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/disc_full.svg", size: 310, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -5344,7 +5344,7 @@ func materialiconsDnsSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/dns.svg", size: 422, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -5364,7 +5364,7 @@ func materialiconsDo_not_disturbSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/do_not_disturb.svg", size: 399, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -5384,7 +5384,7 @@ func materialiconsDo_not_disturb_altSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/do_not_disturb_alt.svg", size: 389, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -5404,7 +5404,7 @@ func materialiconsDockSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/dock.svg", size: 288, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -5424,7 +5424,7 @@ func materialiconsDomainSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/domain.svg", size: 365, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -5444,7 +5444,7 @@ func materialiconsDoneSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/done.svg", size: 201, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -5464,7 +5464,7 @@ func materialiconsDone_allSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/done_all.svg", size: 309, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -5484,7 +5484,7 @@ func materialiconsDraftsSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/drafts.svg", size: 313, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -5504,7 +5504,7 @@ func materialiconsDrive_etaSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/drive_eta.svg", size: 449, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -5524,7 +5524,7 @@ func materialiconsDvrSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/dvr.svg", size: 343, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -5544,7 +5544,7 @@ func materialiconsEditSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/edit.svg", size: 293, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -5564,7 +5564,7 @@ func materialiconsEmailSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/email.svg", size: 281, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -5584,7 +5584,7 @@ func materialiconsEqualizerSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/equalizer.svg", size: 201, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -5604,7 +5604,7 @@ func materialiconsErrorSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/error.svg", size: 250, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -5624,7 +5624,7 @@ func materialiconsError_outlineSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/error_outline.svg", size: 328, mode: os.FileMode(509), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -5644,7 +5644,7 @@ func materialiconsEventSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/event.svg", size: 306, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -5664,7 +5664,7 @@ func materialiconsEvent_availableSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/event_available.svg", size: 361, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -5684,7 +5684,7 @@ func materialiconsEvent_busySvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/event_busy.svg", size: 414, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -5704,7 +5704,7 @@ func materialiconsEvent_noteSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/event_note.svg", size: 323, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -5724,7 +5724,7 @@ func materialiconsEvent_seatSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/event_seat.svg", size: 430, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -5744,7 +5744,7 @@ func materialiconsExit_to_appSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/exit_to_app.svg", size: 332, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -5764,7 +5764,7 @@ func materialiconsExpand_lessSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/expand_less.svg", size: 198, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -5784,7 +5784,7 @@ func materialiconsExpand_moreSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/expand_more.svg", size: 201, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -5804,7 +5804,7 @@ func materialiconsExplicitSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/explicit.svg", size: 277, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -5824,7 +5824,7 @@ func materialiconsExploreSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/explore.svg", size: 370, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -5844,7 +5844,7 @@ func materialiconsExposureSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/exposure.svg", size: 310, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -5864,7 +5864,7 @@ func materialiconsExposure_neg_1Svg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/exposure_neg_1.svg", size: 222, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -5884,7 +5884,7 @@ func materialiconsExposure_neg_2Svg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/exposure_neg_2.svg", size: 802, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -5904,7 +5904,7 @@ func materialiconsExposure_plus_1Svg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/exposure_plus_1.svg", size: 242, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -5924,7 +5924,7 @@ func materialiconsExposure_plus_2Svg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/exposure_plus_2.svg", size: 822, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -5944,7 +5944,7 @@ func materialiconsExposure_zeroSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/exposure_zero.svg", size: 999, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -5964,7 +5964,7 @@ func materialiconsExtensionSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/extension.svg", size: 438, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -5984,7 +5984,7 @@ func materialiconsFaceSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/face.svg", size: 565, mode: os.FileMode(509), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -6004,7 +6004,7 @@ func materialiconsFast_forwardSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/fast_forward.svg", size: 192, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -6024,7 +6024,7 @@ func materialiconsFast_rewindSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/fast_rewind.svg", size: 192, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -6044,7 +6044,7 @@ func materialiconsFavoriteSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/favorite.svg", size: 318, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -6064,7 +6064,7 @@ func materialiconsFavorite_borderSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/favorite_border.svg", size: 496, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -6084,7 +6084,7 @@ func materialiconsFeedbackSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/feedback.svg", size: 264, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -6104,7 +6104,7 @@ func materialiconsFile_downloadSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/file_download.svg", size: 201, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -6124,7 +6124,7 @@ func materialiconsFile_uploadSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/file_upload.svg", size: 192, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -6144,7 +6144,7 @@ func materialiconsFilterSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/filter.svg", size: 350, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -6164,7 +6164,7 @@ func materialiconsFilter_1Svg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/filter_1.svg", size: 319, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -6184,7 +6184,7 @@ func materialiconsFilter_2Svg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/filter_2.svg", size: 389, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -6204,7 +6204,7 @@ func materialiconsFilter_3Svg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/filter_3.svg", size: 407, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -6224,7 +6224,7 @@ func materialiconsFilter_4Svg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/filter_4.svg", size: 330, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -6244,7 +6244,7 @@ func materialiconsFilter_5Svg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/filter_5.svg", size: 371, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -6264,7 +6264,7 @@ func materialiconsFilter_6Svg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/filter_6.svg", size: 414, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -6284,7 +6284,7 @@ func materialiconsFilter_7Svg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/filter_7.svg", size: 327, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -6304,7 +6304,7 @@ func materialiconsFilter_8Svg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/filter_8.svg", size: 495, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -6324,7 +6324,7 @@ func materialiconsFilter_9Svg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/filter_9.svg", size: 411, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -6344,7 +6344,7 @@ func materialiconsFilter_9_plusSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/filter_9_plus.svg", size: 442, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -6364,7 +6364,7 @@ func materialiconsFilter_b_and_wSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/filter_b_and_w.svg", size: 274, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -6384,7 +6384,7 @@ func materialiconsFilter_center_focusSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/filter_center_focus.svg", size: 365, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -6404,7 +6404,7 @@ func materialiconsFilter_dramaSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/filter_drama.svg", size: 475, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -6424,7 +6424,7 @@ func materialiconsFilter_framesSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/filter_frames.svg", size: 303, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -6444,7 +6444,7 @@ func materialiconsFilter_hdrSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/filter_hdr.svg", size: 213, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -6464,7 +6464,7 @@ func materialiconsFilter_listSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/filter_list.svg", size: 200, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -6484,7 +6484,7 @@ func materialiconsFilter_noneSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/filter_none.svg", size: 297, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -6504,7 +6504,7 @@ func materialiconsFilter_tilt_shiftSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/filter_tilt_shift.svg", size: 867, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -6524,7 +6524,7 @@ func materialiconsFilter_vintageSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/filter_vintage.svg", size: 832, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -6544,7 +6544,7 @@ func materialiconsFind_in_pageSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/find_in_page.svg", size: 427, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -6564,7 +6564,7 @@ func materialiconsFind_replaceSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/find_replace.svg", size: 480, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -6584,7 +6584,7 @@ func materialiconsFlagSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/flag.svg", size: 191, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -6604,7 +6604,7 @@ func materialiconsFlareSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/flare.svg", size: 487, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -6624,7 +6624,7 @@ func materialiconsFlash_autoSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/flash_auto.svg", size: 254, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -6644,7 +6644,7 @@ func materialiconsFlash_offSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/flash_off.svg", size: 256, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -6664,7 +6664,7 @@ func materialiconsFlash_onSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/flash_on.svg", size: 178, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -6684,7 +6684,7 @@ func materialiconsFlightSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/flight.svg", size: 273, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -6704,7 +6704,7 @@ func materialiconsFlight_landSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/flight_land.svg", size: 688, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -6724,7 +6724,7 @@ func materialiconsFlight_takeoffSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/flight_takeoff.svg", size: 602, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -6744,7 +6744,7 @@ func materialiconsFlipSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/flip.svg", size: 370, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -6764,7 +6764,7 @@ func materialiconsFlip_to_backSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/flip_to_back.svg", size: 434, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -6784,7 +6784,7 @@ func materialiconsFlip_to_frontSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/flip_to_front.svg", size: 381, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -6804,7 +6804,7 @@ func materialiconsFolderSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/folder.svg", size: 256, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -6824,7 +6824,7 @@ func materialiconsFolder_openSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/folder_open.svg", size: 274, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -6844,7 +6844,7 @@ func materialiconsFolder_sharedSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/folder_shared.svg", size: 359, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -6864,7 +6864,7 @@ func materialiconsFolder_specialSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/folder_special.svg", size: 349, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -6884,7 +6884,7 @@ func materialiconsFormat_align_centerSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/format_align_center.svg", size: 231, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -6904,7 +6904,7 @@ func materialiconsFormat_align_justifySvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/format_align_justify.svg", size: 225, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -6924,7 +6924,7 @@ func materialiconsFormat_align_leftSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/format_align_left.svg", size: 229, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -6944,7 +6944,7 @@ func materialiconsFormat_align_rightSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/format_align_right.svg", size: 230, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -6964,7 +6964,7 @@ func materialiconsFormat_boldSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/format_bold.svg", size: 361, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -6984,7 +6984,7 @@ func materialiconsFormat_clearSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/format_clear.svg", size: 296, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -7004,7 +7004,7 @@ func materialiconsFormat_color_fillSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/format_color_fill.svg", size: 457, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -7024,7 +7024,7 @@ func materialiconsFormat_color_resetSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/format_color_reset.svg", size: 406, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -7044,7 +7044,7 @@ func materialiconsFormat_color_textSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/format_color_text.svg", size: 278, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -7064,7 +7064,7 @@ func materialiconsFormat_indent_decreaseSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/format_indent_decrease.svg", size: 250, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -7084,7 +7084,7 @@ func materialiconsFormat_indent_increaseSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/format_indent_increase.svg", size: 249, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -7104,7 +7104,7 @@ func materialiconsFormat_italicSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/format_italic.svg", size: 202, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -7124,7 +7124,7 @@ func materialiconsFormat_line_spacingSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/format_line_spacing.svg", size: 239, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -7144,7 +7144,7 @@ func materialiconsFormat_list_bulletedSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/format_list_bulleted.svg", size: 412, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -7164,7 +7164,7 @@ func materialiconsFormat_list_numberedSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/format_list_numbered.svg", size: 295, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -7184,7 +7184,7 @@ func materialiconsFormat_paintSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/format_paint.svg", size: 281, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -7204,7 +7204,7 @@ func materialiconsFormat_quoteSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/format_quote.svg", size: 197, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -7224,7 +7224,7 @@ func materialiconsFormat_sizeSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/format_size.svg", size: 202, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -7244,7 +7244,7 @@ func materialiconsFormat_strikethroughSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/format_strikethrough.svg", size: 209, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -7264,7 +7264,7 @@ func materialiconsFormat_textdirection_l_to_rSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/format_textdirection_l_to_r.svg", size: 238, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -7284,7 +7284,7 @@ func materialiconsFormat_textdirection_r_to_lSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/format_textdirection_r_to_l.svg", size: 241, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -7304,7 +7304,7 @@ func materialiconsFormat_underlinedSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/format_underlined.svg", size: 263, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -7324,7 +7324,7 @@ func materialiconsForumSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/forum.svg", size: 274, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -7344,7 +7344,7 @@ func materialiconsForwardSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/forward.svg", size: 179, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -7364,7 +7364,7 @@ func materialiconsForward_10Svg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/forward_10.svg", size: 888, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -7384,7 +7384,7 @@ func materialiconsForward_30Svg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/forward_30.svg", size: 1389, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -7404,7 +7404,7 @@ func materialiconsForward_5Svg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/forward_5.svg", size: 834, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -7424,7 +7424,7 @@ func materialiconsFullscreenSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/fullscreen.svg", size: 241, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -7444,7 +7444,7 @@ func materialiconsFullscreen_exitSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/fullscreen_exit.svg", size: 240, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -7464,7 +7464,7 @@ func materialiconsFunctionsSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/functions.svg", size: 199, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -7484,7 +7484,7 @@ func materialiconsGamepadSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/gamepad.svg", size: 245, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -7504,7 +7504,7 @@ func materialiconsGamesSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/games.svg", size: 245, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -7524,7 +7524,7 @@ func materialiconsGestureSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/gesture.svg", size: 835, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -7544,7 +7544,7 @@ func materialiconsGet_appSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/get_app.svg", size: 201, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -7564,7 +7564,7 @@ func materialiconsGps_fixedSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/gps_fixed.svg", size: 456, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -7584,7 +7584,7 @@ func materialiconsGps_not_fixedSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/gps_not_fixed.svg", size: 398, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -7604,7 +7604,7 @@ func materialiconsGps_offSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/gps_off.svg", size: 612, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -7624,7 +7624,7 @@ func materialiconsGradeSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/grade.svg", size: 247, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -7644,7 +7644,7 @@ func materialiconsGradientSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/gradient.svg", size: 416, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -7664,7 +7664,7 @@ func materialiconsGrainSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/grain.svg", size: 616, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -7684,7 +7684,7 @@ func materialiconsGraphic_eqSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/graphic_eq.svg", size: 231, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -7704,7 +7704,7 @@ func materialiconsGrid_offSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/grid_off.svg", size: 492, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -7724,7 +7724,7 @@ func materialiconsGrid_onSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/grid_on.svg", size: 379, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -7744,7 +7744,7 @@ func materialiconsGroupSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/group.svg", size: 438, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -7764,7 +7764,7 @@ func materialiconsGroup_addSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/group_add.svg", size: 516, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -7784,7 +7784,7 @@ func materialiconsGroup_workSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/group_work.svg", size: 410, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -7804,7 +7804,7 @@ func materialiconsHdr_offSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/hdr_off.svg", size: 392, mode: os.FileMode(509), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -7824,7 +7824,7 @@ func materialiconsHdr_onSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/hdr_on.svg", size: 347, mode: os.FileMode(509), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -7844,7 +7844,7 @@ func materialiconsHdr_strongSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/hdr_strong.svg", size: 338, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -7864,7 +7864,7 @@ func materialiconsHdr_weakSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/hdr_weak.svg", size: 337, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -7884,7 +7884,7 @@ func materialiconsHeadsetSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/headset.svg", size: 309, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -7904,7 +7904,7 @@ func materialiconsHeadset_micSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/headset_mic.svg", size: 319, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -7924,7 +7924,7 @@ func materialiconsHealingSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/healing.svg", size: 812, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -7944,7 +7944,7 @@ func materialiconsHearingSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/hearing.svg", size: 726, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -7964,7 +7964,7 @@ func materialiconsHelpSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/help.svg", size: 433, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -7984,7 +7984,7 @@ func materialiconsHigh_qualitySvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/high_quality.svg", size: 388, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -8004,7 +8004,7 @@ func materialiconsHighlight_offSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/highlight_off.svg", size: 405, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -8024,7 +8024,7 @@ func materialiconsHistorySvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/history.svg", size: 408, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -8044,7 +8044,7 @@ func materialiconsHomeSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/home.svg", size: 188, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -8064,7 +8064,7 @@ func materialiconsHotelSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/hotel.svg", size: 265, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -8084,7 +8084,7 @@ func materialiconsHourglass_emptySvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/hourglass_empty.svg", size: 239, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -8104,7 +8104,7 @@ func materialiconsHourglass_fullSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/hourglass_full.svg", size: 261, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -8124,7 +8124,7 @@ func materialiconsHttpSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/http.svg", size: 306, mode: os.FileMode(509), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -8144,7 +8144,7 @@ func materialiconsHttpsSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/https.svg", size: 410, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -8164,7 +8164,7 @@ func materialiconsImageSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/image.svg", size: 274, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -8184,7 +8184,7 @@ func materialiconsImage_aspect_ratioSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/image_aspect_ratio.svg", size: 321, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -8204,7 +8204,7 @@ func materialiconsImport_exportSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/import_export.svg", size: 225, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -8224,7 +8224,7 @@ func materialiconsInboxSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/inbox.svg", size: 336, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -8244,7 +8244,7 @@ func materialiconsInfoSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/info.svg", size: 251, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -8264,7 +8264,7 @@ func materialiconsInfo_outlineSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/info_outline.svg", size: 322, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -8284,7 +8284,7 @@ func materialiconsInputSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/input.svg", size: 307, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -8304,7 +8304,7 @@ func materialiconsInsert_chartSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/insert_chart.svg", size: 290, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -8324,7 +8324,7 @@ func materialiconsInsert_commentSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/insert_comment.svg", size: 274, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -8344,7 +8344,7 @@ func materialiconsInsert_drive_fileSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/insert_drive_file.svg", size: 256, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -8364,7 +8364,7 @@ func materialiconsInsert_emoticonSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/insert_emoticon.svg", size: 485, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -8384,7 +8384,7 @@ func materialiconsInsert_invitationSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/insert_invitation.svg", size: 306, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -8404,7 +8404,7 @@ func materialiconsInsert_linkSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/insert_link.svg", size: 380, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -8424,7 +8424,7 @@ func materialiconsInsert_photoSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/insert_photo.svg", size: 274, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -8444,7 +8444,7 @@ func materialiconsInvert_colorsSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/invert_colors.svg", size: 396, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -8464,7 +8464,7 @@ func materialiconsInvert_colors_offSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/invert_colors_off.svg", size: 560, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -8484,7 +8484,7 @@ func materialiconsIsoSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/iso.svg", size: 327, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -8504,7 +8504,7 @@ func materialiconsKeyboardSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/keyboard.svg", size: 434, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -8524,7 +8524,7 @@ func materialiconsKeyboard_arrow_downSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/keyboard_arrow_down.svg", size: 206, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -8544,7 +8544,7 @@ func materialiconsKeyboard_arrow_leftSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/keyboard_arrow_left.svg", size: 206, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -8564,7 +8564,7 @@ func materialiconsKeyboard_arrow_rightSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/keyboard_arrow_right.svg", size: 206, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -8584,7 +8584,7 @@ func materialiconsKeyboard_arrow_upSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/keyboard_arrow_up.svg", size: 200, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -8604,7 +8604,7 @@ func materialiconsKeyboard_backspaceSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/keyboard_backspace.svg", size: 212, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -8624,7 +8624,7 @@ func materialiconsKeyboard_capslockSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/keyboard_capslock.svg", size: 227, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -8644,7 +8644,7 @@ func materialiconsKeyboard_hideSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/keyboard_hide.svg", size: 438, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -8664,7 +8664,7 @@ func materialiconsKeyboard_returnSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/keyboard_return.svg", size: 217, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -8684,7 +8684,7 @@ func materialiconsKeyboard_tabSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/keyboard_tab.svg", size: 239, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -8704,7 +8704,7 @@ func materialiconsKeyboard_voiceSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/keyboard_voice.svg", size: 374, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -8724,7 +8724,7 @@ func materialiconsLabelSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/label.svg", size: 297, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -8744,7 +8744,7 @@ func materialiconsLabel_outlineSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/label_outline.svg", size: 327, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -8764,7 +8764,7 @@ func materialiconsLandscapeSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/landscape.svg", size: 213, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -8784,7 +8784,7 @@ func materialiconsLanguageSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/language.svg", size: 989, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -8804,7 +8804,7 @@ func materialiconsLaptopSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/laptop.svg", size: 285, mode: os.FileMode(509), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -8824,7 +8824,7 @@ func materialiconsLaptop_chromebookSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/laptop_chromebook.svg", size: 211, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -8844,7 +8844,7 @@ func materialiconsLaptop_macSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/laptop_mac.svg", size: 358, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -8864,7 +8864,7 @@ func materialiconsLaptop_windowsSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/laptop_windows.svg", size: 282, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -8884,7 +8884,7 @@ func materialiconsLaunchSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/launch.svg", size: 295, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -8904,7 +8904,7 @@ func materialiconsLayersSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/layers.svg", size: 267, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -8924,7 +8924,7 @@ func materialiconsLayers_clearSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/layers_clear.svg", size: 393, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -8944,7 +8944,7 @@ func materialiconsLeak_addSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/leak_add.svg", size: 424, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -8964,7 +8964,7 @@ func materialiconsLeak_removeSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/leak_remove.svg", size: 740, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -8984,7 +8984,7 @@ func materialiconsLensSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/lens.svg", size: 218, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -9004,7 +9004,7 @@ func materialiconsLibrary_addSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/library_add.svg", size: 317, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -9024,7 +9024,7 @@ func materialiconsLibrary_booksSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/library_books.svg", size: 332, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -9044,7 +9044,7 @@ func materialiconsLibrary_musicSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/library_music.svg", size: 363, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -9064,7 +9064,7 @@ func materialiconsLinkSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/link.svg", size: 380, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -9084,7 +9084,7 @@ func materialiconsListSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/list.svg", size: 243, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -9104,7 +9104,7 @@ func materialiconsLive_helpSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/live_help.svg", size: 464, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -9124,7 +9124,7 @@ func materialiconsLive_tvSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/live_tv.svg", size: 324, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -9144,7 +9144,7 @@ func materialiconsLocal_activitySvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/local_activity.svg", size: 439, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -9164,7 +9164,7 @@ func materialiconsLocal_airportSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/local_airport.svg", size: 247, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -9184,7 +9184,7 @@ func materialiconsLocal_atmSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/local_atm.svg", size: 382, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -9204,7 +9204,7 @@ func materialiconsLocal_barSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/local_bar.svg", size: 218, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -9224,7 +9224,7 @@ func materialiconsLocal_cafeSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/local_cafe.svg", size: 276, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -9244,7 +9244,7 @@ func materialiconsLocal_car_washSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/local_car_wash.svg", size: 658, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -9264,7 +9264,7 @@ func materialiconsLocal_convenience_storeSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/local_convenience_store.svg", size: 257, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -9284,7 +9284,7 @@ func materialiconsLocal_diningSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/local_dining.svg", size: 443, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -9304,7 +9304,7 @@ func materialiconsLocal_drinkSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/local_drink.svg", size: 340, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -9324,7 +9324,7 @@ func materialiconsLocal_floristSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/local_florist.svg", size: 677, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -9344,7 +9344,7 @@ func materialiconsLocal_gas_stationSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/local_gas_station.svg", size: 498, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -9364,7 +9364,7 @@ func materialiconsLocal_grocery_storeSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/local_grocery_store.svg", size: 511, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -9384,7 +9384,7 @@ func materialiconsLocal_hospitalSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/local_hospital.svg", size: 286, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -9404,7 +9404,7 @@ func materialiconsLocal_hotelSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/local_hotel.svg", size: 265, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -9424,7 +9424,7 @@ func materialiconsLocal_laundry_serviceSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/local_laundry_service.svg", size: 500, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -9444,7 +9444,7 @@ func materialiconsLocal_librarySvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/local_library.svg", size: 327, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -9464,7 +9464,7 @@ func materialiconsLocal_mallSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/local_mall.svg", size: 415, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -9484,7 +9484,7 @@ func materialiconsLocal_moviesSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/local_movies.svg", size: 298, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -9504,7 +9504,7 @@ func materialiconsLocal_offerSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/local_offer.svg", size: 416, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -9524,7 +9524,7 @@ func materialiconsLocal_parkingSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/local_parking.svg", size: 250, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -9544,7 +9544,7 @@ func materialiconsLocal_pharmacySvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/local_pharmacy.svg", size: 259, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -9564,7 +9564,7 @@ func materialiconsLocal_phoneSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/local_phone.svg", size: 403, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -9584,7 +9584,7 @@ func materialiconsLocal_pizzaSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/local_pizza.svg", size: 342, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -9604,7 +9604,7 @@ func materialiconsLocal_playSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/local_play.svg", size: 439, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -9624,7 +9624,7 @@ func materialiconsLocal_post_officeSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/local_post_office.svg", size: 281, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -9644,7 +9644,7 @@ func materialiconsLocal_printshopSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/local_printshop.svg", size: 312, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -9664,7 +9664,7 @@ func materialiconsLocal_seeSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/local_see.svg", size: 370, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -9684,7 +9684,7 @@ func materialiconsLocal_shippingSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/local_shipping.svg", size: 399, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -9704,7 +9704,7 @@ func materialiconsLocal_taxiSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/local_taxi.svg", size: 462, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -9724,7 +9724,7 @@ func materialiconsLocation_citySvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/location_city.svg", size: 326, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -9744,7 +9744,7 @@ func materialiconsLocation_disabledSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/location_disabled.svg", size: 633, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -9764,7 +9764,7 @@ func materialiconsLocation_offSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/location_off.svg", size: 490, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -9784,7 +9784,7 @@ func materialiconsLocation_onSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/location_on.svg", size: 290, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -9804,7 +9804,7 @@ func materialiconsLocation_searchingSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/location_searching.svg", size: 413, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -9824,7 +9824,7 @@ func materialiconsLockSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/lock.svg", size: 410, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -9844,7 +9844,7 @@ func materialiconsLock_openSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/lock_open.svg", size: 414, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -9864,7 +9864,7 @@ func materialiconsLock_outlineSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/lock_outline.svg", size: 431, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -9884,7 +9884,7 @@ func materialiconsLooksSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/looks.svg", size: 327, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -9904,7 +9904,7 @@ func materialiconsLooks_3Svg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/looks_3.svg", size: 362, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -9924,7 +9924,7 @@ func materialiconsLooks_4Svg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/looks_4.svg", size: 274, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -9944,7 +9944,7 @@ func materialiconsLooks_5Svg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/looks_5.svg", size: 315, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -9964,7 +9964,7 @@ func materialiconsLooks_6Svg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/looks_6.svg", size: 357, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -9984,7 +9984,7 @@ func materialiconsLooks_oneSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/looks_one.svg", size: 265, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -10004,7 +10004,7 @@ func materialiconsLooks_twoSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/looks_two.svg", size: 332, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -10024,7 +10024,7 @@ func materialiconsLoopSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/loop.svg", size: 396, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -10044,7 +10044,7 @@ func materialiconsLoupeSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/loupe.svg", size: 343, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -10064,7 +10064,7 @@ func materialiconsLoyaltySvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/loyalty.svg", size: 612, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -10084,7 +10084,7 @@ func materialiconsMailSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/mail.svg", size: 281, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -10104,7 +10104,7 @@ func materialiconsMapSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/map.svg", size: 354, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -10124,7 +10124,7 @@ func materialiconsMarkunreadSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/markunread.svg", size: 281, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -10144,7 +10144,7 @@ func materialiconsMarkunread_mailboxSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/markunread_mailbox.svg", size: 279, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -10164,7 +10164,7 @@ func materialiconsMemorySvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/memory.svg", size: 369, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -10184,7 +10184,7 @@ func materialiconsMenuSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/menu.svg", size: 198, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -10204,7 +10204,7 @@ func materialiconsMerge_typeSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/merge_type.svg", size: 249, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -10224,7 +10224,7 @@ func materialiconsMessageSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/message.svg", size: 282, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -10244,7 +10244,7 @@ func materialiconsMicSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/mic.svg", size: 374, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -10264,7 +10264,7 @@ func materialiconsMic_noneSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/mic_none.svg", size: 496, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -10284,7 +10284,7 @@ func materialiconsMic_offSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/mic_off.svg", size: 545, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -10304,7 +10304,7 @@ func materialiconsMmsSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/mms.svg", size: 264, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -10324,7 +10324,7 @@ func materialiconsMode_commentSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/mode_comment.svg", size: 235, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -10344,7 +10344,7 @@ func materialiconsMode_editSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/mode_edit.svg", size: 293, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -10364,7 +10364,7 @@ func materialiconsMonochrome_photosSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/monochrome_photos.svg", size: 804, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -10384,7 +10384,7 @@ func materialiconsMoodSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/mood.svg", size: 485, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -10404,7 +10404,7 @@ func materialiconsMood_badSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/mood_bad.svg", size: 470, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -10424,7 +10424,7 @@ func materialiconsMoreSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/more.svg", size: 450, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -10444,7 +10444,7 @@ func materialiconsMore_horizSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/more_horiz.svg", size: 326, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -10464,7 +10464,7 @@ func materialiconsMore_vertSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/more_vert.svg", size: 324, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -10484,7 +10484,7 @@ func materialiconsMouseSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/mouse.svg", size: 280, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -10504,7 +10504,7 @@ func materialiconsMovieSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/movie.svg", size: 274, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -10524,7 +10524,7 @@ func materialiconsMovie_creationSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/movie_creation.svg", size: 274, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -10544,7 +10544,7 @@ func materialiconsMusic_noteSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/music_note.svg", size: 239, mode: os.FileMode(509), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -10564,7 +10564,7 @@ func materialiconsMy_locationSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/my_location.svg", size: 456, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -10584,7 +10584,7 @@ func materialiconsNatureSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/nature.svg", size: 281, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -10604,7 +10604,7 @@ func materialiconsNature_peopleSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/nature_people.svg", size: 387, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -10624,7 +10624,7 @@ func materialiconsNavigate_beforeSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/navigate_before.svg", size: 200, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -10644,7 +10644,7 @@ func materialiconsNavigate_nextSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/navigate_next.svg", size: 200, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -10664,7 +10664,7 @@ func materialiconsNavigationSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/navigation.svg", size: 196, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -10684,7 +10684,7 @@ func materialiconsNetwork_cellSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/network_cell.svg", size: 211, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -10704,7 +10704,7 @@ func materialiconsNetwork_lockedSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/network_locked.svg", size: 396, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -10724,7 +10724,7 @@ func materialiconsNetwork_wifiSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/network_wifi.svg", size: 378, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -10744,7 +10744,7 @@ func materialiconsNew_releasesSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/new_releases.svg", size: 366, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -10764,7 +10764,7 @@ func materialiconsNfcSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/nfc.svg", size: 407, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -10784,7 +10784,7 @@ func materialiconsNo_simSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/no_sim.svg", size: 320, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -10804,7 +10804,7 @@ func materialiconsNot_interestedSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/not_interested.svg", size: 399, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -10824,7 +10824,7 @@ func materialiconsNote_addSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/note_add.svg", size: 292, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -10844,7 +10844,7 @@ func materialiconsNotificationsSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/notifications.svg", size: 317, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -10864,7 +10864,7 @@ func materialiconsNotifications_activeSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/notifications_active.svg", size: 532, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -10884,7 +10884,7 @@ func materialiconsNotifications_noneSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/notifications_none.svg", size: 361, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -10904,7 +10904,7 @@ func materialiconsNotifications_offSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/notifications_off.svg", size: 395, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -10924,7 +10924,7 @@ func materialiconsNotifications_pausedSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/notifications_paused.svg", size: 370, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -10944,7 +10944,7 @@ func materialiconsOndemand_videoSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/ondemand_video.svg", size: 295, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -10964,7 +10964,7 @@ func materialiconsOpen_in_browserSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/open_in_browser.svg", size: 291, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -10984,7 +10984,7 @@ func materialiconsOpen_in_newSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/open_in_new.svg", size: 295, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -11004,7 +11004,7 @@ func materialiconsOpen_withSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/open_with.svg", size: 272, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -11024,7 +11024,7 @@ func materialiconsPagesSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/pages.svg", size: 329, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -11044,7 +11044,7 @@ func materialiconsPageviewSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/pageview.svg", size: 434, mode: os.FileMode(509), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -11064,7 +11064,7 @@ func materialiconsPaletteSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/palette.svg", size: 553, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -11084,7 +11084,7 @@ func materialiconsPanoramaSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/panorama.svg", size: 273, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -11104,7 +11104,7 @@ func materialiconsPanorama_fish_eyeSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/panorama_fish_eye.svg", size: 287, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -11124,7 +11124,7 @@ func materialiconsPanorama_horizontalSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/panorama_horizontal.svg", size: 591, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -11144,7 +11144,7 @@ func materialiconsPanorama_verticalSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/panorama_vertical.svg", size: 599, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -11164,7 +11164,7 @@ func materialiconsPanorama_wide_angleSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/panorama_wide_angle.svg", size: 618, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -11184,7 +11184,7 @@ func materialiconsParty_modeSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/party_mode.svg", size: 498, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -11204,7 +11204,7 @@ func materialiconsPauseSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/pause.svg", size: 186, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -11224,7 +11224,7 @@ func materialiconsPause_circle_filledSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/pause_circle_filled.svg", size: 252, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -11244,7 +11244,7 @@ func materialiconsPause_circle_outlineSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/pause_circle_outline.svg", size: 321, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -11264,7 +11264,7 @@ func materialiconsPaymentSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/payment.svg", size: 281, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -11284,7 +11284,7 @@ func materialiconsPeopleSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/people.svg", size: 438, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -11304,7 +11304,7 @@ func materialiconsPeople_outlineSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/people_outline.svg", size: 657, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -11324,7 +11324,7 @@ func materialiconsPerm_camera_micSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/perm_camera_mic.svg", size: 433, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -11344,7 +11344,7 @@ func materialiconsPerm_contact_calendarSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/perm_contact_calendar.svg", size: 378, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -11364,7 +11364,7 @@ func materialiconsPerm_data_settingSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/perm_data_setting.svg", size: 897, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -11384,7 +11384,7 @@ func materialiconsPerm_device_informationSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/perm_device_information.svg", size: 303, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -11404,7 +11404,7 @@ func materialiconsPerm_identitySvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/perm_identity.svg", size: 429, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -11424,7 +11424,7 @@ func materialiconsPerm_mediaSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/perm_media.svg", size: 337, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -11444,7 +11444,7 @@ func materialiconsPerm_phone_msgSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/perm_phone_msg.svg", size: 425, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -11464,7 +11464,7 @@ func materialiconsPerm_scan_wifiSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/perm_scan_wifi.svg", size: 253, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -11484,7 +11484,7 @@ func materialiconsPersonSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/person.svg", size: 277, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -11504,7 +11504,7 @@ func materialiconsPerson_addSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/person_add.svg", size: 313, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -11524,7 +11524,7 @@ func materialiconsPerson_outlineSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/person_outline.svg", size: 429, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -11544,7 +11544,7 @@ func materialiconsPerson_pinSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/person_pin.svg", size: 402, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -11564,7 +11564,7 @@ func materialiconsPersonal_videoSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/personal_video.svg", size: 277, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -11584,7 +11584,7 @@ func materialiconsPhoneSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/phone.svg", size: 403, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -11604,7 +11604,7 @@ func materialiconsPhone_androidSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/phone_android.svg", size: 276, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -11624,7 +11624,7 @@ func materialiconsPhone_bluetooth_speakerSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/phone_bluetooth_speaker.svg", size: 580, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -11644,7 +11644,7 @@ func materialiconsPhone_forwardedSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/phone_forwarded.svg", size: 434, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -11664,7 +11664,7 @@ func materialiconsPhone_in_talkSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/phone_in_talk.svg", size: 507, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -11684,7 +11684,7 @@ func materialiconsPhone_iphoneSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/phone_iphone.svg", size: 315, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -11704,7 +11704,7 @@ func materialiconsPhone_lockedSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/phone_locked.svg", size: 574, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -11724,7 +11724,7 @@ func materialiconsPhone_missedSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/phone_missed.svg", size: 603, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -11744,7 +11744,7 @@ func materialiconsPhone_pausedSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/phone_paused.svg", size: 437, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -11764,7 +11764,7 @@ func materialiconsPhonelinkSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/phonelink.svg", size: 296, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -11784,7 +11784,7 @@ func materialiconsPhonelink_offSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/phonelink_off.svg", size: 408, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -11804,7 +11804,7 @@ func materialiconsPhotoSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/photo.svg", size: 274, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -11824,7 +11824,7 @@ func materialiconsPhoto_albumSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/photo_album.svg", size: 301, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -11844,7 +11844,7 @@ func materialiconsPhoto_cameraSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/photo_camera.svg", size: 370, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -11864,7 +11864,7 @@ func materialiconsPhoto_librarySvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/photo_library.svg", size: 316, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -11884,7 +11884,7 @@ func materialiconsPicture_as_pdfSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/picture_as_pdf.svg", size: 453, mode: os.FileMode(509), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -11904,7 +11904,7 @@ func materialiconsPicture_in_pictureSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/picture_in_picture.svg", size: 292, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -11924,7 +11924,7 @@ func materialiconsPin_dropSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/pin_drop.svg", size: 296, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -11944,7 +11944,7 @@ func materialiconsPlaceSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/place.svg", size: 290, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -11964,7 +11964,7 @@ func materialiconsPlay_arrowSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/play_arrow.svg", size: 220, mode: os.FileMode(509), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -11984,7 +11984,7 @@ func materialiconsPlay_circle_filledSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/play_circle_filled.svg", size: 238, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -12004,7 +12004,7 @@ func materialiconsPlay_circle_outlineSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/play_circle_outline.svg", size: 307, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -12024,7 +12024,7 @@ func materialiconsPlay_for_workSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/play_for_work.svg", size: 276, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -12044,7 +12044,7 @@ func materialiconsPlaylist_addSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/playlist_add.svg", size: 234, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -12064,7 +12064,7 @@ func materialiconsPlus_oneSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/plus_one.svg", size: 208, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -12084,7 +12084,7 @@ func materialiconsPollSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/poll.svg", size: 290, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -12104,7 +12104,7 @@ func materialiconsPolymerSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/polymer.svg", size: 227, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -12124,7 +12124,7 @@ func materialiconsPortable_wifi_offSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/portable_wifi_off.svg", size: 840, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -12144,7 +12144,7 @@ func materialiconsPortraitSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/portrait.svg", size: 403, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -12164,7 +12164,7 @@ func materialiconsPowerSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/power.svg", size: 269, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -12184,7 +12184,7 @@ func materialiconsPower_inputSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/power_input.svg", size: 218, mode: os.FileMode(509), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -12204,7 +12204,7 @@ func materialiconsPower_settings_newSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/power_settings_new.svg", size: 378, mode: os.FileMode(509), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -12224,7 +12224,7 @@ func materialiconsPresent_to_allSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/present_to_all.svg", size: 296, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -12244,7 +12244,7 @@ func materialiconsPrintSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/print.svg", size: 312, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -12264,7 +12264,7 @@ func materialiconsPublicSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/public.svg", size: 472, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -12284,7 +12284,7 @@ func materialiconsPublishSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/publish.svg", size: 197, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -12304,7 +12304,7 @@ func materialiconsQuery_builderSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/query_builder.svg", size: 364, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -12324,7 +12324,7 @@ func materialiconsQuestion_answerSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/question_answer.svg", size: 274, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -12344,7 +12344,7 @@ func materialiconsQueueSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/queue.svg", size: 317, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -12364,7 +12364,7 @@ func materialiconsQueue_musicSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/queue_music.svg", size: 286, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -12384,7 +12384,7 @@ func materialiconsRadioSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/radio.svg", size: 370, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -12404,7 +12404,7 @@ func materialiconsRadio_button_checkedSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/radio_button_checked.svg", size: 358, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -12424,7 +12424,7 @@ func materialiconsRadio_button_uncheckedSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/radio_button_unchecked.svg", size: 287, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -12444,7 +12444,7 @@ func materialiconsRate_reviewSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/rate_review.svg", size: 443, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -12464,7 +12464,7 @@ func materialiconsReceiptSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/receipt.svg", size: 308, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -12484,7 +12484,7 @@ func materialiconsRecent_actorsSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/recent_actors.svg", size: 408, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -12504,7 +12504,7 @@ func materialiconsRedeemSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/redeem.svg", size: 601, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -12524,7 +12524,7 @@ func materialiconsRedoSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/redo.svg", size: 302, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -12544,7 +12544,7 @@ func materialiconsRefreshSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/refresh.svg", size: 364, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -12564,7 +12564,7 @@ func materialiconsRemoveSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/remove.svg", size: 168, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -12584,7 +12584,7 @@ func materialiconsRemove_circleSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/remove_circle.svg", size: 236, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -12604,7 +12604,7 @@ func materialiconsRemove_circle_outlineSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/remove_circle_outline.svg", size: 305, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -12624,7 +12624,7 @@ func materialiconsRemove_red_eyeSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/remove_red_eye.svg", size: 369, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -12644,7 +12644,7 @@ func materialiconsRepeatSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/repeat.svg", size: 219, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -12664,7 +12664,7 @@ func materialiconsRepeat_oneSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/repeat_one.svg", size: 244, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -12684,7 +12684,7 @@ func materialiconsReplaySvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/replay.svg", size: 275, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -12704,7 +12704,7 @@ func materialiconsReplay_10Svg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/replay_10.svg", size: 884, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -12724,7 +12724,7 @@ func materialiconsReplay_30Svg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/replay_30.svg", size: 1382, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -12744,7 +12744,7 @@ func materialiconsReplay_5Svg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/replay_5.svg", size: 828, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -12764,7 +12764,7 @@ func materialiconsReplySvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/reply.svg", size: 212, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -12784,7 +12784,7 @@ func materialiconsReply_allSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/reply_all.svg", size: 245, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -12804,7 +12804,7 @@ func materialiconsReportSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/report.svg", size: 341, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -12824,7 +12824,7 @@ func materialiconsReport_problemSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/report_problem.svg", size: 200, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -12844,7 +12844,7 @@ func materialiconsRestaurant_menuSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/restaurant_menu.svg", size: 443, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -12864,7 +12864,7 @@ func materialiconsRestoreSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/restore.svg", size: 408, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -12884,7 +12884,7 @@ func materialiconsRing_volumeSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/ring_volume.svg", size: 713, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -12904,7 +12904,7 @@ func materialiconsRoomSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/room.svg", size: 290, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -12924,7 +12924,7 @@ func materialiconsRotate_90_degrees_ccwSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/rotate_90_degrees_ccw.svg", size: 522, mode: os.FileMode(509), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -12944,7 +12944,7 @@ func materialiconsRotate_leftSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/rotate_left.svg", size: 531, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -12964,7 +12964,7 @@ func materialiconsRotate_rightSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/rotate_right.svg", size: 530, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -12984,7 +12984,7 @@ func materialiconsRouterSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/router.svg", size: 560, mode: os.FileMode(509), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -13004,7 +13004,7 @@ func materialiconsSatelliteSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/satellite.svg", size: 371, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -13024,7 +13024,7 @@ func materialiconsSaveSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/save.svg", size: 304, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -13044,7 +13044,7 @@ func materialiconsScannerSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/scanner.svg", size: 355, mode: os.FileMode(509), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -13064,7 +13064,7 @@ func materialiconsScheduleSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/schedule.svg", size: 400, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -13084,7 +13084,7 @@ func materialiconsSchoolSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/school.svg", size: 232, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -13104,7 +13104,7 @@ func materialiconsScreen_lock_landscapeSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/screen_lock_landscape.svg", size: 439, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -13124,7 +13124,7 @@ func materialiconsScreen_lock_portraitSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/screen_lock_portrait.svg", size: 437, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -13144,7 +13144,7 @@ func materialiconsScreen_lock_rotationSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/screen_lock_rotation.svg", size: 684, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -13164,7 +13164,7 @@ func materialiconsScreen_rotationSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/screen_rotation.svg", size: 594, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -13184,7 +13184,7 @@ func materialiconsSd_cardSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/sd_card.svg", size: 269, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -13204,7 +13204,7 @@ func materialiconsSd_storageSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/sd_storage.svg", size: 269, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -13224,7 +13224,7 @@ func materialiconsSearchSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/search.svg", size: 366, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -13244,7 +13244,7 @@ func materialiconsSecuritySvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/security.svg", size: 290, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -13264,7 +13264,7 @@ func materialiconsSelect_allSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/select_all.svg", size: 490, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -13284,7 +13284,7 @@ func materialiconsSendSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/send.svg", size: 187, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -13304,7 +13304,7 @@ func materialiconsSettingsSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/settings.svg", size: 836, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -13324,7 +13324,7 @@ func materialiconsSettings_applicationsSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/settings_applications.svg", size: 916, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -13344,7 +13344,7 @@ func materialiconsSettings_backup_restoreSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/settings_backup_restore.svg", size: 396, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -13364,7 +13364,7 @@ func materialiconsSettings_bluetoothSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/settings_bluetooth.svg", size: 383, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -13384,7 +13384,7 @@ func materialiconsSettings_brightnessSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/settings_brightness.svg", size: 323, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -13404,7 +13404,7 @@ func materialiconsSettings_cellSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/settings_cell.svg", size: 315, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -13424,7 +13424,7 @@ func materialiconsSettings_ethernetSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/settings_ethernet.svg", size: 347, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -13444,7 +13444,7 @@ func materialiconsSettings_input_antennaSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/settings_input_antenna.svg", size: 468, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -13464,7 +13464,7 @@ func materialiconsSettings_input_componentSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/settings_input_component.svg", size: 518, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -13484,7 +13484,7 @@ func materialiconsSettings_input_compositeSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/settings_input_composite.svg", size: 518, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -13504,7 +13504,7 @@ func materialiconsSettings_input_hdmiSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/settings_input_hdmi.svg", size: 269, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -13524,7 +13524,7 @@ func materialiconsSettings_input_svideoSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/settings_input_svideo.svg", size: 601, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -13544,7 +13544,7 @@ func materialiconsSettings_overscanSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/settings_overscan.svg", size: 360, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -13564,7 +13564,7 @@ func materialiconsSettings_phoneSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/settings_phone.svg", size: 454, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -13584,7 +13584,7 @@ func materialiconsSettings_powerSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/settings_power.svg", size: 428, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -13604,7 +13604,7 @@ func materialiconsSettings_remoteSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/settings_remote.svg", size: 537, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -13624,7 +13624,7 @@ func materialiconsSettings_system_daydreamSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/settings_system_daydream.svg", size: 407, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -13644,7 +13644,7 @@ func materialiconsSettings_voiceSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/settings_voice.svg", size: 420, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -13664,7 +13664,7 @@ func materialiconsShareSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/share.svg", size: 526, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -13684,7 +13684,7 @@ func materialiconsShopSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/shop.svg", size: 287, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -13704,7 +13704,7 @@ func materialiconsShop_twoSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/shop_two.svg", size: 341, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -13724,7 +13724,7 @@ func materialiconsShopping_basketSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/shopping_basket.svg", size: 465, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -13744,7 +13744,7 @@ func materialiconsShopping_cartSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/shopping_cart.svg", size: 511, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -13764,7 +13764,7 @@ func materialiconsShuffleSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/shuffle.svg", size: 322, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -13784,7 +13784,7 @@ func materialiconsSignal_cellular_0_barSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/signal_cellular_0_bar.svg", size: 179, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -13804,7 +13804,7 @@ func materialiconsSignal_cellular_1_barSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/signal_cellular_1_bar.svg", size: 211, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -13824,7 +13824,7 @@ func materialiconsSignal_cellular_2_barSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/signal_cellular_2_bar.svg", size: 211, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -13844,7 +13844,7 @@ func materialiconsSignal_cellular_3_barSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/signal_cellular_3_bar.svg", size: 211, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -13864,7 +13864,7 @@ func materialiconsSignal_cellular_4_barSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/signal_cellular_4_bar.svg", size: 161, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -13884,7 +13884,7 @@ func materialiconsSignal_cellular_connected_no_internet_0_barSvg() (*asset, erro
 	}
 
 	info := bindataFileInfo{name: "materialicons/signal_cellular_connected_no_internet_0_bar.svg", size: 239, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -13904,7 +13904,7 @@ func materialiconsSignal_cellular_connected_no_internet_1_barSvg() (*asset, erro
 	}
 
 	info := bindataFileInfo{name: "materialicons/signal_cellular_connected_no_internet_1_bar.svg", size: 257, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -13924,7 +13924,7 @@ func materialiconsSignal_cellular_connected_no_internet_2_barSvg() (*asset, erro
 	}
 
 	info := bindataFileInfo{name: "materialicons/signal_cellular_connected_no_internet_2_bar.svg", size: 257, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -13944,7 +13944,7 @@ func materialiconsSignal_cellular_connected_no_internet_3_barSvg() (*asset, erro
 	}
 
 	info := bindataFileInfo{name: "materialicons/signal_cellular_connected_no_internet_3_bar.svg", size: 256, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -13964,7 +13964,7 @@ func materialiconsSignal_cellular_connected_no_internet_4_barSvg() (*asset, erro
 	}
 
 	info := bindataFileInfo{name: "materialicons/signal_cellular_connected_no_internet_4_bar.svg", size: 204, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -13984,7 +13984,7 @@ func materialiconsSignal_cellular_no_simSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/signal_cellular_no_sim.svg", size: 344, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -14004,7 +14004,7 @@ func materialiconsSignal_cellular_nullSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/signal_cellular_null.svg", size: 193, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -14024,7 +14024,7 @@ func materialiconsSignal_cellular_offSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/signal_cellular_off.svg", size: 238, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -14044,7 +14044,7 @@ func materialiconsSignal_wifi_0_barSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/signal_wifi_0_bar.svg", size: 263, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -14064,7 +14064,7 @@ func materialiconsSignal_wifi_1_barSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/signal_wifi_1_bar.svg", size: 372, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -14084,7 +14084,7 @@ func materialiconsSignal_wifi_1_bar_lockSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/signal_wifi_1_bar_lock.svg", size: 525, mode: os.FileMode(509), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -14104,7 +14104,7 @@ func materialiconsSignal_wifi_2_barSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/signal_wifi_2_bar.svg", size: 368, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -14124,7 +14124,7 @@ func materialiconsSignal_wifi_2_bar_lockSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/signal_wifi_2_bar_lock.svg", size: 515, mode: os.FileMode(509), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -14144,7 +14144,7 @@ func materialiconsSignal_wifi_3_barSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/signal_wifi_3_bar.svg", size: 378, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -14164,7 +14164,7 @@ func materialiconsSignal_wifi_3_bar_lockSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/signal_wifi_3_bar_lock.svg", size: 545, mode: os.FileMode(509), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -14184,7 +14184,7 @@ func materialiconsSignal_wifi_4_barSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/signal_wifi_4_bar.svg", size: 237, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -14204,7 +14204,7 @@ func materialiconsSignal_wifi_4_bar_lockSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/signal_wifi_4_bar_lock.svg", size: 440, mode: os.FileMode(509), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -14224,7 +14224,7 @@ func materialiconsSignal_wifi_offSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/signal_wifi_off.svg", size: 346, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -14244,7 +14244,7 @@ func materialiconsSim_cardSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/sim_card.svg", size: 343, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -14264,7 +14264,7 @@ func materialiconsSim_card_alertSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/sim_card_alert.svg", size: 258, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -14284,7 +14284,7 @@ func materialiconsSkip_nextSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/skip_next.svg", size: 190, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -14304,7 +14304,7 @@ func materialiconsSkip_previousSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/skip_previous.svg", size: 180, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -14324,7 +14324,7 @@ func materialiconsSlideshowSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/slideshow.svg", size: 279, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -14344,7 +14344,7 @@ func materialiconsSmartphoneSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/smartphone.svg", size: 270, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -14364,7 +14364,7 @@ func materialiconsSmsSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/sms.svg", size: 279, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -14384,7 +14384,7 @@ func materialiconsSms_failedSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/sms_failed.svg", size: 264, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -14404,7 +14404,7 @@ func materialiconsSnoozeSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/snooze.svg", size: 451, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -14424,7 +14424,7 @@ func materialiconsSortSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/sort.svg", size: 198, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -14444,7 +14444,7 @@ func materialiconsSpace_barSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/space_bar.svg", size: 178, mode: os.FileMode(509), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -14464,7 +14464,7 @@ func materialiconsSpeakerSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/speaker.svg", size: 435, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -14484,7 +14484,7 @@ func materialiconsSpeaker_groupSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/speaker_group.svg", size: 576, mode: os.FileMode(509), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -14504,7 +14504,7 @@ func materialiconsSpeaker_notesSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/speaker_notes.svg", size: 329, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -14524,7 +14524,7 @@ func materialiconsSpeaker_phoneSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/speaker_phone.svg", size: 585, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -14544,7 +14544,7 @@ func materialiconsSpellcheckSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/spellcheck.svg", size: 309, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -14564,7 +14564,7 @@ func materialiconsStarsSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/stars.svg", size: 335, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -14584,7 +14584,7 @@ func materialiconsStay_current_landscapeSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/stay_current_landscape.svg", size: 270, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -14604,7 +14604,7 @@ func materialiconsStay_current_portraitSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/stay_current_portrait.svg", size: 279, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -14624,7 +14624,7 @@ func materialiconsStay_primary_landscapeSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/stay_primary_landscape.svg", size: 270, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -14644,7 +14644,7 @@ func materialiconsStay_primary_portraitSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/stay_primary_portrait.svg", size: 279, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -14664,7 +14664,7 @@ func materialiconsStopSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/stop.svg", size: 166, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -14684,7 +14684,7 @@ func materialiconsStorageSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/storage.svg", size: 238, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -14704,7 +14704,7 @@ func materialiconsStoreSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/store.svg", size: 230, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -14724,7 +14724,7 @@ func materialiconsStore_mall_directorySvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/store_mall_directory.svg", size: 230, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -14744,7 +14744,7 @@ func materialiconsStraightenSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/straighten.svg", size: 293, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -14764,7 +14764,7 @@ func materialiconsStrikethrough_sSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/strikethrough_s.svg", size: 1008, mode: os.FileMode(509), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -14784,7 +14784,7 @@ func materialiconsStyleSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/style.svg", size: 546, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -14804,7 +14804,7 @@ func materialiconsSubjectSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/subject.svg", size: 216, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -14824,7 +14824,7 @@ func materialiconsSubtitlesSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/subtitles.svg", size: 304, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -14844,7 +14844,7 @@ func materialiconsSupervisor_accountSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/supervisor_account.svg", size: 451, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -14864,7 +14864,7 @@ func materialiconsSurround_soundSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/surround_sound.svg", size: 636, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -14884,7 +14884,7 @@ func materialiconsSwap_callsSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/swap_calls.svg", size: 319, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -14904,7 +14904,7 @@ func materialiconsSwap_horizSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/swap_horiz.svg", size: 226, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -14924,7 +14924,7 @@ func materialiconsSwap_vertSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/swap_vert.svg", size: 225, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -14944,7 +14944,7 @@ func materialiconsSwap_vertical_circleSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/swap_vertical_circle.svg", size: 274, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -14964,7 +14964,7 @@ func materialiconsSwitch_cameraSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/switch_camera.svg", size: 302, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -14984,7 +14984,7 @@ func materialiconsSwitch_videoSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/switch_video.svg", size: 287, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -15004,7 +15004,7 @@ func materialiconsSyncSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/sync.svg", size: 396, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -15024,7 +15024,7 @@ func materialiconsSync_disabledSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/sync_disabled.svg", size: 626, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -15044,7 +15044,7 @@ func materialiconsSync_problemSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/sync_problem.svg", size: 452, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -15064,7 +15064,7 @@ func materialiconsSystem_updateSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/system_update.svg", size: 300, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -15084,7 +15084,7 @@ func materialiconsSystem_update_altSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/system_update_alt.svg", size: 265, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -15104,7 +15104,7 @@ func materialiconsTabSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/tab.svg", size: 262, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -15124,7 +15124,7 @@ func materialiconsTab_unselectedSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/tab_unselected.svg", size: 446, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -15144,7 +15144,7 @@ func materialiconsTabletSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/tablet.svg", size: 268, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -15164,7 +15164,7 @@ func materialiconsTablet_androidSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/tablet_android.svg", size: 234, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -15184,7 +15184,7 @@ func materialiconsTablet_macSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/tablet_mac.svg", size: 271, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -15204,7 +15204,7 @@ func materialiconsTag_facesSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/tag_faces.svg", size: 485, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -15224,7 +15224,7 @@ func materialiconsTap_and_playSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/tap_and_play.svg", size: 432, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -15244,7 +15244,7 @@ func materialiconsTerrainSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/terrain.svg", size: 213, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -15264,7 +15264,7 @@ func materialiconsText_formatSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/text_format.svg", size: 250, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -15284,7 +15284,7 @@ func materialiconsTextsmsSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/textsms.svg", size: 279, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -15304,7 +15304,7 @@ func materialiconsTextureSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/texture.svg", size: 457, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -15324,7 +15324,7 @@ func materialiconsTheatersSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/theaters.svg", size: 298, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -15344,7 +15344,7 @@ func materialiconsThumb_downSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/thumb_down.svg", size: 396, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -15364,7 +15364,7 @@ func materialiconsThumb_upSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/thumb_up.svg", size: 402, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -15384,7 +15384,7 @@ func materialiconsThumbs_up_downSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/thumbs_up_down.svg", size: 576, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -15404,7 +15404,7 @@ func materialiconsTime_to_leaveSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/time_to_leave.svg", size: 449, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -15424,7 +15424,7 @@ func materialiconsTimelapseSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/timelapse.svg", size: 409, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -15444,7 +15444,7 @@ func materialiconsTimerSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/timer.svg", size: 426, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -15464,7 +15464,7 @@ func materialiconsTimer_10Svg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/timer_10.svg", size: 2086, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -15484,7 +15484,7 @@ func materialiconsTimer_3Svg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/timer_3.svg", size: 2299, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -15504,7 +15504,7 @@ func materialiconsTimer_offSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/timer_off.svg", size: 707, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -15524,7 +15524,7 @@ func materialiconsTocSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/toc.svg", size: 244, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -15544,7 +15544,7 @@ func materialiconsTodaySvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/today.svg", size: 303, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -15564,7 +15564,7 @@ func materialiconsTollSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/toll.svg", size: 395, mode: os.FileMode(509), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -15584,7 +15584,7 @@ func materialiconsTonalitySvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/tonality.svg", size: 522, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -15604,7 +15604,7 @@ func materialiconsToysSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/toys.svg", size: 314, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -15624,7 +15624,7 @@ func materialiconsTrack_changesSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/track_changes.svg", size: 639, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -15644,7 +15644,7 @@ func materialiconsTrafficSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/traffic.svg", size: 584, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -15664,7 +15664,7 @@ func materialiconsTransformSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/transform.svg", size: 272, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -15684,7 +15684,7 @@ func materialiconsTranslateSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/translate.svg", size: 451, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -15704,7 +15704,7 @@ func materialiconsTrending_downSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/trending_down.svg", size: 228, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -15724,7 +15724,7 @@ func materialiconsTrending_flatSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/trending_flat.svg", size: 173, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -15744,7 +15744,7 @@ func materialiconsTrending_upSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/trending_up.svg", size: 228, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -15764,7 +15764,7 @@ func materialiconsTuneSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/tune.svg", size: 282, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -15784,7 +15784,7 @@ func materialiconsTurned_inSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/turned_in.svg", size: 221, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -15804,7 +15804,7 @@ func materialiconsTurned_in_notSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/turned_in_not.svg", size: 251, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -15824,7 +15824,7 @@ func materialiconsTvSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/tv.svg", size: 277, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -15844,7 +15844,7 @@ func materialiconsUndoSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/undo.svg", size: 297, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -15864,7 +15864,7 @@ func materialiconsUnfold_lessSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/unfold_less.svg", size: 282, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -15884,7 +15884,7 @@ func materialiconsUnfold_moreSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/unfold_more.svg", size: 276, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -15904,7 +15904,7 @@ func materialiconsUsbSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/usb.svg", size: 451, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -15924,7 +15924,7 @@ func materialiconsVerified_userSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/verified_user.svg", size: 278, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -15944,7 +15944,7 @@ func materialiconsVertical_align_bottomSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/vertical_align_bottom.svg", size: 195, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -15964,7 +15964,7 @@ func materialiconsVertical_align_centerSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/vertical_align_center.svg", size: 221, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -15984,7 +15984,7 @@ func materialiconsVertical_align_topSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/vertical_align_top.svg", size: 192, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -16004,7 +16004,7 @@ func materialiconsVibrationSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/vibration.svg", size: 326, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -16024,7 +16024,7 @@ func materialiconsVideo_librarySvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/video_library.svg", size: 300, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -16044,7 +16044,7 @@ func materialiconsVideocamSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/videocam.svg", size: 243, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -16064,7 +16064,7 @@ func materialiconsVideocam_offSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/videocam_off.svg", size: 320, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -16084,7 +16084,7 @@ func materialiconsView_agendaSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/view_agenda.svg", size: 304, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -16104,7 +16104,7 @@ func materialiconsView_arraySvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/view_array.svg", size: 203, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -16124,7 +16124,7 @@ func materialiconsView_carouselSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/view_carousel.svg", size: 202, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -16144,7 +16144,7 @@ func materialiconsView_columnSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/view_column.svg", size: 205, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -16164,7 +16164,7 @@ func materialiconsView_comfySvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/view_comfy.svg", size: 341, mode: os.FileMode(509), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -16184,7 +16184,7 @@ func materialiconsView_compactSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/view_compact.svg", size: 202, mode: os.FileMode(509), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -16204,7 +16204,7 @@ func materialiconsView_daySvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/view_day.svg", size: 258, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -16224,7 +16224,7 @@ func materialiconsView_headlineSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/view_headline.svg", size: 213, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -16244,7 +16244,7 @@ func materialiconsView_listSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/view_list.svg", size: 247, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -16264,7 +16264,7 @@ func materialiconsView_moduleSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/view_module.svg", size: 258, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -16284,7 +16284,7 @@ func materialiconsView_quiltSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/view_quilt.svg", size: 223, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -16304,7 +16304,7 @@ func materialiconsView_streamSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/view_stream.svg", size: 184, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -16324,7 +16324,7 @@ func materialiconsView_weekSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/view_week.svg", size: 382, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -16344,7 +16344,7 @@ func materialiconsVisibilitySvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/visibility.svg", size: 377, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -16364,7 +16364,7 @@ func materialiconsVisibility_offSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/visibility_off.svg", size: 717, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -16384,7 +16384,7 @@ func materialiconsVoice_chatSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/voice_chat.svg", size: 271, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -16404,7 +16404,7 @@ func materialiconsVoicemailSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/voicemail.svg", size: 436, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -16424,7 +16424,7 @@ func materialiconsVolume_downSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/volume_down.svg", size: 240, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -16444,7 +16444,7 @@ func materialiconsVolume_muteSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/volume_mute.svg", size: 179, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -16464,7 +16464,7 @@ func materialiconsVolume_offSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/volume_off.svg", size: 521, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -16484,7 +16484,7 @@ func materialiconsVolume_upSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/volume_up.svg", size: 350, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -16504,7 +16504,7 @@ func materialiconsVpn_keySvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/vpn_key.svg", size: 322, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -16524,7 +16524,7 @@ func materialiconsVpn_lockSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/vpn_lock.svg", size: 664, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -16544,7 +16544,7 @@ func materialiconsWallpaperSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/wallpaper.svg", size: 402, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -16564,7 +16564,7 @@ func materialiconsWarningSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/warning.svg", size: 200, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -16584,7 +16584,7 @@ func materialiconsWatchSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/watch.svg", size: 381, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -16604,7 +16604,7 @@ func materialiconsWb_autoSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/wb_auto.svg", size: 413, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -16624,7 +16624,7 @@ func materialiconsWb_cloudySvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/wb_cloudy.svg", size: 313, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -16644,7 +16644,7 @@ func materialiconsWb_incandescentSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/wb_incandescent.svg", size: 412, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -16664,7 +16664,7 @@ func materialiconsWb_iridescentSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/wb_iridescent.svg", size: 412, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -16684,7 +16684,7 @@ func materialiconsWb_sunnySvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/wb_sunny.svg", size: 499, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -16704,7 +16704,7 @@ func materialiconsWcSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/wc.svg", size: 427, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -16724,7 +16724,7 @@ func materialiconsWebSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/web.svg", size: 299, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -16744,7 +16744,7 @@ func materialiconsWhatshotSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/whatshot.svg", size: 455, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -16764,7 +16764,7 @@ func materialiconsWidgetsSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/widgets.svg", size: 254, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -16784,7 +16784,7 @@ func materialiconsWifiSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/wifi.svg", size: 325, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -16804,7 +16804,7 @@ func materialiconsWifi_lockSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/wifi_lock.svg", size: 410, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -16824,7 +16824,7 @@ func materialiconsWifi_tetheringSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/wifi_tethering.svg", size: 615, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -16844,7 +16844,7 @@ func materialiconsWorkSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/work.svg", size: 312, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -16864,7 +16864,7 @@ func materialiconsWrap_textSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/wrap_text.svg", size: 279, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -16884,7 +16884,7 @@ func materialiconsYoutube_searched_forSvg() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "materialicons/youtube_searched_for.svg", size: 449, mode: os.FileMode(436), modTime: time.Unix(1441302449, 0)}
-	a := &asset{bytes: bytes, info:  info}
+	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
@@ -16907,7 +16907,7 @@ func Asset(name string) ([]byte, error) {
 // It simplifies safe initialization of global variables.
 func MustAsset(name string) []byte {
 	a, err := Asset(name)
-	if (err != nil) {
+	if err != nil {
 		panic("asset: Asset(" + name + "): " + err.Error())
 	}
 
@@ -16940,807 +16940,807 @@ func AssetNames() []string {
 
 // _bindata is a table, holding each asset generator, mapped to its name.
 var _bindata = map[string]func() (*asset, error){
-	"templates/article.tmpl": templatesArticleTmpl,
-	"templates/search.tmpl": templatesSearchTmpl,
-	"static/breadcrumb.svg": staticBreadcrumbSvg,
-	"static/styles.css": staticStylesCss,
-	"materialicons/3d_rotation.svg": materialicons3d_rotationSvg,
-	"materialicons/access_alarm.svg": materialiconsAccess_alarmSvg,
-	"materialicons/access_alarms.svg": materialiconsAccess_alarmsSvg,
-	"materialicons/access_time.svg": materialiconsAccess_timeSvg,
-	"materialicons/accessibility.svg": materialiconsAccessibilitySvg,
-	"materialicons/account_balance.svg": materialiconsAccount_balanceSvg,
-	"materialicons/account_balance_wallet.svg": materialiconsAccount_balance_walletSvg,
-	"materialicons/account_box.svg": materialiconsAccount_boxSvg,
-	"materialicons/account_circle.svg": materialiconsAccount_circleSvg,
-	"materialicons/adb.svg": materialiconsAdbSvg,
-	"materialicons/add.svg": materialiconsAddSvg,
-	"materialicons/add_alarm.svg": materialiconsAdd_alarmSvg,
-	"materialicons/add_alert.svg": materialiconsAdd_alertSvg,
-	"materialicons/add_box.svg": materialiconsAdd_boxSvg,
-	"materialicons/add_circle.svg": materialiconsAdd_circleSvg,
-	"materialicons/add_circle_outline.svg": materialiconsAdd_circle_outlineSvg,
-	"materialicons/add_shopping_cart.svg": materialiconsAdd_shopping_cartSvg,
-	"materialicons/add_to_photos.svg": materialiconsAdd_to_photosSvg,
-	"materialicons/adjust.svg": materialiconsAdjustSvg,
-	"materialicons/airline_seat_flat.svg": materialiconsAirline_seat_flatSvg,
-	"materialicons/airline_seat_flat_angled.svg": materialiconsAirline_seat_flat_angledSvg,
-	"materialicons/airline_seat_individual_suite.svg": materialiconsAirline_seat_individual_suiteSvg,
-	"materialicons/airline_seat_legroom_extra.svg": materialiconsAirline_seat_legroom_extraSvg,
-	"materialicons/airline_seat_legroom_normal.svg": materialiconsAirline_seat_legroom_normalSvg,
-	"materialicons/airline_seat_legroom_reduced.svg": materialiconsAirline_seat_legroom_reducedSvg,
-	"materialicons/airline_seat_recline_extra.svg": materialiconsAirline_seat_recline_extraSvg,
-	"materialicons/airline_seat_recline_normal.svg": materialiconsAirline_seat_recline_normalSvg,
-	"materialicons/airplanemode_active.svg": materialiconsAirplanemode_activeSvg,
-	"materialicons/airplanemode_inactive.svg": materialiconsAirplanemode_inactiveSvg,
-	"materialicons/airplay.svg": materialiconsAirplaySvg,
-	"materialicons/alarm.svg": materialiconsAlarmSvg,
-	"materialicons/alarm_add.svg": materialiconsAlarm_addSvg,
-	"materialicons/alarm_off.svg": materialiconsAlarm_offSvg,
-	"materialicons/alarm_on.svg": materialiconsAlarm_onSvg,
-	"materialicons/album.svg": materialiconsAlbumSvg,
-	"materialicons/android.svg": materialiconsAndroidSvg,
-	"materialicons/announcement.svg": materialiconsAnnouncementSvg,
-	"materialicons/apps.svg": materialiconsAppsSvg,
-	"materialicons/archive.svg": materialiconsArchiveSvg,
-	"materialicons/arrow_back.svg": materialiconsArrow_backSvg,
-	"materialicons/arrow_drop_down.svg": materialiconsArrow_drop_downSvg,
-	"materialicons/arrow_drop_down_circle.svg": materialiconsArrow_drop_down_circleSvg,
-	"materialicons/arrow_drop_up.svg": materialiconsArrow_drop_upSvg,
-	"materialicons/arrow_forward.svg": materialiconsArrow_forwardSvg,
-	"materialicons/aspect_ratio.svg": materialiconsAspect_ratioSvg,
-	"materialicons/assessment.svg": materialiconsAssessmentSvg,
-	"materialicons/assignment.svg": materialiconsAssignmentSvg,
-	"materialicons/assignment_ind.svg": materialiconsAssignment_indSvg,
-	"materialicons/assignment_late.svg": materialiconsAssignment_lateSvg,
-	"materialicons/assignment_return.svg": materialiconsAssignment_returnSvg,
-	"materialicons/assignment_returned.svg": materialiconsAssignment_returnedSvg,
-	"materialicons/assignment_turned_in.svg": materialiconsAssignment_turned_inSvg,
-	"materialicons/assistant.svg": materialiconsAssistantSvg,
-	"materialicons/assistant_photo.svg": materialiconsAssistant_photoSvg,
-	"materialicons/attach_file.svg": materialiconsAttach_fileSvg,
-	"materialicons/attach_money.svg": materialiconsAttach_moneySvg,
-	"materialicons/attachment.svg": materialiconsAttachmentSvg,
-	"materialicons/audiotrack.svg": materialiconsAudiotrackSvg,
-	"materialicons/autorenew.svg": materialiconsAutorenewSvg,
-	"materialicons/av_timer.svg": materialiconsAv_timerSvg,
-	"materialicons/backspace.svg": materialiconsBackspaceSvg,
-	"materialicons/backup.svg": materialiconsBackupSvg,
-	"materialicons/battery_20.svg": materialiconsBattery_20Svg,
-	"materialicons/battery_30.svg": materialiconsBattery_30Svg,
-	"materialicons/battery_50.svg": materialiconsBattery_50Svg,
-	"materialicons/battery_60.svg": materialiconsBattery_60Svg,
-	"materialicons/battery_80.svg": materialiconsBattery_80Svg,
-	"materialicons/battery_90.svg": materialiconsBattery_90Svg,
-	"materialicons/battery_alert.svg": materialiconsBattery_alertSvg,
-	"materialicons/battery_charging_20.svg": materialiconsBattery_charging_20Svg,
-	"materialicons/battery_charging_30.svg": materialiconsBattery_charging_30Svg,
-	"materialicons/battery_charging_50.svg": materialiconsBattery_charging_50Svg,
-	"materialicons/battery_charging_60.svg": materialiconsBattery_charging_60Svg,
-	"materialicons/battery_charging_80.svg": materialiconsBattery_charging_80Svg,
-	"materialicons/battery_charging_90.svg": materialiconsBattery_charging_90Svg,
-	"materialicons/battery_charging_full.svg": materialiconsBattery_charging_fullSvg,
-	"materialicons/battery_full.svg": materialiconsBattery_fullSvg,
-	"materialicons/battery_std.svg": materialiconsBattery_stdSvg,
-	"materialicons/battery_unknown.svg": materialiconsBattery_unknownSvg,
-	"materialicons/beenhere.svg": materialiconsBeenhereSvg,
-	"materialicons/block.svg": materialiconsBlockSvg,
-	"materialicons/bluetooth.svg": materialiconsBluetoothSvg,
-	"materialicons/bluetooth_audio.svg": materialiconsBluetooth_audioSvg,
-	"materialicons/bluetooth_connected.svg": materialiconsBluetooth_connectedSvg,
-	"materialicons/bluetooth_disabled.svg": materialiconsBluetooth_disabledSvg,
-	"materialicons/bluetooth_searching.svg": materialiconsBluetooth_searchingSvg,
-	"materialicons/blur_circular.svg": materialiconsBlur_circularSvg,
-	"materialicons/blur_linear.svg": materialiconsBlur_linearSvg,
-	"materialicons/blur_off.svg": materialiconsBlur_offSvg,
-	"materialicons/blur_on.svg": materialiconsBlur_onSvg,
-	"materialicons/book.svg": materialiconsBookSvg,
-	"materialicons/bookmark.svg": materialiconsBookmarkSvg,
-	"materialicons/bookmark_border.svg": materialiconsBookmark_borderSvg,
-	"materialicons/border_all.svg": materialiconsBorder_allSvg,
-	"materialicons/border_bottom.svg": materialiconsBorder_bottomSvg,
-	"materialicons/border_clear.svg": materialiconsBorder_clearSvg,
-	"materialicons/border_color.svg": materialiconsBorder_colorSvg,
-	"materialicons/border_horizontal.svg": materialiconsBorder_horizontalSvg,
-	"materialicons/border_inner.svg": materialiconsBorder_innerSvg,
-	"materialicons/border_left.svg": materialiconsBorder_leftSvg,
-	"materialicons/border_outer.svg": materialiconsBorder_outerSvg,
-	"materialicons/border_right.svg": materialiconsBorder_rightSvg,
-	"materialicons/border_style.svg": materialiconsBorder_styleSvg,
-	"materialicons/border_top.svg": materialiconsBorder_topSvg,
-	"materialicons/border_vertical.svg": materialiconsBorder_verticalSvg,
-	"materialicons/brightness_1.svg": materialiconsBrightness_1Svg,
-	"materialicons/brightness_2.svg": materialiconsBrightness_2Svg,
-	"materialicons/brightness_3.svg": materialiconsBrightness_3Svg,
-	"materialicons/brightness_4.svg": materialiconsBrightness_4Svg,
-	"materialicons/brightness_5.svg": materialiconsBrightness_5Svg,
-	"materialicons/brightness_6.svg": materialiconsBrightness_6Svg,
-	"materialicons/brightness_7.svg": materialiconsBrightness_7Svg,
-	"materialicons/brightness_auto.svg": materialiconsBrightness_autoSvg,
-	"materialicons/brightness_high.svg": materialiconsBrightness_highSvg,
-	"materialicons/brightness_low.svg": materialiconsBrightness_lowSvg,
-	"materialicons/brightness_medium.svg": materialiconsBrightness_mediumSvg,
-	"materialicons/broken_image.svg": materialiconsBroken_imageSvg,
-	"materialicons/brush.svg": materialiconsBrushSvg,
-	"materialicons/bug_report.svg": materialiconsBug_reportSvg,
-	"materialicons/build.svg": materialiconsBuildSvg,
-	"materialicons/business.svg": materialiconsBusinessSvg,
-	"materialicons/cached.svg": materialiconsCachedSvg,
-	"materialicons/cake.svg": materialiconsCakeSvg,
-	"materialicons/call.svg": materialiconsCallSvg,
-	"materialicons/call_end.svg": materialiconsCall_endSvg,
-	"materialicons/call_made.svg": materialiconsCall_madeSvg,
-	"materialicons/call_merge.svg": materialiconsCall_mergeSvg,
-	"materialicons/call_missed.svg": materialiconsCall_missedSvg,
-	"materialicons/call_received.svg": materialiconsCall_receivedSvg,
-	"materialicons/call_split.svg": materialiconsCall_splitSvg,
-	"materialicons/camera.svg": materialiconsCameraSvg,
-	"materialicons/camera_alt.svg": materialiconsCamera_altSvg,
-	"materialicons/camera_front.svg": materialiconsCamera_frontSvg,
-	"materialicons/camera_rear.svg": materialiconsCamera_rearSvg,
-	"materialicons/camera_roll.svg": materialiconsCamera_rollSvg,
-	"materialicons/cancel.svg": materialiconsCancelSvg,
-	"materialicons/card_giftcard.svg": materialiconsCard_giftcardSvg,
-	"materialicons/card_membership.svg": materialiconsCard_membershipSvg,
-	"materialicons/card_travel.svg": materialiconsCard_travelSvg,
-	"materialicons/cast.svg": materialiconsCastSvg,
-	"materialicons/cast_connected.svg": materialiconsCast_connectedSvg,
-	"materialicons/center_focus_strong.svg": materialiconsCenter_focus_strongSvg,
-	"materialicons/center_focus_weak.svg": materialiconsCenter_focus_weakSvg,
-	"materialicons/change_history.svg": materialiconsChange_historySvg,
-	"materialicons/chat.svg": materialiconsChatSvg,
-	"materialicons/chat_bubble.svg": materialiconsChat_bubbleSvg,
-	"materialicons/chat_bubble_outline.svg": materialiconsChat_bubble_outlineSvg,
-	"materialicons/check.svg": materialiconsCheckSvg,
-	"materialicons/check_box.svg": materialiconsCheck_boxSvg,
-	"materialicons/check_box_outline_blank.svg": materialiconsCheck_box_outline_blankSvg,
-	"materialicons/check_circle.svg": materialiconsCheck_circleSvg,
-	"materialicons/chevron_left.svg": materialiconsChevron_leftSvg,
-	"materialicons/chevron_right.svg": materialiconsChevron_rightSvg,
-	"materialicons/chrome_reader_mode.svg": materialiconsChrome_reader_modeSvg,
-	"materialicons/class.svg": materialiconsClassSvg,
-	"materialicons/clear.svg": materialiconsClearSvg,
-	"materialicons/clear_all.svg": materialiconsClear_allSvg,
-	"materialicons/close.svg": materialiconsCloseSvg,
-	"materialicons/closed_caption.svg": materialiconsClosed_captionSvg,
-	"materialicons/cloud.svg": materialiconsCloudSvg,
-	"materialicons/cloud_circle.svg": materialiconsCloud_circleSvg,
-	"materialicons/cloud_done.svg": materialiconsCloud_doneSvg,
-	"materialicons/cloud_download.svg": materialiconsCloud_downloadSvg,
-	"materialicons/cloud_off.svg": materialiconsCloud_offSvg,
-	"materialicons/cloud_queue.svg": materialiconsCloud_queueSvg,
-	"materialicons/cloud_upload.svg": materialiconsCloud_uploadSvg,
-	"materialicons/code.svg": materialiconsCodeSvg,
-	"materialicons/collections.svg": materialiconsCollectionsSvg,
-	"materialicons/color_lens.svg": materialiconsColor_lensSvg,
-	"materialicons/colorize.svg": materialiconsColorizeSvg,
-	"materialicons/comment.svg": materialiconsCommentSvg,
-	"materialicons/compare.svg": materialiconsCompareSvg,
-	"materialicons/computer.svg": materialiconsComputerSvg,
-	"materialicons/confirmation_number.svg": materialiconsConfirmation_numberSvg,
-	"materialicons/contact_mail.svg": materialiconsContact_mailSvg,
-	"materialicons/contact_phone.svg": materialiconsContact_phoneSvg,
-	"materialicons/contacts.svg": materialiconsContactsSvg,
-	"materialicons/content_copy.svg": materialiconsContent_copySvg,
-	"materialicons/content_cut.svg": materialiconsContent_cutSvg,
-	"materialicons/content_paste.svg": materialiconsContent_pasteSvg,
-	"materialicons/control_point.svg": materialiconsControl_pointSvg,
-	"materialicons/control_point_duplicate.svg": materialiconsControl_point_duplicateSvg,
-	"materialicons/create.svg": materialiconsCreateSvg,
-	"materialicons/credit_card.svg": materialiconsCredit_cardSvg,
-	"materialicons/crop.svg": materialiconsCropSvg,
-	"materialicons/crop_16_9.svg": materialiconsCrop_16_9Svg,
-	"materialicons/crop_3_2.svg": materialiconsCrop_3_2Svg,
-	"materialicons/crop_5_4.svg": materialiconsCrop_5_4Svg,
-	"materialicons/crop_7_5.svg": materialiconsCrop_7_5Svg,
-	"materialicons/crop_din.svg": materialiconsCrop_dinSvg,
-	"materialicons/crop_free.svg": materialiconsCrop_freeSvg,
-	"materialicons/crop_landscape.svg": materialiconsCrop_landscapeSvg,
-	"materialicons/crop_original.svg": materialiconsCrop_originalSvg,
-	"materialicons/crop_portrait.svg": materialiconsCrop_portraitSvg,
-	"materialicons/crop_square.svg": materialiconsCrop_squareSvg,
-	"materialicons/dashboard.svg": materialiconsDashboardSvg,
-	"materialicons/data_usage.svg": materialiconsData_usageSvg,
-	"materialicons/dehaze.svg": materialiconsDehazeSvg,
-	"materialicons/delete.svg": materialiconsDeleteSvg,
-	"materialicons/description.svg": materialiconsDescriptionSvg,
-	"materialicons/desktop_mac.svg": materialiconsDesktop_macSvg,
-	"materialicons/desktop_windows.svg": materialiconsDesktop_windowsSvg,
-	"materialicons/details.svg": materialiconsDetailsSvg,
-	"materialicons/developer_board.svg": materialiconsDeveloper_boardSvg,
-	"materialicons/developer_mode.svg": materialiconsDeveloper_modeSvg,
-	"materialicons/devices.svg": materialiconsDevicesSvg,
-	"materialicons/dialer_sip.svg": materialiconsDialer_sipSvg,
-	"materialicons/dialpad.svg": materialiconsDialpadSvg,
-	"materialicons/directions.svg": materialiconsDirectionsSvg,
-	"materialicons/directions_bike.svg": materialiconsDirections_bikeSvg,
-	"materialicons/directions_boat.svg": materialiconsDirections_boatSvg,
-	"materialicons/directions_bus.svg": materialiconsDirections_busSvg,
-	"materialicons/directions_car.svg": materialiconsDirections_carSvg,
-	"materialicons/directions_railway.svg": materialiconsDirections_railwaySvg,
-	"materialicons/directions_run.svg": materialiconsDirections_runSvg,
-	"materialicons/directions_subway.svg": materialiconsDirections_subwaySvg,
-	"materialicons/directions_transit.svg": materialiconsDirections_transitSvg,
-	"materialicons/directions_walk.svg": materialiconsDirections_walkSvg,
-	"materialicons/disc_full.svg": materialiconsDisc_fullSvg,
-	"materialicons/dns.svg": materialiconsDnsSvg,
-	"materialicons/do_not_disturb.svg": materialiconsDo_not_disturbSvg,
-	"materialicons/do_not_disturb_alt.svg": materialiconsDo_not_disturb_altSvg,
-	"materialicons/dock.svg": materialiconsDockSvg,
-	"materialicons/domain.svg": materialiconsDomainSvg,
-	"materialicons/done.svg": materialiconsDoneSvg,
-	"materialicons/done_all.svg": materialiconsDone_allSvg,
-	"materialicons/drafts.svg": materialiconsDraftsSvg,
-	"materialicons/drive_eta.svg": materialiconsDrive_etaSvg,
-	"materialicons/dvr.svg": materialiconsDvrSvg,
-	"materialicons/edit.svg": materialiconsEditSvg,
-	"materialicons/email.svg": materialiconsEmailSvg,
-	"materialicons/equalizer.svg": materialiconsEqualizerSvg,
-	"materialicons/error.svg": materialiconsErrorSvg,
-	"materialicons/error_outline.svg": materialiconsError_outlineSvg,
-	"materialicons/event.svg": materialiconsEventSvg,
-	"materialicons/event_available.svg": materialiconsEvent_availableSvg,
-	"materialicons/event_busy.svg": materialiconsEvent_busySvg,
-	"materialicons/event_note.svg": materialiconsEvent_noteSvg,
-	"materialicons/event_seat.svg": materialiconsEvent_seatSvg,
-	"materialicons/exit_to_app.svg": materialiconsExit_to_appSvg,
-	"materialicons/expand_less.svg": materialiconsExpand_lessSvg,
-	"materialicons/expand_more.svg": materialiconsExpand_moreSvg,
-	"materialicons/explicit.svg": materialiconsExplicitSvg,
-	"materialicons/explore.svg": materialiconsExploreSvg,
-	"materialicons/exposure.svg": materialiconsExposureSvg,
-	"materialicons/exposure_neg_1.svg": materialiconsExposure_neg_1Svg,
-	"materialicons/exposure_neg_2.svg": materialiconsExposure_neg_2Svg,
-	"materialicons/exposure_plus_1.svg": materialiconsExposure_plus_1Svg,
-	"materialicons/exposure_plus_2.svg": materialiconsExposure_plus_2Svg,
-	"materialicons/exposure_zero.svg": materialiconsExposure_zeroSvg,
-	"materialicons/extension.svg": materialiconsExtensionSvg,
-	"materialicons/face.svg": materialiconsFaceSvg,
-	"materialicons/fast_forward.svg": materialiconsFast_forwardSvg,
-	"materialicons/fast_rewind.svg": materialiconsFast_rewindSvg,
-	"materialicons/favorite.svg": materialiconsFavoriteSvg,
-	"materialicons/favorite_border.svg": materialiconsFavorite_borderSvg,
-	"materialicons/feedback.svg": materialiconsFeedbackSvg,
-	"materialicons/file_download.svg": materialiconsFile_downloadSvg,
-	"materialicons/file_upload.svg": materialiconsFile_uploadSvg,
-	"materialicons/filter.svg": materialiconsFilterSvg,
-	"materialicons/filter_1.svg": materialiconsFilter_1Svg,
-	"materialicons/filter_2.svg": materialiconsFilter_2Svg,
-	"materialicons/filter_3.svg": materialiconsFilter_3Svg,
-	"materialicons/filter_4.svg": materialiconsFilter_4Svg,
-	"materialicons/filter_5.svg": materialiconsFilter_5Svg,
-	"materialicons/filter_6.svg": materialiconsFilter_6Svg,
-	"materialicons/filter_7.svg": materialiconsFilter_7Svg,
-	"materialicons/filter_8.svg": materialiconsFilter_8Svg,
-	"materialicons/filter_9.svg": materialiconsFilter_9Svg,
-	"materialicons/filter_9_plus.svg": materialiconsFilter_9_plusSvg,
-	"materialicons/filter_b_and_w.svg": materialiconsFilter_b_and_wSvg,
-	"materialicons/filter_center_focus.svg": materialiconsFilter_center_focusSvg,
-	"materialicons/filter_drama.svg": materialiconsFilter_dramaSvg,
-	"materialicons/filter_frames.svg": materialiconsFilter_framesSvg,
-	"materialicons/filter_hdr.svg": materialiconsFilter_hdrSvg,
-	"materialicons/filter_list.svg": materialiconsFilter_listSvg,
-	"materialicons/filter_none.svg": materialiconsFilter_noneSvg,
-	"materialicons/filter_tilt_shift.svg": materialiconsFilter_tilt_shiftSvg,
-	"materialicons/filter_vintage.svg": materialiconsFilter_vintageSvg,
-	"materialicons/find_in_page.svg": materialiconsFind_in_pageSvg,
-	"materialicons/find_replace.svg": materialiconsFind_replaceSvg,
-	"materialicons/flag.svg": materialiconsFlagSvg,
-	"materialicons/flare.svg": materialiconsFlareSvg,
-	"materialicons/flash_auto.svg": materialiconsFlash_autoSvg,
-	"materialicons/flash_off.svg": materialiconsFlash_offSvg,
-	"materialicons/flash_on.svg": materialiconsFlash_onSvg,
-	"materialicons/flight.svg": materialiconsFlightSvg,
-	"materialicons/flight_land.svg": materialiconsFlight_landSvg,
-	"materialicons/flight_takeoff.svg": materialiconsFlight_takeoffSvg,
-	"materialicons/flip.svg": materialiconsFlipSvg,
-	"materialicons/flip_to_back.svg": materialiconsFlip_to_backSvg,
-	"materialicons/flip_to_front.svg": materialiconsFlip_to_frontSvg,
-	"materialicons/folder.svg": materialiconsFolderSvg,
-	"materialicons/folder_open.svg": materialiconsFolder_openSvg,
-	"materialicons/folder_shared.svg": materialiconsFolder_sharedSvg,
-	"materialicons/folder_special.svg": materialiconsFolder_specialSvg,
-	"materialicons/format_align_center.svg": materialiconsFormat_align_centerSvg,
-	"materialicons/format_align_justify.svg": materialiconsFormat_align_justifySvg,
-	"materialicons/format_align_left.svg": materialiconsFormat_align_leftSvg,
-	"materialicons/format_align_right.svg": materialiconsFormat_align_rightSvg,
-	"materialicons/format_bold.svg": materialiconsFormat_boldSvg,
-	"materialicons/format_clear.svg": materialiconsFormat_clearSvg,
-	"materialicons/format_color_fill.svg": materialiconsFormat_color_fillSvg,
-	"materialicons/format_color_reset.svg": materialiconsFormat_color_resetSvg,
-	"materialicons/format_color_text.svg": materialiconsFormat_color_textSvg,
-	"materialicons/format_indent_decrease.svg": materialiconsFormat_indent_decreaseSvg,
-	"materialicons/format_indent_increase.svg": materialiconsFormat_indent_increaseSvg,
-	"materialicons/format_italic.svg": materialiconsFormat_italicSvg,
-	"materialicons/format_line_spacing.svg": materialiconsFormat_line_spacingSvg,
-	"materialicons/format_list_bulleted.svg": materialiconsFormat_list_bulletedSvg,
-	"materialicons/format_list_numbered.svg": materialiconsFormat_list_numberedSvg,
-	"materialicons/format_paint.svg": materialiconsFormat_paintSvg,
-	"materialicons/format_quote.svg": materialiconsFormat_quoteSvg,
-	"materialicons/format_size.svg": materialiconsFormat_sizeSvg,
-	"materialicons/format_strikethrough.svg": materialiconsFormat_strikethroughSvg,
-	"materialicons/format_textdirection_l_to_r.svg": materialiconsFormat_textdirection_l_to_rSvg,
-	"materialicons/format_textdirection_r_to_l.svg": materialiconsFormat_textdirection_r_to_lSvg,
-	"materialicons/format_underlined.svg": materialiconsFormat_underlinedSvg,
-	"materialicons/forum.svg": materialiconsForumSvg,
-	"materialicons/forward.svg": materialiconsForwardSvg,
-	"materialicons/forward_10.svg": materialiconsForward_10Svg,
-	"materialicons/forward_30.svg": materialiconsForward_30Svg,
-	"materialicons/forward_5.svg": materialiconsForward_5Svg,
-	"materialicons/fullscreen.svg": materialiconsFullscreenSvg,
-	"materialicons/fullscreen_exit.svg": materialiconsFullscreen_exitSvg,
-	"materialicons/functions.svg": materialiconsFunctionsSvg,
-	"materialicons/gamepad.svg": materialiconsGamepadSvg,
-	"materialicons/games.svg": materialiconsGamesSvg,
-	"materialicons/gesture.svg": materialiconsGestureSvg,
-	"materialicons/get_app.svg": materialiconsGet_appSvg,
-	"materialicons/gps_fixed.svg": materialiconsGps_fixedSvg,
-	"materialicons/gps_not_fixed.svg": materialiconsGps_not_fixedSvg,
-	"materialicons/gps_off.svg": materialiconsGps_offSvg,
-	"materialicons/grade.svg": materialiconsGradeSvg,
-	"materialicons/gradient.svg": materialiconsGradientSvg,
-	"materialicons/grain.svg": materialiconsGrainSvg,
-	"materialicons/graphic_eq.svg": materialiconsGraphic_eqSvg,
-	"materialicons/grid_off.svg": materialiconsGrid_offSvg,
-	"materialicons/grid_on.svg": materialiconsGrid_onSvg,
-	"materialicons/group.svg": materialiconsGroupSvg,
-	"materialicons/group_add.svg": materialiconsGroup_addSvg,
-	"materialicons/group_work.svg": materialiconsGroup_workSvg,
-	"materialicons/hdr_off.svg": materialiconsHdr_offSvg,
-	"materialicons/hdr_on.svg": materialiconsHdr_onSvg,
-	"materialicons/hdr_strong.svg": materialiconsHdr_strongSvg,
-	"materialicons/hdr_weak.svg": materialiconsHdr_weakSvg,
-	"materialicons/headset.svg": materialiconsHeadsetSvg,
-	"materialicons/headset_mic.svg": materialiconsHeadset_micSvg,
-	"materialicons/healing.svg": materialiconsHealingSvg,
-	"materialicons/hearing.svg": materialiconsHearingSvg,
-	"materialicons/help.svg": materialiconsHelpSvg,
-	"materialicons/high_quality.svg": materialiconsHigh_qualitySvg,
-	"materialicons/highlight_off.svg": materialiconsHighlight_offSvg,
-	"materialicons/history.svg": materialiconsHistorySvg,
-	"materialicons/home.svg": materialiconsHomeSvg,
-	"materialicons/hotel.svg": materialiconsHotelSvg,
-	"materialicons/hourglass_empty.svg": materialiconsHourglass_emptySvg,
-	"materialicons/hourglass_full.svg": materialiconsHourglass_fullSvg,
-	"materialicons/http.svg": materialiconsHttpSvg,
-	"materialicons/https.svg": materialiconsHttpsSvg,
-	"materialicons/image.svg": materialiconsImageSvg,
-	"materialicons/image_aspect_ratio.svg": materialiconsImage_aspect_ratioSvg,
-	"materialicons/import_export.svg": materialiconsImport_exportSvg,
-	"materialicons/inbox.svg": materialiconsInboxSvg,
-	"materialicons/info.svg": materialiconsInfoSvg,
-	"materialicons/info_outline.svg": materialiconsInfo_outlineSvg,
-	"materialicons/input.svg": materialiconsInputSvg,
-	"materialicons/insert_chart.svg": materialiconsInsert_chartSvg,
-	"materialicons/insert_comment.svg": materialiconsInsert_commentSvg,
-	"materialicons/insert_drive_file.svg": materialiconsInsert_drive_fileSvg,
-	"materialicons/insert_emoticon.svg": materialiconsInsert_emoticonSvg,
-	"materialicons/insert_invitation.svg": materialiconsInsert_invitationSvg,
-	"materialicons/insert_link.svg": materialiconsInsert_linkSvg,
-	"materialicons/insert_photo.svg": materialiconsInsert_photoSvg,
-	"materialicons/invert_colors.svg": materialiconsInvert_colorsSvg,
-	"materialicons/invert_colors_off.svg": materialiconsInvert_colors_offSvg,
-	"materialicons/iso.svg": materialiconsIsoSvg,
-	"materialicons/keyboard.svg": materialiconsKeyboardSvg,
-	"materialicons/keyboard_arrow_down.svg": materialiconsKeyboard_arrow_downSvg,
-	"materialicons/keyboard_arrow_left.svg": materialiconsKeyboard_arrow_leftSvg,
-	"materialicons/keyboard_arrow_right.svg": materialiconsKeyboard_arrow_rightSvg,
-	"materialicons/keyboard_arrow_up.svg": materialiconsKeyboard_arrow_upSvg,
-	"materialicons/keyboard_backspace.svg": materialiconsKeyboard_backspaceSvg,
-	"materialicons/keyboard_capslock.svg": materialiconsKeyboard_capslockSvg,
-	"materialicons/keyboard_hide.svg": materialiconsKeyboard_hideSvg,
-	"materialicons/keyboard_return.svg": materialiconsKeyboard_returnSvg,
-	"materialicons/keyboard_tab.svg": materialiconsKeyboard_tabSvg,
-	"materialicons/keyboard_voice.svg": materialiconsKeyboard_voiceSvg,
-	"materialicons/label.svg": materialiconsLabelSvg,
-	"materialicons/label_outline.svg": materialiconsLabel_outlineSvg,
-	"materialicons/landscape.svg": materialiconsLandscapeSvg,
-	"materialicons/language.svg": materialiconsLanguageSvg,
-	"materialicons/laptop.svg": materialiconsLaptopSvg,
-	"materialicons/laptop_chromebook.svg": materialiconsLaptop_chromebookSvg,
-	"materialicons/laptop_mac.svg": materialiconsLaptop_macSvg,
-	"materialicons/laptop_windows.svg": materialiconsLaptop_windowsSvg,
-	"materialicons/launch.svg": materialiconsLaunchSvg,
-	"materialicons/layers.svg": materialiconsLayersSvg,
-	"materialicons/layers_clear.svg": materialiconsLayers_clearSvg,
-	"materialicons/leak_add.svg": materialiconsLeak_addSvg,
-	"materialicons/leak_remove.svg": materialiconsLeak_removeSvg,
-	"materialicons/lens.svg": materialiconsLensSvg,
-	"materialicons/library_add.svg": materialiconsLibrary_addSvg,
-	"materialicons/library_books.svg": materialiconsLibrary_booksSvg,
-	"materialicons/library_music.svg": materialiconsLibrary_musicSvg,
-	"materialicons/link.svg": materialiconsLinkSvg,
-	"materialicons/list.svg": materialiconsListSvg,
-	"materialicons/live_help.svg": materialiconsLive_helpSvg,
-	"materialicons/live_tv.svg": materialiconsLive_tvSvg,
-	"materialicons/local_activity.svg": materialiconsLocal_activitySvg,
-	"materialicons/local_airport.svg": materialiconsLocal_airportSvg,
-	"materialicons/local_atm.svg": materialiconsLocal_atmSvg,
-	"materialicons/local_bar.svg": materialiconsLocal_barSvg,
-	"materialicons/local_cafe.svg": materialiconsLocal_cafeSvg,
-	"materialicons/local_car_wash.svg": materialiconsLocal_car_washSvg,
-	"materialicons/local_convenience_store.svg": materialiconsLocal_convenience_storeSvg,
-	"materialicons/local_dining.svg": materialiconsLocal_diningSvg,
-	"materialicons/local_drink.svg": materialiconsLocal_drinkSvg,
-	"materialicons/local_florist.svg": materialiconsLocal_floristSvg,
-	"materialicons/local_gas_station.svg": materialiconsLocal_gas_stationSvg,
-	"materialicons/local_grocery_store.svg": materialiconsLocal_grocery_storeSvg,
-	"materialicons/local_hospital.svg": materialiconsLocal_hospitalSvg,
-	"materialicons/local_hotel.svg": materialiconsLocal_hotelSvg,
-	"materialicons/local_laundry_service.svg": materialiconsLocal_laundry_serviceSvg,
-	"materialicons/local_library.svg": materialiconsLocal_librarySvg,
-	"materialicons/local_mall.svg": materialiconsLocal_mallSvg,
-	"materialicons/local_movies.svg": materialiconsLocal_moviesSvg,
-	"materialicons/local_offer.svg": materialiconsLocal_offerSvg,
-	"materialicons/local_parking.svg": materialiconsLocal_parkingSvg,
-	"materialicons/local_pharmacy.svg": materialiconsLocal_pharmacySvg,
-	"materialicons/local_phone.svg": materialiconsLocal_phoneSvg,
-	"materialicons/local_pizza.svg": materialiconsLocal_pizzaSvg,
-	"materialicons/local_play.svg": materialiconsLocal_playSvg,
-	"materialicons/local_post_office.svg": materialiconsLocal_post_officeSvg,
-	"materialicons/local_printshop.svg": materialiconsLocal_printshopSvg,
-	"materialicons/local_see.svg": materialiconsLocal_seeSvg,
-	"materialicons/local_shipping.svg": materialiconsLocal_shippingSvg,
-	"materialicons/local_taxi.svg": materialiconsLocal_taxiSvg,
-	"materialicons/location_city.svg": materialiconsLocation_citySvg,
-	"materialicons/location_disabled.svg": materialiconsLocation_disabledSvg,
-	"materialicons/location_off.svg": materialiconsLocation_offSvg,
-	"materialicons/location_on.svg": materialiconsLocation_onSvg,
-	"materialicons/location_searching.svg": materialiconsLocation_searchingSvg,
-	"materialicons/lock.svg": materialiconsLockSvg,
-	"materialicons/lock_open.svg": materialiconsLock_openSvg,
-	"materialicons/lock_outline.svg": materialiconsLock_outlineSvg,
-	"materialicons/looks.svg": materialiconsLooksSvg,
-	"materialicons/looks_3.svg": materialiconsLooks_3Svg,
-	"materialicons/looks_4.svg": materialiconsLooks_4Svg,
-	"materialicons/looks_5.svg": materialiconsLooks_5Svg,
-	"materialicons/looks_6.svg": materialiconsLooks_6Svg,
-	"materialicons/looks_one.svg": materialiconsLooks_oneSvg,
-	"materialicons/looks_two.svg": materialiconsLooks_twoSvg,
-	"materialicons/loop.svg": materialiconsLoopSvg,
-	"materialicons/loupe.svg": materialiconsLoupeSvg,
-	"materialicons/loyalty.svg": materialiconsLoyaltySvg,
-	"materialicons/mail.svg": materialiconsMailSvg,
-	"materialicons/map.svg": materialiconsMapSvg,
-	"materialicons/markunread.svg": materialiconsMarkunreadSvg,
-	"materialicons/markunread_mailbox.svg": materialiconsMarkunread_mailboxSvg,
-	"materialicons/memory.svg": materialiconsMemorySvg,
-	"materialicons/menu.svg": materialiconsMenuSvg,
-	"materialicons/merge_type.svg": materialiconsMerge_typeSvg,
-	"materialicons/message.svg": materialiconsMessageSvg,
-	"materialicons/mic.svg": materialiconsMicSvg,
-	"materialicons/mic_none.svg": materialiconsMic_noneSvg,
-	"materialicons/mic_off.svg": materialiconsMic_offSvg,
-	"materialicons/mms.svg": materialiconsMmsSvg,
-	"materialicons/mode_comment.svg": materialiconsMode_commentSvg,
-	"materialicons/mode_edit.svg": materialiconsMode_editSvg,
-	"materialicons/monochrome_photos.svg": materialiconsMonochrome_photosSvg,
-	"materialicons/mood.svg": materialiconsMoodSvg,
-	"materialicons/mood_bad.svg": materialiconsMood_badSvg,
-	"materialicons/more.svg": materialiconsMoreSvg,
-	"materialicons/more_horiz.svg": materialiconsMore_horizSvg,
-	"materialicons/more_vert.svg": materialiconsMore_vertSvg,
-	"materialicons/mouse.svg": materialiconsMouseSvg,
-	"materialicons/movie.svg": materialiconsMovieSvg,
-	"materialicons/movie_creation.svg": materialiconsMovie_creationSvg,
-	"materialicons/music_note.svg": materialiconsMusic_noteSvg,
-	"materialicons/my_location.svg": materialiconsMy_locationSvg,
-	"materialicons/nature.svg": materialiconsNatureSvg,
-	"materialicons/nature_people.svg": materialiconsNature_peopleSvg,
-	"materialicons/navigate_before.svg": materialiconsNavigate_beforeSvg,
-	"materialicons/navigate_next.svg": materialiconsNavigate_nextSvg,
-	"materialicons/navigation.svg": materialiconsNavigationSvg,
-	"materialicons/network_cell.svg": materialiconsNetwork_cellSvg,
-	"materialicons/network_locked.svg": materialiconsNetwork_lockedSvg,
-	"materialicons/network_wifi.svg": materialiconsNetwork_wifiSvg,
-	"materialicons/new_releases.svg": materialiconsNew_releasesSvg,
-	"materialicons/nfc.svg": materialiconsNfcSvg,
-	"materialicons/no_sim.svg": materialiconsNo_simSvg,
-	"materialicons/not_interested.svg": materialiconsNot_interestedSvg,
-	"materialicons/note_add.svg": materialiconsNote_addSvg,
-	"materialicons/notifications.svg": materialiconsNotificationsSvg,
-	"materialicons/notifications_active.svg": materialiconsNotifications_activeSvg,
-	"materialicons/notifications_none.svg": materialiconsNotifications_noneSvg,
-	"materialicons/notifications_off.svg": materialiconsNotifications_offSvg,
-	"materialicons/notifications_paused.svg": materialiconsNotifications_pausedSvg,
-	"materialicons/ondemand_video.svg": materialiconsOndemand_videoSvg,
-	"materialicons/open_in_browser.svg": materialiconsOpen_in_browserSvg,
-	"materialicons/open_in_new.svg": materialiconsOpen_in_newSvg,
-	"materialicons/open_with.svg": materialiconsOpen_withSvg,
-	"materialicons/pages.svg": materialiconsPagesSvg,
-	"materialicons/pageview.svg": materialiconsPageviewSvg,
-	"materialicons/palette.svg": materialiconsPaletteSvg,
-	"materialicons/panorama.svg": materialiconsPanoramaSvg,
-	"materialicons/panorama_fish_eye.svg": materialiconsPanorama_fish_eyeSvg,
-	"materialicons/panorama_horizontal.svg": materialiconsPanorama_horizontalSvg,
-	"materialicons/panorama_vertical.svg": materialiconsPanorama_verticalSvg,
-	"materialicons/panorama_wide_angle.svg": materialiconsPanorama_wide_angleSvg,
-	"materialicons/party_mode.svg": materialiconsParty_modeSvg,
-	"materialicons/pause.svg": materialiconsPauseSvg,
-	"materialicons/pause_circle_filled.svg": materialiconsPause_circle_filledSvg,
-	"materialicons/pause_circle_outline.svg": materialiconsPause_circle_outlineSvg,
-	"materialicons/payment.svg": materialiconsPaymentSvg,
-	"materialicons/people.svg": materialiconsPeopleSvg,
-	"materialicons/people_outline.svg": materialiconsPeople_outlineSvg,
-	"materialicons/perm_camera_mic.svg": materialiconsPerm_camera_micSvg,
-	"materialicons/perm_contact_calendar.svg": materialiconsPerm_contact_calendarSvg,
-	"materialicons/perm_data_setting.svg": materialiconsPerm_data_settingSvg,
-	"materialicons/perm_device_information.svg": materialiconsPerm_device_informationSvg,
-	"materialicons/perm_identity.svg": materialiconsPerm_identitySvg,
-	"materialicons/perm_media.svg": materialiconsPerm_mediaSvg,
-	"materialicons/perm_phone_msg.svg": materialiconsPerm_phone_msgSvg,
-	"materialicons/perm_scan_wifi.svg": materialiconsPerm_scan_wifiSvg,
-	"materialicons/person.svg": materialiconsPersonSvg,
-	"materialicons/person_add.svg": materialiconsPerson_addSvg,
-	"materialicons/person_outline.svg": materialiconsPerson_outlineSvg,
-	"materialicons/person_pin.svg": materialiconsPerson_pinSvg,
-	"materialicons/personal_video.svg": materialiconsPersonal_videoSvg,
-	"materialicons/phone.svg": materialiconsPhoneSvg,
-	"materialicons/phone_android.svg": materialiconsPhone_androidSvg,
-	"materialicons/phone_bluetooth_speaker.svg": materialiconsPhone_bluetooth_speakerSvg,
-	"materialicons/phone_forwarded.svg": materialiconsPhone_forwardedSvg,
-	"materialicons/phone_in_talk.svg": materialiconsPhone_in_talkSvg,
-	"materialicons/phone_iphone.svg": materialiconsPhone_iphoneSvg,
-	"materialicons/phone_locked.svg": materialiconsPhone_lockedSvg,
-	"materialicons/phone_missed.svg": materialiconsPhone_missedSvg,
-	"materialicons/phone_paused.svg": materialiconsPhone_pausedSvg,
-	"materialicons/phonelink.svg": materialiconsPhonelinkSvg,
-	"materialicons/phonelink_off.svg": materialiconsPhonelink_offSvg,
-	"materialicons/photo.svg": materialiconsPhotoSvg,
-	"materialicons/photo_album.svg": materialiconsPhoto_albumSvg,
-	"materialicons/photo_camera.svg": materialiconsPhoto_cameraSvg,
-	"materialicons/photo_library.svg": materialiconsPhoto_librarySvg,
-	"materialicons/picture_as_pdf.svg": materialiconsPicture_as_pdfSvg,
-	"materialicons/picture_in_picture.svg": materialiconsPicture_in_pictureSvg,
-	"materialicons/pin_drop.svg": materialiconsPin_dropSvg,
-	"materialicons/place.svg": materialiconsPlaceSvg,
-	"materialicons/play_arrow.svg": materialiconsPlay_arrowSvg,
-	"materialicons/play_circle_filled.svg": materialiconsPlay_circle_filledSvg,
-	"materialicons/play_circle_outline.svg": materialiconsPlay_circle_outlineSvg,
-	"materialicons/play_for_work.svg": materialiconsPlay_for_workSvg,
-	"materialicons/playlist_add.svg": materialiconsPlaylist_addSvg,
-	"materialicons/plus_one.svg": materialiconsPlus_oneSvg,
-	"materialicons/poll.svg": materialiconsPollSvg,
-	"materialicons/polymer.svg": materialiconsPolymerSvg,
-	"materialicons/portable_wifi_off.svg": materialiconsPortable_wifi_offSvg,
-	"materialicons/portrait.svg": materialiconsPortraitSvg,
-	"materialicons/power.svg": materialiconsPowerSvg,
-	"materialicons/power_input.svg": materialiconsPower_inputSvg,
-	"materialicons/power_settings_new.svg": materialiconsPower_settings_newSvg,
-	"materialicons/present_to_all.svg": materialiconsPresent_to_allSvg,
-	"materialicons/print.svg": materialiconsPrintSvg,
-	"materialicons/public.svg": materialiconsPublicSvg,
-	"materialicons/publish.svg": materialiconsPublishSvg,
-	"materialicons/query_builder.svg": materialiconsQuery_builderSvg,
-	"materialicons/question_answer.svg": materialiconsQuestion_answerSvg,
-	"materialicons/queue.svg": materialiconsQueueSvg,
-	"materialicons/queue_music.svg": materialiconsQueue_musicSvg,
-	"materialicons/radio.svg": materialiconsRadioSvg,
-	"materialicons/radio_button_checked.svg": materialiconsRadio_button_checkedSvg,
-	"materialicons/radio_button_unchecked.svg": materialiconsRadio_button_uncheckedSvg,
-	"materialicons/rate_review.svg": materialiconsRate_reviewSvg,
-	"materialicons/receipt.svg": materialiconsReceiptSvg,
-	"materialicons/recent_actors.svg": materialiconsRecent_actorsSvg,
-	"materialicons/redeem.svg": materialiconsRedeemSvg,
-	"materialicons/redo.svg": materialiconsRedoSvg,
-	"materialicons/refresh.svg": materialiconsRefreshSvg,
-	"materialicons/remove.svg": materialiconsRemoveSvg,
-	"materialicons/remove_circle.svg": materialiconsRemove_circleSvg,
-	"materialicons/remove_circle_outline.svg": materialiconsRemove_circle_outlineSvg,
-	"materialicons/remove_red_eye.svg": materialiconsRemove_red_eyeSvg,
-	"materialicons/repeat.svg": materialiconsRepeatSvg,
-	"materialicons/repeat_one.svg": materialiconsRepeat_oneSvg,
-	"materialicons/replay.svg": materialiconsReplaySvg,
-	"materialicons/replay_10.svg": materialiconsReplay_10Svg,
-	"materialicons/replay_30.svg": materialiconsReplay_30Svg,
-	"materialicons/replay_5.svg": materialiconsReplay_5Svg,
-	"materialicons/reply.svg": materialiconsReplySvg,
-	"materialicons/reply_all.svg": materialiconsReply_allSvg,
-	"materialicons/report.svg": materialiconsReportSvg,
-	"materialicons/report_problem.svg": materialiconsReport_problemSvg,
-	"materialicons/restaurant_menu.svg": materialiconsRestaurant_menuSvg,
-	"materialicons/restore.svg": materialiconsRestoreSvg,
-	"materialicons/ring_volume.svg": materialiconsRing_volumeSvg,
-	"materialicons/room.svg": materialiconsRoomSvg,
-	"materialicons/rotate_90_degrees_ccw.svg": materialiconsRotate_90_degrees_ccwSvg,
-	"materialicons/rotate_left.svg": materialiconsRotate_leftSvg,
-	"materialicons/rotate_right.svg": materialiconsRotate_rightSvg,
-	"materialicons/router.svg": materialiconsRouterSvg,
-	"materialicons/satellite.svg": materialiconsSatelliteSvg,
-	"materialicons/save.svg": materialiconsSaveSvg,
-	"materialicons/scanner.svg": materialiconsScannerSvg,
-	"materialicons/schedule.svg": materialiconsScheduleSvg,
-	"materialicons/school.svg": materialiconsSchoolSvg,
-	"materialicons/screen_lock_landscape.svg": materialiconsScreen_lock_landscapeSvg,
-	"materialicons/screen_lock_portrait.svg": materialiconsScreen_lock_portraitSvg,
-	"materialicons/screen_lock_rotation.svg": materialiconsScreen_lock_rotationSvg,
-	"materialicons/screen_rotation.svg": materialiconsScreen_rotationSvg,
-	"materialicons/sd_card.svg": materialiconsSd_cardSvg,
-	"materialicons/sd_storage.svg": materialiconsSd_storageSvg,
-	"materialicons/search.svg": materialiconsSearchSvg,
-	"materialicons/security.svg": materialiconsSecuritySvg,
-	"materialicons/select_all.svg": materialiconsSelect_allSvg,
-	"materialicons/send.svg": materialiconsSendSvg,
-	"materialicons/settings.svg": materialiconsSettingsSvg,
-	"materialicons/settings_applications.svg": materialiconsSettings_applicationsSvg,
-	"materialicons/settings_backup_restore.svg": materialiconsSettings_backup_restoreSvg,
-	"materialicons/settings_bluetooth.svg": materialiconsSettings_bluetoothSvg,
-	"materialicons/settings_brightness.svg": materialiconsSettings_brightnessSvg,
-	"materialicons/settings_cell.svg": materialiconsSettings_cellSvg,
-	"materialicons/settings_ethernet.svg": materialiconsSettings_ethernetSvg,
-	"materialicons/settings_input_antenna.svg": materialiconsSettings_input_antennaSvg,
-	"materialicons/settings_input_component.svg": materialiconsSettings_input_componentSvg,
-	"materialicons/settings_input_composite.svg": materialiconsSettings_input_compositeSvg,
-	"materialicons/settings_input_hdmi.svg": materialiconsSettings_input_hdmiSvg,
-	"materialicons/settings_input_svideo.svg": materialiconsSettings_input_svideoSvg,
-	"materialicons/settings_overscan.svg": materialiconsSettings_overscanSvg,
-	"materialicons/settings_phone.svg": materialiconsSettings_phoneSvg,
-	"materialicons/settings_power.svg": materialiconsSettings_powerSvg,
-	"materialicons/settings_remote.svg": materialiconsSettings_remoteSvg,
-	"materialicons/settings_system_daydream.svg": materialiconsSettings_system_daydreamSvg,
-	"materialicons/settings_voice.svg": materialiconsSettings_voiceSvg,
-	"materialicons/share.svg": materialiconsShareSvg,
-	"materialicons/shop.svg": materialiconsShopSvg,
-	"materialicons/shop_two.svg": materialiconsShop_twoSvg,
-	"materialicons/shopping_basket.svg": materialiconsShopping_basketSvg,
-	"materialicons/shopping_cart.svg": materialiconsShopping_cartSvg,
-	"materialicons/shuffle.svg": materialiconsShuffleSvg,
-	"materialicons/signal_cellular_0_bar.svg": materialiconsSignal_cellular_0_barSvg,
-	"materialicons/signal_cellular_1_bar.svg": materialiconsSignal_cellular_1_barSvg,
-	"materialicons/signal_cellular_2_bar.svg": materialiconsSignal_cellular_2_barSvg,
-	"materialicons/signal_cellular_3_bar.svg": materialiconsSignal_cellular_3_barSvg,
-	"materialicons/signal_cellular_4_bar.svg": materialiconsSignal_cellular_4_barSvg,
+	"templates/article.tmpl":                                        templatesArticleTmpl,
+	"templates/search.tmpl":                                         templatesSearchTmpl,
+	"static/breadcrumb.svg":                                         staticBreadcrumbSvg,
+	"static/styles.css":                                             staticStylesCss,
+	"materialicons/3d_rotation.svg":                                 materialicons3d_rotationSvg,
+	"materialicons/access_alarm.svg":                                materialiconsAccess_alarmSvg,
+	"materialicons/access_alarms.svg":                               materialiconsAccess_alarmsSvg,
+	"materialicons/access_time.svg":                                 materialiconsAccess_timeSvg,
+	"materialicons/accessibility.svg":                               materialiconsAccessibilitySvg,
+	"materialicons/account_balance.svg":                             materialiconsAccount_balanceSvg,
+	"materialicons/account_balance_wallet.svg":                      materialiconsAccount_balance_walletSvg,
+	"materialicons/account_box.svg":                                 materialiconsAccount_boxSvg,
+	"materialicons/account_circle.svg":                              materialiconsAccount_circleSvg,
+	"materialicons/adb.svg":                                         materialiconsAdbSvg,
+	"materialicons/add.svg":                                         materialiconsAddSvg,
+	"materialicons/add_alarm.svg":                                   materialiconsAdd_alarmSvg,
+	"materialicons/add_alert.svg":                                   materialiconsAdd_alertSvg,
+	"materialicons/add_box.svg":                                     materialiconsAdd_boxSvg,
+	"materialicons/add_circle.svg":                                  materialiconsAdd_circleSvg,
+	"materialicons/add_circle_outline.svg":                          materialiconsAdd_circle_outlineSvg,
+	"materialicons/add_shopping_cart.svg":                           materialiconsAdd_shopping_cartSvg,
+	"materialicons/add_to_photos.svg":                               materialiconsAdd_to_photosSvg,
+	"materialicons/adjust.svg":                                      materialiconsAdjustSvg,
+	"materialicons/airline_seat_flat.svg":                           materialiconsAirline_seat_flatSvg,
+	"materialicons/airline_seat_flat_angled.svg":                    materialiconsAirline_seat_flat_angledSvg,
+	"materialicons/airline_seat_individual_suite.svg":               materialiconsAirline_seat_individual_suiteSvg,
+	"materialicons/airline_seat_legroom_extra.svg":                  materialiconsAirline_seat_legroom_extraSvg,
+	"materialicons/airline_seat_legroom_normal.svg":                 materialiconsAirline_seat_legroom_normalSvg,
+	"materialicons/airline_seat_legroom_reduced.svg":                materialiconsAirline_seat_legroom_reducedSvg,
+	"materialicons/airline_seat_recline_extra.svg":                  materialiconsAirline_seat_recline_extraSvg,
+	"materialicons/airline_seat_recline_normal.svg":                 materialiconsAirline_seat_recline_normalSvg,
+	"materialicons/airplanemode_active.svg":                         materialiconsAirplanemode_activeSvg,
+	"materialicons/airplanemode_inactive.svg":                       materialiconsAirplanemode_inactiveSvg,
+	"materialicons/airplay.svg":                                     materialiconsAirplaySvg,
+	"materialicons/alarm.svg":                                       materialiconsAlarmSvg,
+	"materialicons/alarm_add.svg":                                   materialiconsAlarm_addSvg,
+	"materialicons/alarm_off.svg":                                   materialiconsAlarm_offSvg,
+	"materialicons/alarm_on.svg":                                    materialiconsAlarm_onSvg,
+	"materialicons/album.svg":                                       materialiconsAlbumSvg,
+	"materialicons/android.svg":                                     materialiconsAndroidSvg,
+	"materialicons/announcement.svg":                                materialiconsAnnouncementSvg,
+	"materialicons/apps.svg":                                        materialiconsAppsSvg,
+	"materialicons/archive.svg":                                     materialiconsArchiveSvg,
+	"materialicons/arrow_back.svg":                                  materialiconsArrow_backSvg,
+	"materialicons/arrow_drop_down.svg":                             materialiconsArrow_drop_downSvg,
+	"materialicons/arrow_drop_down_circle.svg":                      materialiconsArrow_drop_down_circleSvg,
+	"materialicons/arrow_drop_up.svg":                               materialiconsArrow_drop_upSvg,
+	"materialicons/arrow_forward.svg":                               materialiconsArrow_forwardSvg,
+	"materialicons/aspect_ratio.svg":                                materialiconsAspect_ratioSvg,
+	"materialicons/assessment.svg":                                  materialiconsAssessmentSvg,
+	"materialicons/assignment.svg":                                  materialiconsAssignmentSvg,
+	"materialicons/assignment_ind.svg":                              materialiconsAssignment_indSvg,
+	"materialicons/assignment_late.svg":                             materialiconsAssignment_lateSvg,
+	"materialicons/assignment_return.svg":                           materialiconsAssignment_returnSvg,
+	"materialicons/assignment_returned.svg":                         materialiconsAssignment_returnedSvg,
+	"materialicons/assignment_turned_in.svg":                        materialiconsAssignment_turned_inSvg,
+	"materialicons/assistant.svg":                                   materialiconsAssistantSvg,
+	"materialicons/assistant_photo.svg":                             materialiconsAssistant_photoSvg,
+	"materialicons/attach_file.svg":                                 materialiconsAttach_fileSvg,
+	"materialicons/attach_money.svg":                                materialiconsAttach_moneySvg,
+	"materialicons/attachment.svg":                                  materialiconsAttachmentSvg,
+	"materialicons/audiotrack.svg":                                  materialiconsAudiotrackSvg,
+	"materialicons/autorenew.svg":                                   materialiconsAutorenewSvg,
+	"materialicons/av_timer.svg":                                    materialiconsAv_timerSvg,
+	"materialicons/backspace.svg":                                   materialiconsBackspaceSvg,
+	"materialicons/backup.svg":                                      materialiconsBackupSvg,
+	"materialicons/battery_20.svg":                                  materialiconsBattery_20Svg,
+	"materialicons/battery_30.svg":                                  materialiconsBattery_30Svg,
+	"materialicons/battery_50.svg":                                  materialiconsBattery_50Svg,
+	"materialicons/battery_60.svg":                                  materialiconsBattery_60Svg,
+	"materialicons/battery_80.svg":                                  materialiconsBattery_80Svg,
+	"materialicons/battery_90.svg":                                  materialiconsBattery_90Svg,
+	"materialicons/battery_alert.svg":                               materialiconsBattery_alertSvg,
+	"materialicons/battery_charging_20.svg":                         materialiconsBattery_charging_20Svg,
+	"materialicons/battery_charging_30.svg":                         materialiconsBattery_charging_30Svg,
+	"materialicons/battery_charging_50.svg":                         materialiconsBattery_charging_50Svg,
+	"materialicons/battery_charging_60.svg":                         materialiconsBattery_charging_60Svg,
+	"materialicons/battery_charging_80.svg":                         materialiconsBattery_charging_80Svg,
+	"materialicons/battery_charging_90.svg":                         materialiconsBattery_charging_90Svg,
+	"materialicons/battery_charging_full.svg":                       materialiconsBattery_charging_fullSvg,
+	"materialicons/battery_full.svg":                                materialiconsBattery_fullSvg,
+	"materialicons/battery_std.svg":                                 materialiconsBattery_stdSvg,
+	"materialicons/battery_unknown.svg":                             materialiconsBattery_unknownSvg,
+	"materialicons/beenhere.svg":                                    materialiconsBeenhereSvg,
+	"materialicons/block.svg":                                       materialiconsBlockSvg,
+	"materialicons/bluetooth.svg":                                   materialiconsBluetoothSvg,
+	"materialicons/bluetooth_audio.svg":                             materialiconsBluetooth_audioSvg,
+	"materialicons/bluetooth_connected.svg":                         materialiconsBluetooth_connectedSvg,
+	"materialicons/bluetooth_disabled.svg":                          materialiconsBluetooth_disabledSvg,
+	"materialicons/bluetooth_searching.svg":                         materialiconsBluetooth_searchingSvg,
+	"materialicons/blur_circular.svg":                               materialiconsBlur_circularSvg,
+	"materialicons/blur_linear.svg":                                 materialiconsBlur_linearSvg,
+	"materialicons/blur_off.svg":                                    materialiconsBlur_offSvg,
+	"materialicons/blur_on.svg":                                     materialiconsBlur_onSvg,
+	"materialicons/book.svg":                                        materialiconsBookSvg,
+	"materialicons/bookmark.svg":                                    materialiconsBookmarkSvg,
+	"materialicons/bookmark_border.svg":                             materialiconsBookmark_borderSvg,
+	"materialicons/border_all.svg":                                  materialiconsBorder_allSvg,
+	"materialicons/border_bottom.svg":                               materialiconsBorder_bottomSvg,
+	"materialicons/border_clear.svg":                                materialiconsBorder_clearSvg,
+	"materialicons/border_color.svg":                                materialiconsBorder_colorSvg,
+	"materialicons/border_horizontal.svg":                           materialiconsBorder_horizontalSvg,
+	"materialicons/border_inner.svg":                                materialiconsBorder_innerSvg,
+	"materialicons/border_left.svg":                                 materialiconsBorder_leftSvg,
+	"materialicons/border_outer.svg":                                materialiconsBorder_outerSvg,
+	"materialicons/border_right.svg":                                materialiconsBorder_rightSvg,
+	"materialicons/border_style.svg":                                materialiconsBorder_styleSvg,
+	"materialicons/border_top.svg":                                  materialiconsBorder_topSvg,
+	"materialicons/border_vertical.svg":                             materialiconsBorder_verticalSvg,
+	"materialicons/brightness_1.svg":                                materialiconsBrightness_1Svg,
+	"materialicons/brightness_2.svg":                                materialiconsBrightness_2Svg,
+	"materialicons/brightness_3.svg":                                materialiconsBrightness_3Svg,
+	"materialicons/brightness_4.svg":                                materialiconsBrightness_4Svg,
+	"materialicons/brightness_5.svg":                                materialiconsBrightness_5Svg,
+	"materialicons/brightness_6.svg":                                materialiconsBrightness_6Svg,
+	"materialicons/brightness_7.svg":                                materialiconsBrightness_7Svg,
+	"materialicons/brightness_auto.svg":                             materialiconsBrightness_autoSvg,
+	"materialicons/brightness_high.svg":                             materialiconsBrightness_highSvg,
+	"materialicons/brightness_low.svg":                              materialiconsBrightness_lowSvg,
+	"materialicons/brightness_medium.svg":                           materialiconsBrightness_mediumSvg,
+	"materialicons/broken_image.svg":                                materialiconsBroken_imageSvg,
+	"materialicons/brush.svg":                                       materialiconsBrushSvg,
+	"materialicons/bug_report.svg":                                  materialiconsBug_reportSvg,
+	"materialicons/build.svg":                                       materialiconsBuildSvg,
+	"materialicons/business.svg":                                    materialiconsBusinessSvg,
+	"materialicons/cached.svg":                                      materialiconsCachedSvg,
+	"materialicons/cake.svg":                                        materialiconsCakeSvg,
+	"materialicons/call.svg":                                        materialiconsCallSvg,
+	"materialicons/call_end.svg":                                    materialiconsCall_endSvg,
+	"materialicons/call_made.svg":                                   materialiconsCall_madeSvg,
+	"materialicons/call_merge.svg":                                  materialiconsCall_mergeSvg,
+	"materialicons/call_missed.svg":                                 materialiconsCall_missedSvg,
+	"materialicons/call_received.svg":                               materialiconsCall_receivedSvg,
+	"materialicons/call_split.svg":                                  materialiconsCall_splitSvg,
+	"materialicons/camera.svg":                                      materialiconsCameraSvg,
+	"materialicons/camera_alt.svg":                                  materialiconsCamera_altSvg,
+	"materialicons/camera_front.svg":                                materialiconsCamera_frontSvg,
+	"materialicons/camera_rear.svg":                                 materialiconsCamera_rearSvg,
+	"materialicons/camera_roll.svg":                                 materialiconsCamera_rollSvg,
+	"materialicons/cancel.svg":                                      materialiconsCancelSvg,
+	"materialicons/card_giftcard.svg":                               materialiconsCard_giftcardSvg,
+	"materialicons/card_membership.svg":                             materialiconsCard_membershipSvg,
+	"materialicons/card_travel.svg":                                 materialiconsCard_travelSvg,
+	"materialicons/cast.svg":                                        materialiconsCastSvg,
+	"materialicons/cast_connected.svg":                              materialiconsCast_connectedSvg,
+	"materialicons/center_focus_strong.svg":                         materialiconsCenter_focus_strongSvg,
+	"materialicons/center_focus_weak.svg":                           materialiconsCenter_focus_weakSvg,
+	"materialicons/change_history.svg":                              materialiconsChange_historySvg,
+	"materialicons/chat.svg":                                        materialiconsChatSvg,
+	"materialicons/chat_bubble.svg":                                 materialiconsChat_bubbleSvg,
+	"materialicons/chat_bubble_outline.svg":                         materialiconsChat_bubble_outlineSvg,
+	"materialicons/check.svg":                                       materialiconsCheckSvg,
+	"materialicons/check_box.svg":                                   materialiconsCheck_boxSvg,
+	"materialicons/check_box_outline_blank.svg":                     materialiconsCheck_box_outline_blankSvg,
+	"materialicons/check_circle.svg":                                materialiconsCheck_circleSvg,
+	"materialicons/chevron_left.svg":                                materialiconsChevron_leftSvg,
+	"materialicons/chevron_right.svg":                               materialiconsChevron_rightSvg,
+	"materialicons/chrome_reader_mode.svg":                          materialiconsChrome_reader_modeSvg,
+	"materialicons/class.svg":                                       materialiconsClassSvg,
+	"materialicons/clear.svg":                                       materialiconsClearSvg,
+	"materialicons/clear_all.svg":                                   materialiconsClear_allSvg,
+	"materialicons/close.svg":                                       materialiconsCloseSvg,
+	"materialicons/closed_caption.svg":                              materialiconsClosed_captionSvg,
+	"materialicons/cloud.svg":                                       materialiconsCloudSvg,
+	"materialicons/cloud_circle.svg":                                materialiconsCloud_circleSvg,
+	"materialicons/cloud_done.svg":                                  materialiconsCloud_doneSvg,
+	"materialicons/cloud_download.svg":                              materialiconsCloud_downloadSvg,
+	"materialicons/cloud_off.svg":                                   materialiconsCloud_offSvg,
+	"materialicons/cloud_queue.svg":                                 materialiconsCloud_queueSvg,
+	"materialicons/cloud_upload.svg":                                materialiconsCloud_uploadSvg,
+	"materialicons/code.svg":                                        materialiconsCodeSvg,
+	"materialicons/collections.svg":                                 materialiconsCollectionsSvg,
+	"materialicons/color_lens.svg":                                  materialiconsColor_lensSvg,
+	"materialicons/colorize.svg":                                    materialiconsColorizeSvg,
+	"materialicons/comment.svg":                                     materialiconsCommentSvg,
+	"materialicons/compare.svg":                                     materialiconsCompareSvg,
+	"materialicons/computer.svg":                                    materialiconsComputerSvg,
+	"materialicons/confirmation_number.svg":                         materialiconsConfirmation_numberSvg,
+	"materialicons/contact_mail.svg":                                materialiconsContact_mailSvg,
+	"materialicons/contact_phone.svg":                               materialiconsContact_phoneSvg,
+	"materialicons/contacts.svg":                                    materialiconsContactsSvg,
+	"materialicons/content_copy.svg":                                materialiconsContent_copySvg,
+	"materialicons/content_cut.svg":                                 materialiconsContent_cutSvg,
+	"materialicons/content_paste.svg":                               materialiconsContent_pasteSvg,
+	"materialicons/control_point.svg":                               materialiconsControl_pointSvg,
+	"materialicons/control_point_duplicate.svg":                     materialiconsControl_point_duplicateSvg,
+	"materialicons/create.svg":                                      materialiconsCreateSvg,
+	"materialicons/credit_card.svg":                                 materialiconsCredit_cardSvg,
+	"materialicons/crop.svg":                                        materialiconsCropSvg,
+	"materialicons/crop_16_9.svg":                                   materialiconsCrop_16_9Svg,
+	"materialicons/crop_3_2.svg":                                    materialiconsCrop_3_2Svg,
+	"materialicons/crop_5_4.svg":                                    materialiconsCrop_5_4Svg,
+	"materialicons/crop_7_5.svg":                                    materialiconsCrop_7_5Svg,
+	"materialicons/crop_din.svg":                                    materialiconsCrop_dinSvg,
+	"materialicons/crop_free.svg":                                   materialiconsCrop_freeSvg,
+	"materialicons/crop_landscape.svg":                              materialiconsCrop_landscapeSvg,
+	"materialicons/crop_original.svg":                               materialiconsCrop_originalSvg,
+	"materialicons/crop_portrait.svg":                               materialiconsCrop_portraitSvg,
+	"materialicons/crop_square.svg":                                 materialiconsCrop_squareSvg,
+	"materialicons/dashboard.svg":                                   materialiconsDashboardSvg,
+	"materialicons/data_usage.svg":                                  materialiconsData_usageSvg,
+	"materialicons/dehaze.svg":                                      materialiconsDehazeSvg,
+	"materialicons/delete.svg":                                      materialiconsDeleteSvg,
+	"materialicons/description.svg":                                 materialiconsDescriptionSvg,
+	"materialicons/desktop_mac.svg":                                 materialiconsDesktop_macSvg,
+	"materialicons/desktop_windows.svg":                             materialiconsDesktop_windowsSvg,
+	"materialicons/details.svg":                                     materialiconsDetailsSvg,
+	"materialicons/developer_board.svg":                             materialiconsDeveloper_boardSvg,
+	"materialicons/developer_mode.svg":                              materialiconsDeveloper_modeSvg,
+	"materialicons/devices.svg":                                     materialiconsDevicesSvg,
+	"materialicons/dialer_sip.svg":                                  materialiconsDialer_sipSvg,
+	"materialicons/dialpad.svg":                                     materialiconsDialpadSvg,
+	"materialicons/directions.svg":                                  materialiconsDirectionsSvg,
+	"materialicons/directions_bike.svg":                             materialiconsDirections_bikeSvg,
+	"materialicons/directions_boat.svg":                             materialiconsDirections_boatSvg,
+	"materialicons/directions_bus.svg":                              materialiconsDirections_busSvg,
+	"materialicons/directions_car.svg":                              materialiconsDirections_carSvg,
+	"materialicons/directions_railway.svg":                          materialiconsDirections_railwaySvg,
+	"materialicons/directions_run.svg":                              materialiconsDirections_runSvg,
+	"materialicons/directions_subway.svg":                           materialiconsDirections_subwaySvg,
+	"materialicons/directions_transit.svg":                          materialiconsDirections_transitSvg,
+	"materialicons/directions_walk.svg":                             materialiconsDirections_walkSvg,
+	"materialicons/disc_full.svg":                                   materialiconsDisc_fullSvg,
+	"materialicons/dns.svg":                                         materialiconsDnsSvg,
+	"materialicons/do_not_disturb.svg":                              materialiconsDo_not_disturbSvg,
+	"materialicons/do_not_disturb_alt.svg":                          materialiconsDo_not_disturb_altSvg,
+	"materialicons/dock.svg":                                        materialiconsDockSvg,
+	"materialicons/domain.svg":                                      materialiconsDomainSvg,
+	"materialicons/done.svg":                                        materialiconsDoneSvg,
+	"materialicons/done_all.svg":                                    materialiconsDone_allSvg,
+	"materialicons/drafts.svg":                                      materialiconsDraftsSvg,
+	"materialicons/drive_eta.svg":                                   materialiconsDrive_etaSvg,
+	"materialicons/dvr.svg":                                         materialiconsDvrSvg,
+	"materialicons/edit.svg":                                        materialiconsEditSvg,
+	"materialicons/email.svg":                                       materialiconsEmailSvg,
+	"materialicons/equalizer.svg":                                   materialiconsEqualizerSvg,
+	"materialicons/error.svg":                                       materialiconsErrorSvg,
+	"materialicons/error_outline.svg":                               materialiconsError_outlineSvg,
+	"materialicons/event.svg":                                       materialiconsEventSvg,
+	"materialicons/event_available.svg":                             materialiconsEvent_availableSvg,
+	"materialicons/event_busy.svg":                                  materialiconsEvent_busySvg,
+	"materialicons/event_note.svg":                                  materialiconsEvent_noteSvg,
+	"materialicons/event_seat.svg":                                  materialiconsEvent_seatSvg,
+	"materialicons/exit_to_app.svg":                                 materialiconsExit_to_appSvg,
+	"materialicons/expand_less.svg":                                 materialiconsExpand_lessSvg,
+	"materialicons/expand_more.svg":                                 materialiconsExpand_moreSvg,
+	"materialicons/explicit.svg":                                    materialiconsExplicitSvg,
+	"materialicons/explore.svg":                                     materialiconsExploreSvg,
+	"materialicons/exposure.svg":                                    materialiconsExposureSvg,
+	"materialicons/exposure_neg_1.svg":                              materialiconsExposure_neg_1Svg,
+	"materialicons/exposure_neg_2.svg":                              materialiconsExposure_neg_2Svg,
+	"materialicons/exposure_plus_1.svg":                             materialiconsExposure_plus_1Svg,
+	"materialicons/exposure_plus_2.svg":                             materialiconsExposure_plus_2Svg,
+	"materialicons/exposure_zero.svg":                               materialiconsExposure_zeroSvg,
+	"materialicons/extension.svg":                                   materialiconsExtensionSvg,
+	"materialicons/face.svg":                                        materialiconsFaceSvg,
+	"materialicons/fast_forward.svg":                                materialiconsFast_forwardSvg,
+	"materialicons/fast_rewind.svg":                                 materialiconsFast_rewindSvg,
+	"materialicons/favorite.svg":                                    materialiconsFavoriteSvg,
+	"materialicons/favorite_border.svg":                             materialiconsFavorite_borderSvg,
+	"materialicons/feedback.svg":                                    materialiconsFeedbackSvg,
+	"materialicons/file_download.svg":                               materialiconsFile_downloadSvg,
+	"materialicons/file_upload.svg":                                 materialiconsFile_uploadSvg,
+	"materialicons/filter.svg":                                      materialiconsFilterSvg,
+	"materialicons/filter_1.svg":                                    materialiconsFilter_1Svg,
+	"materialicons/filter_2.svg":                                    materialiconsFilter_2Svg,
+	"materialicons/filter_3.svg":                                    materialiconsFilter_3Svg,
+	"materialicons/filter_4.svg":                                    materialiconsFilter_4Svg,
+	"materialicons/filter_5.svg":                                    materialiconsFilter_5Svg,
+	"materialicons/filter_6.svg":                                    materialiconsFilter_6Svg,
+	"materialicons/filter_7.svg":                                    materialiconsFilter_7Svg,
+	"materialicons/filter_8.svg":                                    materialiconsFilter_8Svg,
+	"materialicons/filter_9.svg":                                    materialiconsFilter_9Svg,
+	"materialicons/filter_9_plus.svg":                               materialiconsFilter_9_plusSvg,
+	"materialicons/filter_b_and_w.svg":                              materialiconsFilter_b_and_wSvg,
+	"materialicons/filter_center_focus.svg":                         materialiconsFilter_center_focusSvg,
+	"materialicons/filter_drama.svg":                                materialiconsFilter_dramaSvg,
+	"materialicons/filter_frames.svg":                               materialiconsFilter_framesSvg,
+	"materialicons/filter_hdr.svg":                                  materialiconsFilter_hdrSvg,
+	"materialicons/filter_list.svg":                                 materialiconsFilter_listSvg,
+	"materialicons/filter_none.svg":                                 materialiconsFilter_noneSvg,
+	"materialicons/filter_tilt_shift.svg":                           materialiconsFilter_tilt_shiftSvg,
+	"materialicons/filter_vintage.svg":                              materialiconsFilter_vintageSvg,
+	"materialicons/find_in_page.svg":                                materialiconsFind_in_pageSvg,
+	"materialicons/find_replace.svg":                                materialiconsFind_replaceSvg,
+	"materialicons/flag.svg":                                        materialiconsFlagSvg,
+	"materialicons/flare.svg":                                       materialiconsFlareSvg,
+	"materialicons/flash_auto.svg":                                  materialiconsFlash_autoSvg,
+	"materialicons/flash_off.svg":                                   materialiconsFlash_offSvg,
+	"materialicons/flash_on.svg":                                    materialiconsFlash_onSvg,
+	"materialicons/flight.svg":                                      materialiconsFlightSvg,
+	"materialicons/flight_land.svg":                                 materialiconsFlight_landSvg,
+	"materialicons/flight_takeoff.svg":                              materialiconsFlight_takeoffSvg,
+	"materialicons/flip.svg":                                        materialiconsFlipSvg,
+	"materialicons/flip_to_back.svg":                                materialiconsFlip_to_backSvg,
+	"materialicons/flip_to_front.svg":                               materialiconsFlip_to_frontSvg,
+	"materialicons/folder.svg":                                      materialiconsFolderSvg,
+	"materialicons/folder_open.svg":                                 materialiconsFolder_openSvg,
+	"materialicons/folder_shared.svg":                               materialiconsFolder_sharedSvg,
+	"materialicons/folder_special.svg":                              materialiconsFolder_specialSvg,
+	"materialicons/format_align_center.svg":                         materialiconsFormat_align_centerSvg,
+	"materialicons/format_align_justify.svg":                        materialiconsFormat_align_justifySvg,
+	"materialicons/format_align_left.svg":                           materialiconsFormat_align_leftSvg,
+	"materialicons/format_align_right.svg":                          materialiconsFormat_align_rightSvg,
+	"materialicons/format_bold.svg":                                 materialiconsFormat_boldSvg,
+	"materialicons/format_clear.svg":                                materialiconsFormat_clearSvg,
+	"materialicons/format_color_fill.svg":                           materialiconsFormat_color_fillSvg,
+	"materialicons/format_color_reset.svg":                          materialiconsFormat_color_resetSvg,
+	"materialicons/format_color_text.svg":                           materialiconsFormat_color_textSvg,
+	"materialicons/format_indent_decrease.svg":                      materialiconsFormat_indent_decreaseSvg,
+	"materialicons/format_indent_increase.svg":                      materialiconsFormat_indent_increaseSvg,
+	"materialicons/format_italic.svg":                               materialiconsFormat_italicSvg,
+	"materialicons/format_line_spacing.svg":                         materialiconsFormat_line_spacingSvg,
+	"materialicons/format_list_bulleted.svg":                        materialiconsFormat_list_bulletedSvg,
+	"materialicons/format_list_numbered.svg":                        materialiconsFormat_list_numberedSvg,
+	"materialicons/format_paint.svg":                                materialiconsFormat_paintSvg,
+	"materialicons/format_quote.svg":                                materialiconsFormat_quoteSvg,
+	"materialicons/format_size.svg":                                 materialiconsFormat_sizeSvg,
+	"materialicons/format_strikethrough.svg":                        materialiconsFormat_strikethroughSvg,
+	"materialicons/format_textdirection_l_to_r.svg":                 materialiconsFormat_textdirection_l_to_rSvg,
+	"materialicons/format_textdirection_r_to_l.svg":                 materialiconsFormat_textdirection_r_to_lSvg,
+	"materialicons/format_underlined.svg":                           materialiconsFormat_underlinedSvg,
+	"materialicons/forum.svg":                                       materialiconsForumSvg,
+	"materialicons/forward.svg":                                     materialiconsForwardSvg,
+	"materialicons/forward_10.svg":                                  materialiconsForward_10Svg,
+	"materialicons/forward_30.svg":                                  materialiconsForward_30Svg,
+	"materialicons/forward_5.svg":                                   materialiconsForward_5Svg,
+	"materialicons/fullscreen.svg":                                  materialiconsFullscreenSvg,
+	"materialicons/fullscreen_exit.svg":                             materialiconsFullscreen_exitSvg,
+	"materialicons/functions.svg":                                   materialiconsFunctionsSvg,
+	"materialicons/gamepad.svg":                                     materialiconsGamepadSvg,
+	"materialicons/games.svg":                                       materialiconsGamesSvg,
+	"materialicons/gesture.svg":                                     materialiconsGestureSvg,
+	"materialicons/get_app.svg":                                     materialiconsGet_appSvg,
+	"materialicons/gps_fixed.svg":                                   materialiconsGps_fixedSvg,
+	"materialicons/gps_not_fixed.svg":                               materialiconsGps_not_fixedSvg,
+	"materialicons/gps_off.svg":                                     materialiconsGps_offSvg,
+	"materialicons/grade.svg":                                       materialiconsGradeSvg,
+	"materialicons/gradient.svg":                                    materialiconsGradientSvg,
+	"materialicons/grain.svg":                                       materialiconsGrainSvg,
+	"materialicons/graphic_eq.svg":                                  materialiconsGraphic_eqSvg,
+	"materialicons/grid_off.svg":                                    materialiconsGrid_offSvg,
+	"materialicons/grid_on.svg":                                     materialiconsGrid_onSvg,
+	"materialicons/group.svg":                                       materialiconsGroupSvg,
+	"materialicons/group_add.svg":                                   materialiconsGroup_addSvg,
+	"materialicons/group_work.svg":                                  materialiconsGroup_workSvg,
+	"materialicons/hdr_off.svg":                                     materialiconsHdr_offSvg,
+	"materialicons/hdr_on.svg":                                      materialiconsHdr_onSvg,
+	"materialicons/hdr_strong.svg":                                  materialiconsHdr_strongSvg,
+	"materialicons/hdr_weak.svg":                                    materialiconsHdr_weakSvg,
+	"materialicons/headset.svg":                                     materialiconsHeadsetSvg,
+	"materialicons/headset_mic.svg":                                 materialiconsHeadset_micSvg,
+	"materialicons/healing.svg":                                     materialiconsHealingSvg,
+	"materialicons/hearing.svg":                                     materialiconsHearingSvg,
+	"materialicons/help.svg":                                        materialiconsHelpSvg,
+	"materialicons/high_quality.svg":                                materialiconsHigh_qualitySvg,
+	"materialicons/highlight_off.svg":                               materialiconsHighlight_offSvg,
+	"materialicons/history.svg":                                     materialiconsHistorySvg,
+	"materialicons/home.svg":                                        materialiconsHomeSvg,
+	"materialicons/hotel.svg":                                       materialiconsHotelSvg,
+	"materialicons/hourglass_empty.svg":                             materialiconsHourglass_emptySvg,
+	"materialicons/hourglass_full.svg":                              materialiconsHourglass_fullSvg,
+	"materialicons/http.svg":                                        materialiconsHttpSvg,
+	"materialicons/https.svg":                                       materialiconsHttpsSvg,
+	"materialicons/image.svg":                                       materialiconsImageSvg,
+	"materialicons/image_aspect_ratio.svg":                          materialiconsImage_aspect_ratioSvg,
+	"materialicons/import_export.svg":                               materialiconsImport_exportSvg,
+	"materialicons/inbox.svg":                                       materialiconsInboxSvg,
+	"materialicons/info.svg":                                        materialiconsInfoSvg,
+	"materialicons/info_outline.svg":                                materialiconsInfo_outlineSvg,
+	"materialicons/input.svg":                                       materialiconsInputSvg,
+	"materialicons/insert_chart.svg":                                materialiconsInsert_chartSvg,
+	"materialicons/insert_comment.svg":                              materialiconsInsert_commentSvg,
+	"materialicons/insert_drive_file.svg":                           materialiconsInsert_drive_fileSvg,
+	"materialicons/insert_emoticon.svg":                             materialiconsInsert_emoticonSvg,
+	"materialicons/insert_invitation.svg":                           materialiconsInsert_invitationSvg,
+	"materialicons/insert_link.svg":                                 materialiconsInsert_linkSvg,
+	"materialicons/insert_photo.svg":                                materialiconsInsert_photoSvg,
+	"materialicons/invert_colors.svg":                               materialiconsInvert_colorsSvg,
+	"materialicons/invert_colors_off.svg":                           materialiconsInvert_colors_offSvg,
+	"materialicons/iso.svg":                                         materialiconsIsoSvg,
+	"materialicons/keyboard.svg":                                    materialiconsKeyboardSvg,
+	"materialicons/keyboard_arrow_down.svg":                         materialiconsKeyboard_arrow_downSvg,
+	"materialicons/keyboard_arrow_left.svg":                         materialiconsKeyboard_arrow_leftSvg,
+	"materialicons/keyboard_arrow_right.svg":                        materialiconsKeyboard_arrow_rightSvg,
+	"materialicons/keyboard_arrow_up.svg":                           materialiconsKeyboard_arrow_upSvg,
+	"materialicons/keyboard_backspace.svg":                          materialiconsKeyboard_backspaceSvg,
+	"materialicons/keyboard_capslock.svg":                           materialiconsKeyboard_capslockSvg,
+	"materialicons/keyboard_hide.svg":                               materialiconsKeyboard_hideSvg,
+	"materialicons/keyboard_return.svg":                             materialiconsKeyboard_returnSvg,
+	"materialicons/keyboard_tab.svg":                                materialiconsKeyboard_tabSvg,
+	"materialicons/keyboard_voice.svg":                              materialiconsKeyboard_voiceSvg,
+	"materialicons/label.svg":                                       materialiconsLabelSvg,
+	"materialicons/label_outline.svg":                               materialiconsLabel_outlineSvg,
+	"materialicons/landscape.svg":                                   materialiconsLandscapeSvg,
+	"materialicons/language.svg":                                    materialiconsLanguageSvg,
+	"materialicons/laptop.svg":                                      materialiconsLaptopSvg,
+	"materialicons/laptop_chromebook.svg":                           materialiconsLaptop_chromebookSvg,
+	"materialicons/laptop_mac.svg":                                  materialiconsLaptop_macSvg,
+	"materialicons/laptop_windows.svg":                              materialiconsLaptop_windowsSvg,
+	"materialicons/launch.svg":                                      materialiconsLaunchSvg,
+	"materialicons/layers.svg":                                      materialiconsLayersSvg,
+	"materialicons/layers_clear.svg":                                materialiconsLayers_clearSvg,
+	"materialicons/leak_add.svg":                                    materialiconsLeak_addSvg,
+	"materialicons/leak_remove.svg":                                 materialiconsLeak_removeSvg,
+	"materialicons/lens.svg":                                        materialiconsLensSvg,
+	"materialicons/library_add.svg":                                 materialiconsLibrary_addSvg,
+	"materialicons/library_books.svg":                               materialiconsLibrary_booksSvg,
+	"materialicons/library_music.svg":                               materialiconsLibrary_musicSvg,
+	"materialicons/link.svg":                                        materialiconsLinkSvg,
+	"materialicons/list.svg":                                        materialiconsListSvg,
+	"materialicons/live_help.svg":                                   materialiconsLive_helpSvg,
+	"materialicons/live_tv.svg":                                     materialiconsLive_tvSvg,
+	"materialicons/local_activity.svg":                              materialiconsLocal_activitySvg,
+	"materialicons/local_airport.svg":                               materialiconsLocal_airportSvg,
+	"materialicons/local_atm.svg":                                   materialiconsLocal_atmSvg,
+	"materialicons/local_bar.svg":                                   materialiconsLocal_barSvg,
+	"materialicons/local_cafe.svg":                                  materialiconsLocal_cafeSvg,
+	"materialicons/local_car_wash.svg":                              materialiconsLocal_car_washSvg,
+	"materialicons/local_convenience_store.svg":                     materialiconsLocal_convenience_storeSvg,
+	"materialicons/local_dining.svg":                                materialiconsLocal_diningSvg,
+	"materialicons/local_drink.svg":                                 materialiconsLocal_drinkSvg,
+	"materialicons/local_florist.svg":                               materialiconsLocal_floristSvg,
+	"materialicons/local_gas_station.svg":                           materialiconsLocal_gas_stationSvg,
+	"materialicons/local_grocery_store.svg":                         materialiconsLocal_grocery_storeSvg,
+	"materialicons/local_hospital.svg":                              materialiconsLocal_hospitalSvg,
+	"materialicons/local_hotel.svg":                                 materialiconsLocal_hotelSvg,
+	"materialicons/local_laundry_service.svg":                       materialiconsLocal_laundry_serviceSvg,
+	"materialicons/local_library.svg":                               materialiconsLocal_librarySvg,
+	"materialicons/local_mall.svg":                                  materialiconsLocal_mallSvg,
+	"materialicons/local_movies.svg":                                materialiconsLocal_moviesSvg,
+	"materialicons/local_offer.svg":                                 materialiconsLocal_offerSvg,
+	"materialicons/local_parking.svg":                               materialiconsLocal_parkingSvg,
+	"materialicons/local_pharmacy.svg":                              materialiconsLocal_pharmacySvg,
+	"materialicons/local_phone.svg":                                 materialiconsLocal_phoneSvg,
+	"materialicons/local_pizza.svg":                                 materialiconsLocal_pizzaSvg,
+	"materialicons/local_play.svg":                                  materialiconsLocal_playSvg,
+	"materialicons/local_post_office.svg":                           materialiconsLocal_post_officeSvg,
+	"materialicons/local_printshop.svg":                             materialiconsLocal_printshopSvg,
+	"materialicons/local_see.svg":                                   materialiconsLocal_seeSvg,
+	"materialicons/local_shipping.svg":                              materialiconsLocal_shippingSvg,
+	"materialicons/local_taxi.svg":                                  materialiconsLocal_taxiSvg,
+	"materialicons/location_city.svg":                               materialiconsLocation_citySvg,
+	"materialicons/location_disabled.svg":                           materialiconsLocation_disabledSvg,
+	"materialicons/location_off.svg":                                materialiconsLocation_offSvg,
+	"materialicons/location_on.svg":                                 materialiconsLocation_onSvg,
+	"materialicons/location_searching.svg":                          materialiconsLocation_searchingSvg,
+	"materialicons/lock.svg":                                        materialiconsLockSvg,
+	"materialicons/lock_open.svg":                                   materialiconsLock_openSvg,
+	"materialicons/lock_outline.svg":                                materialiconsLock_outlineSvg,
+	"materialicons/looks.svg":                                       materialiconsLooksSvg,
+	"materialicons/looks_3.svg":                                     materialiconsLooks_3Svg,
+	"materialicons/looks_4.svg":                                     materialiconsLooks_4Svg,
+	"materialicons/looks_5.svg":                                     materialiconsLooks_5Svg,
+	"materialicons/looks_6.svg":                                     materialiconsLooks_6Svg,
+	"materialicons/looks_one.svg":                                   materialiconsLooks_oneSvg,
+	"materialicons/looks_two.svg":                                   materialiconsLooks_twoSvg,
+	"materialicons/loop.svg":                                        materialiconsLoopSvg,
+	"materialicons/loupe.svg":                                       materialiconsLoupeSvg,
+	"materialicons/loyalty.svg":                                     materialiconsLoyaltySvg,
+	"materialicons/mail.svg":                                        materialiconsMailSvg,
+	"materialicons/map.svg":                                         materialiconsMapSvg,
+	"materialicons/markunread.svg":                                  materialiconsMarkunreadSvg,
+	"materialicons/markunread_mailbox.svg":                          materialiconsMarkunread_mailboxSvg,
+	"materialicons/memory.svg":                                      materialiconsMemorySvg,
+	"materialicons/menu.svg":                                        materialiconsMenuSvg,
+	"materialicons/merge_type.svg":                                  materialiconsMerge_typeSvg,
+	"materialicons/message.svg":                                     materialiconsMessageSvg,
+	"materialicons/mic.svg":                                         materialiconsMicSvg,
+	"materialicons/mic_none.svg":                                    materialiconsMic_noneSvg,
+	"materialicons/mic_off.svg":                                     materialiconsMic_offSvg,
+	"materialicons/mms.svg":                                         materialiconsMmsSvg,
+	"materialicons/mode_comment.svg":                                materialiconsMode_commentSvg,
+	"materialicons/mode_edit.svg":                                   materialiconsMode_editSvg,
+	"materialicons/monochrome_photos.svg":                           materialiconsMonochrome_photosSvg,
+	"materialicons/mood.svg":                                        materialiconsMoodSvg,
+	"materialicons/mood_bad.svg":                                    materialiconsMood_badSvg,
+	"materialicons/more.svg":                                        materialiconsMoreSvg,
+	"materialicons/more_horiz.svg":                                  materialiconsMore_horizSvg,
+	"materialicons/more_vert.svg":                                   materialiconsMore_vertSvg,
+	"materialicons/mouse.svg":                                       materialiconsMouseSvg,
+	"materialicons/movie.svg":                                       materialiconsMovieSvg,
+	"materialicons/movie_creation.svg":                              materialiconsMovie_creationSvg,
+	"materialicons/music_note.svg":                                  materialiconsMusic_noteSvg,
+	"materialicons/my_location.svg":                                 materialiconsMy_locationSvg,
+	"materialicons/nature.svg":                                      materialiconsNatureSvg,
+	"materialicons/nature_people.svg":                               materialiconsNature_peopleSvg,
+	"materialicons/navigate_before.svg":                             materialiconsNavigate_beforeSvg,
+	"materialicons/navigate_next.svg":                               materialiconsNavigate_nextSvg,
+	"materialicons/navigation.svg":                                  materialiconsNavigationSvg,
+	"materialicons/network_cell.svg":                                materialiconsNetwork_cellSvg,
+	"materialicons/network_locked.svg":                              materialiconsNetwork_lockedSvg,
+	"materialicons/network_wifi.svg":                                materialiconsNetwork_wifiSvg,
+	"materialicons/new_releases.svg":                                materialiconsNew_releasesSvg,
+	"materialicons/nfc.svg":                                         materialiconsNfcSvg,
+	"materialicons/no_sim.svg":                                      materialiconsNo_simSvg,
+	"materialicons/not_interested.svg":                              materialiconsNot_interestedSvg,
+	"materialicons/note_add.svg":                                    materialiconsNote_addSvg,
+	"materialicons/notifications.svg":                               materialiconsNotificationsSvg,
+	"materialicons/notifications_active.svg":                        materialiconsNotifications_activeSvg,
+	"materialicons/notifications_none.svg":                          materialiconsNotifications_noneSvg,
+	"materialicons/notifications_off.svg":                           materialiconsNotifications_offSvg,
+	"materialicons/notifications_paused.svg":                        materialiconsNotifications_pausedSvg,
+	"materialicons/ondemand_video.svg":                              materialiconsOndemand_videoSvg,
+	"materialicons/open_in_browser.svg":                             materialiconsOpen_in_browserSvg,
+	"materialicons/open_in_new.svg":                                 materialiconsOpen_in_newSvg,
+	"materialicons/open_with.svg":                                   materialiconsOpen_withSvg,
+	"materialicons/pages.svg":                                       materialiconsPagesSvg,
+	"materialicons/pageview.svg":                                    materialiconsPageviewSvg,
+	"materialicons/palette.svg":                                     materialiconsPaletteSvg,
+	"materialicons/panorama.svg":                                    materialiconsPanoramaSvg,
+	"materialicons/panorama_fish_eye.svg":                           materialiconsPanorama_fish_eyeSvg,
+	"materialicons/panorama_horizontal.svg":                         materialiconsPanorama_horizontalSvg,
+	"materialicons/panorama_vertical.svg":                           materialiconsPanorama_verticalSvg,
+	"materialicons/panorama_wide_angle.svg":                         materialiconsPanorama_wide_angleSvg,
+	"materialicons/party_mode.svg":                                  materialiconsParty_modeSvg,
+	"materialicons/pause.svg":                                       materialiconsPauseSvg,
+	"materialicons/pause_circle_filled.svg":                         materialiconsPause_circle_filledSvg,
+	"materialicons/pause_circle_outline.svg":                        materialiconsPause_circle_outlineSvg,
+	"materialicons/payment.svg":                                     materialiconsPaymentSvg,
+	"materialicons/people.svg":                                      materialiconsPeopleSvg,
+	"materialicons/people_outline.svg":                              materialiconsPeople_outlineSvg,
+	"materialicons/perm_camera_mic.svg":                             materialiconsPerm_camera_micSvg,
+	"materialicons/perm_contact_calendar.svg":                       materialiconsPerm_contact_calendarSvg,
+	"materialicons/perm_data_setting.svg":                           materialiconsPerm_data_settingSvg,
+	"materialicons/perm_device_information.svg":                     materialiconsPerm_device_informationSvg,
+	"materialicons/perm_identity.svg":                               materialiconsPerm_identitySvg,
+	"materialicons/perm_media.svg":                                  materialiconsPerm_mediaSvg,
+	"materialicons/perm_phone_msg.svg":                              materialiconsPerm_phone_msgSvg,
+	"materialicons/perm_scan_wifi.svg":                              materialiconsPerm_scan_wifiSvg,
+	"materialicons/person.svg":                                      materialiconsPersonSvg,
+	"materialicons/person_add.svg":                                  materialiconsPerson_addSvg,
+	"materialicons/person_outline.svg":                              materialiconsPerson_outlineSvg,
+	"materialicons/person_pin.svg":                                  materialiconsPerson_pinSvg,
+	"materialicons/personal_video.svg":                              materialiconsPersonal_videoSvg,
+	"materialicons/phone.svg":                                       materialiconsPhoneSvg,
+	"materialicons/phone_android.svg":                               materialiconsPhone_androidSvg,
+	"materialicons/phone_bluetooth_speaker.svg":                     materialiconsPhone_bluetooth_speakerSvg,
+	"materialicons/phone_forwarded.svg":                             materialiconsPhone_forwardedSvg,
+	"materialicons/phone_in_talk.svg":                               materialiconsPhone_in_talkSvg,
+	"materialicons/phone_iphone.svg":                                materialiconsPhone_iphoneSvg,
+	"materialicons/phone_locked.svg":                                materialiconsPhone_lockedSvg,
+	"materialicons/phone_missed.svg":                                materialiconsPhone_missedSvg,
+	"materialicons/phone_paused.svg":                                materialiconsPhone_pausedSvg,
+	"materialicons/phonelink.svg":                                   materialiconsPhonelinkSvg,
+	"materialicons/phonelink_off.svg":                               materialiconsPhonelink_offSvg,
+	"materialicons/photo.svg":                                       materialiconsPhotoSvg,
+	"materialicons/photo_album.svg":                                 materialiconsPhoto_albumSvg,
+	"materialicons/photo_camera.svg":                                materialiconsPhoto_cameraSvg,
+	"materialicons/photo_library.svg":                               materialiconsPhoto_librarySvg,
+	"materialicons/picture_as_pdf.svg":                              materialiconsPicture_as_pdfSvg,
+	"materialicons/picture_in_picture.svg":                          materialiconsPicture_in_pictureSvg,
+	"materialicons/pin_drop.svg":                                    materialiconsPin_dropSvg,
+	"materialicons/place.svg":                                       materialiconsPlaceSvg,
+	"materialicons/play_arrow.svg":                                  materialiconsPlay_arrowSvg,
+	"materialicons/play_circle_filled.svg":                          materialiconsPlay_circle_filledSvg,
+	"materialicons/play_circle_outline.svg":                         materialiconsPlay_circle_outlineSvg,
+	"materialicons/play_for_work.svg":                               materialiconsPlay_for_workSvg,
+	"materialicons/playlist_add.svg":                                materialiconsPlaylist_addSvg,
+	"materialicons/plus_one.svg":                                    materialiconsPlus_oneSvg,
+	"materialicons/poll.svg":                                        materialiconsPollSvg,
+	"materialicons/polymer.svg":                                     materialiconsPolymerSvg,
+	"materialicons/portable_wifi_off.svg":                           materialiconsPortable_wifi_offSvg,
+	"materialicons/portrait.svg":                                    materialiconsPortraitSvg,
+	"materialicons/power.svg":                                       materialiconsPowerSvg,
+	"materialicons/power_input.svg":                                 materialiconsPower_inputSvg,
+	"materialicons/power_settings_new.svg":                          materialiconsPower_settings_newSvg,
+	"materialicons/present_to_all.svg":                              materialiconsPresent_to_allSvg,
+	"materialicons/print.svg":                                       materialiconsPrintSvg,
+	"materialicons/public.svg":                                      materialiconsPublicSvg,
+	"materialicons/publish.svg":                                     materialiconsPublishSvg,
+	"materialicons/query_builder.svg":                               materialiconsQuery_builderSvg,
+	"materialicons/question_answer.svg":                             materialiconsQuestion_answerSvg,
+	"materialicons/queue.svg":                                       materialiconsQueueSvg,
+	"materialicons/queue_music.svg":                                 materialiconsQueue_musicSvg,
+	"materialicons/radio.svg":                                       materialiconsRadioSvg,
+	"materialicons/radio_button_checked.svg":                        materialiconsRadio_button_checkedSvg,
+	"materialicons/radio_button_unchecked.svg":                      materialiconsRadio_button_uncheckedSvg,
+	"materialicons/rate_review.svg":                                 materialiconsRate_reviewSvg,
+	"materialicons/receipt.svg":                                     materialiconsReceiptSvg,
+	"materialicons/recent_actors.svg":                               materialiconsRecent_actorsSvg,
+	"materialicons/redeem.svg":                                      materialiconsRedeemSvg,
+	"materialicons/redo.svg":                                        materialiconsRedoSvg,
+	"materialicons/refresh.svg":                                     materialiconsRefreshSvg,
+	"materialicons/remove.svg":                                      materialiconsRemoveSvg,
+	"materialicons/remove_circle.svg":                               materialiconsRemove_circleSvg,
+	"materialicons/remove_circle_outline.svg":                       materialiconsRemove_circle_outlineSvg,
+	"materialicons/remove_red_eye.svg":                              materialiconsRemove_red_eyeSvg,
+	"materialicons/repeat.svg":                                      materialiconsRepeatSvg,
+	"materialicons/repeat_one.svg":                                  materialiconsRepeat_oneSvg,
+	"materialicons/replay.svg":                                      materialiconsReplaySvg,
+	"materialicons/replay_10.svg":                                   materialiconsReplay_10Svg,
+	"materialicons/replay_30.svg":                                   materialiconsReplay_30Svg,
+	"materialicons/replay_5.svg":                                    materialiconsReplay_5Svg,
+	"materialicons/reply.svg":                                       materialiconsReplySvg,
+	"materialicons/reply_all.svg":                                   materialiconsReply_allSvg,
+	"materialicons/report.svg":                                      materialiconsReportSvg,
+	"materialicons/report_problem.svg":                              materialiconsReport_problemSvg,
+	"materialicons/restaurant_menu.svg":                             materialiconsRestaurant_menuSvg,
+	"materialicons/restore.svg":                                     materialiconsRestoreSvg,
+	"materialicons/ring_volume.svg":                                 materialiconsRing_volumeSvg,
+	"materialicons/room.svg":                                        materialiconsRoomSvg,
+	"materialicons/rotate_90_degrees_ccw.svg":                       materialiconsRotate_90_degrees_ccwSvg,
+	"materialicons/rotate_left.svg":                                 materialiconsRotate_leftSvg,
+	"materialicons/rotate_right.svg":                                materialiconsRotate_rightSvg,
+	"materialicons/router.svg":                                      materialiconsRouterSvg,
+	"materialicons/satellite.svg":                                   materialiconsSatelliteSvg,
+	"materialicons/save.svg":                                        materialiconsSaveSvg,
+	"materialicons/scanner.svg":                                     materialiconsScannerSvg,
+	"materialicons/schedule.svg":                                    materialiconsScheduleSvg,
+	"materialicons/school.svg":                                      materialiconsSchoolSvg,
+	"materialicons/screen_lock_landscape.svg":                       materialiconsScreen_lock_landscapeSvg,
+	"materialicons/screen_lock_portrait.svg":                        materialiconsScreen_lock_portraitSvg,
+	"materialicons/screen_lock_rotation.svg":                        materialiconsScreen_lock_rotationSvg,
+	"materialicons/screen_rotation.svg":                             materialiconsScreen_rotationSvg,
+	"materialicons/sd_card.svg":                                     materialiconsSd_cardSvg,
+	"materialicons/sd_storage.svg":                                  materialiconsSd_storageSvg,
+	"materialicons/search.svg":                                      materialiconsSearchSvg,
+	"materialicons/security.svg":                                    materialiconsSecuritySvg,
+	"materialicons/select_all.svg":                                  materialiconsSelect_allSvg,
+	"materialicons/send.svg":                                        materialiconsSendSvg,
+	"materialicons/settings.svg":                                    materialiconsSettingsSvg,
+	"materialicons/settings_applications.svg":                       materialiconsSettings_applicationsSvg,
+	"materialicons/settings_backup_restore.svg":                     materialiconsSettings_backup_restoreSvg,
+	"materialicons/settings_bluetooth.svg":                          materialiconsSettings_bluetoothSvg,
+	"materialicons/settings_brightness.svg":                         materialiconsSettings_brightnessSvg,
+	"materialicons/settings_cell.svg":                               materialiconsSettings_cellSvg,
+	"materialicons/settings_ethernet.svg":                           materialiconsSettings_ethernetSvg,
+	"materialicons/settings_input_antenna.svg":                      materialiconsSettings_input_antennaSvg,
+	"materialicons/settings_input_component.svg":                    materialiconsSettings_input_componentSvg,
+	"materialicons/settings_input_composite.svg":                    materialiconsSettings_input_compositeSvg,
+	"materialicons/settings_input_hdmi.svg":                         materialiconsSettings_input_hdmiSvg,
+	"materialicons/settings_input_svideo.svg":                       materialiconsSettings_input_svideoSvg,
+	"materialicons/settings_overscan.svg":                           materialiconsSettings_overscanSvg,
+	"materialicons/settings_phone.svg":                              materialiconsSettings_phoneSvg,
+	"materialicons/settings_power.svg":                              materialiconsSettings_powerSvg,
+	"materialicons/settings_remote.svg":                             materialiconsSettings_remoteSvg,
+	"materialicons/settings_system_daydream.svg":                    materialiconsSettings_system_daydreamSvg,
+	"materialicons/settings_voice.svg":                              materialiconsSettings_voiceSvg,
+	"materialicons/share.svg":                                       materialiconsShareSvg,
+	"materialicons/shop.svg":                                        materialiconsShopSvg,
+	"materialicons/shop_two.svg":                                    materialiconsShop_twoSvg,
+	"materialicons/shopping_basket.svg":                             materialiconsShopping_basketSvg,
+	"materialicons/shopping_cart.svg":                               materialiconsShopping_cartSvg,
+	"materialicons/shuffle.svg":                                     materialiconsShuffleSvg,
+	"materialicons/signal_cellular_0_bar.svg":                       materialiconsSignal_cellular_0_barSvg,
+	"materialicons/signal_cellular_1_bar.svg":                       materialiconsSignal_cellular_1_barSvg,
+	"materialicons/signal_cellular_2_bar.svg":                       materialiconsSignal_cellular_2_barSvg,
+	"materialicons/signal_cellular_3_bar.svg":                       materialiconsSignal_cellular_3_barSvg,
+	"materialicons/signal_cellular_4_bar.svg":                       materialiconsSignal_cellular_4_barSvg,
 	"materialicons/signal_cellular_connected_no_internet_0_bar.svg": materialiconsSignal_cellular_connected_no_internet_0_barSvg,
 	"materialicons/signal_cellular_connected_no_internet_1_bar.svg": materialiconsSignal_cellular_connected_no_internet_1_barSvg,
 	"materialicons/signal_cellular_connected_no_internet_2_bar.svg": materialiconsSignal_cellular_connected_no_internet_2_barSvg,
 	"materialicons/signal_cellular_connected_no_internet_3_bar.svg": materialiconsSignal_cellular_connected_no_internet_3_barSvg,
 	"materialicons/signal_cellular_connected_no_internet_4_bar.svg": materialiconsSignal_cellular_connected_no_internet_4_barSvg,
-	"materialicons/signal_cellular_no_sim.svg": materialiconsSignal_cellular_no_simSvg,
-	"materialicons/signal_cellular_null.svg": materialiconsSignal_cellular_nullSvg,
-	"materialicons/signal_cellular_off.svg": materialiconsSignal_cellular_offSvg,
-	"materialicons/signal_wifi_0_bar.svg": materialiconsSignal_wifi_0_barSvg,
-	"materialicons/signal_wifi_1_bar.svg": materialiconsSignal_wifi_1_barSvg,
-	"materialicons/signal_wifi_1_bar_lock.svg": materialiconsSignal_wifi_1_bar_lockSvg,
-	"materialicons/signal_wifi_2_bar.svg": materialiconsSignal_wifi_2_barSvg,
-	"materialicons/signal_wifi_2_bar_lock.svg": materialiconsSignal_wifi_2_bar_lockSvg,
-	"materialicons/signal_wifi_3_bar.svg": materialiconsSignal_wifi_3_barSvg,
-	"materialicons/signal_wifi_3_bar_lock.svg": materialiconsSignal_wifi_3_bar_lockSvg,
-	"materialicons/signal_wifi_4_bar.svg": materialiconsSignal_wifi_4_barSvg,
-	"materialicons/signal_wifi_4_bar_lock.svg": materialiconsSignal_wifi_4_bar_lockSvg,
-	"materialicons/signal_wifi_off.svg": materialiconsSignal_wifi_offSvg,
-	"materialicons/sim_card.svg": materialiconsSim_cardSvg,
-	"materialicons/sim_card_alert.svg": materialiconsSim_card_alertSvg,
-	"materialicons/skip_next.svg": materialiconsSkip_nextSvg,
-	"materialicons/skip_previous.svg": materialiconsSkip_previousSvg,
-	"materialicons/slideshow.svg": materialiconsSlideshowSvg,
-	"materialicons/smartphone.svg": materialiconsSmartphoneSvg,
-	"materialicons/sms.svg": materialiconsSmsSvg,
-	"materialicons/sms_failed.svg": materialiconsSms_failedSvg,
-	"materialicons/snooze.svg": materialiconsSnoozeSvg,
-	"materialicons/sort.svg": materialiconsSortSvg,
-	"materialicons/space_bar.svg": materialiconsSpace_barSvg,
-	"materialicons/speaker.svg": materialiconsSpeakerSvg,
-	"materialicons/speaker_group.svg": materialiconsSpeaker_groupSvg,
-	"materialicons/speaker_notes.svg": materialiconsSpeaker_notesSvg,
-	"materialicons/speaker_phone.svg": materialiconsSpeaker_phoneSvg,
-	"materialicons/spellcheck.svg": materialiconsSpellcheckSvg,
-	"materialicons/stars.svg": materialiconsStarsSvg,
-	"materialicons/stay_current_landscape.svg": materialiconsStay_current_landscapeSvg,
-	"materialicons/stay_current_portrait.svg": materialiconsStay_current_portraitSvg,
-	"materialicons/stay_primary_landscape.svg": materialiconsStay_primary_landscapeSvg,
-	"materialicons/stay_primary_portrait.svg": materialiconsStay_primary_portraitSvg,
-	"materialicons/stop.svg": materialiconsStopSvg,
-	"materialicons/storage.svg": materialiconsStorageSvg,
-	"materialicons/store.svg": materialiconsStoreSvg,
-	"materialicons/store_mall_directory.svg": materialiconsStore_mall_directorySvg,
-	"materialicons/straighten.svg": materialiconsStraightenSvg,
-	"materialicons/strikethrough_s.svg": materialiconsStrikethrough_sSvg,
-	"materialicons/style.svg": materialiconsStyleSvg,
-	"materialicons/subject.svg": materialiconsSubjectSvg,
-	"materialicons/subtitles.svg": materialiconsSubtitlesSvg,
-	"materialicons/supervisor_account.svg": materialiconsSupervisor_accountSvg,
-	"materialicons/surround_sound.svg": materialiconsSurround_soundSvg,
-	"materialicons/swap_calls.svg": materialiconsSwap_callsSvg,
-	"materialicons/swap_horiz.svg": materialiconsSwap_horizSvg,
-	"materialicons/swap_vert.svg": materialiconsSwap_vertSvg,
-	"materialicons/swap_vertical_circle.svg": materialiconsSwap_vertical_circleSvg,
-	"materialicons/switch_camera.svg": materialiconsSwitch_cameraSvg,
-	"materialicons/switch_video.svg": materialiconsSwitch_videoSvg,
-	"materialicons/sync.svg": materialiconsSyncSvg,
-	"materialicons/sync_disabled.svg": materialiconsSync_disabledSvg,
-	"materialicons/sync_problem.svg": materialiconsSync_problemSvg,
-	"materialicons/system_update.svg": materialiconsSystem_updateSvg,
-	"materialicons/system_update_alt.svg": materialiconsSystem_update_altSvg,
-	"materialicons/tab.svg": materialiconsTabSvg,
-	"materialicons/tab_unselected.svg": materialiconsTab_unselectedSvg,
-	"materialicons/tablet.svg": materialiconsTabletSvg,
-	"materialicons/tablet_android.svg": materialiconsTablet_androidSvg,
-	"materialicons/tablet_mac.svg": materialiconsTablet_macSvg,
-	"materialicons/tag_faces.svg": materialiconsTag_facesSvg,
-	"materialicons/tap_and_play.svg": materialiconsTap_and_playSvg,
-	"materialicons/terrain.svg": materialiconsTerrainSvg,
-	"materialicons/text_format.svg": materialiconsText_formatSvg,
-	"materialicons/textsms.svg": materialiconsTextsmsSvg,
-	"materialicons/texture.svg": materialiconsTextureSvg,
-	"materialicons/theaters.svg": materialiconsTheatersSvg,
-	"materialicons/thumb_down.svg": materialiconsThumb_downSvg,
-	"materialicons/thumb_up.svg": materialiconsThumb_upSvg,
-	"materialicons/thumbs_up_down.svg": materialiconsThumbs_up_downSvg,
-	"materialicons/time_to_leave.svg": materialiconsTime_to_leaveSvg,
-	"materialicons/timelapse.svg": materialiconsTimelapseSvg,
-	"materialicons/timer.svg": materialiconsTimerSvg,
-	"materialicons/timer_10.svg": materialiconsTimer_10Svg,
-	"materialicons/timer_3.svg": materialiconsTimer_3Svg,
-	"materialicons/timer_off.svg": materialiconsTimer_offSvg,
-	"materialicons/toc.svg": materialiconsTocSvg,
-	"materialicons/today.svg": materialiconsTodaySvg,
-	"materialicons/toll.svg": materialiconsTollSvg,
-	"materialicons/tonality.svg": materialiconsTonalitySvg,
-	"materialicons/toys.svg": materialiconsToysSvg,
-	"materialicons/track_changes.svg": materialiconsTrack_changesSvg,
-	"materialicons/traffic.svg": materialiconsTrafficSvg,
-	"materialicons/transform.svg": materialiconsTransformSvg,
-	"materialicons/translate.svg": materialiconsTranslateSvg,
-	"materialicons/trending_down.svg": materialiconsTrending_downSvg,
-	"materialicons/trending_flat.svg": materialiconsTrending_flatSvg,
-	"materialicons/trending_up.svg": materialiconsTrending_upSvg,
-	"materialicons/tune.svg": materialiconsTuneSvg,
-	"materialicons/turned_in.svg": materialiconsTurned_inSvg,
-	"materialicons/turned_in_not.svg": materialiconsTurned_in_notSvg,
-	"materialicons/tv.svg": materialiconsTvSvg,
-	"materialicons/undo.svg": materialiconsUndoSvg,
-	"materialicons/unfold_less.svg": materialiconsUnfold_lessSvg,
-	"materialicons/unfold_more.svg": materialiconsUnfold_moreSvg,
-	"materialicons/usb.svg": materialiconsUsbSvg,
-	"materialicons/verified_user.svg": materialiconsVerified_userSvg,
-	"materialicons/vertical_align_bottom.svg": materialiconsVertical_align_bottomSvg,
-	"materialicons/vertical_align_center.svg": materialiconsVertical_align_centerSvg,
-	"materialicons/vertical_align_top.svg": materialiconsVertical_align_topSvg,
-	"materialicons/vibration.svg": materialiconsVibrationSvg,
-	"materialicons/video_library.svg": materialiconsVideo_librarySvg,
-	"materialicons/videocam.svg": materialiconsVideocamSvg,
-	"materialicons/videocam_off.svg": materialiconsVideocam_offSvg,
-	"materialicons/view_agenda.svg": materialiconsView_agendaSvg,
-	"materialicons/view_array.svg": materialiconsView_arraySvg,
-	"materialicons/view_carousel.svg": materialiconsView_carouselSvg,
-	"materialicons/view_column.svg": materialiconsView_columnSvg,
-	"materialicons/view_comfy.svg": materialiconsView_comfySvg,
-	"materialicons/view_compact.svg": materialiconsView_compactSvg,
-	"materialicons/view_day.svg": materialiconsView_daySvg,
-	"materialicons/view_headline.svg": materialiconsView_headlineSvg,
-	"materialicons/view_list.svg": materialiconsView_listSvg,
-	"materialicons/view_module.svg": materialiconsView_moduleSvg,
-	"materialicons/view_quilt.svg": materialiconsView_quiltSvg,
-	"materialicons/view_stream.svg": materialiconsView_streamSvg,
-	"materialicons/view_week.svg": materialiconsView_weekSvg,
-	"materialicons/visibility.svg": materialiconsVisibilitySvg,
-	"materialicons/visibility_off.svg": materialiconsVisibility_offSvg,
-	"materialicons/voice_chat.svg": materialiconsVoice_chatSvg,
-	"materialicons/voicemail.svg": materialiconsVoicemailSvg,
-	"materialicons/volume_down.svg": materialiconsVolume_downSvg,
-	"materialicons/volume_mute.svg": materialiconsVolume_muteSvg,
-	"materialicons/volume_off.svg": materialiconsVolume_offSvg,
-	"materialicons/volume_up.svg": materialiconsVolume_upSvg,
-	"materialicons/vpn_key.svg": materialiconsVpn_keySvg,
-	"materialicons/vpn_lock.svg": materialiconsVpn_lockSvg,
-	"materialicons/wallpaper.svg": materialiconsWallpaperSvg,
-	"materialicons/warning.svg": materialiconsWarningSvg,
-	"materialicons/watch.svg": materialiconsWatchSvg,
-	"materialicons/wb_auto.svg": materialiconsWb_autoSvg,
-	"materialicons/wb_cloudy.svg": materialiconsWb_cloudySvg,
-	"materialicons/wb_incandescent.svg": materialiconsWb_incandescentSvg,
-	"materialicons/wb_iridescent.svg": materialiconsWb_iridescentSvg,
-	"materialicons/wb_sunny.svg": materialiconsWb_sunnySvg,
-	"materialicons/wc.svg": materialiconsWcSvg,
-	"materialicons/web.svg": materialiconsWebSvg,
-	"materialicons/whatshot.svg": materialiconsWhatshotSvg,
-	"materialicons/widgets.svg": materialiconsWidgetsSvg,
-	"materialicons/wifi.svg": materialiconsWifiSvg,
-	"materialicons/wifi_lock.svg": materialiconsWifi_lockSvg,
-	"materialicons/wifi_tethering.svg": materialiconsWifi_tetheringSvg,
-	"materialicons/work.svg": materialiconsWorkSvg,
-	"materialicons/wrap_text.svg": materialiconsWrap_textSvg,
-	"materialicons/youtube_searched_for.svg": materialiconsYoutube_searched_forSvg,
+	"materialicons/signal_cellular_no_sim.svg":                      materialiconsSignal_cellular_no_simSvg,
+	"materialicons/signal_cellular_null.svg":                        materialiconsSignal_cellular_nullSvg,
+	"materialicons/signal_cellular_off.svg":                         materialiconsSignal_cellular_offSvg,
+	"materialicons/signal_wifi_0_bar.svg":                           materialiconsSignal_wifi_0_barSvg,
+	"materialicons/signal_wifi_1_bar.svg":                           materialiconsSignal_wifi_1_barSvg,
+	"materialicons/signal_wifi_1_bar_lock.svg":                      materialiconsSignal_wifi_1_bar_lockSvg,
+	"materialicons/signal_wifi_2_bar.svg":                           materialiconsSignal_wifi_2_barSvg,
+	"materialicons/signal_wifi_2_bar_lock.svg":                      materialiconsSignal_wifi_2_bar_lockSvg,
+	"materialicons/signal_wifi_3_bar.svg":                           materialiconsSignal_wifi_3_barSvg,
+	"materialicons/signal_wifi_3_bar_lock.svg":                      materialiconsSignal_wifi_3_bar_lockSvg,
+	"materialicons/signal_wifi_4_bar.svg":                           materialiconsSignal_wifi_4_barSvg,
+	"materialicons/signal_wifi_4_bar_lock.svg":                      materialiconsSignal_wifi_4_bar_lockSvg,
+	"materialicons/signal_wifi_off.svg":                             materialiconsSignal_wifi_offSvg,
+	"materialicons/sim_card.svg":                                    materialiconsSim_cardSvg,
+	"materialicons/sim_card_alert.svg":                              materialiconsSim_card_alertSvg,
+	"materialicons/skip_next.svg":                                   materialiconsSkip_nextSvg,
+	"materialicons/skip_previous.svg":                               materialiconsSkip_previousSvg,
+	"materialicons/slideshow.svg":                                   materialiconsSlideshowSvg,
+	"materialicons/smartphone.svg":                                  materialiconsSmartphoneSvg,
+	"materialicons/sms.svg":                                         materialiconsSmsSvg,
+	"materialicons/sms_failed.svg":                                  materialiconsSms_failedSvg,
+	"materialicons/snooze.svg":                                      materialiconsSnoozeSvg,
+	"materialicons/sort.svg":                                        materialiconsSortSvg,
+	"materialicons/space_bar.svg":                                   materialiconsSpace_barSvg,
+	"materialicons/speaker.svg":                                     materialiconsSpeakerSvg,
+	"materialicons/speaker_group.svg":                               materialiconsSpeaker_groupSvg,
+	"materialicons/speaker_notes.svg":                               materialiconsSpeaker_notesSvg,
+	"materialicons/speaker_phone.svg":                               materialiconsSpeaker_phoneSvg,
+	"materialicons/spellcheck.svg":                                  materialiconsSpellcheckSvg,
+	"materialicons/stars.svg":                                       materialiconsStarsSvg,
+	"materialicons/stay_current_landscape.svg":                      materialiconsStay_current_landscapeSvg,
+	"materialicons/stay_current_portrait.svg":                       materialiconsStay_current_portraitSvg,
+	"materialicons/stay_primary_landscape.svg":                      materialiconsStay_primary_landscapeSvg,
+	"materialicons/stay_primary_portrait.svg":                       materialiconsStay_primary_portraitSvg,
+	"materialicons/stop.svg":                                        materialiconsStopSvg,
+	"materialicons/storage.svg":                                     materialiconsStorageSvg,
+	"materialicons/store.svg":                                       materialiconsStoreSvg,
+	"materialicons/store_mall_directory.svg":                        materialiconsStore_mall_directorySvg,
+	"materialicons/straighten.svg":                                  materialiconsStraightenSvg,
+	"materialicons/strikethrough_s.svg":                             materialiconsStrikethrough_sSvg,
+	"materialicons/style.svg":                                       materialiconsStyleSvg,
+	"materialicons/subject.svg":                                     materialiconsSubjectSvg,
+	"materialicons/subtitles.svg":                                   materialiconsSubtitlesSvg,
+	"materialicons/supervisor_account.svg":                          materialiconsSupervisor_accountSvg,
+	"materialicons/surround_sound.svg":                              materialiconsSurround_soundSvg,
+	"materialicons/swap_calls.svg":                                  materialiconsSwap_callsSvg,
+	"materialicons/swap_horiz.svg":                                  materialiconsSwap_horizSvg,
+	"materialicons/swap_vert.svg":                                   materialiconsSwap_vertSvg,
+	"materialicons/swap_vertical_circle.svg":                        materialiconsSwap_vertical_circleSvg,
+	"materialicons/switch_camera.svg":                               materialiconsSwitch_cameraSvg,
+	"materialicons/switch_video.svg":                                materialiconsSwitch_videoSvg,
+	"materialicons/sync.svg":                                        materialiconsSyncSvg,
+	"materialicons/sync_disabled.svg":                               materialiconsSync_disabledSvg,
+	"materialicons/sync_problem.svg":                                materialiconsSync_problemSvg,
+	"materialicons/system_update.svg":                               materialiconsSystem_updateSvg,
+	"materialicons/system_update_alt.svg":                           materialiconsSystem_update_altSvg,
+	"materialicons/tab.svg":                                         materialiconsTabSvg,
+	"materialicons/tab_unselected.svg":                              materialiconsTab_unselectedSvg,
+	"materialicons/tablet.svg":                                      materialiconsTabletSvg,
+	"materialicons/tablet_android.svg":                              materialiconsTablet_androidSvg,
+	"materialicons/tablet_mac.svg":                                  materialiconsTablet_macSvg,
+	"materialicons/tag_faces.svg":                                   materialiconsTag_facesSvg,
+	"materialicons/tap_and_play.svg":                                materialiconsTap_and_playSvg,
+	"materialicons/terrain.svg":                                     materialiconsTerrainSvg,
+	"materialicons/text_format.svg":                                 materialiconsText_formatSvg,
+	"materialicons/textsms.svg":                                     materialiconsTextsmsSvg,
+	"materialicons/texture.svg":                                     materialiconsTextureSvg,
+	"materialicons/theaters.svg":                                    materialiconsTheatersSvg,
+	"materialicons/thumb_down.svg":                                  materialiconsThumb_downSvg,
+	"materialicons/thumb_up.svg":                                    materialiconsThumb_upSvg,
+	"materialicons/thumbs_up_down.svg":                              materialiconsThumbs_up_downSvg,
+	"materialicons/time_to_leave.svg":                               materialiconsTime_to_leaveSvg,
+	"materialicons/timelapse.svg":                                   materialiconsTimelapseSvg,
+	"materialicons/timer.svg":                                       materialiconsTimerSvg,
+	"materialicons/timer_10.svg":                                    materialiconsTimer_10Svg,
+	"materialicons/timer_3.svg":                                     materialiconsTimer_3Svg,
+	"materialicons/timer_off.svg":                                   materialiconsTimer_offSvg,
+	"materialicons/toc.svg":                                         materialiconsTocSvg,
+	"materialicons/today.svg":                                       materialiconsTodaySvg,
+	"materialicons/toll.svg":                                        materialiconsTollSvg,
+	"materialicons/tonality.svg":                                    materialiconsTonalitySvg,
+	"materialicons/toys.svg":                                        materialiconsToysSvg,
+	"materialicons/track_changes.svg":                               materialiconsTrack_changesSvg,
+	"materialicons/traffic.svg":                                     materialiconsTrafficSvg,
+	"materialicons/transform.svg":                                   materialiconsTransformSvg,
+	"materialicons/translate.svg":                                   materialiconsTranslateSvg,
+	"materialicons/trending_down.svg":                               materialiconsTrending_downSvg,
+	"materialicons/trending_flat.svg":                               materialiconsTrending_flatSvg,
+	"materialicons/trending_up.svg":                                 materialiconsTrending_upSvg,
+	"materialicons/tune.svg":                                        materialiconsTuneSvg,
+	"materialicons/turned_in.svg":                                   materialiconsTurned_inSvg,
+	"materialicons/turned_in_not.svg":                               materialiconsTurned_in_notSvg,
+	"materialicons/tv.svg":                                          materialiconsTvSvg,
+	"materialicons/undo.svg":                                        materialiconsUndoSvg,
+	"materialicons/unfold_less.svg":                                 materialiconsUnfold_lessSvg,
+	"materialicons/unfold_more.svg":                                 materialiconsUnfold_moreSvg,
+	"materialicons/usb.svg":                                         materialiconsUsbSvg,
+	"materialicons/verified_user.svg":                               materialiconsVerified_userSvg,
+	"materialicons/vertical_align_bottom.svg":                       materialiconsVertical_align_bottomSvg,
+	"materialicons/vertical_align_center.svg":                       materialiconsVertical_align_centerSvg,
+	"materialicons/vertical_align_top.svg":                          materialiconsVertical_align_topSvg,
+	"materialicons/vibration.svg":                                   materialiconsVibrationSvg,
+	"materialicons/video_library.svg":                               materialiconsVideo_librarySvg,
+	"materialicons/videocam.svg":                                    materialiconsVideocamSvg,
+	"materialicons/videocam_off.svg":                                materialiconsVideocam_offSvg,
+	"materialicons/view_agenda.svg":                                 materialiconsView_agendaSvg,
+	"materialicons/view_array.svg":                                  materialiconsView_arraySvg,
+	"materialicons/view_carousel.svg":                               materialiconsView_carouselSvg,
+	"materialicons/view_column.svg":                                 materialiconsView_columnSvg,
+	"materialicons/view_comfy.svg":                                  materialiconsView_comfySvg,
+	"materialicons/view_compact.svg":                                materialiconsView_compactSvg,
+	"materialicons/view_day.svg":                                    materialiconsView_daySvg,
+	"materialicons/view_headline.svg":                               materialiconsView_headlineSvg,
+	"materialicons/view_list.svg":                                   materialiconsView_listSvg,
+	"materialicons/view_module.svg":                                 materialiconsView_moduleSvg,
+	"materialicons/view_quilt.svg":                                  materialiconsView_quiltSvg,
+	"materialicons/view_stream.svg":                                 materialiconsView_streamSvg,
+	"materialicons/view_week.svg":                                   materialiconsView_weekSvg,
+	"materialicons/visibility.svg":                                  materialiconsVisibilitySvg,
+	"materialicons/visibility_off.svg":                              materialiconsVisibility_offSvg,
+	"materialicons/voice_chat.svg":                                  materialiconsVoice_chatSvg,
+	"materialicons/voicemail.svg":                                   materialiconsVoicemailSvg,
+	"materialicons/volume_down.svg":                                 materialiconsVolume_downSvg,
+	"materialicons/volume_mute.svg":                                 materialiconsVolume_muteSvg,
+	"materialicons/volume_off.svg":                                  materialiconsVolume_offSvg,
+	"materialicons/volume_up.svg":                                   materialiconsVolume_upSvg,
+	"materialicons/vpn_key.svg":                                     materialiconsVpn_keySvg,
+	"materialicons/vpn_lock.svg":                                    materialiconsVpn_lockSvg,
+	"materialicons/wallpaper.svg":                                   materialiconsWallpaperSvg,
+	"materialicons/warning.svg":                                     materialiconsWarningSvg,
+	"materialicons/watch.svg":                                       materialiconsWatchSvg,
+	"materialicons/wb_auto.svg":                                     materialiconsWb_autoSvg,
+	"materialicons/wb_cloudy.svg":                                   materialiconsWb_cloudySvg,
+	"materialicons/wb_incandescent.svg":                             materialiconsWb_incandescentSvg,
+	"materialicons/wb_iridescent.svg":                               materialiconsWb_iridescentSvg,
+	"materialicons/wb_sunny.svg":                                    materialiconsWb_sunnySvg,
+	"materialicons/wc.svg":                                          materialiconsWcSvg,
+	"materialicons/web.svg":                                         materialiconsWebSvg,
+	"materialicons/whatshot.svg":                                    materialiconsWhatshotSvg,
+	"materialicons/widgets.svg":                                     materialiconsWidgetsSvg,
+	"materialicons/wifi.svg":                                        materialiconsWifiSvg,
+	"materialicons/wifi_lock.svg":                                   materialiconsWifi_lockSvg,
+	"materialicons/wifi_tethering.svg":                              materialiconsWifi_tetheringSvg,
+	"materialicons/work.svg":                                        materialiconsWorkSvg,
+	"materialicons/wrap_text.svg":                                   materialiconsWrap_textSvg,
+	"materialicons/youtube_searched_for.svg":                        materialiconsYoutube_searched_forSvg,
 }
 
 // AssetDir returns the file names below a certain
@@ -17779,1664 +17779,863 @@ func AssetDir(name string) ([]string, error) {
 }
 
 type bintree struct {
-	Func func() (*asset, error)
+	Func     func() (*asset, error)
 	Children map[string]*bintree
 }
+
 var _bintree = &bintree{nil, map[string]*bintree{
 	"materialicons": &bintree{nil, map[string]*bintree{
-		"3d_rotation.svg": &bintree{materialicons3d_rotationSvg, map[string]*bintree{
-		}},
-		"access_alarm.svg": &bintree{materialiconsAccess_alarmSvg, map[string]*bintree{
-		}},
-		"access_alarms.svg": &bintree{materialiconsAccess_alarmsSvg, map[string]*bintree{
-		}},
-		"access_time.svg": &bintree{materialiconsAccess_timeSvg, map[string]*bintree{
-		}},
-		"accessibility.svg": &bintree{materialiconsAccessibilitySvg, map[string]*bintree{
-		}},
-		"account_balance.svg": &bintree{materialiconsAccount_balanceSvg, map[string]*bintree{
-		}},
-		"account_balance_wallet.svg": &bintree{materialiconsAccount_balance_walletSvg, map[string]*bintree{
-		}},
-		"account_box.svg": &bintree{materialiconsAccount_boxSvg, map[string]*bintree{
-		}},
-		"account_circle.svg": &bintree{materialiconsAccount_circleSvg, map[string]*bintree{
-		}},
-		"adb.svg": &bintree{materialiconsAdbSvg, map[string]*bintree{
-		}},
-		"add.svg": &bintree{materialiconsAddSvg, map[string]*bintree{
-		}},
-		"add_alarm.svg": &bintree{materialiconsAdd_alarmSvg, map[string]*bintree{
-		}},
-		"add_alert.svg": &bintree{materialiconsAdd_alertSvg, map[string]*bintree{
-		}},
-		"add_box.svg": &bintree{materialiconsAdd_boxSvg, map[string]*bintree{
-		}},
-		"add_circle.svg": &bintree{materialiconsAdd_circleSvg, map[string]*bintree{
-		}},
-		"add_circle_outline.svg": &bintree{materialiconsAdd_circle_outlineSvg, map[string]*bintree{
-		}},
-		"add_shopping_cart.svg": &bintree{materialiconsAdd_shopping_cartSvg, map[string]*bintree{
-		}},
-		"add_to_photos.svg": &bintree{materialiconsAdd_to_photosSvg, map[string]*bintree{
-		}},
-		"adjust.svg": &bintree{materialiconsAdjustSvg, map[string]*bintree{
-		}},
-		"airline_seat_flat.svg": &bintree{materialiconsAirline_seat_flatSvg, map[string]*bintree{
-		}},
-		"airline_seat_flat_angled.svg": &bintree{materialiconsAirline_seat_flat_angledSvg, map[string]*bintree{
-		}},
-		"airline_seat_individual_suite.svg": &bintree{materialiconsAirline_seat_individual_suiteSvg, map[string]*bintree{
-		}},
-		"airline_seat_legroom_extra.svg": &bintree{materialiconsAirline_seat_legroom_extraSvg, map[string]*bintree{
-		}},
-		"airline_seat_legroom_normal.svg": &bintree{materialiconsAirline_seat_legroom_normalSvg, map[string]*bintree{
-		}},
-		"airline_seat_legroom_reduced.svg": &bintree{materialiconsAirline_seat_legroom_reducedSvg, map[string]*bintree{
-		}},
-		"airline_seat_recline_extra.svg": &bintree{materialiconsAirline_seat_recline_extraSvg, map[string]*bintree{
-		}},
-		"airline_seat_recline_normal.svg": &bintree{materialiconsAirline_seat_recline_normalSvg, map[string]*bintree{
-		}},
-		"airplanemode_active.svg": &bintree{materialiconsAirplanemode_activeSvg, map[string]*bintree{
-		}},
-		"airplanemode_inactive.svg": &bintree{materialiconsAirplanemode_inactiveSvg, map[string]*bintree{
-		}},
-		"airplay.svg": &bintree{materialiconsAirplaySvg, map[string]*bintree{
-		}},
-		"alarm.svg": &bintree{materialiconsAlarmSvg, map[string]*bintree{
-		}},
-		"alarm_add.svg": &bintree{materialiconsAlarm_addSvg, map[string]*bintree{
-		}},
-		"alarm_off.svg": &bintree{materialiconsAlarm_offSvg, map[string]*bintree{
-		}},
-		"alarm_on.svg": &bintree{materialiconsAlarm_onSvg, map[string]*bintree{
-		}},
-		"album.svg": &bintree{materialiconsAlbumSvg, map[string]*bintree{
-		}},
-		"android.svg": &bintree{materialiconsAndroidSvg, map[string]*bintree{
-		}},
-		"announcement.svg": &bintree{materialiconsAnnouncementSvg, map[string]*bintree{
-		}},
-		"apps.svg": &bintree{materialiconsAppsSvg, map[string]*bintree{
-		}},
-		"archive.svg": &bintree{materialiconsArchiveSvg, map[string]*bintree{
-		}},
-		"arrow_back.svg": &bintree{materialiconsArrow_backSvg, map[string]*bintree{
-		}},
-		"arrow_drop_down.svg": &bintree{materialiconsArrow_drop_downSvg, map[string]*bintree{
-		}},
-		"arrow_drop_down_circle.svg": &bintree{materialiconsArrow_drop_down_circleSvg, map[string]*bintree{
-		}},
-		"arrow_drop_up.svg": &bintree{materialiconsArrow_drop_upSvg, map[string]*bintree{
-		}},
-		"arrow_forward.svg": &bintree{materialiconsArrow_forwardSvg, map[string]*bintree{
-		}},
-		"aspect_ratio.svg": &bintree{materialiconsAspect_ratioSvg, map[string]*bintree{
-		}},
-		"assessment.svg": &bintree{materialiconsAssessmentSvg, map[string]*bintree{
-		}},
-		"assignment.svg": &bintree{materialiconsAssignmentSvg, map[string]*bintree{
-		}},
-		"assignment_ind.svg": &bintree{materialiconsAssignment_indSvg, map[string]*bintree{
-		}},
-		"assignment_late.svg": &bintree{materialiconsAssignment_lateSvg, map[string]*bintree{
-		}},
-		"assignment_return.svg": &bintree{materialiconsAssignment_returnSvg, map[string]*bintree{
-		}},
-		"assignment_returned.svg": &bintree{materialiconsAssignment_returnedSvg, map[string]*bintree{
-		}},
-		"assignment_turned_in.svg": &bintree{materialiconsAssignment_turned_inSvg, map[string]*bintree{
-		}},
-		"assistant.svg": &bintree{materialiconsAssistantSvg, map[string]*bintree{
-		}},
-		"assistant_photo.svg": &bintree{materialiconsAssistant_photoSvg, map[string]*bintree{
-		}},
-		"attach_file.svg": &bintree{materialiconsAttach_fileSvg, map[string]*bintree{
-		}},
-		"attach_money.svg": &bintree{materialiconsAttach_moneySvg, map[string]*bintree{
-		}},
-		"attachment.svg": &bintree{materialiconsAttachmentSvg, map[string]*bintree{
-		}},
-		"audiotrack.svg": &bintree{materialiconsAudiotrackSvg, map[string]*bintree{
-		}},
-		"autorenew.svg": &bintree{materialiconsAutorenewSvg, map[string]*bintree{
-		}},
-		"av_timer.svg": &bintree{materialiconsAv_timerSvg, map[string]*bintree{
-		}},
-		"backspace.svg": &bintree{materialiconsBackspaceSvg, map[string]*bintree{
-		}},
-		"backup.svg": &bintree{materialiconsBackupSvg, map[string]*bintree{
-		}},
-		"battery_20.svg": &bintree{materialiconsBattery_20Svg, map[string]*bintree{
-		}},
-		"battery_30.svg": &bintree{materialiconsBattery_30Svg, map[string]*bintree{
-		}},
-		"battery_50.svg": &bintree{materialiconsBattery_50Svg, map[string]*bintree{
-		}},
-		"battery_60.svg": &bintree{materialiconsBattery_60Svg, map[string]*bintree{
-		}},
-		"battery_80.svg": &bintree{materialiconsBattery_80Svg, map[string]*bintree{
-		}},
-		"battery_90.svg": &bintree{materialiconsBattery_90Svg, map[string]*bintree{
-		}},
-		"battery_alert.svg": &bintree{materialiconsBattery_alertSvg, map[string]*bintree{
-		}},
-		"battery_charging_20.svg": &bintree{materialiconsBattery_charging_20Svg, map[string]*bintree{
-		}},
-		"battery_charging_30.svg": &bintree{materialiconsBattery_charging_30Svg, map[string]*bintree{
-		}},
-		"battery_charging_50.svg": &bintree{materialiconsBattery_charging_50Svg, map[string]*bintree{
-		}},
-		"battery_charging_60.svg": &bintree{materialiconsBattery_charging_60Svg, map[string]*bintree{
-		}},
-		"battery_charging_80.svg": &bintree{materialiconsBattery_charging_80Svg, map[string]*bintree{
-		}},
-		"battery_charging_90.svg": &bintree{materialiconsBattery_charging_90Svg, map[string]*bintree{
-		}},
-		"battery_charging_full.svg": &bintree{materialiconsBattery_charging_fullSvg, map[string]*bintree{
-		}},
-		"battery_full.svg": &bintree{materialiconsBattery_fullSvg, map[string]*bintree{
-		}},
-		"battery_std.svg": &bintree{materialiconsBattery_stdSvg, map[string]*bintree{
-		}},
-		"battery_unknown.svg": &bintree{materialiconsBattery_unknownSvg, map[string]*bintree{
-		}},
-		"beenhere.svg": &bintree{materialiconsBeenhereSvg, map[string]*bintree{
-		}},
-		"block.svg": &bintree{materialiconsBlockSvg, map[string]*bintree{
-		}},
-		"bluetooth.svg": &bintree{materialiconsBluetoothSvg, map[string]*bintree{
-		}},
-		"bluetooth_audio.svg": &bintree{materialiconsBluetooth_audioSvg, map[string]*bintree{
-		}},
-		"bluetooth_connected.svg": &bintree{materialiconsBluetooth_connectedSvg, map[string]*bintree{
-		}},
-		"bluetooth_disabled.svg": &bintree{materialiconsBluetooth_disabledSvg, map[string]*bintree{
-		}},
-		"bluetooth_searching.svg": &bintree{materialiconsBluetooth_searchingSvg, map[string]*bintree{
-		}},
-		"blur_circular.svg": &bintree{materialiconsBlur_circularSvg, map[string]*bintree{
-		}},
-		"blur_linear.svg": &bintree{materialiconsBlur_linearSvg, map[string]*bintree{
-		}},
-		"blur_off.svg": &bintree{materialiconsBlur_offSvg, map[string]*bintree{
-		}},
-		"blur_on.svg": &bintree{materialiconsBlur_onSvg, map[string]*bintree{
-		}},
-		"book.svg": &bintree{materialiconsBookSvg, map[string]*bintree{
-		}},
-		"bookmark.svg": &bintree{materialiconsBookmarkSvg, map[string]*bintree{
-		}},
-		"bookmark_border.svg": &bintree{materialiconsBookmark_borderSvg, map[string]*bintree{
-		}},
-		"border_all.svg": &bintree{materialiconsBorder_allSvg, map[string]*bintree{
-		}},
-		"border_bottom.svg": &bintree{materialiconsBorder_bottomSvg, map[string]*bintree{
-		}},
-		"border_clear.svg": &bintree{materialiconsBorder_clearSvg, map[string]*bintree{
-		}},
-		"border_color.svg": &bintree{materialiconsBorder_colorSvg, map[string]*bintree{
-		}},
-		"border_horizontal.svg": &bintree{materialiconsBorder_horizontalSvg, map[string]*bintree{
-		}},
-		"border_inner.svg": &bintree{materialiconsBorder_innerSvg, map[string]*bintree{
-		}},
-		"border_left.svg": &bintree{materialiconsBorder_leftSvg, map[string]*bintree{
-		}},
-		"border_outer.svg": &bintree{materialiconsBorder_outerSvg, map[string]*bintree{
-		}},
-		"border_right.svg": &bintree{materialiconsBorder_rightSvg, map[string]*bintree{
-		}},
-		"border_style.svg": &bintree{materialiconsBorder_styleSvg, map[string]*bintree{
-		}},
-		"border_top.svg": &bintree{materialiconsBorder_topSvg, map[string]*bintree{
-		}},
-		"border_vertical.svg": &bintree{materialiconsBorder_verticalSvg, map[string]*bintree{
-		}},
-		"brightness_1.svg": &bintree{materialiconsBrightness_1Svg, map[string]*bintree{
-		}},
-		"brightness_2.svg": &bintree{materialiconsBrightness_2Svg, map[string]*bintree{
-		}},
-		"brightness_3.svg": &bintree{materialiconsBrightness_3Svg, map[string]*bintree{
-		}},
-		"brightness_4.svg": &bintree{materialiconsBrightness_4Svg, map[string]*bintree{
-		}},
-		"brightness_5.svg": &bintree{materialiconsBrightness_5Svg, map[string]*bintree{
-		}},
-		"brightness_6.svg": &bintree{materialiconsBrightness_6Svg, map[string]*bintree{
-		}},
-		"brightness_7.svg": &bintree{materialiconsBrightness_7Svg, map[string]*bintree{
-		}},
-		"brightness_auto.svg": &bintree{materialiconsBrightness_autoSvg, map[string]*bintree{
-		}},
-		"brightness_high.svg": &bintree{materialiconsBrightness_highSvg, map[string]*bintree{
-		}},
-		"brightness_low.svg": &bintree{materialiconsBrightness_lowSvg, map[string]*bintree{
-		}},
-		"brightness_medium.svg": &bintree{materialiconsBrightness_mediumSvg, map[string]*bintree{
-		}},
-		"broken_image.svg": &bintree{materialiconsBroken_imageSvg, map[string]*bintree{
-		}},
-		"brush.svg": &bintree{materialiconsBrushSvg, map[string]*bintree{
-		}},
-		"bug_report.svg": &bintree{materialiconsBug_reportSvg, map[string]*bintree{
-		}},
-		"build.svg": &bintree{materialiconsBuildSvg, map[string]*bintree{
-		}},
-		"business.svg": &bintree{materialiconsBusinessSvg, map[string]*bintree{
-		}},
-		"cached.svg": &bintree{materialiconsCachedSvg, map[string]*bintree{
-		}},
-		"cake.svg": &bintree{materialiconsCakeSvg, map[string]*bintree{
-		}},
-		"call.svg": &bintree{materialiconsCallSvg, map[string]*bintree{
-		}},
-		"call_end.svg": &bintree{materialiconsCall_endSvg, map[string]*bintree{
-		}},
-		"call_made.svg": &bintree{materialiconsCall_madeSvg, map[string]*bintree{
-		}},
-		"call_merge.svg": &bintree{materialiconsCall_mergeSvg, map[string]*bintree{
-		}},
-		"call_missed.svg": &bintree{materialiconsCall_missedSvg, map[string]*bintree{
-		}},
-		"call_received.svg": &bintree{materialiconsCall_receivedSvg, map[string]*bintree{
-		}},
-		"call_split.svg": &bintree{materialiconsCall_splitSvg, map[string]*bintree{
-		}},
-		"camera.svg": &bintree{materialiconsCameraSvg, map[string]*bintree{
-		}},
-		"camera_alt.svg": &bintree{materialiconsCamera_altSvg, map[string]*bintree{
-		}},
-		"camera_front.svg": &bintree{materialiconsCamera_frontSvg, map[string]*bintree{
-		}},
-		"camera_rear.svg": &bintree{materialiconsCamera_rearSvg, map[string]*bintree{
-		}},
-		"camera_roll.svg": &bintree{materialiconsCamera_rollSvg, map[string]*bintree{
-		}},
-		"cancel.svg": &bintree{materialiconsCancelSvg, map[string]*bintree{
-		}},
-		"card_giftcard.svg": &bintree{materialiconsCard_giftcardSvg, map[string]*bintree{
-		}},
-		"card_membership.svg": &bintree{materialiconsCard_membershipSvg, map[string]*bintree{
-		}},
-		"card_travel.svg": &bintree{materialiconsCard_travelSvg, map[string]*bintree{
-		}},
-		"cast.svg": &bintree{materialiconsCastSvg, map[string]*bintree{
-		}},
-		"cast_connected.svg": &bintree{materialiconsCast_connectedSvg, map[string]*bintree{
-		}},
-		"center_focus_strong.svg": &bintree{materialiconsCenter_focus_strongSvg, map[string]*bintree{
-		}},
-		"center_focus_weak.svg": &bintree{materialiconsCenter_focus_weakSvg, map[string]*bintree{
-		}},
-		"change_history.svg": &bintree{materialiconsChange_historySvg, map[string]*bintree{
-		}},
-		"chat.svg": &bintree{materialiconsChatSvg, map[string]*bintree{
-		}},
-		"chat_bubble.svg": &bintree{materialiconsChat_bubbleSvg, map[string]*bintree{
-		}},
-		"chat_bubble_outline.svg": &bintree{materialiconsChat_bubble_outlineSvg, map[string]*bintree{
-		}},
-		"check.svg": &bintree{materialiconsCheckSvg, map[string]*bintree{
-		}},
-		"check_box.svg": &bintree{materialiconsCheck_boxSvg, map[string]*bintree{
-		}},
-		"check_box_outline_blank.svg": &bintree{materialiconsCheck_box_outline_blankSvg, map[string]*bintree{
-		}},
-		"check_circle.svg": &bintree{materialiconsCheck_circleSvg, map[string]*bintree{
-		}},
-		"chevron_left.svg": &bintree{materialiconsChevron_leftSvg, map[string]*bintree{
-		}},
-		"chevron_right.svg": &bintree{materialiconsChevron_rightSvg, map[string]*bintree{
-		}},
-		"chrome_reader_mode.svg": &bintree{materialiconsChrome_reader_modeSvg, map[string]*bintree{
-		}},
-		"class.svg": &bintree{materialiconsClassSvg, map[string]*bintree{
-		}},
-		"clear.svg": &bintree{materialiconsClearSvg, map[string]*bintree{
-		}},
-		"clear_all.svg": &bintree{materialiconsClear_allSvg, map[string]*bintree{
-		}},
-		"close.svg": &bintree{materialiconsCloseSvg, map[string]*bintree{
-		}},
-		"closed_caption.svg": &bintree{materialiconsClosed_captionSvg, map[string]*bintree{
-		}},
-		"cloud.svg": &bintree{materialiconsCloudSvg, map[string]*bintree{
-		}},
-		"cloud_circle.svg": &bintree{materialiconsCloud_circleSvg, map[string]*bintree{
-		}},
-		"cloud_done.svg": &bintree{materialiconsCloud_doneSvg, map[string]*bintree{
-		}},
-		"cloud_download.svg": &bintree{materialiconsCloud_downloadSvg, map[string]*bintree{
-		}},
-		"cloud_off.svg": &bintree{materialiconsCloud_offSvg, map[string]*bintree{
-		}},
-		"cloud_queue.svg": &bintree{materialiconsCloud_queueSvg, map[string]*bintree{
-		}},
-		"cloud_upload.svg": &bintree{materialiconsCloud_uploadSvg, map[string]*bintree{
-		}},
-		"code.svg": &bintree{materialiconsCodeSvg, map[string]*bintree{
-		}},
-		"collections.svg": &bintree{materialiconsCollectionsSvg, map[string]*bintree{
-		}},
-		"color_lens.svg": &bintree{materialiconsColor_lensSvg, map[string]*bintree{
-		}},
-		"colorize.svg": &bintree{materialiconsColorizeSvg, map[string]*bintree{
-		}},
-		"comment.svg": &bintree{materialiconsCommentSvg, map[string]*bintree{
-		}},
-		"compare.svg": &bintree{materialiconsCompareSvg, map[string]*bintree{
-		}},
-		"computer.svg": &bintree{materialiconsComputerSvg, map[string]*bintree{
-		}},
-		"confirmation_number.svg": &bintree{materialiconsConfirmation_numberSvg, map[string]*bintree{
-		}},
-		"contact_mail.svg": &bintree{materialiconsContact_mailSvg, map[string]*bintree{
-		}},
-		"contact_phone.svg": &bintree{materialiconsContact_phoneSvg, map[string]*bintree{
-		}},
-		"contacts.svg": &bintree{materialiconsContactsSvg, map[string]*bintree{
-		}},
-		"content_copy.svg": &bintree{materialiconsContent_copySvg, map[string]*bintree{
-		}},
-		"content_cut.svg": &bintree{materialiconsContent_cutSvg, map[string]*bintree{
-		}},
-		"content_paste.svg": &bintree{materialiconsContent_pasteSvg, map[string]*bintree{
-		}},
-		"control_point.svg": &bintree{materialiconsControl_pointSvg, map[string]*bintree{
-		}},
-		"control_point_duplicate.svg": &bintree{materialiconsControl_point_duplicateSvg, map[string]*bintree{
-		}},
-		"create.svg": &bintree{materialiconsCreateSvg, map[string]*bintree{
-		}},
-		"credit_card.svg": &bintree{materialiconsCredit_cardSvg, map[string]*bintree{
-		}},
-		"crop.svg": &bintree{materialiconsCropSvg, map[string]*bintree{
-		}},
-		"crop_16_9.svg": &bintree{materialiconsCrop_16_9Svg, map[string]*bintree{
-		}},
-		"crop_3_2.svg": &bintree{materialiconsCrop_3_2Svg, map[string]*bintree{
-		}},
-		"crop_5_4.svg": &bintree{materialiconsCrop_5_4Svg, map[string]*bintree{
-		}},
-		"crop_7_5.svg": &bintree{materialiconsCrop_7_5Svg, map[string]*bintree{
-		}},
-		"crop_din.svg": &bintree{materialiconsCrop_dinSvg, map[string]*bintree{
-		}},
-		"crop_free.svg": &bintree{materialiconsCrop_freeSvg, map[string]*bintree{
-		}},
-		"crop_landscape.svg": &bintree{materialiconsCrop_landscapeSvg, map[string]*bintree{
-		}},
-		"crop_original.svg": &bintree{materialiconsCrop_originalSvg, map[string]*bintree{
-		}},
-		"crop_portrait.svg": &bintree{materialiconsCrop_portraitSvg, map[string]*bintree{
-		}},
-		"crop_square.svg": &bintree{materialiconsCrop_squareSvg, map[string]*bintree{
-		}},
-		"dashboard.svg": &bintree{materialiconsDashboardSvg, map[string]*bintree{
-		}},
-		"data_usage.svg": &bintree{materialiconsData_usageSvg, map[string]*bintree{
-		}},
-		"dehaze.svg": &bintree{materialiconsDehazeSvg, map[string]*bintree{
-		}},
-		"delete.svg": &bintree{materialiconsDeleteSvg, map[string]*bintree{
-		}},
-		"description.svg": &bintree{materialiconsDescriptionSvg, map[string]*bintree{
-		}},
-		"desktop_mac.svg": &bintree{materialiconsDesktop_macSvg, map[string]*bintree{
-		}},
-		"desktop_windows.svg": &bintree{materialiconsDesktop_windowsSvg, map[string]*bintree{
-		}},
-		"details.svg": &bintree{materialiconsDetailsSvg, map[string]*bintree{
-		}},
-		"developer_board.svg": &bintree{materialiconsDeveloper_boardSvg, map[string]*bintree{
-		}},
-		"developer_mode.svg": &bintree{materialiconsDeveloper_modeSvg, map[string]*bintree{
-		}},
-		"devices.svg": &bintree{materialiconsDevicesSvg, map[string]*bintree{
-		}},
-		"dialer_sip.svg": &bintree{materialiconsDialer_sipSvg, map[string]*bintree{
-		}},
-		"dialpad.svg": &bintree{materialiconsDialpadSvg, map[string]*bintree{
-		}},
-		"directions.svg": &bintree{materialiconsDirectionsSvg, map[string]*bintree{
-		}},
-		"directions_bike.svg": &bintree{materialiconsDirections_bikeSvg, map[string]*bintree{
-		}},
-		"directions_boat.svg": &bintree{materialiconsDirections_boatSvg, map[string]*bintree{
-		}},
-		"directions_bus.svg": &bintree{materialiconsDirections_busSvg, map[string]*bintree{
-		}},
-		"directions_car.svg": &bintree{materialiconsDirections_carSvg, map[string]*bintree{
-		}},
-		"directions_railway.svg": &bintree{materialiconsDirections_railwaySvg, map[string]*bintree{
-		}},
-		"directions_run.svg": &bintree{materialiconsDirections_runSvg, map[string]*bintree{
-		}},
-		"directions_subway.svg": &bintree{materialiconsDirections_subwaySvg, map[string]*bintree{
-		}},
-		"directions_transit.svg": &bintree{materialiconsDirections_transitSvg, map[string]*bintree{
-		}},
-		"directions_walk.svg": &bintree{materialiconsDirections_walkSvg, map[string]*bintree{
-		}},
-		"disc_full.svg": &bintree{materialiconsDisc_fullSvg, map[string]*bintree{
-		}},
-		"dns.svg": &bintree{materialiconsDnsSvg, map[string]*bintree{
-		}},
-		"do_not_disturb.svg": &bintree{materialiconsDo_not_disturbSvg, map[string]*bintree{
-		}},
-		"do_not_disturb_alt.svg": &bintree{materialiconsDo_not_disturb_altSvg, map[string]*bintree{
-		}},
-		"dock.svg": &bintree{materialiconsDockSvg, map[string]*bintree{
-		}},
-		"domain.svg": &bintree{materialiconsDomainSvg, map[string]*bintree{
-		}},
-		"done.svg": &bintree{materialiconsDoneSvg, map[string]*bintree{
-		}},
-		"done_all.svg": &bintree{materialiconsDone_allSvg, map[string]*bintree{
-		}},
-		"drafts.svg": &bintree{materialiconsDraftsSvg, map[string]*bintree{
-		}},
-		"drive_eta.svg": &bintree{materialiconsDrive_etaSvg, map[string]*bintree{
-		}},
-		"dvr.svg": &bintree{materialiconsDvrSvg, map[string]*bintree{
-		}},
-		"edit.svg": &bintree{materialiconsEditSvg, map[string]*bintree{
-		}},
-		"email.svg": &bintree{materialiconsEmailSvg, map[string]*bintree{
-		}},
-		"equalizer.svg": &bintree{materialiconsEqualizerSvg, map[string]*bintree{
-		}},
-		"error.svg": &bintree{materialiconsErrorSvg, map[string]*bintree{
-		}},
-		"error_outline.svg": &bintree{materialiconsError_outlineSvg, map[string]*bintree{
-		}},
-		"event.svg": &bintree{materialiconsEventSvg, map[string]*bintree{
-		}},
-		"event_available.svg": &bintree{materialiconsEvent_availableSvg, map[string]*bintree{
-		}},
-		"event_busy.svg": &bintree{materialiconsEvent_busySvg, map[string]*bintree{
-		}},
-		"event_note.svg": &bintree{materialiconsEvent_noteSvg, map[string]*bintree{
-		}},
-		"event_seat.svg": &bintree{materialiconsEvent_seatSvg, map[string]*bintree{
-		}},
-		"exit_to_app.svg": &bintree{materialiconsExit_to_appSvg, map[string]*bintree{
-		}},
-		"expand_less.svg": &bintree{materialiconsExpand_lessSvg, map[string]*bintree{
-		}},
-		"expand_more.svg": &bintree{materialiconsExpand_moreSvg, map[string]*bintree{
-		}},
-		"explicit.svg": &bintree{materialiconsExplicitSvg, map[string]*bintree{
-		}},
-		"explore.svg": &bintree{materialiconsExploreSvg, map[string]*bintree{
-		}},
-		"exposure.svg": &bintree{materialiconsExposureSvg, map[string]*bintree{
-		}},
-		"exposure_neg_1.svg": &bintree{materialiconsExposure_neg_1Svg, map[string]*bintree{
-		}},
-		"exposure_neg_2.svg": &bintree{materialiconsExposure_neg_2Svg, map[string]*bintree{
-		}},
-		"exposure_plus_1.svg": &bintree{materialiconsExposure_plus_1Svg, map[string]*bintree{
-		}},
-		"exposure_plus_2.svg": &bintree{materialiconsExposure_plus_2Svg, map[string]*bintree{
-		}},
-		"exposure_zero.svg": &bintree{materialiconsExposure_zeroSvg, map[string]*bintree{
-		}},
-		"extension.svg": &bintree{materialiconsExtensionSvg, map[string]*bintree{
-		}},
-		"face.svg": &bintree{materialiconsFaceSvg, map[string]*bintree{
-		}},
-		"fast_forward.svg": &bintree{materialiconsFast_forwardSvg, map[string]*bintree{
-		}},
-		"fast_rewind.svg": &bintree{materialiconsFast_rewindSvg, map[string]*bintree{
-		}},
-		"favorite.svg": &bintree{materialiconsFavoriteSvg, map[string]*bintree{
-		}},
-		"favorite_border.svg": &bintree{materialiconsFavorite_borderSvg, map[string]*bintree{
-		}},
-		"feedback.svg": &bintree{materialiconsFeedbackSvg, map[string]*bintree{
-		}},
-		"file_download.svg": &bintree{materialiconsFile_downloadSvg, map[string]*bintree{
-		}},
-		"file_upload.svg": &bintree{materialiconsFile_uploadSvg, map[string]*bintree{
-		}},
-		"filter.svg": &bintree{materialiconsFilterSvg, map[string]*bintree{
-		}},
-		"filter_1.svg": &bintree{materialiconsFilter_1Svg, map[string]*bintree{
-		}},
-		"filter_2.svg": &bintree{materialiconsFilter_2Svg, map[string]*bintree{
-		}},
-		"filter_3.svg": &bintree{materialiconsFilter_3Svg, map[string]*bintree{
-		}},
-		"filter_4.svg": &bintree{materialiconsFilter_4Svg, map[string]*bintree{
-		}},
-		"filter_5.svg": &bintree{materialiconsFilter_5Svg, map[string]*bintree{
-		}},
-		"filter_6.svg": &bintree{materialiconsFilter_6Svg, map[string]*bintree{
-		}},
-		"filter_7.svg": &bintree{materialiconsFilter_7Svg, map[string]*bintree{
-		}},
-		"filter_8.svg": &bintree{materialiconsFilter_8Svg, map[string]*bintree{
-		}},
-		"filter_9.svg": &bintree{materialiconsFilter_9Svg, map[string]*bintree{
-		}},
-		"filter_9_plus.svg": &bintree{materialiconsFilter_9_plusSvg, map[string]*bintree{
-		}},
-		"filter_b_and_w.svg": &bintree{materialiconsFilter_b_and_wSvg, map[string]*bintree{
-		}},
-		"filter_center_focus.svg": &bintree{materialiconsFilter_center_focusSvg, map[string]*bintree{
-		}},
-		"filter_drama.svg": &bintree{materialiconsFilter_dramaSvg, map[string]*bintree{
-		}},
-		"filter_frames.svg": &bintree{materialiconsFilter_framesSvg, map[string]*bintree{
-		}},
-		"filter_hdr.svg": &bintree{materialiconsFilter_hdrSvg, map[string]*bintree{
-		}},
-		"filter_list.svg": &bintree{materialiconsFilter_listSvg, map[string]*bintree{
-		}},
-		"filter_none.svg": &bintree{materialiconsFilter_noneSvg, map[string]*bintree{
-		}},
-		"filter_tilt_shift.svg": &bintree{materialiconsFilter_tilt_shiftSvg, map[string]*bintree{
-		}},
-		"filter_vintage.svg": &bintree{materialiconsFilter_vintageSvg, map[string]*bintree{
-		}},
-		"find_in_page.svg": &bintree{materialiconsFind_in_pageSvg, map[string]*bintree{
-		}},
-		"find_replace.svg": &bintree{materialiconsFind_replaceSvg, map[string]*bintree{
-		}},
-		"flag.svg": &bintree{materialiconsFlagSvg, map[string]*bintree{
-		}},
-		"flare.svg": &bintree{materialiconsFlareSvg, map[string]*bintree{
-		}},
-		"flash_auto.svg": &bintree{materialiconsFlash_autoSvg, map[string]*bintree{
-		}},
-		"flash_off.svg": &bintree{materialiconsFlash_offSvg, map[string]*bintree{
-		}},
-		"flash_on.svg": &bintree{materialiconsFlash_onSvg, map[string]*bintree{
-		}},
-		"flight.svg": &bintree{materialiconsFlightSvg, map[string]*bintree{
-		}},
-		"flight_land.svg": &bintree{materialiconsFlight_landSvg, map[string]*bintree{
-		}},
-		"flight_takeoff.svg": &bintree{materialiconsFlight_takeoffSvg, map[string]*bintree{
-		}},
-		"flip.svg": &bintree{materialiconsFlipSvg, map[string]*bintree{
-		}},
-		"flip_to_back.svg": &bintree{materialiconsFlip_to_backSvg, map[string]*bintree{
-		}},
-		"flip_to_front.svg": &bintree{materialiconsFlip_to_frontSvg, map[string]*bintree{
-		}},
-		"folder.svg": &bintree{materialiconsFolderSvg, map[string]*bintree{
-		}},
-		"folder_open.svg": &bintree{materialiconsFolder_openSvg, map[string]*bintree{
-		}},
-		"folder_shared.svg": &bintree{materialiconsFolder_sharedSvg, map[string]*bintree{
-		}},
-		"folder_special.svg": &bintree{materialiconsFolder_specialSvg, map[string]*bintree{
-		}},
-		"format_align_center.svg": &bintree{materialiconsFormat_align_centerSvg, map[string]*bintree{
-		}},
-		"format_align_justify.svg": &bintree{materialiconsFormat_align_justifySvg, map[string]*bintree{
-		}},
-		"format_align_left.svg": &bintree{materialiconsFormat_align_leftSvg, map[string]*bintree{
-		}},
-		"format_align_right.svg": &bintree{materialiconsFormat_align_rightSvg, map[string]*bintree{
-		}},
-		"format_bold.svg": &bintree{materialiconsFormat_boldSvg, map[string]*bintree{
-		}},
-		"format_clear.svg": &bintree{materialiconsFormat_clearSvg, map[string]*bintree{
-		}},
-		"format_color_fill.svg": &bintree{materialiconsFormat_color_fillSvg, map[string]*bintree{
-		}},
-		"format_color_reset.svg": &bintree{materialiconsFormat_color_resetSvg, map[string]*bintree{
-		}},
-		"format_color_text.svg": &bintree{materialiconsFormat_color_textSvg, map[string]*bintree{
-		}},
-		"format_indent_decrease.svg": &bintree{materialiconsFormat_indent_decreaseSvg, map[string]*bintree{
-		}},
-		"format_indent_increase.svg": &bintree{materialiconsFormat_indent_increaseSvg, map[string]*bintree{
-		}},
-		"format_italic.svg": &bintree{materialiconsFormat_italicSvg, map[string]*bintree{
-		}},
-		"format_line_spacing.svg": &bintree{materialiconsFormat_line_spacingSvg, map[string]*bintree{
-		}},
-		"format_list_bulleted.svg": &bintree{materialiconsFormat_list_bulletedSvg, map[string]*bintree{
-		}},
-		"format_list_numbered.svg": &bintree{materialiconsFormat_list_numberedSvg, map[string]*bintree{
-		}},
-		"format_paint.svg": &bintree{materialiconsFormat_paintSvg, map[string]*bintree{
-		}},
-		"format_quote.svg": &bintree{materialiconsFormat_quoteSvg, map[string]*bintree{
-		}},
-		"format_size.svg": &bintree{materialiconsFormat_sizeSvg, map[string]*bintree{
-		}},
-		"format_strikethrough.svg": &bintree{materialiconsFormat_strikethroughSvg, map[string]*bintree{
-		}},
-		"format_textdirection_l_to_r.svg": &bintree{materialiconsFormat_textdirection_l_to_rSvg, map[string]*bintree{
-		}},
-		"format_textdirection_r_to_l.svg": &bintree{materialiconsFormat_textdirection_r_to_lSvg, map[string]*bintree{
-		}},
-		"format_underlined.svg": &bintree{materialiconsFormat_underlinedSvg, map[string]*bintree{
-		}},
-		"forum.svg": &bintree{materialiconsForumSvg, map[string]*bintree{
-		}},
-		"forward.svg": &bintree{materialiconsForwardSvg, map[string]*bintree{
-		}},
-		"forward_10.svg": &bintree{materialiconsForward_10Svg, map[string]*bintree{
-		}},
-		"forward_30.svg": &bintree{materialiconsForward_30Svg, map[string]*bintree{
-		}},
-		"forward_5.svg": &bintree{materialiconsForward_5Svg, map[string]*bintree{
-		}},
-		"fullscreen.svg": &bintree{materialiconsFullscreenSvg, map[string]*bintree{
-		}},
-		"fullscreen_exit.svg": &bintree{materialiconsFullscreen_exitSvg, map[string]*bintree{
-		}},
-		"functions.svg": &bintree{materialiconsFunctionsSvg, map[string]*bintree{
-		}},
-		"gamepad.svg": &bintree{materialiconsGamepadSvg, map[string]*bintree{
-		}},
-		"games.svg": &bintree{materialiconsGamesSvg, map[string]*bintree{
-		}},
-		"gesture.svg": &bintree{materialiconsGestureSvg, map[string]*bintree{
-		}},
-		"get_app.svg": &bintree{materialiconsGet_appSvg, map[string]*bintree{
-		}},
-		"gps_fixed.svg": &bintree{materialiconsGps_fixedSvg, map[string]*bintree{
-		}},
-		"gps_not_fixed.svg": &bintree{materialiconsGps_not_fixedSvg, map[string]*bintree{
-		}},
-		"gps_off.svg": &bintree{materialiconsGps_offSvg, map[string]*bintree{
-		}},
-		"grade.svg": &bintree{materialiconsGradeSvg, map[string]*bintree{
-		}},
-		"gradient.svg": &bintree{materialiconsGradientSvg, map[string]*bintree{
-		}},
-		"grain.svg": &bintree{materialiconsGrainSvg, map[string]*bintree{
-		}},
-		"graphic_eq.svg": &bintree{materialiconsGraphic_eqSvg, map[string]*bintree{
-		}},
-		"grid_off.svg": &bintree{materialiconsGrid_offSvg, map[string]*bintree{
-		}},
-		"grid_on.svg": &bintree{materialiconsGrid_onSvg, map[string]*bintree{
-		}},
-		"group.svg": &bintree{materialiconsGroupSvg, map[string]*bintree{
-		}},
-		"group_add.svg": &bintree{materialiconsGroup_addSvg, map[string]*bintree{
-		}},
-		"group_work.svg": &bintree{materialiconsGroup_workSvg, map[string]*bintree{
-		}},
-		"hdr_off.svg": &bintree{materialiconsHdr_offSvg, map[string]*bintree{
-		}},
-		"hdr_on.svg": &bintree{materialiconsHdr_onSvg, map[string]*bintree{
-		}},
-		"hdr_strong.svg": &bintree{materialiconsHdr_strongSvg, map[string]*bintree{
-		}},
-		"hdr_weak.svg": &bintree{materialiconsHdr_weakSvg, map[string]*bintree{
-		}},
-		"headset.svg": &bintree{materialiconsHeadsetSvg, map[string]*bintree{
-		}},
-		"headset_mic.svg": &bintree{materialiconsHeadset_micSvg, map[string]*bintree{
-		}},
-		"healing.svg": &bintree{materialiconsHealingSvg, map[string]*bintree{
-		}},
-		"hearing.svg": &bintree{materialiconsHearingSvg, map[string]*bintree{
-		}},
-		"help.svg": &bintree{materialiconsHelpSvg, map[string]*bintree{
-		}},
-		"high_quality.svg": &bintree{materialiconsHigh_qualitySvg, map[string]*bintree{
-		}},
-		"highlight_off.svg": &bintree{materialiconsHighlight_offSvg, map[string]*bintree{
-		}},
-		"history.svg": &bintree{materialiconsHistorySvg, map[string]*bintree{
-		}},
-		"home.svg": &bintree{materialiconsHomeSvg, map[string]*bintree{
-		}},
-		"hotel.svg": &bintree{materialiconsHotelSvg, map[string]*bintree{
-		}},
-		"hourglass_empty.svg": &bintree{materialiconsHourglass_emptySvg, map[string]*bintree{
-		}},
-		"hourglass_full.svg": &bintree{materialiconsHourglass_fullSvg, map[string]*bintree{
-		}},
-		"http.svg": &bintree{materialiconsHttpSvg, map[string]*bintree{
-		}},
-		"https.svg": &bintree{materialiconsHttpsSvg, map[string]*bintree{
-		}},
-		"image.svg": &bintree{materialiconsImageSvg, map[string]*bintree{
-		}},
-		"image_aspect_ratio.svg": &bintree{materialiconsImage_aspect_ratioSvg, map[string]*bintree{
-		}},
-		"import_export.svg": &bintree{materialiconsImport_exportSvg, map[string]*bintree{
-		}},
-		"inbox.svg": &bintree{materialiconsInboxSvg, map[string]*bintree{
-		}},
-		"info.svg": &bintree{materialiconsInfoSvg, map[string]*bintree{
-		}},
-		"info_outline.svg": &bintree{materialiconsInfo_outlineSvg, map[string]*bintree{
-		}},
-		"input.svg": &bintree{materialiconsInputSvg, map[string]*bintree{
-		}},
-		"insert_chart.svg": &bintree{materialiconsInsert_chartSvg, map[string]*bintree{
-		}},
-		"insert_comment.svg": &bintree{materialiconsInsert_commentSvg, map[string]*bintree{
-		}},
-		"insert_drive_file.svg": &bintree{materialiconsInsert_drive_fileSvg, map[string]*bintree{
-		}},
-		"insert_emoticon.svg": &bintree{materialiconsInsert_emoticonSvg, map[string]*bintree{
-		}},
-		"insert_invitation.svg": &bintree{materialiconsInsert_invitationSvg, map[string]*bintree{
-		}},
-		"insert_link.svg": &bintree{materialiconsInsert_linkSvg, map[string]*bintree{
-		}},
-		"insert_photo.svg": &bintree{materialiconsInsert_photoSvg, map[string]*bintree{
-		}},
-		"invert_colors.svg": &bintree{materialiconsInvert_colorsSvg, map[string]*bintree{
-		}},
-		"invert_colors_off.svg": &bintree{materialiconsInvert_colors_offSvg, map[string]*bintree{
-		}},
-		"iso.svg": &bintree{materialiconsIsoSvg, map[string]*bintree{
-		}},
-		"keyboard.svg": &bintree{materialiconsKeyboardSvg, map[string]*bintree{
-		}},
-		"keyboard_arrow_down.svg": &bintree{materialiconsKeyboard_arrow_downSvg, map[string]*bintree{
-		}},
-		"keyboard_arrow_left.svg": &bintree{materialiconsKeyboard_arrow_leftSvg, map[string]*bintree{
-		}},
-		"keyboard_arrow_right.svg": &bintree{materialiconsKeyboard_arrow_rightSvg, map[string]*bintree{
-		}},
-		"keyboard_arrow_up.svg": &bintree{materialiconsKeyboard_arrow_upSvg, map[string]*bintree{
-		}},
-		"keyboard_backspace.svg": &bintree{materialiconsKeyboard_backspaceSvg, map[string]*bintree{
-		}},
-		"keyboard_capslock.svg": &bintree{materialiconsKeyboard_capslockSvg, map[string]*bintree{
-		}},
-		"keyboard_hide.svg": &bintree{materialiconsKeyboard_hideSvg, map[string]*bintree{
-		}},
-		"keyboard_return.svg": &bintree{materialiconsKeyboard_returnSvg, map[string]*bintree{
-		}},
-		"keyboard_tab.svg": &bintree{materialiconsKeyboard_tabSvg, map[string]*bintree{
-		}},
-		"keyboard_voice.svg": &bintree{materialiconsKeyboard_voiceSvg, map[string]*bintree{
-		}},
-		"label.svg": &bintree{materialiconsLabelSvg, map[string]*bintree{
-		}},
-		"label_outline.svg": &bintree{materialiconsLabel_outlineSvg, map[string]*bintree{
-		}},
-		"landscape.svg": &bintree{materialiconsLandscapeSvg, map[string]*bintree{
-		}},
-		"language.svg": &bintree{materialiconsLanguageSvg, map[string]*bintree{
-		}},
-		"laptop.svg": &bintree{materialiconsLaptopSvg, map[string]*bintree{
-		}},
-		"laptop_chromebook.svg": &bintree{materialiconsLaptop_chromebookSvg, map[string]*bintree{
-		}},
-		"laptop_mac.svg": &bintree{materialiconsLaptop_macSvg, map[string]*bintree{
-		}},
-		"laptop_windows.svg": &bintree{materialiconsLaptop_windowsSvg, map[string]*bintree{
-		}},
-		"launch.svg": &bintree{materialiconsLaunchSvg, map[string]*bintree{
-		}},
-		"layers.svg": &bintree{materialiconsLayersSvg, map[string]*bintree{
-		}},
-		"layers_clear.svg": &bintree{materialiconsLayers_clearSvg, map[string]*bintree{
-		}},
-		"leak_add.svg": &bintree{materialiconsLeak_addSvg, map[string]*bintree{
-		}},
-		"leak_remove.svg": &bintree{materialiconsLeak_removeSvg, map[string]*bintree{
-		}},
-		"lens.svg": &bintree{materialiconsLensSvg, map[string]*bintree{
-		}},
-		"library_add.svg": &bintree{materialiconsLibrary_addSvg, map[string]*bintree{
-		}},
-		"library_books.svg": &bintree{materialiconsLibrary_booksSvg, map[string]*bintree{
-		}},
-		"library_music.svg": &bintree{materialiconsLibrary_musicSvg, map[string]*bintree{
-		}},
-		"link.svg": &bintree{materialiconsLinkSvg, map[string]*bintree{
-		}},
-		"list.svg": &bintree{materialiconsListSvg, map[string]*bintree{
-		}},
-		"live_help.svg": &bintree{materialiconsLive_helpSvg, map[string]*bintree{
-		}},
-		"live_tv.svg": &bintree{materialiconsLive_tvSvg, map[string]*bintree{
-		}},
-		"local_activity.svg": &bintree{materialiconsLocal_activitySvg, map[string]*bintree{
-		}},
-		"local_airport.svg": &bintree{materialiconsLocal_airportSvg, map[string]*bintree{
-		}},
-		"local_atm.svg": &bintree{materialiconsLocal_atmSvg, map[string]*bintree{
-		}},
-		"local_bar.svg": &bintree{materialiconsLocal_barSvg, map[string]*bintree{
-		}},
-		"local_cafe.svg": &bintree{materialiconsLocal_cafeSvg, map[string]*bintree{
-		}},
-		"local_car_wash.svg": &bintree{materialiconsLocal_car_washSvg, map[string]*bintree{
-		}},
-		"local_convenience_store.svg": &bintree{materialiconsLocal_convenience_storeSvg, map[string]*bintree{
-		}},
-		"local_dining.svg": &bintree{materialiconsLocal_diningSvg, map[string]*bintree{
-		}},
-		"local_drink.svg": &bintree{materialiconsLocal_drinkSvg, map[string]*bintree{
-		}},
-		"local_florist.svg": &bintree{materialiconsLocal_floristSvg, map[string]*bintree{
-		}},
-		"local_gas_station.svg": &bintree{materialiconsLocal_gas_stationSvg, map[string]*bintree{
-		}},
-		"local_grocery_store.svg": &bintree{materialiconsLocal_grocery_storeSvg, map[string]*bintree{
-		}},
-		"local_hospital.svg": &bintree{materialiconsLocal_hospitalSvg, map[string]*bintree{
-		}},
-		"local_hotel.svg": &bintree{materialiconsLocal_hotelSvg, map[string]*bintree{
-		}},
-		"local_laundry_service.svg": &bintree{materialiconsLocal_laundry_serviceSvg, map[string]*bintree{
-		}},
-		"local_library.svg": &bintree{materialiconsLocal_librarySvg, map[string]*bintree{
-		}},
-		"local_mall.svg": &bintree{materialiconsLocal_mallSvg, map[string]*bintree{
-		}},
-		"local_movies.svg": &bintree{materialiconsLocal_moviesSvg, map[string]*bintree{
-		}},
-		"local_offer.svg": &bintree{materialiconsLocal_offerSvg, map[string]*bintree{
-		}},
-		"local_parking.svg": &bintree{materialiconsLocal_parkingSvg, map[string]*bintree{
-		}},
-		"local_pharmacy.svg": &bintree{materialiconsLocal_pharmacySvg, map[string]*bintree{
-		}},
-		"local_phone.svg": &bintree{materialiconsLocal_phoneSvg, map[string]*bintree{
-		}},
-		"local_pizza.svg": &bintree{materialiconsLocal_pizzaSvg, map[string]*bintree{
-		}},
-		"local_play.svg": &bintree{materialiconsLocal_playSvg, map[string]*bintree{
-		}},
-		"local_post_office.svg": &bintree{materialiconsLocal_post_officeSvg, map[string]*bintree{
-		}},
-		"local_printshop.svg": &bintree{materialiconsLocal_printshopSvg, map[string]*bintree{
-		}},
-		"local_see.svg": &bintree{materialiconsLocal_seeSvg, map[string]*bintree{
-		}},
-		"local_shipping.svg": &bintree{materialiconsLocal_shippingSvg, map[string]*bintree{
-		}},
-		"local_taxi.svg": &bintree{materialiconsLocal_taxiSvg, map[string]*bintree{
-		}},
-		"location_city.svg": &bintree{materialiconsLocation_citySvg, map[string]*bintree{
-		}},
-		"location_disabled.svg": &bintree{materialiconsLocation_disabledSvg, map[string]*bintree{
-		}},
-		"location_off.svg": &bintree{materialiconsLocation_offSvg, map[string]*bintree{
-		}},
-		"location_on.svg": &bintree{materialiconsLocation_onSvg, map[string]*bintree{
-		}},
-		"location_searching.svg": &bintree{materialiconsLocation_searchingSvg, map[string]*bintree{
-		}},
-		"lock.svg": &bintree{materialiconsLockSvg, map[string]*bintree{
-		}},
-		"lock_open.svg": &bintree{materialiconsLock_openSvg, map[string]*bintree{
-		}},
-		"lock_outline.svg": &bintree{materialiconsLock_outlineSvg, map[string]*bintree{
-		}},
-		"looks.svg": &bintree{materialiconsLooksSvg, map[string]*bintree{
-		}},
-		"looks_3.svg": &bintree{materialiconsLooks_3Svg, map[string]*bintree{
-		}},
-		"looks_4.svg": &bintree{materialiconsLooks_4Svg, map[string]*bintree{
-		}},
-		"looks_5.svg": &bintree{materialiconsLooks_5Svg, map[string]*bintree{
-		}},
-		"looks_6.svg": &bintree{materialiconsLooks_6Svg, map[string]*bintree{
-		}},
-		"looks_one.svg": &bintree{materialiconsLooks_oneSvg, map[string]*bintree{
-		}},
-		"looks_two.svg": &bintree{materialiconsLooks_twoSvg, map[string]*bintree{
-		}},
-		"loop.svg": &bintree{materialiconsLoopSvg, map[string]*bintree{
-		}},
-		"loupe.svg": &bintree{materialiconsLoupeSvg, map[string]*bintree{
-		}},
-		"loyalty.svg": &bintree{materialiconsLoyaltySvg, map[string]*bintree{
-		}},
-		"mail.svg": &bintree{materialiconsMailSvg, map[string]*bintree{
-		}},
-		"map.svg": &bintree{materialiconsMapSvg, map[string]*bintree{
-		}},
-		"markunread.svg": &bintree{materialiconsMarkunreadSvg, map[string]*bintree{
-		}},
-		"markunread_mailbox.svg": &bintree{materialiconsMarkunread_mailboxSvg, map[string]*bintree{
-		}},
-		"memory.svg": &bintree{materialiconsMemorySvg, map[string]*bintree{
-		}},
-		"menu.svg": &bintree{materialiconsMenuSvg, map[string]*bintree{
-		}},
-		"merge_type.svg": &bintree{materialiconsMerge_typeSvg, map[string]*bintree{
-		}},
-		"message.svg": &bintree{materialiconsMessageSvg, map[string]*bintree{
-		}},
-		"mic.svg": &bintree{materialiconsMicSvg, map[string]*bintree{
-		}},
-		"mic_none.svg": &bintree{materialiconsMic_noneSvg, map[string]*bintree{
-		}},
-		"mic_off.svg": &bintree{materialiconsMic_offSvg, map[string]*bintree{
-		}},
-		"mms.svg": &bintree{materialiconsMmsSvg, map[string]*bintree{
-		}},
-		"mode_comment.svg": &bintree{materialiconsMode_commentSvg, map[string]*bintree{
-		}},
-		"mode_edit.svg": &bintree{materialiconsMode_editSvg, map[string]*bintree{
-		}},
-		"monochrome_photos.svg": &bintree{materialiconsMonochrome_photosSvg, map[string]*bintree{
-		}},
-		"mood.svg": &bintree{materialiconsMoodSvg, map[string]*bintree{
-		}},
-		"mood_bad.svg": &bintree{materialiconsMood_badSvg, map[string]*bintree{
-		}},
-		"more.svg": &bintree{materialiconsMoreSvg, map[string]*bintree{
-		}},
-		"more_horiz.svg": &bintree{materialiconsMore_horizSvg, map[string]*bintree{
-		}},
-		"more_vert.svg": &bintree{materialiconsMore_vertSvg, map[string]*bintree{
-		}},
-		"mouse.svg": &bintree{materialiconsMouseSvg, map[string]*bintree{
-		}},
-		"movie.svg": &bintree{materialiconsMovieSvg, map[string]*bintree{
-		}},
-		"movie_creation.svg": &bintree{materialiconsMovie_creationSvg, map[string]*bintree{
-		}},
-		"music_note.svg": &bintree{materialiconsMusic_noteSvg, map[string]*bintree{
-		}},
-		"my_location.svg": &bintree{materialiconsMy_locationSvg, map[string]*bintree{
-		}},
-		"nature.svg": &bintree{materialiconsNatureSvg, map[string]*bintree{
-		}},
-		"nature_people.svg": &bintree{materialiconsNature_peopleSvg, map[string]*bintree{
-		}},
-		"navigate_before.svg": &bintree{materialiconsNavigate_beforeSvg, map[string]*bintree{
-		}},
-		"navigate_next.svg": &bintree{materialiconsNavigate_nextSvg, map[string]*bintree{
-		}},
-		"navigation.svg": &bintree{materialiconsNavigationSvg, map[string]*bintree{
-		}},
-		"network_cell.svg": &bintree{materialiconsNetwork_cellSvg, map[string]*bintree{
-		}},
-		"network_locked.svg": &bintree{materialiconsNetwork_lockedSvg, map[string]*bintree{
-		}},
-		"network_wifi.svg": &bintree{materialiconsNetwork_wifiSvg, map[string]*bintree{
-		}},
-		"new_releases.svg": &bintree{materialiconsNew_releasesSvg, map[string]*bintree{
-		}},
-		"nfc.svg": &bintree{materialiconsNfcSvg, map[string]*bintree{
-		}},
-		"no_sim.svg": &bintree{materialiconsNo_simSvg, map[string]*bintree{
-		}},
-		"not_interested.svg": &bintree{materialiconsNot_interestedSvg, map[string]*bintree{
-		}},
-		"note_add.svg": &bintree{materialiconsNote_addSvg, map[string]*bintree{
-		}},
-		"notifications.svg": &bintree{materialiconsNotificationsSvg, map[string]*bintree{
-		}},
-		"notifications_active.svg": &bintree{materialiconsNotifications_activeSvg, map[string]*bintree{
-		}},
-		"notifications_none.svg": &bintree{materialiconsNotifications_noneSvg, map[string]*bintree{
-		}},
-		"notifications_off.svg": &bintree{materialiconsNotifications_offSvg, map[string]*bintree{
-		}},
-		"notifications_paused.svg": &bintree{materialiconsNotifications_pausedSvg, map[string]*bintree{
-		}},
-		"ondemand_video.svg": &bintree{materialiconsOndemand_videoSvg, map[string]*bintree{
-		}},
-		"open_in_browser.svg": &bintree{materialiconsOpen_in_browserSvg, map[string]*bintree{
-		}},
-		"open_in_new.svg": &bintree{materialiconsOpen_in_newSvg, map[string]*bintree{
-		}},
-		"open_with.svg": &bintree{materialiconsOpen_withSvg, map[string]*bintree{
-		}},
-		"pages.svg": &bintree{materialiconsPagesSvg, map[string]*bintree{
-		}},
-		"pageview.svg": &bintree{materialiconsPageviewSvg, map[string]*bintree{
-		}},
-		"palette.svg": &bintree{materialiconsPaletteSvg, map[string]*bintree{
-		}},
-		"panorama.svg": &bintree{materialiconsPanoramaSvg, map[string]*bintree{
-		}},
-		"panorama_fish_eye.svg": &bintree{materialiconsPanorama_fish_eyeSvg, map[string]*bintree{
-		}},
-		"panorama_horizontal.svg": &bintree{materialiconsPanorama_horizontalSvg, map[string]*bintree{
-		}},
-		"panorama_vertical.svg": &bintree{materialiconsPanorama_verticalSvg, map[string]*bintree{
-		}},
-		"panorama_wide_angle.svg": &bintree{materialiconsPanorama_wide_angleSvg, map[string]*bintree{
-		}},
-		"party_mode.svg": &bintree{materialiconsParty_modeSvg, map[string]*bintree{
-		}},
-		"pause.svg": &bintree{materialiconsPauseSvg, map[string]*bintree{
-		}},
-		"pause_circle_filled.svg": &bintree{materialiconsPause_circle_filledSvg, map[string]*bintree{
-		}},
-		"pause_circle_outline.svg": &bintree{materialiconsPause_circle_outlineSvg, map[string]*bintree{
-		}},
-		"payment.svg": &bintree{materialiconsPaymentSvg, map[string]*bintree{
-		}},
-		"people.svg": &bintree{materialiconsPeopleSvg, map[string]*bintree{
-		}},
-		"people_outline.svg": &bintree{materialiconsPeople_outlineSvg, map[string]*bintree{
-		}},
-		"perm_camera_mic.svg": &bintree{materialiconsPerm_camera_micSvg, map[string]*bintree{
-		}},
-		"perm_contact_calendar.svg": &bintree{materialiconsPerm_contact_calendarSvg, map[string]*bintree{
-		}},
-		"perm_data_setting.svg": &bintree{materialiconsPerm_data_settingSvg, map[string]*bintree{
-		}},
-		"perm_device_information.svg": &bintree{materialiconsPerm_device_informationSvg, map[string]*bintree{
-		}},
-		"perm_identity.svg": &bintree{materialiconsPerm_identitySvg, map[string]*bintree{
-		}},
-		"perm_media.svg": &bintree{materialiconsPerm_mediaSvg, map[string]*bintree{
-		}},
-		"perm_phone_msg.svg": &bintree{materialiconsPerm_phone_msgSvg, map[string]*bintree{
-		}},
-		"perm_scan_wifi.svg": &bintree{materialiconsPerm_scan_wifiSvg, map[string]*bintree{
-		}},
-		"person.svg": &bintree{materialiconsPersonSvg, map[string]*bintree{
-		}},
-		"person_add.svg": &bintree{materialiconsPerson_addSvg, map[string]*bintree{
-		}},
-		"person_outline.svg": &bintree{materialiconsPerson_outlineSvg, map[string]*bintree{
-		}},
-		"person_pin.svg": &bintree{materialiconsPerson_pinSvg, map[string]*bintree{
-		}},
-		"personal_video.svg": &bintree{materialiconsPersonal_videoSvg, map[string]*bintree{
-		}},
-		"phone.svg": &bintree{materialiconsPhoneSvg, map[string]*bintree{
-		}},
-		"phone_android.svg": &bintree{materialiconsPhone_androidSvg, map[string]*bintree{
-		}},
-		"phone_bluetooth_speaker.svg": &bintree{materialiconsPhone_bluetooth_speakerSvg, map[string]*bintree{
-		}},
-		"phone_forwarded.svg": &bintree{materialiconsPhone_forwardedSvg, map[string]*bintree{
-		}},
-		"phone_in_talk.svg": &bintree{materialiconsPhone_in_talkSvg, map[string]*bintree{
-		}},
-		"phone_iphone.svg": &bintree{materialiconsPhone_iphoneSvg, map[string]*bintree{
-		}},
-		"phone_locked.svg": &bintree{materialiconsPhone_lockedSvg, map[string]*bintree{
-		}},
-		"phone_missed.svg": &bintree{materialiconsPhone_missedSvg, map[string]*bintree{
-		}},
-		"phone_paused.svg": &bintree{materialiconsPhone_pausedSvg, map[string]*bintree{
-		}},
-		"phonelink.svg": &bintree{materialiconsPhonelinkSvg, map[string]*bintree{
-		}},
-		"phonelink_off.svg": &bintree{materialiconsPhonelink_offSvg, map[string]*bintree{
-		}},
-		"photo.svg": &bintree{materialiconsPhotoSvg, map[string]*bintree{
-		}},
-		"photo_album.svg": &bintree{materialiconsPhoto_albumSvg, map[string]*bintree{
-		}},
-		"photo_camera.svg": &bintree{materialiconsPhoto_cameraSvg, map[string]*bintree{
-		}},
-		"photo_library.svg": &bintree{materialiconsPhoto_librarySvg, map[string]*bintree{
-		}},
-		"picture_as_pdf.svg": &bintree{materialiconsPicture_as_pdfSvg, map[string]*bintree{
-		}},
-		"picture_in_picture.svg": &bintree{materialiconsPicture_in_pictureSvg, map[string]*bintree{
-		}},
-		"pin_drop.svg": &bintree{materialiconsPin_dropSvg, map[string]*bintree{
-		}},
-		"place.svg": &bintree{materialiconsPlaceSvg, map[string]*bintree{
-		}},
-		"play_arrow.svg": &bintree{materialiconsPlay_arrowSvg, map[string]*bintree{
-		}},
-		"play_circle_filled.svg": &bintree{materialiconsPlay_circle_filledSvg, map[string]*bintree{
-		}},
-		"play_circle_outline.svg": &bintree{materialiconsPlay_circle_outlineSvg, map[string]*bintree{
-		}},
-		"play_for_work.svg": &bintree{materialiconsPlay_for_workSvg, map[string]*bintree{
-		}},
-		"playlist_add.svg": &bintree{materialiconsPlaylist_addSvg, map[string]*bintree{
-		}},
-		"plus_one.svg": &bintree{materialiconsPlus_oneSvg, map[string]*bintree{
-		}},
-		"poll.svg": &bintree{materialiconsPollSvg, map[string]*bintree{
-		}},
-		"polymer.svg": &bintree{materialiconsPolymerSvg, map[string]*bintree{
-		}},
-		"portable_wifi_off.svg": &bintree{materialiconsPortable_wifi_offSvg, map[string]*bintree{
-		}},
-		"portrait.svg": &bintree{materialiconsPortraitSvg, map[string]*bintree{
-		}},
-		"power.svg": &bintree{materialiconsPowerSvg, map[string]*bintree{
-		}},
-		"power_input.svg": &bintree{materialiconsPower_inputSvg, map[string]*bintree{
-		}},
-		"power_settings_new.svg": &bintree{materialiconsPower_settings_newSvg, map[string]*bintree{
-		}},
-		"present_to_all.svg": &bintree{materialiconsPresent_to_allSvg, map[string]*bintree{
-		}},
-		"print.svg": &bintree{materialiconsPrintSvg, map[string]*bintree{
-		}},
-		"public.svg": &bintree{materialiconsPublicSvg, map[string]*bintree{
-		}},
-		"publish.svg": &bintree{materialiconsPublishSvg, map[string]*bintree{
-		}},
-		"query_builder.svg": &bintree{materialiconsQuery_builderSvg, map[string]*bintree{
-		}},
-		"question_answer.svg": &bintree{materialiconsQuestion_answerSvg, map[string]*bintree{
-		}},
-		"queue.svg": &bintree{materialiconsQueueSvg, map[string]*bintree{
-		}},
-		"queue_music.svg": &bintree{materialiconsQueue_musicSvg, map[string]*bintree{
-		}},
-		"radio.svg": &bintree{materialiconsRadioSvg, map[string]*bintree{
-		}},
-		"radio_button_checked.svg": &bintree{materialiconsRadio_button_checkedSvg, map[string]*bintree{
-		}},
-		"radio_button_unchecked.svg": &bintree{materialiconsRadio_button_uncheckedSvg, map[string]*bintree{
-		}},
-		"rate_review.svg": &bintree{materialiconsRate_reviewSvg, map[string]*bintree{
-		}},
-		"receipt.svg": &bintree{materialiconsReceiptSvg, map[string]*bintree{
-		}},
-		"recent_actors.svg": &bintree{materialiconsRecent_actorsSvg, map[string]*bintree{
-		}},
-		"redeem.svg": &bintree{materialiconsRedeemSvg, map[string]*bintree{
-		}},
-		"redo.svg": &bintree{materialiconsRedoSvg, map[string]*bintree{
-		}},
-		"refresh.svg": &bintree{materialiconsRefreshSvg, map[string]*bintree{
-		}},
-		"remove.svg": &bintree{materialiconsRemoveSvg, map[string]*bintree{
-		}},
-		"remove_circle.svg": &bintree{materialiconsRemove_circleSvg, map[string]*bintree{
-		}},
-		"remove_circle_outline.svg": &bintree{materialiconsRemove_circle_outlineSvg, map[string]*bintree{
-		}},
-		"remove_red_eye.svg": &bintree{materialiconsRemove_red_eyeSvg, map[string]*bintree{
-		}},
-		"repeat.svg": &bintree{materialiconsRepeatSvg, map[string]*bintree{
-		}},
-		"repeat_one.svg": &bintree{materialiconsRepeat_oneSvg, map[string]*bintree{
-		}},
-		"replay.svg": &bintree{materialiconsReplaySvg, map[string]*bintree{
-		}},
-		"replay_10.svg": &bintree{materialiconsReplay_10Svg, map[string]*bintree{
-		}},
-		"replay_30.svg": &bintree{materialiconsReplay_30Svg, map[string]*bintree{
-		}},
-		"replay_5.svg": &bintree{materialiconsReplay_5Svg, map[string]*bintree{
-		}},
-		"reply.svg": &bintree{materialiconsReplySvg, map[string]*bintree{
-		}},
-		"reply_all.svg": &bintree{materialiconsReply_allSvg, map[string]*bintree{
-		}},
-		"report.svg": &bintree{materialiconsReportSvg, map[string]*bintree{
-		}},
-		"report_problem.svg": &bintree{materialiconsReport_problemSvg, map[string]*bintree{
-		}},
-		"restaurant_menu.svg": &bintree{materialiconsRestaurant_menuSvg, map[string]*bintree{
-		}},
-		"restore.svg": &bintree{materialiconsRestoreSvg, map[string]*bintree{
-		}},
-		"ring_volume.svg": &bintree{materialiconsRing_volumeSvg, map[string]*bintree{
-		}},
-		"room.svg": &bintree{materialiconsRoomSvg, map[string]*bintree{
-		}},
-		"rotate_90_degrees_ccw.svg": &bintree{materialiconsRotate_90_degrees_ccwSvg, map[string]*bintree{
-		}},
-		"rotate_left.svg": &bintree{materialiconsRotate_leftSvg, map[string]*bintree{
-		}},
-		"rotate_right.svg": &bintree{materialiconsRotate_rightSvg, map[string]*bintree{
-		}},
-		"router.svg": &bintree{materialiconsRouterSvg, map[string]*bintree{
-		}},
-		"satellite.svg": &bintree{materialiconsSatelliteSvg, map[string]*bintree{
-		}},
-		"save.svg": &bintree{materialiconsSaveSvg, map[string]*bintree{
-		}},
-		"scanner.svg": &bintree{materialiconsScannerSvg, map[string]*bintree{
-		}},
-		"schedule.svg": &bintree{materialiconsScheduleSvg, map[string]*bintree{
-		}},
-		"school.svg": &bintree{materialiconsSchoolSvg, map[string]*bintree{
-		}},
-		"screen_lock_landscape.svg": &bintree{materialiconsScreen_lock_landscapeSvg, map[string]*bintree{
-		}},
-		"screen_lock_portrait.svg": &bintree{materialiconsScreen_lock_portraitSvg, map[string]*bintree{
-		}},
-		"screen_lock_rotation.svg": &bintree{materialiconsScreen_lock_rotationSvg, map[string]*bintree{
-		}},
-		"screen_rotation.svg": &bintree{materialiconsScreen_rotationSvg, map[string]*bintree{
-		}},
-		"sd_card.svg": &bintree{materialiconsSd_cardSvg, map[string]*bintree{
-		}},
-		"sd_storage.svg": &bintree{materialiconsSd_storageSvg, map[string]*bintree{
-		}},
-		"search.svg": &bintree{materialiconsSearchSvg, map[string]*bintree{
-		}},
-		"security.svg": &bintree{materialiconsSecuritySvg, map[string]*bintree{
-		}},
-		"select_all.svg": &bintree{materialiconsSelect_allSvg, map[string]*bintree{
-		}},
-		"send.svg": &bintree{materialiconsSendSvg, map[string]*bintree{
-		}},
-		"settings.svg": &bintree{materialiconsSettingsSvg, map[string]*bintree{
-		}},
-		"settings_applications.svg": &bintree{materialiconsSettings_applicationsSvg, map[string]*bintree{
-		}},
-		"settings_backup_restore.svg": &bintree{materialiconsSettings_backup_restoreSvg, map[string]*bintree{
-		}},
-		"settings_bluetooth.svg": &bintree{materialiconsSettings_bluetoothSvg, map[string]*bintree{
-		}},
-		"settings_brightness.svg": &bintree{materialiconsSettings_brightnessSvg, map[string]*bintree{
-		}},
-		"settings_cell.svg": &bintree{materialiconsSettings_cellSvg, map[string]*bintree{
-		}},
-		"settings_ethernet.svg": &bintree{materialiconsSettings_ethernetSvg, map[string]*bintree{
-		}},
-		"settings_input_antenna.svg": &bintree{materialiconsSettings_input_antennaSvg, map[string]*bintree{
-		}},
-		"settings_input_component.svg": &bintree{materialiconsSettings_input_componentSvg, map[string]*bintree{
-		}},
-		"settings_input_composite.svg": &bintree{materialiconsSettings_input_compositeSvg, map[string]*bintree{
-		}},
-		"settings_input_hdmi.svg": &bintree{materialiconsSettings_input_hdmiSvg, map[string]*bintree{
-		}},
-		"settings_input_svideo.svg": &bintree{materialiconsSettings_input_svideoSvg, map[string]*bintree{
-		}},
-		"settings_overscan.svg": &bintree{materialiconsSettings_overscanSvg, map[string]*bintree{
-		}},
-		"settings_phone.svg": &bintree{materialiconsSettings_phoneSvg, map[string]*bintree{
-		}},
-		"settings_power.svg": &bintree{materialiconsSettings_powerSvg, map[string]*bintree{
-		}},
-		"settings_remote.svg": &bintree{materialiconsSettings_remoteSvg, map[string]*bintree{
-		}},
-		"settings_system_daydream.svg": &bintree{materialiconsSettings_system_daydreamSvg, map[string]*bintree{
-		}},
-		"settings_voice.svg": &bintree{materialiconsSettings_voiceSvg, map[string]*bintree{
-		}},
-		"share.svg": &bintree{materialiconsShareSvg, map[string]*bintree{
-		}},
-		"shop.svg": &bintree{materialiconsShopSvg, map[string]*bintree{
-		}},
-		"shop_two.svg": &bintree{materialiconsShop_twoSvg, map[string]*bintree{
-		}},
-		"shopping_basket.svg": &bintree{materialiconsShopping_basketSvg, map[string]*bintree{
-		}},
-		"shopping_cart.svg": &bintree{materialiconsShopping_cartSvg, map[string]*bintree{
-		}},
-		"shuffle.svg": &bintree{materialiconsShuffleSvg, map[string]*bintree{
-		}},
-		"signal_cellular_0_bar.svg": &bintree{materialiconsSignal_cellular_0_barSvg, map[string]*bintree{
-		}},
-		"signal_cellular_1_bar.svg": &bintree{materialiconsSignal_cellular_1_barSvg, map[string]*bintree{
-		}},
-		"signal_cellular_2_bar.svg": &bintree{materialiconsSignal_cellular_2_barSvg, map[string]*bintree{
-		}},
-		"signal_cellular_3_bar.svg": &bintree{materialiconsSignal_cellular_3_barSvg, map[string]*bintree{
-		}},
-		"signal_cellular_4_bar.svg": &bintree{materialiconsSignal_cellular_4_barSvg, map[string]*bintree{
-		}},
-		"signal_cellular_connected_no_internet_0_bar.svg": &bintree{materialiconsSignal_cellular_connected_no_internet_0_barSvg, map[string]*bintree{
-		}},
-		"signal_cellular_connected_no_internet_1_bar.svg": &bintree{materialiconsSignal_cellular_connected_no_internet_1_barSvg, map[string]*bintree{
-		}},
-		"signal_cellular_connected_no_internet_2_bar.svg": &bintree{materialiconsSignal_cellular_connected_no_internet_2_barSvg, map[string]*bintree{
-		}},
-		"signal_cellular_connected_no_internet_3_bar.svg": &bintree{materialiconsSignal_cellular_connected_no_internet_3_barSvg, map[string]*bintree{
-		}},
-		"signal_cellular_connected_no_internet_4_bar.svg": &bintree{materialiconsSignal_cellular_connected_no_internet_4_barSvg, map[string]*bintree{
-		}},
-		"signal_cellular_no_sim.svg": &bintree{materialiconsSignal_cellular_no_simSvg, map[string]*bintree{
-		}},
-		"signal_cellular_null.svg": &bintree{materialiconsSignal_cellular_nullSvg, map[string]*bintree{
-		}},
-		"signal_cellular_off.svg": &bintree{materialiconsSignal_cellular_offSvg, map[string]*bintree{
-		}},
-		"signal_wifi_0_bar.svg": &bintree{materialiconsSignal_wifi_0_barSvg, map[string]*bintree{
-		}},
-		"signal_wifi_1_bar.svg": &bintree{materialiconsSignal_wifi_1_barSvg, map[string]*bintree{
-		}},
-		"signal_wifi_1_bar_lock.svg": &bintree{materialiconsSignal_wifi_1_bar_lockSvg, map[string]*bintree{
-		}},
-		"signal_wifi_2_bar.svg": &bintree{materialiconsSignal_wifi_2_barSvg, map[string]*bintree{
-		}},
-		"signal_wifi_2_bar_lock.svg": &bintree{materialiconsSignal_wifi_2_bar_lockSvg, map[string]*bintree{
-		}},
-		"signal_wifi_3_bar.svg": &bintree{materialiconsSignal_wifi_3_barSvg, map[string]*bintree{
-		}},
-		"signal_wifi_3_bar_lock.svg": &bintree{materialiconsSignal_wifi_3_bar_lockSvg, map[string]*bintree{
-		}},
-		"signal_wifi_4_bar.svg": &bintree{materialiconsSignal_wifi_4_barSvg, map[string]*bintree{
-		}},
-		"signal_wifi_4_bar_lock.svg": &bintree{materialiconsSignal_wifi_4_bar_lockSvg, map[string]*bintree{
-		}},
-		"signal_wifi_off.svg": &bintree{materialiconsSignal_wifi_offSvg, map[string]*bintree{
-		}},
-		"sim_card.svg": &bintree{materialiconsSim_cardSvg, map[string]*bintree{
-		}},
-		"sim_card_alert.svg": &bintree{materialiconsSim_card_alertSvg, map[string]*bintree{
-		}},
-		"skip_next.svg": &bintree{materialiconsSkip_nextSvg, map[string]*bintree{
-		}},
-		"skip_previous.svg": &bintree{materialiconsSkip_previousSvg, map[string]*bintree{
-		}},
-		"slideshow.svg": &bintree{materialiconsSlideshowSvg, map[string]*bintree{
-		}},
-		"smartphone.svg": &bintree{materialiconsSmartphoneSvg, map[string]*bintree{
-		}},
-		"sms.svg": &bintree{materialiconsSmsSvg, map[string]*bintree{
-		}},
-		"sms_failed.svg": &bintree{materialiconsSms_failedSvg, map[string]*bintree{
-		}},
-		"snooze.svg": &bintree{materialiconsSnoozeSvg, map[string]*bintree{
-		}},
-		"sort.svg": &bintree{materialiconsSortSvg, map[string]*bintree{
-		}},
-		"space_bar.svg": &bintree{materialiconsSpace_barSvg, map[string]*bintree{
-		}},
-		"speaker.svg": &bintree{materialiconsSpeakerSvg, map[string]*bintree{
-		}},
-		"speaker_group.svg": &bintree{materialiconsSpeaker_groupSvg, map[string]*bintree{
-		}},
-		"speaker_notes.svg": &bintree{materialiconsSpeaker_notesSvg, map[string]*bintree{
-		}},
-		"speaker_phone.svg": &bintree{materialiconsSpeaker_phoneSvg, map[string]*bintree{
-		}},
-		"spellcheck.svg": &bintree{materialiconsSpellcheckSvg, map[string]*bintree{
-		}},
-		"stars.svg": &bintree{materialiconsStarsSvg, map[string]*bintree{
-		}},
-		"stay_current_landscape.svg": &bintree{materialiconsStay_current_landscapeSvg, map[string]*bintree{
-		}},
-		"stay_current_portrait.svg": &bintree{materialiconsStay_current_portraitSvg, map[string]*bintree{
-		}},
-		"stay_primary_landscape.svg": &bintree{materialiconsStay_primary_landscapeSvg, map[string]*bintree{
-		}},
-		"stay_primary_portrait.svg": &bintree{materialiconsStay_primary_portraitSvg, map[string]*bintree{
-		}},
-		"stop.svg": &bintree{materialiconsStopSvg, map[string]*bintree{
-		}},
-		"storage.svg": &bintree{materialiconsStorageSvg, map[string]*bintree{
-		}},
-		"store.svg": &bintree{materialiconsStoreSvg, map[string]*bintree{
-		}},
-		"store_mall_directory.svg": &bintree{materialiconsStore_mall_directorySvg, map[string]*bintree{
-		}},
-		"straighten.svg": &bintree{materialiconsStraightenSvg, map[string]*bintree{
-		}},
-		"strikethrough_s.svg": &bintree{materialiconsStrikethrough_sSvg, map[string]*bintree{
-		}},
-		"style.svg": &bintree{materialiconsStyleSvg, map[string]*bintree{
-		}},
-		"subject.svg": &bintree{materialiconsSubjectSvg, map[string]*bintree{
-		}},
-		"subtitles.svg": &bintree{materialiconsSubtitlesSvg, map[string]*bintree{
-		}},
-		"supervisor_account.svg": &bintree{materialiconsSupervisor_accountSvg, map[string]*bintree{
-		}},
-		"surround_sound.svg": &bintree{materialiconsSurround_soundSvg, map[string]*bintree{
-		}},
-		"swap_calls.svg": &bintree{materialiconsSwap_callsSvg, map[string]*bintree{
-		}},
-		"swap_horiz.svg": &bintree{materialiconsSwap_horizSvg, map[string]*bintree{
-		}},
-		"swap_vert.svg": &bintree{materialiconsSwap_vertSvg, map[string]*bintree{
-		}},
-		"swap_vertical_circle.svg": &bintree{materialiconsSwap_vertical_circleSvg, map[string]*bintree{
-		}},
-		"switch_camera.svg": &bintree{materialiconsSwitch_cameraSvg, map[string]*bintree{
-		}},
-		"switch_video.svg": &bintree{materialiconsSwitch_videoSvg, map[string]*bintree{
-		}},
-		"sync.svg": &bintree{materialiconsSyncSvg, map[string]*bintree{
-		}},
-		"sync_disabled.svg": &bintree{materialiconsSync_disabledSvg, map[string]*bintree{
-		}},
-		"sync_problem.svg": &bintree{materialiconsSync_problemSvg, map[string]*bintree{
-		}},
-		"system_update.svg": &bintree{materialiconsSystem_updateSvg, map[string]*bintree{
-		}},
-		"system_update_alt.svg": &bintree{materialiconsSystem_update_altSvg, map[string]*bintree{
-		}},
-		"tab.svg": &bintree{materialiconsTabSvg, map[string]*bintree{
-		}},
-		"tab_unselected.svg": &bintree{materialiconsTab_unselectedSvg, map[string]*bintree{
-		}},
-		"tablet.svg": &bintree{materialiconsTabletSvg, map[string]*bintree{
-		}},
-		"tablet_android.svg": &bintree{materialiconsTablet_androidSvg, map[string]*bintree{
-		}},
-		"tablet_mac.svg": &bintree{materialiconsTablet_macSvg, map[string]*bintree{
-		}},
-		"tag_faces.svg": &bintree{materialiconsTag_facesSvg, map[string]*bintree{
-		}},
-		"tap_and_play.svg": &bintree{materialiconsTap_and_playSvg, map[string]*bintree{
-		}},
-		"terrain.svg": &bintree{materialiconsTerrainSvg, map[string]*bintree{
-		}},
-		"text_format.svg": &bintree{materialiconsText_formatSvg, map[string]*bintree{
-		}},
-		"textsms.svg": &bintree{materialiconsTextsmsSvg, map[string]*bintree{
-		}},
-		"texture.svg": &bintree{materialiconsTextureSvg, map[string]*bintree{
-		}},
-		"theaters.svg": &bintree{materialiconsTheatersSvg, map[string]*bintree{
-		}},
-		"thumb_down.svg": &bintree{materialiconsThumb_downSvg, map[string]*bintree{
-		}},
-		"thumb_up.svg": &bintree{materialiconsThumb_upSvg, map[string]*bintree{
-		}},
-		"thumbs_up_down.svg": &bintree{materialiconsThumbs_up_downSvg, map[string]*bintree{
-		}},
-		"time_to_leave.svg": &bintree{materialiconsTime_to_leaveSvg, map[string]*bintree{
-		}},
-		"timelapse.svg": &bintree{materialiconsTimelapseSvg, map[string]*bintree{
-		}},
-		"timer.svg": &bintree{materialiconsTimerSvg, map[string]*bintree{
-		}},
-		"timer_10.svg": &bintree{materialiconsTimer_10Svg, map[string]*bintree{
-		}},
-		"timer_3.svg": &bintree{materialiconsTimer_3Svg, map[string]*bintree{
-		}},
-		"timer_off.svg": &bintree{materialiconsTimer_offSvg, map[string]*bintree{
-		}},
-		"toc.svg": &bintree{materialiconsTocSvg, map[string]*bintree{
-		}},
-		"today.svg": &bintree{materialiconsTodaySvg, map[string]*bintree{
-		}},
-		"toll.svg": &bintree{materialiconsTollSvg, map[string]*bintree{
-		}},
-		"tonality.svg": &bintree{materialiconsTonalitySvg, map[string]*bintree{
-		}},
-		"toys.svg": &bintree{materialiconsToysSvg, map[string]*bintree{
-		}},
-		"track_changes.svg": &bintree{materialiconsTrack_changesSvg, map[string]*bintree{
-		}},
-		"traffic.svg": &bintree{materialiconsTrafficSvg, map[string]*bintree{
-		}},
-		"transform.svg": &bintree{materialiconsTransformSvg, map[string]*bintree{
-		}},
-		"translate.svg": &bintree{materialiconsTranslateSvg, map[string]*bintree{
-		}},
-		"trending_down.svg": &bintree{materialiconsTrending_downSvg, map[string]*bintree{
-		}},
-		"trending_flat.svg": &bintree{materialiconsTrending_flatSvg, map[string]*bintree{
-		}},
-		"trending_up.svg": &bintree{materialiconsTrending_upSvg, map[string]*bintree{
-		}},
-		"tune.svg": &bintree{materialiconsTuneSvg, map[string]*bintree{
-		}},
-		"turned_in.svg": &bintree{materialiconsTurned_inSvg, map[string]*bintree{
-		}},
-		"turned_in_not.svg": &bintree{materialiconsTurned_in_notSvg, map[string]*bintree{
-		}},
-		"tv.svg": &bintree{materialiconsTvSvg, map[string]*bintree{
-		}},
-		"undo.svg": &bintree{materialiconsUndoSvg, map[string]*bintree{
-		}},
-		"unfold_less.svg": &bintree{materialiconsUnfold_lessSvg, map[string]*bintree{
-		}},
-		"unfold_more.svg": &bintree{materialiconsUnfold_moreSvg, map[string]*bintree{
-		}},
-		"usb.svg": &bintree{materialiconsUsbSvg, map[string]*bintree{
-		}},
-		"verified_user.svg": &bintree{materialiconsVerified_userSvg, map[string]*bintree{
-		}},
-		"vertical_align_bottom.svg": &bintree{materialiconsVertical_align_bottomSvg, map[string]*bintree{
-		}},
-		"vertical_align_center.svg": &bintree{materialiconsVertical_align_centerSvg, map[string]*bintree{
-		}},
-		"vertical_align_top.svg": &bintree{materialiconsVertical_align_topSvg, map[string]*bintree{
-		}},
-		"vibration.svg": &bintree{materialiconsVibrationSvg, map[string]*bintree{
-		}},
-		"video_library.svg": &bintree{materialiconsVideo_librarySvg, map[string]*bintree{
-		}},
-		"videocam.svg": &bintree{materialiconsVideocamSvg, map[string]*bintree{
-		}},
-		"videocam_off.svg": &bintree{materialiconsVideocam_offSvg, map[string]*bintree{
-		}},
-		"view_agenda.svg": &bintree{materialiconsView_agendaSvg, map[string]*bintree{
-		}},
-		"view_array.svg": &bintree{materialiconsView_arraySvg, map[string]*bintree{
-		}},
-		"view_carousel.svg": &bintree{materialiconsView_carouselSvg, map[string]*bintree{
-		}},
-		"view_column.svg": &bintree{materialiconsView_columnSvg, map[string]*bintree{
-		}},
-		"view_comfy.svg": &bintree{materialiconsView_comfySvg, map[string]*bintree{
-		}},
-		"view_compact.svg": &bintree{materialiconsView_compactSvg, map[string]*bintree{
-		}},
-		"view_day.svg": &bintree{materialiconsView_daySvg, map[string]*bintree{
-		}},
-		"view_headline.svg": &bintree{materialiconsView_headlineSvg, map[string]*bintree{
-		}},
-		"view_list.svg": &bintree{materialiconsView_listSvg, map[string]*bintree{
-		}},
-		"view_module.svg": &bintree{materialiconsView_moduleSvg, map[string]*bintree{
-		}},
-		"view_quilt.svg": &bintree{materialiconsView_quiltSvg, map[string]*bintree{
-		}},
-		"view_stream.svg": &bintree{materialiconsView_streamSvg, map[string]*bintree{
-		}},
-		"view_week.svg": &bintree{materialiconsView_weekSvg, map[string]*bintree{
-		}},
-		"visibility.svg": &bintree{materialiconsVisibilitySvg, map[string]*bintree{
-		}},
-		"visibility_off.svg": &bintree{materialiconsVisibility_offSvg, map[string]*bintree{
-		}},
-		"voice_chat.svg": &bintree{materialiconsVoice_chatSvg, map[string]*bintree{
-		}},
-		"voicemail.svg": &bintree{materialiconsVoicemailSvg, map[string]*bintree{
-		}},
-		"volume_down.svg": &bintree{materialiconsVolume_downSvg, map[string]*bintree{
-		}},
-		"volume_mute.svg": &bintree{materialiconsVolume_muteSvg, map[string]*bintree{
-		}},
-		"volume_off.svg": &bintree{materialiconsVolume_offSvg, map[string]*bintree{
-		}},
-		"volume_up.svg": &bintree{materialiconsVolume_upSvg, map[string]*bintree{
-		}},
-		"vpn_key.svg": &bintree{materialiconsVpn_keySvg, map[string]*bintree{
-		}},
-		"vpn_lock.svg": &bintree{materialiconsVpn_lockSvg, map[string]*bintree{
-		}},
-		"wallpaper.svg": &bintree{materialiconsWallpaperSvg, map[string]*bintree{
-		}},
-		"warning.svg": &bintree{materialiconsWarningSvg, map[string]*bintree{
-		}},
-		"watch.svg": &bintree{materialiconsWatchSvg, map[string]*bintree{
-		}},
-		"wb_auto.svg": &bintree{materialiconsWb_autoSvg, map[string]*bintree{
-		}},
-		"wb_cloudy.svg": &bintree{materialiconsWb_cloudySvg, map[string]*bintree{
-		}},
-		"wb_incandescent.svg": &bintree{materialiconsWb_incandescentSvg, map[string]*bintree{
-		}},
-		"wb_iridescent.svg": &bintree{materialiconsWb_iridescentSvg, map[string]*bintree{
-		}},
-		"wb_sunny.svg": &bintree{materialiconsWb_sunnySvg, map[string]*bintree{
-		}},
-		"wc.svg": &bintree{materialiconsWcSvg, map[string]*bintree{
-		}},
-		"web.svg": &bintree{materialiconsWebSvg, map[string]*bintree{
-		}},
-		"whatshot.svg": &bintree{materialiconsWhatshotSvg, map[string]*bintree{
-		}},
-		"widgets.svg": &bintree{materialiconsWidgetsSvg, map[string]*bintree{
-		}},
-		"wifi.svg": &bintree{materialiconsWifiSvg, map[string]*bintree{
-		}},
-		"wifi_lock.svg": &bintree{materialiconsWifi_lockSvg, map[string]*bintree{
-		}},
-		"wifi_tethering.svg": &bintree{materialiconsWifi_tetheringSvg, map[string]*bintree{
-		}},
-		"work.svg": &bintree{materialiconsWorkSvg, map[string]*bintree{
-		}},
-		"wrap_text.svg": &bintree{materialiconsWrap_textSvg, map[string]*bintree{
-		}},
-		"youtube_searched_for.svg": &bintree{materialiconsYoutube_searched_forSvg, map[string]*bintree{
-		}},
+		"3d_rotation.svg":                                 &bintree{materialicons3d_rotationSvg, map[string]*bintree{}},
+		"access_alarm.svg":                                &bintree{materialiconsAccess_alarmSvg, map[string]*bintree{}},
+		"access_alarms.svg":                               &bintree{materialiconsAccess_alarmsSvg, map[string]*bintree{}},
+		"access_time.svg":                                 &bintree{materialiconsAccess_timeSvg, map[string]*bintree{}},
+		"accessibility.svg":                               &bintree{materialiconsAccessibilitySvg, map[string]*bintree{}},
+		"account_balance.svg":                             &bintree{materialiconsAccount_balanceSvg, map[string]*bintree{}},
+		"account_balance_wallet.svg":                      &bintree{materialiconsAccount_balance_walletSvg, map[string]*bintree{}},
+		"account_box.svg":                                 &bintree{materialiconsAccount_boxSvg, map[string]*bintree{}},
+		"account_circle.svg":                              &bintree{materialiconsAccount_circleSvg, map[string]*bintree{}},
+		"adb.svg":                                         &bintree{materialiconsAdbSvg, map[string]*bintree{}},
+		"add.svg":                                         &bintree{materialiconsAddSvg, map[string]*bintree{}},
+		"add_alarm.svg":                                   &bintree{materialiconsAdd_alarmSvg, map[string]*bintree{}},
+		"add_alert.svg":                                   &bintree{materialiconsAdd_alertSvg, map[string]*bintree{}},
+		"add_box.svg":                                     &bintree{materialiconsAdd_boxSvg, map[string]*bintree{}},
+		"add_circle.svg":                                  &bintree{materialiconsAdd_circleSvg, map[string]*bintree{}},
+		"add_circle_outline.svg":                          &bintree{materialiconsAdd_circle_outlineSvg, map[string]*bintree{}},
+		"add_shopping_cart.svg":                           &bintree{materialiconsAdd_shopping_cartSvg, map[string]*bintree{}},
+		"add_to_photos.svg":                               &bintree{materialiconsAdd_to_photosSvg, map[string]*bintree{}},
+		"adjust.svg":                                      &bintree{materialiconsAdjustSvg, map[string]*bintree{}},
+		"airline_seat_flat.svg":                           &bintree{materialiconsAirline_seat_flatSvg, map[string]*bintree{}},
+		"airline_seat_flat_angled.svg":                    &bintree{materialiconsAirline_seat_flat_angledSvg, map[string]*bintree{}},
+		"airline_seat_individual_suite.svg":               &bintree{materialiconsAirline_seat_individual_suiteSvg, map[string]*bintree{}},
+		"airline_seat_legroom_extra.svg":                  &bintree{materialiconsAirline_seat_legroom_extraSvg, map[string]*bintree{}},
+		"airline_seat_legroom_normal.svg":                 &bintree{materialiconsAirline_seat_legroom_normalSvg, map[string]*bintree{}},
+		"airline_seat_legroom_reduced.svg":                &bintree{materialiconsAirline_seat_legroom_reducedSvg, map[string]*bintree{}},
+		"airline_seat_recline_extra.svg":                  &bintree{materialiconsAirline_seat_recline_extraSvg, map[string]*bintree{}},
+		"airline_seat_recline_normal.svg":                 &bintree{materialiconsAirline_seat_recline_normalSvg, map[string]*bintree{}},
+		"airplanemode_active.svg":                         &bintree{materialiconsAirplanemode_activeSvg, map[string]*bintree{}},
+		"airplanemode_inactive.svg":                       &bintree{materialiconsAirplanemode_inactiveSvg, map[string]*bintree{}},
+		"airplay.svg":                                     &bintree{materialiconsAirplaySvg, map[string]*bintree{}},
+		"alarm.svg":                                       &bintree{materialiconsAlarmSvg, map[string]*bintree{}},
+		"alarm_add.svg":                                   &bintree{materialiconsAlarm_addSvg, map[string]*bintree{}},
+		"alarm_off.svg":                                   &bintree{materialiconsAlarm_offSvg, map[string]*bintree{}},
+		"alarm_on.svg":                                    &bintree{materialiconsAlarm_onSvg, map[string]*bintree{}},
+		"album.svg":                                       &bintree{materialiconsAlbumSvg, map[string]*bintree{}},
+		"android.svg":                                     &bintree{materialiconsAndroidSvg, map[string]*bintree{}},
+		"announcement.svg":                                &bintree{materialiconsAnnouncementSvg, map[string]*bintree{}},
+		"apps.svg":                                        &bintree{materialiconsAppsSvg, map[string]*bintree{}},
+		"archive.svg":                                     &bintree{materialiconsArchiveSvg, map[string]*bintree{}},
+		"arrow_back.svg":                                  &bintree{materialiconsArrow_backSvg, map[string]*bintree{}},
+		"arrow_drop_down.svg":                             &bintree{materialiconsArrow_drop_downSvg, map[string]*bintree{}},
+		"arrow_drop_down_circle.svg":                      &bintree{materialiconsArrow_drop_down_circleSvg, map[string]*bintree{}},
+		"arrow_drop_up.svg":                               &bintree{materialiconsArrow_drop_upSvg, map[string]*bintree{}},
+		"arrow_forward.svg":                               &bintree{materialiconsArrow_forwardSvg, map[string]*bintree{}},
+		"aspect_ratio.svg":                                &bintree{materialiconsAspect_ratioSvg, map[string]*bintree{}},
+		"assessment.svg":                                  &bintree{materialiconsAssessmentSvg, map[string]*bintree{}},
+		"assignment.svg":                                  &bintree{materialiconsAssignmentSvg, map[string]*bintree{}},
+		"assignment_ind.svg":                              &bintree{materialiconsAssignment_indSvg, map[string]*bintree{}},
+		"assignment_late.svg":                             &bintree{materialiconsAssignment_lateSvg, map[string]*bintree{}},
+		"assignment_return.svg":                           &bintree{materialiconsAssignment_returnSvg, map[string]*bintree{}},
+		"assignment_returned.svg":                         &bintree{materialiconsAssignment_returnedSvg, map[string]*bintree{}},
+		"assignment_turned_in.svg":                        &bintree{materialiconsAssignment_turned_inSvg, map[string]*bintree{}},
+		"assistant.svg":                                   &bintree{materialiconsAssistantSvg, map[string]*bintree{}},
+		"assistant_photo.svg":                             &bintree{materialiconsAssistant_photoSvg, map[string]*bintree{}},
+		"attach_file.svg":                                 &bintree{materialiconsAttach_fileSvg, map[string]*bintree{}},
+		"attach_money.svg":                                &bintree{materialiconsAttach_moneySvg, map[string]*bintree{}},
+		"attachment.svg":                                  &bintree{materialiconsAttachmentSvg, map[string]*bintree{}},
+		"audiotrack.svg":                                  &bintree{materialiconsAudiotrackSvg, map[string]*bintree{}},
+		"autorenew.svg":                                   &bintree{materialiconsAutorenewSvg, map[string]*bintree{}},
+		"av_timer.svg":                                    &bintree{materialiconsAv_timerSvg, map[string]*bintree{}},
+		"backspace.svg":                                   &bintree{materialiconsBackspaceSvg, map[string]*bintree{}},
+		"backup.svg":                                      &bintree{materialiconsBackupSvg, map[string]*bintree{}},
+		"battery_20.svg":                                  &bintree{materialiconsBattery_20Svg, map[string]*bintree{}},
+		"battery_30.svg":                                  &bintree{materialiconsBattery_30Svg, map[string]*bintree{}},
+		"battery_50.svg":                                  &bintree{materialiconsBattery_50Svg, map[string]*bintree{}},
+		"battery_60.svg":                                  &bintree{materialiconsBattery_60Svg, map[string]*bintree{}},
+		"battery_80.svg":                                  &bintree{materialiconsBattery_80Svg, map[string]*bintree{}},
+		"battery_90.svg":                                  &bintree{materialiconsBattery_90Svg, map[string]*bintree{}},
+		"battery_alert.svg":                               &bintree{materialiconsBattery_alertSvg, map[string]*bintree{}},
+		"battery_charging_20.svg":                         &bintree{materialiconsBattery_charging_20Svg, map[string]*bintree{}},
+		"battery_charging_30.svg":                         &bintree{materialiconsBattery_charging_30Svg, map[string]*bintree{}},
+		"battery_charging_50.svg":                         &bintree{materialiconsBattery_charging_50Svg, map[string]*bintree{}},
+		"battery_charging_60.svg":                         &bintree{materialiconsBattery_charging_60Svg, map[string]*bintree{}},
+		"battery_charging_80.svg":                         &bintree{materialiconsBattery_charging_80Svg, map[string]*bintree{}},
+		"battery_charging_90.svg":                         &bintree{materialiconsBattery_charging_90Svg, map[string]*bintree{}},
+		"battery_charging_full.svg":                       &bintree{materialiconsBattery_charging_fullSvg, map[string]*bintree{}},
+		"battery_full.svg":                                &bintree{materialiconsBattery_fullSvg, map[string]*bintree{}},
+		"battery_std.svg":                                 &bintree{materialiconsBattery_stdSvg, map[string]*bintree{}},
+		"battery_unknown.svg":                             &bintree{materialiconsBattery_unknownSvg, map[string]*bintree{}},
+		"beenhere.svg":                                    &bintree{materialiconsBeenhereSvg, map[string]*bintree{}},
+		"block.svg":                                       &bintree{materialiconsBlockSvg, map[string]*bintree{}},
+		"bluetooth.svg":                                   &bintree{materialiconsBluetoothSvg, map[string]*bintree{}},
+		"bluetooth_audio.svg":                             &bintree{materialiconsBluetooth_audioSvg, map[string]*bintree{}},
+		"bluetooth_connected.svg":                         &bintree{materialiconsBluetooth_connectedSvg, map[string]*bintree{}},
+		"bluetooth_disabled.svg":                          &bintree{materialiconsBluetooth_disabledSvg, map[string]*bintree{}},
+		"bluetooth_searching.svg":                         &bintree{materialiconsBluetooth_searchingSvg, map[string]*bintree{}},
+		"blur_circular.svg":                               &bintree{materialiconsBlur_circularSvg, map[string]*bintree{}},
+		"blur_linear.svg":                                 &bintree{materialiconsBlur_linearSvg, map[string]*bintree{}},
+		"blur_off.svg":                                    &bintree{materialiconsBlur_offSvg, map[string]*bintree{}},
+		"blur_on.svg":                                     &bintree{materialiconsBlur_onSvg, map[string]*bintree{}},
+		"book.svg":                                        &bintree{materialiconsBookSvg, map[string]*bintree{}},
+		"bookmark.svg":                                    &bintree{materialiconsBookmarkSvg, map[string]*bintree{}},
+		"bookmark_border.svg":                             &bintree{materialiconsBookmark_borderSvg, map[string]*bintree{}},
+		"border_all.svg":                                  &bintree{materialiconsBorder_allSvg, map[string]*bintree{}},
+		"border_bottom.svg":                               &bintree{materialiconsBorder_bottomSvg, map[string]*bintree{}},
+		"border_clear.svg":                                &bintree{materialiconsBorder_clearSvg, map[string]*bintree{}},
+		"border_color.svg":                                &bintree{materialiconsBorder_colorSvg, map[string]*bintree{}},
+		"border_horizontal.svg":                           &bintree{materialiconsBorder_horizontalSvg, map[string]*bintree{}},
+		"border_inner.svg":                                &bintree{materialiconsBorder_innerSvg, map[string]*bintree{}},
+		"border_left.svg":                                 &bintree{materialiconsBorder_leftSvg, map[string]*bintree{}},
+		"border_outer.svg":                                &bintree{materialiconsBorder_outerSvg, map[string]*bintree{}},
+		"border_right.svg":                                &bintree{materialiconsBorder_rightSvg, map[string]*bintree{}},
+		"border_style.svg":                                &bintree{materialiconsBorder_styleSvg, map[string]*bintree{}},
+		"border_top.svg":                                  &bintree{materialiconsBorder_topSvg, map[string]*bintree{}},
+		"border_vertical.svg":                             &bintree{materialiconsBorder_verticalSvg, map[string]*bintree{}},
+		"brightness_1.svg":                                &bintree{materialiconsBrightness_1Svg, map[string]*bintree{}},
+		"brightness_2.svg":                                &bintree{materialiconsBrightness_2Svg, map[string]*bintree{}},
+		"brightness_3.svg":                                &bintree{materialiconsBrightness_3Svg, map[string]*bintree{}},
+		"brightness_4.svg":                                &bintree{materialiconsBrightness_4Svg, map[string]*bintree{}},
+		"brightness_5.svg":                                &bintree{materialiconsBrightness_5Svg, map[string]*bintree{}},
+		"brightness_6.svg":                                &bintree{materialiconsBrightness_6Svg, map[string]*bintree{}},
+		"brightness_7.svg":                                &bintree{materialiconsBrightness_7Svg, map[string]*bintree{}},
+		"brightness_auto.svg":                             &bintree{materialiconsBrightness_autoSvg, map[string]*bintree{}},
+		"brightness_high.svg":                             &bintree{materialiconsBrightness_highSvg, map[string]*bintree{}},
+		"brightness_low.svg":                              &bintree{materialiconsBrightness_lowSvg, map[string]*bintree{}},
+		"brightness_medium.svg":                           &bintree{materialiconsBrightness_mediumSvg, map[string]*bintree{}},
+		"broken_image.svg":                                &bintree{materialiconsBroken_imageSvg, map[string]*bintree{}},
+		"brush.svg":                                       &bintree{materialiconsBrushSvg, map[string]*bintree{}},
+		"bug_report.svg":                                  &bintree{materialiconsBug_reportSvg, map[string]*bintree{}},
+		"build.svg":                                       &bintree{materialiconsBuildSvg, map[string]*bintree{}},
+		"business.svg":                                    &bintree{materialiconsBusinessSvg, map[string]*bintree{}},
+		"cached.svg":                                      &bintree{materialiconsCachedSvg, map[string]*bintree{}},
+		"cake.svg":                                        &bintree{materialiconsCakeSvg, map[string]*bintree{}},
+		"call.svg":                                        &bintree{materialiconsCallSvg, map[string]*bintree{}},
+		"call_end.svg":                                    &bintree{materialiconsCall_endSvg, map[string]*bintree{}},
+		"call_made.svg":                                   &bintree{materialiconsCall_madeSvg, map[string]*bintree{}},
+		"call_merge.svg":                                  &bintree{materialiconsCall_mergeSvg, map[string]*bintree{}},
+		"call_missed.svg":                                 &bintree{materialiconsCall_missedSvg, map[string]*bintree{}},
+		"call_received.svg":                               &bintree{materialiconsCall_receivedSvg, map[string]*bintree{}},
+		"call_split.svg":                                  &bintree{materialiconsCall_splitSvg, map[string]*bintree{}},
+		"camera.svg":                                      &bintree{materialiconsCameraSvg, map[string]*bintree{}},
+		"camera_alt.svg":                                  &bintree{materialiconsCamera_altSvg, map[string]*bintree{}},
+		"camera_front.svg":                                &bintree{materialiconsCamera_frontSvg, map[string]*bintree{}},
+		"camera_rear.svg":                                 &bintree{materialiconsCamera_rearSvg, map[string]*bintree{}},
+		"camera_roll.svg":                                 &bintree{materialiconsCamera_rollSvg, map[string]*bintree{}},
+		"cancel.svg":                                      &bintree{materialiconsCancelSvg, map[string]*bintree{}},
+		"card_giftcard.svg":                               &bintree{materialiconsCard_giftcardSvg, map[string]*bintree{}},
+		"card_membership.svg":                             &bintree{materialiconsCard_membershipSvg, map[string]*bintree{}},
+		"card_travel.svg":                                 &bintree{materialiconsCard_travelSvg, map[string]*bintree{}},
+		"cast.svg":                                        &bintree{materialiconsCastSvg, map[string]*bintree{}},
+		"cast_connected.svg":                              &bintree{materialiconsCast_connectedSvg, map[string]*bintree{}},
+		"center_focus_strong.svg":                         &bintree{materialiconsCenter_focus_strongSvg, map[string]*bintree{}},
+		"center_focus_weak.svg":                           &bintree{materialiconsCenter_focus_weakSvg, map[string]*bintree{}},
+		"change_history.svg":                              &bintree{materialiconsChange_historySvg, map[string]*bintree{}},
+		"chat.svg":                                        &bintree{materialiconsChatSvg, map[string]*bintree{}},
+		"chat_bubble.svg":                                 &bintree{materialiconsChat_bubbleSvg, map[string]*bintree{}},
+		"chat_bubble_outline.svg":                         &bintree{materialiconsChat_bubble_outlineSvg, map[string]*bintree{}},
+		"check.svg":                                       &bintree{materialiconsCheckSvg, map[string]*bintree{}},
+		"check_box.svg":                                   &bintree{materialiconsCheck_boxSvg, map[string]*bintree{}},
+		"check_box_outline_blank.svg":                     &bintree{materialiconsCheck_box_outline_blankSvg, map[string]*bintree{}},
+		"check_circle.svg":                                &bintree{materialiconsCheck_circleSvg, map[string]*bintree{}},
+		"chevron_left.svg":                                &bintree{materialiconsChevron_leftSvg, map[string]*bintree{}},
+		"chevron_right.svg":                               &bintree{materialiconsChevron_rightSvg, map[string]*bintree{}},
+		"chrome_reader_mode.svg":                          &bintree{materialiconsChrome_reader_modeSvg, map[string]*bintree{}},
+		"class.svg":                                       &bintree{materialiconsClassSvg, map[string]*bintree{}},
+		"clear.svg":                                       &bintree{materialiconsClearSvg, map[string]*bintree{}},
+		"clear_all.svg":                                   &bintree{materialiconsClear_allSvg, map[string]*bintree{}},
+		"close.svg":                                       &bintree{materialiconsCloseSvg, map[string]*bintree{}},
+		"closed_caption.svg":                              &bintree{materialiconsClosed_captionSvg, map[string]*bintree{}},
+		"cloud.svg":                                       &bintree{materialiconsCloudSvg, map[string]*bintree{}},
+		"cloud_circle.svg":                                &bintree{materialiconsCloud_circleSvg, map[string]*bintree{}},
+		"cloud_done.svg":                                  &bintree{materialiconsCloud_doneSvg, map[string]*bintree{}},
+		"cloud_download.svg":                              &bintree{materialiconsCloud_downloadSvg, map[string]*bintree{}},
+		"cloud_off.svg":                                   &bintree{materialiconsCloud_offSvg, map[string]*bintree{}},
+		"cloud_queue.svg":                                 &bintree{materialiconsCloud_queueSvg, map[string]*bintree{}},
+		"cloud_upload.svg":                                &bintree{materialiconsCloud_uploadSvg, map[string]*bintree{}},
+		"code.svg":                                        &bintree{materialiconsCodeSvg, map[string]*bintree{}},
+		"collections.svg":                                 &bintree{materialiconsCollectionsSvg, map[string]*bintree{}},
+		"color_lens.svg":                                  &bintree{materialiconsColor_lensSvg, map[string]*bintree{}},
+		"colorize.svg":                                    &bintree{materialiconsColorizeSvg, map[string]*bintree{}},
+		"comment.svg":                                     &bintree{materialiconsCommentSvg, map[string]*bintree{}},
+		"compare.svg":                                     &bintree{materialiconsCompareSvg, map[string]*bintree{}},
+		"computer.svg":                                    &bintree{materialiconsComputerSvg, map[string]*bintree{}},
+		"confirmation_number.svg":                         &bintree{materialiconsConfirmation_numberSvg, map[string]*bintree{}},
+		"contact_mail.svg":                                &bintree{materialiconsContact_mailSvg, map[string]*bintree{}},
+		"contact_phone.svg":                               &bintree{materialiconsContact_phoneSvg, map[string]*bintree{}},
+		"contacts.svg":                                    &bintree{materialiconsContactsSvg, map[string]*bintree{}},
+		"content_copy.svg":                                &bintree{materialiconsContent_copySvg, map[string]*bintree{}},
+		"content_cut.svg":                                 &bintree{materialiconsContent_cutSvg, map[string]*bintree{}},
+		"content_paste.svg":                               &bintree{materialiconsContent_pasteSvg, map[string]*bintree{}},
+		"control_point.svg":                               &bintree{materialiconsControl_pointSvg, map[string]*bintree{}},
+		"control_point_duplicate.svg":                     &bintree{materialiconsControl_point_duplicateSvg, map[string]*bintree{}},
+		"create.svg":                                      &bintree{materialiconsCreateSvg, map[string]*bintree{}},
+		"credit_card.svg":                                 &bintree{materialiconsCredit_cardSvg, map[string]*bintree{}},
+		"crop.svg":                                        &bintree{materialiconsCropSvg, map[string]*bintree{}},
+		"crop_16_9.svg":                                   &bintree{materialiconsCrop_16_9Svg, map[string]*bintree{}},
+		"crop_3_2.svg":                                    &bintree{materialiconsCrop_3_2Svg, map[string]*bintree{}},
+		"crop_5_4.svg":                                    &bintree{materialiconsCrop_5_4Svg, map[string]*bintree{}},
+		"crop_7_5.svg":                                    &bintree{materialiconsCrop_7_5Svg, map[string]*bintree{}},
+		"crop_din.svg":                                    &bintree{materialiconsCrop_dinSvg, map[string]*bintree{}},
+		"crop_free.svg":                                   &bintree{materialiconsCrop_freeSvg, map[string]*bintree{}},
+		"crop_landscape.svg":                              &bintree{materialiconsCrop_landscapeSvg, map[string]*bintree{}},
+		"crop_original.svg":                               &bintree{materialiconsCrop_originalSvg, map[string]*bintree{}},
+		"crop_portrait.svg":                               &bintree{materialiconsCrop_portraitSvg, map[string]*bintree{}},
+		"crop_square.svg":                                 &bintree{materialiconsCrop_squareSvg, map[string]*bintree{}},
+		"dashboard.svg":                                   &bintree{materialiconsDashboardSvg, map[string]*bintree{}},
+		"data_usage.svg":                                  &bintree{materialiconsData_usageSvg, map[string]*bintree{}},
+		"dehaze.svg":                                      &bintree{materialiconsDehazeSvg, map[string]*bintree{}},
+		"delete.svg":                                      &bintree{materialiconsDeleteSvg, map[string]*bintree{}},
+		"description.svg":                                 &bintree{materialiconsDescriptionSvg, map[string]*bintree{}},
+		"desktop_mac.svg":                                 &bintree{materialiconsDesktop_macSvg, map[string]*bintree{}},
+		"desktop_windows.svg":                             &bintree{materialiconsDesktop_windowsSvg, map[string]*bintree{}},
+		"details.svg":                                     &bintree{materialiconsDetailsSvg, map[string]*bintree{}},
+		"developer_board.svg":                             &bintree{materialiconsDeveloper_boardSvg, map[string]*bintree{}},
+		"developer_mode.svg":                              &bintree{materialiconsDeveloper_modeSvg, map[string]*bintree{}},
+		"devices.svg":                                     &bintree{materialiconsDevicesSvg, map[string]*bintree{}},
+		"dialer_sip.svg":                                  &bintree{materialiconsDialer_sipSvg, map[string]*bintree{}},
+		"dialpad.svg":                                     &bintree{materialiconsDialpadSvg, map[string]*bintree{}},
+		"directions.svg":                                  &bintree{materialiconsDirectionsSvg, map[string]*bintree{}},
+		"directions_bike.svg":                             &bintree{materialiconsDirections_bikeSvg, map[string]*bintree{}},
+		"directions_boat.svg":                             &bintree{materialiconsDirections_boatSvg, map[string]*bintree{}},
+		"directions_bus.svg":                              &bintree{materialiconsDirections_busSvg, map[string]*bintree{}},
+		"directions_car.svg":                              &bintree{materialiconsDirections_carSvg, map[string]*bintree{}},
+		"directions_railway.svg":                          &bintree{materialiconsDirections_railwaySvg, map[string]*bintree{}},
+		"directions_run.svg":                              &bintree{materialiconsDirections_runSvg, map[string]*bintree{}},
+		"directions_subway.svg":                           &bintree{materialiconsDirections_subwaySvg, map[string]*bintree{}},
+		"directions_transit.svg":                          &bintree{materialiconsDirections_transitSvg, map[string]*bintree{}},
+		"directions_walk.svg":                             &bintree{materialiconsDirections_walkSvg, map[string]*bintree{}},
+		"disc_full.svg":                                   &bintree{materialiconsDisc_fullSvg, map[string]*bintree{}},
+		"dns.svg":                                         &bintree{materialiconsDnsSvg, map[string]*bintree{}},
+		"do_not_disturb.svg":                              &bintree{materialiconsDo_not_disturbSvg, map[string]*bintree{}},
+		"do_not_disturb_alt.svg":                          &bintree{materialiconsDo_not_disturb_altSvg, map[string]*bintree{}},
+		"dock.svg":                                        &bintree{materialiconsDockSvg, map[string]*bintree{}},
+		"domain.svg":                                      &bintree{materialiconsDomainSvg, map[string]*bintree{}},
+		"done.svg":                                        &bintree{materialiconsDoneSvg, map[string]*bintree{}},
+		"done_all.svg":                                    &bintree{materialiconsDone_allSvg, map[string]*bintree{}},
+		"drafts.svg":                                      &bintree{materialiconsDraftsSvg, map[string]*bintree{}},
+		"drive_eta.svg":                                   &bintree{materialiconsDrive_etaSvg, map[string]*bintree{}},
+		"dvr.svg":                                         &bintree{materialiconsDvrSvg, map[string]*bintree{}},
+		"edit.svg":                                        &bintree{materialiconsEditSvg, map[string]*bintree{}},
+		"email.svg":                                       &bintree{materialiconsEmailSvg, map[string]*bintree{}},
+		"equalizer.svg":                                   &bintree{materialiconsEqualizerSvg, map[string]*bintree{}},
+		"error.svg":                                       &bintree{materialiconsErrorSvg, map[string]*bintree{}},
+		"error_outline.svg":                               &bintree{materialiconsError_outlineSvg, map[string]*bintree{}},
+		"event.svg":                                       &bintree{materialiconsEventSvg, map[string]*bintree{}},
+		"event_available.svg":                             &bintree{materialiconsEvent_availableSvg, map[string]*bintree{}},
+		"event_busy.svg":                                  &bintree{materialiconsEvent_busySvg, map[string]*bintree{}},
+		"event_note.svg":                                  &bintree{materialiconsEvent_noteSvg, map[string]*bintree{}},
+		"event_seat.svg":                                  &bintree{materialiconsEvent_seatSvg, map[string]*bintree{}},
+		"exit_to_app.svg":                                 &bintree{materialiconsExit_to_appSvg, map[string]*bintree{}},
+		"expand_less.svg":                                 &bintree{materialiconsExpand_lessSvg, map[string]*bintree{}},
+		"expand_more.svg":                                 &bintree{materialiconsExpand_moreSvg, map[string]*bintree{}},
+		"explicit.svg":                                    &bintree{materialiconsExplicitSvg, map[string]*bintree{}},
+		"explore.svg":                                     &bintree{materialiconsExploreSvg, map[string]*bintree{}},
+		"exposure.svg":                                    &bintree{materialiconsExposureSvg, map[string]*bintree{}},
+		"exposure_neg_1.svg":                              &bintree{materialiconsExposure_neg_1Svg, map[string]*bintree{}},
+		"exposure_neg_2.svg":                              &bintree{materialiconsExposure_neg_2Svg, map[string]*bintree{}},
+		"exposure_plus_1.svg":                             &bintree{materialiconsExposure_plus_1Svg, map[string]*bintree{}},
+		"exposure_plus_2.svg":                             &bintree{materialiconsExposure_plus_2Svg, map[string]*bintree{}},
+		"exposure_zero.svg":                               &bintree{materialiconsExposure_zeroSvg, map[string]*bintree{}},
+		"extension.svg":                                   &bintree{materialiconsExtensionSvg, map[string]*bintree{}},
+		"face.svg":                                        &bintree{materialiconsFaceSvg, map[string]*bintree{}},
+		"fast_forward.svg":                                &bintree{materialiconsFast_forwardSvg, map[string]*bintree{}},
+		"fast_rewind.svg":                                 &bintree{materialiconsFast_rewindSvg, map[string]*bintree{}},
+		"favorite.svg":                                    &bintree{materialiconsFavoriteSvg, map[string]*bintree{}},
+		"favorite_border.svg":                             &bintree{materialiconsFavorite_borderSvg, map[string]*bintree{}},
+		"feedback.svg":                                    &bintree{materialiconsFeedbackSvg, map[string]*bintree{}},
+		"file_download.svg":                               &bintree{materialiconsFile_downloadSvg, map[string]*bintree{}},
+		"file_upload.svg":                                 &bintree{materialiconsFile_uploadSvg, map[string]*bintree{}},
+		"filter.svg":                                      &bintree{materialiconsFilterSvg, map[string]*bintree{}},
+		"filter_1.svg":                                    &bintree{materialiconsFilter_1Svg, map[string]*bintree{}},
+		"filter_2.svg":                                    &bintree{materialiconsFilter_2Svg, map[string]*bintree{}},
+		"filter_3.svg":                                    &bintree{materialiconsFilter_3Svg, map[string]*bintree{}},
+		"filter_4.svg":                                    &bintree{materialiconsFilter_4Svg, map[string]*bintree{}},
+		"filter_5.svg":                                    &bintree{materialiconsFilter_5Svg, map[string]*bintree{}},
+		"filter_6.svg":                                    &bintree{materialiconsFilter_6Svg, map[string]*bintree{}},
+		"filter_7.svg":                                    &bintree{materialiconsFilter_7Svg, map[string]*bintree{}},
+		"filter_8.svg":                                    &bintree{materialiconsFilter_8Svg, map[string]*bintree{}},
+		"filter_9.svg":                                    &bintree{materialiconsFilter_9Svg, map[string]*bintree{}},
+		"filter_9_plus.svg":                               &bintree{materialiconsFilter_9_plusSvg, map[string]*bintree{}},
+		"filter_b_and_w.svg":                              &bintree{materialiconsFilter_b_and_wSvg, map[string]*bintree{}},
+		"filter_center_focus.svg":                         &bintree{materialiconsFilter_center_focusSvg, map[string]*bintree{}},
+		"filter_drama.svg":                                &bintree{materialiconsFilter_dramaSvg, map[string]*bintree{}},
+		"filter_frames.svg":                               &bintree{materialiconsFilter_framesSvg, map[string]*bintree{}},
+		"filter_hdr.svg":                                  &bintree{materialiconsFilter_hdrSvg, map[string]*bintree{}},
+		"filter_list.svg":                                 &bintree{materialiconsFilter_listSvg, map[string]*bintree{}},
+		"filter_none.svg":                                 &bintree{materialiconsFilter_noneSvg, map[string]*bintree{}},
+		"filter_tilt_shift.svg":                           &bintree{materialiconsFilter_tilt_shiftSvg, map[string]*bintree{}},
+		"filter_vintage.svg":                              &bintree{materialiconsFilter_vintageSvg, map[string]*bintree{}},
+		"find_in_page.svg":                                &bintree{materialiconsFind_in_pageSvg, map[string]*bintree{}},
+		"find_replace.svg":                                &bintree{materialiconsFind_replaceSvg, map[string]*bintree{}},
+		"flag.svg":                                        &bintree{materialiconsFlagSvg, map[string]*bintree{}},
+		"flare.svg":                                       &bintree{materialiconsFlareSvg, map[string]*bintree{}},
+		"flash_auto.svg":                                  &bintree{materialiconsFlash_autoSvg, map[string]*bintree{}},
+		"flash_off.svg":                                   &bintree{materialiconsFlash_offSvg, map[string]*bintree{}},
+		"flash_on.svg":                                    &bintree{materialiconsFlash_onSvg, map[string]*bintree{}},
+		"flight.svg":                                      &bintree{materialiconsFlightSvg, map[string]*bintree{}},
+		"flight_land.svg":                                 &bintree{materialiconsFlight_landSvg, map[string]*bintree{}},
+		"flight_takeoff.svg":                              &bintree{materialiconsFlight_takeoffSvg, map[string]*bintree{}},
+		"flip.svg":                                        &bintree{materialiconsFlipSvg, map[string]*bintree{}},
+		"flip_to_back.svg":                                &bintree{materialiconsFlip_to_backSvg, map[string]*bintree{}},
+		"flip_to_front.svg":                               &bintree{materialiconsFlip_to_frontSvg, map[string]*bintree{}},
+		"folder.svg":                                      &bintree{materialiconsFolderSvg, map[string]*bintree{}},
+		"folder_open.svg":                                 &bintree{materialiconsFolder_openSvg, map[string]*bintree{}},
+		"folder_shared.svg":                               &bintree{materialiconsFolder_sharedSvg, map[string]*bintree{}},
+		"folder_special.svg":                              &bintree{materialiconsFolder_specialSvg, map[string]*bintree{}},
+		"format_align_center.svg":                         &bintree{materialiconsFormat_align_centerSvg, map[string]*bintree{}},
+		"format_align_justify.svg":                        &bintree{materialiconsFormat_align_justifySvg, map[string]*bintree{}},
+		"format_align_left.svg":                           &bintree{materialiconsFormat_align_leftSvg, map[string]*bintree{}},
+		"format_align_right.svg":                          &bintree{materialiconsFormat_align_rightSvg, map[string]*bintree{}},
+		"format_bold.svg":                                 &bintree{materialiconsFormat_boldSvg, map[string]*bintree{}},
+		"format_clear.svg":                                &bintree{materialiconsFormat_clearSvg, map[string]*bintree{}},
+		"format_color_fill.svg":                           &bintree{materialiconsFormat_color_fillSvg, map[string]*bintree{}},
+		"format_color_reset.svg":                          &bintree{materialiconsFormat_color_resetSvg, map[string]*bintree{}},
+		"format_color_text.svg":                           &bintree{materialiconsFormat_color_textSvg, map[string]*bintree{}},
+		"format_indent_decrease.svg":                      &bintree{materialiconsFormat_indent_decreaseSvg, map[string]*bintree{}},
+		"format_indent_increase.svg":                      &bintree{materialiconsFormat_indent_increaseSvg, map[string]*bintree{}},
+		"format_italic.svg":                               &bintree{materialiconsFormat_italicSvg, map[string]*bintree{}},
+		"format_line_spacing.svg":                         &bintree{materialiconsFormat_line_spacingSvg, map[string]*bintree{}},
+		"format_list_bulleted.svg":                        &bintree{materialiconsFormat_list_bulletedSvg, map[string]*bintree{}},
+		"format_list_numbered.svg":                        &bintree{materialiconsFormat_list_numberedSvg, map[string]*bintree{}},
+		"format_paint.svg":                                &bintree{materialiconsFormat_paintSvg, map[string]*bintree{}},
+		"format_quote.svg":                                &bintree{materialiconsFormat_quoteSvg, map[string]*bintree{}},
+		"format_size.svg":                                 &bintree{materialiconsFormat_sizeSvg, map[string]*bintree{}},
+		"format_strikethrough.svg":                        &bintree{materialiconsFormat_strikethroughSvg, map[string]*bintree{}},
+		"format_textdirection_l_to_r.svg":                 &bintree{materialiconsFormat_textdirection_l_to_rSvg, map[string]*bintree{}},
+		"format_textdirection_r_to_l.svg":                 &bintree{materialiconsFormat_textdirection_r_to_lSvg, map[string]*bintree{}},
+		"format_underlined.svg":                           &bintree{materialiconsFormat_underlinedSvg, map[string]*bintree{}},
+		"forum.svg":                                       &bintree{materialiconsForumSvg, map[string]*bintree{}},
+		"forward.svg":                                     &bintree{materialiconsForwardSvg, map[string]*bintree{}},
+		"forward_10.svg":                                  &bintree{materialiconsForward_10Svg, map[string]*bintree{}},
+		"forward_30.svg":                                  &bintree{materialiconsForward_30Svg, map[string]*bintree{}},
+		"forward_5.svg":                                   &bintree{materialiconsForward_5Svg, map[string]*bintree{}},
+		"fullscreen.svg":                                  &bintree{materialiconsFullscreenSvg, map[string]*bintree{}},
+		"fullscreen_exit.svg":                             &bintree{materialiconsFullscreen_exitSvg, map[string]*bintree{}},
+		"functions.svg":                                   &bintree{materialiconsFunctionsSvg, map[string]*bintree{}},
+		"gamepad.svg":                                     &bintree{materialiconsGamepadSvg, map[string]*bintree{}},
+		"games.svg":                                       &bintree{materialiconsGamesSvg, map[string]*bintree{}},
+		"gesture.svg":                                     &bintree{materialiconsGestureSvg, map[string]*bintree{}},
+		"get_app.svg":                                     &bintree{materialiconsGet_appSvg, map[string]*bintree{}},
+		"gps_fixed.svg":                                   &bintree{materialiconsGps_fixedSvg, map[string]*bintree{}},
+		"gps_not_fixed.svg":                               &bintree{materialiconsGps_not_fixedSvg, map[string]*bintree{}},
+		"gps_off.svg":                                     &bintree{materialiconsGps_offSvg, map[string]*bintree{}},
+		"grade.svg":                                       &bintree{materialiconsGradeSvg, map[string]*bintree{}},
+		"gradient.svg":                                    &bintree{materialiconsGradientSvg, map[string]*bintree{}},
+		"grain.svg":                                       &bintree{materialiconsGrainSvg, map[string]*bintree{}},
+		"graphic_eq.svg":                                  &bintree{materialiconsGraphic_eqSvg, map[string]*bintree{}},
+		"grid_off.svg":                                    &bintree{materialiconsGrid_offSvg, map[string]*bintree{}},
+		"grid_on.svg":                                     &bintree{materialiconsGrid_onSvg, map[string]*bintree{}},
+		"group.svg":                                       &bintree{materialiconsGroupSvg, map[string]*bintree{}},
+		"group_add.svg":                                   &bintree{materialiconsGroup_addSvg, map[string]*bintree{}},
+		"group_work.svg":                                  &bintree{materialiconsGroup_workSvg, map[string]*bintree{}},
+		"hdr_off.svg":                                     &bintree{materialiconsHdr_offSvg, map[string]*bintree{}},
+		"hdr_on.svg":                                      &bintree{materialiconsHdr_onSvg, map[string]*bintree{}},
+		"hdr_strong.svg":                                  &bintree{materialiconsHdr_strongSvg, map[string]*bintree{}},
+		"hdr_weak.svg":                                    &bintree{materialiconsHdr_weakSvg, map[string]*bintree{}},
+		"headset.svg":                                     &bintree{materialiconsHeadsetSvg, map[string]*bintree{}},
+		"headset_mic.svg":                                 &bintree{materialiconsHeadset_micSvg, map[string]*bintree{}},
+		"healing.svg":                                     &bintree{materialiconsHealingSvg, map[string]*bintree{}},
+		"hearing.svg":                                     &bintree{materialiconsHearingSvg, map[string]*bintree{}},
+		"help.svg":                                        &bintree{materialiconsHelpSvg, map[string]*bintree{}},
+		"high_quality.svg":                                &bintree{materialiconsHigh_qualitySvg, map[string]*bintree{}},
+		"highlight_off.svg":                               &bintree{materialiconsHighlight_offSvg, map[string]*bintree{}},
+		"history.svg":                                     &bintree{materialiconsHistorySvg, map[string]*bintree{}},
+		"home.svg":                                        &bintree{materialiconsHomeSvg, map[string]*bintree{}},
+		"hotel.svg":                                       &bintree{materialiconsHotelSvg, map[string]*bintree{}},
+		"hourglass_empty.svg":                             &bintree{materialiconsHourglass_emptySvg, map[string]*bintree{}},
+		"hourglass_full.svg":                              &bintree{materialiconsHourglass_fullSvg, map[string]*bintree{}},
+		"http.svg":                                        &bintree{materialiconsHttpSvg, map[string]*bintree{}},
+		"https.svg":                                       &bintree{materialiconsHttpsSvg, map[string]*bintree{}},
+		"image.svg":                                       &bintree{materialiconsImageSvg, map[string]*bintree{}},
+		"image_aspect_ratio.svg":                          &bintree{materialiconsImage_aspect_ratioSvg, map[string]*bintree{}},
+		"import_export.svg":                               &bintree{materialiconsImport_exportSvg, map[string]*bintree{}},
+		"inbox.svg":                                       &bintree{materialiconsInboxSvg, map[string]*bintree{}},
+		"info.svg":                                        &bintree{materialiconsInfoSvg, map[string]*bintree{}},
+		"info_outline.svg":                                &bintree{materialiconsInfo_outlineSvg, map[string]*bintree{}},
+		"input.svg":                                       &bintree{materialiconsInputSvg, map[string]*bintree{}},
+		"insert_chart.svg":                                &bintree{materialiconsInsert_chartSvg, map[string]*bintree{}},
+		"insert_comment.svg":                              &bintree{materialiconsInsert_commentSvg, map[string]*bintree{}},
+		"insert_drive_file.svg":                           &bintree{materialiconsInsert_drive_fileSvg, map[string]*bintree{}},
+		"insert_emoticon.svg":                             &bintree{materialiconsInsert_emoticonSvg, map[string]*bintree{}},
+		"insert_invitation.svg":                           &bintree{materialiconsInsert_invitationSvg, map[string]*bintree{}},
+		"insert_link.svg":                                 &bintree{materialiconsInsert_linkSvg, map[string]*bintree{}},
+		"insert_photo.svg":                                &bintree{materialiconsInsert_photoSvg, map[string]*bintree{}},
+		"invert_colors.svg":                               &bintree{materialiconsInvert_colorsSvg, map[string]*bintree{}},
+		"invert_colors_off.svg":                           &bintree{materialiconsInvert_colors_offSvg, map[string]*bintree{}},
+		"iso.svg":                                         &bintree{materialiconsIsoSvg, map[string]*bintree{}},
+		"keyboard.svg":                                    &bintree{materialiconsKeyboardSvg, map[string]*bintree{}},
+		"keyboard_arrow_down.svg":                         &bintree{materialiconsKeyboard_arrow_downSvg, map[string]*bintree{}},
+		"keyboard_arrow_left.svg":                         &bintree{materialiconsKeyboard_arrow_leftSvg, map[string]*bintree{}},
+		"keyboard_arrow_right.svg":                        &bintree{materialiconsKeyboard_arrow_rightSvg, map[string]*bintree{}},
+		"keyboard_arrow_up.svg":                           &bintree{materialiconsKeyboard_arrow_upSvg, map[string]*bintree{}},
+		"keyboard_backspace.svg":                          &bintree{materialiconsKeyboard_backspaceSvg, map[string]*bintree{}},
+		"keyboard_capslock.svg":                           &bintree{materialiconsKeyboard_capslockSvg, map[string]*bintree{}},
+		"keyboard_hide.svg":                               &bintree{materialiconsKeyboard_hideSvg, map[string]*bintree{}},
+		"keyboard_return.svg":                             &bintree{materialiconsKeyboard_returnSvg, map[string]*bintree{}},
+		"keyboard_tab.svg":                                &bintree{materialiconsKeyboard_tabSvg, map[string]*bintree{}},
+		"keyboard_voice.svg":                              &bintree{materialiconsKeyboard_voiceSvg, map[string]*bintree{}},
+		"label.svg":                                       &bintree{materialiconsLabelSvg, map[string]*bintree{}},
+		"label_outline.svg":                               &bintree{materialiconsLabel_outlineSvg, map[string]*bintree{}},
+		"landscape.svg":                                   &bintree{materialiconsLandscapeSvg, map[string]*bintree{}},
+		"language.svg":                                    &bintree{materialiconsLanguageSvg, map[string]*bintree{}},
+		"laptop.svg":                                      &bintree{materialiconsLaptopSvg, map[string]*bintree{}},
+		"laptop_chromebook.svg":                           &bintree{materialiconsLaptop_chromebookSvg, map[string]*bintree{}},
+		"laptop_mac.svg":                                  &bintree{materialiconsLaptop_macSvg, map[string]*bintree{}},
+		"laptop_windows.svg":                              &bintree{materialiconsLaptop_windowsSvg, map[string]*bintree{}},
+		"launch.svg":                                      &bintree{materialiconsLaunchSvg, map[string]*bintree{}},
+		"layers.svg":                                      &bintree{materialiconsLayersSvg, map[string]*bintree{}},
+		"layers_clear.svg":                                &bintree{materialiconsLayers_clearSvg, map[string]*bintree{}},
+		"leak_add.svg":                                    &bintree{materialiconsLeak_addSvg, map[string]*bintree{}},
+		"leak_remove.svg":                                 &bintree{materialiconsLeak_removeSvg, map[string]*bintree{}},
+		"lens.svg":                                        &bintree{materialiconsLensSvg, map[string]*bintree{}},
+		"library_add.svg":                                 &bintree{materialiconsLibrary_addSvg, map[string]*bintree{}},
+		"library_books.svg":                               &bintree{materialiconsLibrary_booksSvg, map[string]*bintree{}},
+		"library_music.svg":                               &bintree{materialiconsLibrary_musicSvg, map[string]*bintree{}},
+		"link.svg":                                        &bintree{materialiconsLinkSvg, map[string]*bintree{}},
+		"list.svg":                                        &bintree{materialiconsListSvg, map[string]*bintree{}},
+		"live_help.svg":                                   &bintree{materialiconsLive_helpSvg, map[string]*bintree{}},
+		"live_tv.svg":                                     &bintree{materialiconsLive_tvSvg, map[string]*bintree{}},
+		"local_activity.svg":                              &bintree{materialiconsLocal_activitySvg, map[string]*bintree{}},
+		"local_airport.svg":                               &bintree{materialiconsLocal_airportSvg, map[string]*bintree{}},
+		"local_atm.svg":                                   &bintree{materialiconsLocal_atmSvg, map[string]*bintree{}},
+		"local_bar.svg":                                   &bintree{materialiconsLocal_barSvg, map[string]*bintree{}},
+		"local_cafe.svg":                                  &bintree{materialiconsLocal_cafeSvg, map[string]*bintree{}},
+		"local_car_wash.svg":                              &bintree{materialiconsLocal_car_washSvg, map[string]*bintree{}},
+		"local_convenience_store.svg":                     &bintree{materialiconsLocal_convenience_storeSvg, map[string]*bintree{}},
+		"local_dining.svg":                                &bintree{materialiconsLocal_diningSvg, map[string]*bintree{}},
+		"local_drink.svg":                                 &bintree{materialiconsLocal_drinkSvg, map[string]*bintree{}},
+		"local_florist.svg":                               &bintree{materialiconsLocal_floristSvg, map[string]*bintree{}},
+		"local_gas_station.svg":                           &bintree{materialiconsLocal_gas_stationSvg, map[string]*bintree{}},
+		"local_grocery_store.svg":                         &bintree{materialiconsLocal_grocery_storeSvg, map[string]*bintree{}},
+		"local_hospital.svg":                              &bintree{materialiconsLocal_hospitalSvg, map[string]*bintree{}},
+		"local_hotel.svg":                                 &bintree{materialiconsLocal_hotelSvg, map[string]*bintree{}},
+		"local_laundry_service.svg":                       &bintree{materialiconsLocal_laundry_serviceSvg, map[string]*bintree{}},
+		"local_library.svg":                               &bintree{materialiconsLocal_librarySvg, map[string]*bintree{}},
+		"local_mall.svg":                                  &bintree{materialiconsLocal_mallSvg, map[string]*bintree{}},
+		"local_movies.svg":                                &bintree{materialiconsLocal_moviesSvg, map[string]*bintree{}},
+		"local_offer.svg":                                 &bintree{materialiconsLocal_offerSvg, map[string]*bintree{}},
+		"local_parking.svg":                               &bintree{materialiconsLocal_parkingSvg, map[string]*bintree{}},
+		"local_pharmacy.svg":                              &bintree{materialiconsLocal_pharmacySvg, map[string]*bintree{}},
+		"local_phone.svg":                                 &bintree{materialiconsLocal_phoneSvg, map[string]*bintree{}},
+		"local_pizza.svg":                                 &bintree{materialiconsLocal_pizzaSvg, map[string]*bintree{}},
+		"local_play.svg":                                  &bintree{materialiconsLocal_playSvg, map[string]*bintree{}},
+		"local_post_office.svg":                           &bintree{materialiconsLocal_post_officeSvg, map[string]*bintree{}},
+		"local_printshop.svg":                             &bintree{materialiconsLocal_printshopSvg, map[string]*bintree{}},
+		"local_see.svg":                                   &bintree{materialiconsLocal_seeSvg, map[string]*bintree{}},
+		"local_shipping.svg":                              &bintree{materialiconsLocal_shippingSvg, map[string]*bintree{}},
+		"local_taxi.svg":                                  &bintree{materialiconsLocal_taxiSvg, map[string]*bintree{}},
+		"location_city.svg":                               &bintree{materialiconsLocation_citySvg, map[string]*bintree{}},
+		"location_disabled.svg":                           &bintree{materialiconsLocation_disabledSvg, map[string]*bintree{}},
+		"location_off.svg":                                &bintree{materialiconsLocation_offSvg, map[string]*bintree{}},
+		"location_on.svg":                                 &bintree{materialiconsLocation_onSvg, map[string]*bintree{}},
+		"location_searching.svg":                          &bintree{materialiconsLocation_searchingSvg, map[string]*bintree{}},
+		"lock.svg":                                        &bintree{materialiconsLockSvg, map[string]*bintree{}},
+		"lock_open.svg":                                   &bintree{materialiconsLock_openSvg, map[string]*bintree{}},
+		"lock_outline.svg":                                &bintree{materialiconsLock_outlineSvg, map[string]*bintree{}},
+		"looks.svg":                                       &bintree{materialiconsLooksSvg, map[string]*bintree{}},
+		"looks_3.svg":                                     &bintree{materialiconsLooks_3Svg, map[string]*bintree{}},
+		"looks_4.svg":                                     &bintree{materialiconsLooks_4Svg, map[string]*bintree{}},
+		"looks_5.svg":                                     &bintree{materialiconsLooks_5Svg, map[string]*bintree{}},
+		"looks_6.svg":                                     &bintree{materialiconsLooks_6Svg, map[string]*bintree{}},
+		"looks_one.svg":                                   &bintree{materialiconsLooks_oneSvg, map[string]*bintree{}},
+		"looks_two.svg":                                   &bintree{materialiconsLooks_twoSvg, map[string]*bintree{}},
+		"loop.svg":                                        &bintree{materialiconsLoopSvg, map[string]*bintree{}},
+		"loupe.svg":                                       &bintree{materialiconsLoupeSvg, map[string]*bintree{}},
+		"loyalty.svg":                                     &bintree{materialiconsLoyaltySvg, map[string]*bintree{}},
+		"mail.svg":                                        &bintree{materialiconsMailSvg, map[string]*bintree{}},
+		"map.svg":                                         &bintree{materialiconsMapSvg, map[string]*bintree{}},
+		"markunread.svg":                                  &bintree{materialiconsMarkunreadSvg, map[string]*bintree{}},
+		"markunread_mailbox.svg":                          &bintree{materialiconsMarkunread_mailboxSvg, map[string]*bintree{}},
+		"memory.svg":                                      &bintree{materialiconsMemorySvg, map[string]*bintree{}},
+		"menu.svg":                                        &bintree{materialiconsMenuSvg, map[string]*bintree{}},
+		"merge_type.svg":                                  &bintree{materialiconsMerge_typeSvg, map[string]*bintree{}},
+		"message.svg":                                     &bintree{materialiconsMessageSvg, map[string]*bintree{}},
+		"mic.svg":                                         &bintree{materialiconsMicSvg, map[string]*bintree{}},
+		"mic_none.svg":                                    &bintree{materialiconsMic_noneSvg, map[string]*bintree{}},
+		"mic_off.svg":                                     &bintree{materialiconsMic_offSvg, map[string]*bintree{}},
+		"mms.svg":                                         &bintree{materialiconsMmsSvg, map[string]*bintree{}},
+		"mode_comment.svg":                                &bintree{materialiconsMode_commentSvg, map[string]*bintree{}},
+		"mode_edit.svg":                                   &bintree{materialiconsMode_editSvg, map[string]*bintree{}},
+		"monochrome_photos.svg":                           &bintree{materialiconsMonochrome_photosSvg, map[string]*bintree{}},
+		"mood.svg":                                        &bintree{materialiconsMoodSvg, map[string]*bintree{}},
+		"mood_bad.svg":                                    &bintree{materialiconsMood_badSvg, map[string]*bintree{}},
+		"more.svg":                                        &bintree{materialiconsMoreSvg, map[string]*bintree{}},
+		"more_horiz.svg":                                  &bintree{materialiconsMore_horizSvg, map[string]*bintree{}},
+		"more_vert.svg":                                   &bintree{materialiconsMore_vertSvg, map[string]*bintree{}},
+		"mouse.svg":                                       &bintree{materialiconsMouseSvg, map[string]*bintree{}},
+		"movie.svg":                                       &bintree{materialiconsMovieSvg, map[string]*bintree{}},
+		"movie_creation.svg":                              &bintree{materialiconsMovie_creationSvg, map[string]*bintree{}},
+		"music_note.svg":                                  &bintree{materialiconsMusic_noteSvg, map[string]*bintree{}},
+		"my_location.svg":                                 &bintree{materialiconsMy_locationSvg, map[string]*bintree{}},
+		"nature.svg":                                      &bintree{materialiconsNatureSvg, map[string]*bintree{}},
+		"nature_people.svg":                               &bintree{materialiconsNature_peopleSvg, map[string]*bintree{}},
+		"navigate_before.svg":                             &bintree{materialiconsNavigate_beforeSvg, map[string]*bintree{}},
+		"navigate_next.svg":                               &bintree{materialiconsNavigate_nextSvg, map[string]*bintree{}},
+		"navigation.svg":                                  &bintree{materialiconsNavigationSvg, map[string]*bintree{}},
+		"network_cell.svg":                                &bintree{materialiconsNetwork_cellSvg, map[string]*bintree{}},
+		"network_locked.svg":                              &bintree{materialiconsNetwork_lockedSvg, map[string]*bintree{}},
+		"network_wifi.svg":                                &bintree{materialiconsNetwork_wifiSvg, map[string]*bintree{}},
+		"new_releases.svg":                                &bintree{materialiconsNew_releasesSvg, map[string]*bintree{}},
+		"nfc.svg":                                         &bintree{materialiconsNfcSvg, map[string]*bintree{}},
+		"no_sim.svg":                                      &bintree{materialiconsNo_simSvg, map[string]*bintree{}},
+		"not_interested.svg":                              &bintree{materialiconsNot_interestedSvg, map[string]*bintree{}},
+		"note_add.svg":                                    &bintree{materialiconsNote_addSvg, map[string]*bintree{}},
+		"notifications.svg":                               &bintree{materialiconsNotificationsSvg, map[string]*bintree{}},
+		"notifications_active.svg":                        &bintree{materialiconsNotifications_activeSvg, map[string]*bintree{}},
+		"notifications_none.svg":                          &bintree{materialiconsNotifications_noneSvg, map[string]*bintree{}},
+		"notifications_off.svg":                           &bintree{materialiconsNotifications_offSvg, map[string]*bintree{}},
+		"notifications_paused.svg":                        &bintree{materialiconsNotifications_pausedSvg, map[string]*bintree{}},
+		"ondemand_video.svg":                              &bintree{materialiconsOndemand_videoSvg, map[string]*bintree{}},
+		"open_in_browser.svg":                             &bintree{materialiconsOpen_in_browserSvg, map[string]*bintree{}},
+		"open_in_new.svg":                                 &bintree{materialiconsOpen_in_newSvg, map[string]*bintree{}},
+		"open_with.svg":                                   &bintree{materialiconsOpen_withSvg, map[string]*bintree{}},
+		"pages.svg":                                       &bintree{materialiconsPagesSvg, map[string]*bintree{}},
+		"pageview.svg":                                    &bintree{materialiconsPageviewSvg, map[string]*bintree{}},
+		"palette.svg":                                     &bintree{materialiconsPaletteSvg, map[string]*bintree{}},
+		"panorama.svg":                                    &bintree{materialiconsPanoramaSvg, map[string]*bintree{}},
+		"panorama_fish_eye.svg":                           &bintree{materialiconsPanorama_fish_eyeSvg, map[string]*bintree{}},
+		"panorama_horizontal.svg":                         &bintree{materialiconsPanorama_horizontalSvg, map[string]*bintree{}},
+		"panorama_vertical.svg":                           &bintree{materialiconsPanorama_verticalSvg, map[string]*bintree{}},
+		"panorama_wide_angle.svg":                         &bintree{materialiconsPanorama_wide_angleSvg, map[string]*bintree{}},
+		"party_mode.svg":                                  &bintree{materialiconsParty_modeSvg, map[string]*bintree{}},
+		"pause.svg":                                       &bintree{materialiconsPauseSvg, map[string]*bintree{}},
+		"pause_circle_filled.svg":                         &bintree{materialiconsPause_circle_filledSvg, map[string]*bintree{}},
+		"pause_circle_outline.svg":                        &bintree{materialiconsPause_circle_outlineSvg, map[string]*bintree{}},
+		"payment.svg":                                     &bintree{materialiconsPaymentSvg, map[string]*bintree{}},
+		"people.svg":                                      &bintree{materialiconsPeopleSvg, map[string]*bintree{}},
+		"people_outline.svg":                              &bintree{materialiconsPeople_outlineSvg, map[string]*bintree{}},
+		"perm_camera_mic.svg":                             &bintree{materialiconsPerm_camera_micSvg, map[string]*bintree{}},
+		"perm_contact_calendar.svg":                       &bintree{materialiconsPerm_contact_calendarSvg, map[string]*bintree{}},
+		"perm_data_setting.svg":                           &bintree{materialiconsPerm_data_settingSvg, map[string]*bintree{}},
+		"perm_device_information.svg":                     &bintree{materialiconsPerm_device_informationSvg, map[string]*bintree{}},
+		"perm_identity.svg":                               &bintree{materialiconsPerm_identitySvg, map[string]*bintree{}},
+		"perm_media.svg":                                  &bintree{materialiconsPerm_mediaSvg, map[string]*bintree{}},
+		"perm_phone_msg.svg":                              &bintree{materialiconsPerm_phone_msgSvg, map[string]*bintree{}},
+		"perm_scan_wifi.svg":                              &bintree{materialiconsPerm_scan_wifiSvg, map[string]*bintree{}},
+		"person.svg":                                      &bintree{materialiconsPersonSvg, map[string]*bintree{}},
+		"person_add.svg":                                  &bintree{materialiconsPerson_addSvg, map[string]*bintree{}},
+		"person_outline.svg":                              &bintree{materialiconsPerson_outlineSvg, map[string]*bintree{}},
+		"person_pin.svg":                                  &bintree{materialiconsPerson_pinSvg, map[string]*bintree{}},
+		"personal_video.svg":                              &bintree{materialiconsPersonal_videoSvg, map[string]*bintree{}},
+		"phone.svg":                                       &bintree{materialiconsPhoneSvg, map[string]*bintree{}},
+		"phone_android.svg":                               &bintree{materialiconsPhone_androidSvg, map[string]*bintree{}},
+		"phone_bluetooth_speaker.svg":                     &bintree{materialiconsPhone_bluetooth_speakerSvg, map[string]*bintree{}},
+		"phone_forwarded.svg":                             &bintree{materialiconsPhone_forwardedSvg, map[string]*bintree{}},
+		"phone_in_talk.svg":                               &bintree{materialiconsPhone_in_talkSvg, map[string]*bintree{}},
+		"phone_iphone.svg":                                &bintree{materialiconsPhone_iphoneSvg, map[string]*bintree{}},
+		"phone_locked.svg":                                &bintree{materialiconsPhone_lockedSvg, map[string]*bintree{}},
+		"phone_missed.svg":                                &bintree{materialiconsPhone_missedSvg, map[string]*bintree{}},
+		"phone_paused.svg":                                &bintree{materialiconsPhone_pausedSvg, map[string]*bintree{}},
+		"phonelink.svg":                                   &bintree{materialiconsPhonelinkSvg, map[string]*bintree{}},
+		"phonelink_off.svg":                               &bintree{materialiconsPhonelink_offSvg, map[string]*bintree{}},
+		"photo.svg":                                       &bintree{materialiconsPhotoSvg, map[string]*bintree{}},
+		"photo_album.svg":                                 &bintree{materialiconsPhoto_albumSvg, map[string]*bintree{}},
+		"photo_camera.svg":                                &bintree{materialiconsPhoto_cameraSvg, map[string]*bintree{}},
+		"photo_library.svg":                               &bintree{materialiconsPhoto_librarySvg, map[string]*bintree{}},
+		"picture_as_pdf.svg":                              &bintree{materialiconsPicture_as_pdfSvg, map[string]*bintree{}},
+		"picture_in_picture.svg":                          &bintree{materialiconsPicture_in_pictureSvg, map[string]*bintree{}},
+		"pin_drop.svg":                                    &bintree{materialiconsPin_dropSvg, map[string]*bintree{}},
+		"place.svg":                                       &bintree{materialiconsPlaceSvg, map[string]*bintree{}},
+		"play_arrow.svg":                                  &bintree{materialiconsPlay_arrowSvg, map[string]*bintree{}},
+		"play_circle_filled.svg":                          &bintree{materialiconsPlay_circle_filledSvg, map[string]*bintree{}},
+		"play_circle_outline.svg":                         &bintree{materialiconsPlay_circle_outlineSvg, map[string]*bintree{}},
+		"play_for_work.svg":                               &bintree{materialiconsPlay_for_workSvg, map[string]*bintree{}},
+		"playlist_add.svg":                                &bintree{materialiconsPlaylist_addSvg, map[string]*bintree{}},
+		"plus_one.svg":                                    &bintree{materialiconsPlus_oneSvg, map[string]*bintree{}},
+		"poll.svg":                                        &bintree{materialiconsPollSvg, map[string]*bintree{}},
+		"polymer.svg":                                     &bintree{materialiconsPolymerSvg, map[string]*bintree{}},
+		"portable_wifi_off.svg":                           &bintree{materialiconsPortable_wifi_offSvg, map[string]*bintree{}},
+		"portrait.svg":                                    &bintree{materialiconsPortraitSvg, map[string]*bintree{}},
+		"power.svg":                                       &bintree{materialiconsPowerSvg, map[string]*bintree{}},
+		"power_input.svg":                                 &bintree{materialiconsPower_inputSvg, map[string]*bintree{}},
+		"power_settings_new.svg":                          &bintree{materialiconsPower_settings_newSvg, map[string]*bintree{}},
+		"present_to_all.svg":                              &bintree{materialiconsPresent_to_allSvg, map[string]*bintree{}},
+		"print.svg":                                       &bintree{materialiconsPrintSvg, map[string]*bintree{}},
+		"public.svg":                                      &bintree{materialiconsPublicSvg, map[string]*bintree{}},
+		"publish.svg":                                     &bintree{materialiconsPublishSvg, map[string]*bintree{}},
+		"query_builder.svg":                               &bintree{materialiconsQuery_builderSvg, map[string]*bintree{}},
+		"question_answer.svg":                             &bintree{materialiconsQuestion_answerSvg, map[string]*bintree{}},
+		"queue.svg":                                       &bintree{materialiconsQueueSvg, map[string]*bintree{}},
+		"queue_music.svg":                                 &bintree{materialiconsQueue_musicSvg, map[string]*bintree{}},
+		"radio.svg":                                       &bintree{materialiconsRadioSvg, map[string]*bintree{}},
+		"radio_button_checked.svg":                        &bintree{materialiconsRadio_button_checkedSvg, map[string]*bintree{}},
+		"radio_button_unchecked.svg":                      &bintree{materialiconsRadio_button_uncheckedSvg, map[string]*bintree{}},
+		"rate_review.svg":                                 &bintree{materialiconsRate_reviewSvg, map[string]*bintree{}},
+		"receipt.svg":                                     &bintree{materialiconsReceiptSvg, map[string]*bintree{}},
+		"recent_actors.svg":                               &bintree{materialiconsRecent_actorsSvg, map[string]*bintree{}},
+		"redeem.svg":                                      &bintree{materialiconsRedeemSvg, map[string]*bintree{}},
+		"redo.svg":                                        &bintree{materialiconsRedoSvg, map[string]*bintree{}},
+		"refresh.svg":                                     &bintree{materialiconsRefreshSvg, map[string]*bintree{}},
+		"remove.svg":                                      &bintree{materialiconsRemoveSvg, map[string]*bintree{}},
+		"remove_circle.svg":                               &bintree{materialiconsRemove_circleSvg, map[string]*bintree{}},
+		"remove_circle_outline.svg":                       &bintree{materialiconsRemove_circle_outlineSvg, map[string]*bintree{}},
+		"remove_red_eye.svg":                              &bintree{materialiconsRemove_red_eyeSvg, map[string]*bintree{}},
+		"repeat.svg":                                      &bintree{materialiconsRepeatSvg, map[string]*bintree{}},
+		"repeat_one.svg":                                  &bintree{materialiconsRepeat_oneSvg, map[string]*bintree{}},
+		"replay.svg":                                      &bintree{materialiconsReplaySvg, map[string]*bintree{}},
+		"replay_10.svg":                                   &bintree{materialiconsReplay_10Svg, map[string]*bintree{}},
+		"replay_30.svg":                                   &bintree{materialiconsReplay_30Svg, map[string]*bintree{}},
+		"replay_5.svg":                                    &bintree{materialiconsReplay_5Svg, map[string]*bintree{}},
+		"reply.svg":                                       &bintree{materialiconsReplySvg, map[string]*bintree{}},
+		"reply_all.svg":                                   &bintree{materialiconsReply_allSvg, map[string]*bintree{}},
+		"report.svg":                                      &bintree{materialiconsReportSvg, map[string]*bintree{}},
+		"report_problem.svg":                              &bintree{materialiconsReport_problemSvg, map[string]*bintree{}},
+		"restaurant_menu.svg":                             &bintree{materialiconsRestaurant_menuSvg, map[string]*bintree{}},
+		"restore.svg":                                     &bintree{materialiconsRestoreSvg, map[string]*bintree{}},
+		"ring_volume.svg":                                 &bintree{materialiconsRing_volumeSvg, map[string]*bintree{}},
+		"room.svg":                                        &bintree{materialiconsRoomSvg, map[string]*bintree{}},
+		"rotate_90_degrees_ccw.svg":                       &bintree{materialiconsRotate_90_degrees_ccwSvg, map[string]*bintree{}},
+		"rotate_left.svg":                                 &bintree{materialiconsRotate_leftSvg, map[string]*bintree{}},
+		"rotate_right.svg":                                &bintree{materialiconsRotate_rightSvg, map[string]*bintree{}},
+		"router.svg":                                      &bintree{materialiconsRouterSvg, map[string]*bintree{}},
+		"satellite.svg":                                   &bintree{materialiconsSatelliteSvg, map[string]*bintree{}},
+		"save.svg":                                        &bintree{materialiconsSaveSvg, map[string]*bintree{}},
+		"scanner.svg":                                     &bintree{materialiconsScannerSvg, map[string]*bintree{}},
+		"schedule.svg":                                    &bintree{materialiconsScheduleSvg, map[string]*bintree{}},
+		"school.svg":                                      &bintree{materialiconsSchoolSvg, map[string]*bintree{}},
+		"screen_lock_landscape.svg":                       &bintree{materialiconsScreen_lock_landscapeSvg, map[string]*bintree{}},
+		"screen_lock_portrait.svg":                        &bintree{materialiconsScreen_lock_portraitSvg, map[string]*bintree{}},
+		"screen_lock_rotation.svg":                        &bintree{materialiconsScreen_lock_rotationSvg, map[string]*bintree{}},
+		"screen_rotation.svg":                             &bintree{materialiconsScreen_rotationSvg, map[string]*bintree{}},
+		"sd_card.svg":                                     &bintree{materialiconsSd_cardSvg, map[string]*bintree{}},
+		"sd_storage.svg":                                  &bintree{materialiconsSd_storageSvg, map[string]*bintree{}},
+		"search.svg":                                      &bintree{materialiconsSearchSvg, map[string]*bintree{}},
+		"security.svg":                                    &bintree{materialiconsSecuritySvg, map[string]*bintree{}},
+		"select_all.svg":                                  &bintree{materialiconsSelect_allSvg, map[string]*bintree{}},
+		"send.svg":                                        &bintree{materialiconsSendSvg, map[string]*bintree{}},
+		"settings.svg":                                    &bintree{materialiconsSettingsSvg, map[string]*bintree{}},
+		"settings_applications.svg":                       &bintree{materialiconsSettings_applicationsSvg, map[string]*bintree{}},
+		"settings_backup_restore.svg":                     &bintree{materialiconsSettings_backup_restoreSvg, map[string]*bintree{}},
+		"settings_bluetooth.svg":                          &bintree{materialiconsSettings_bluetoothSvg, map[string]*bintree{}},
+		"settings_brightness.svg":                         &bintree{materialiconsSettings_brightnessSvg, map[string]*bintree{}},
+		"settings_cell.svg":                               &bintree{materialiconsSettings_cellSvg, map[string]*bintree{}},
+		"settings_ethernet.svg":                           &bintree{materialiconsSettings_ethernetSvg, map[string]*bintree{}},
+		"settings_input_antenna.svg":                      &bintree{materialiconsSettings_input_antennaSvg, map[string]*bintree{}},
+		"settings_input_component.svg":                    &bintree{materialiconsSettings_input_componentSvg, map[string]*bintree{}},
+		"settings_input_composite.svg":                    &bintree{materialiconsSettings_input_compositeSvg, map[string]*bintree{}},
+		"settings_input_hdmi.svg":                         &bintree{materialiconsSettings_input_hdmiSvg, map[string]*bintree{}},
+		"settings_input_svideo.svg":                       &bintree{materialiconsSettings_input_svideoSvg, map[string]*bintree{}},
+		"settings_overscan.svg":                           &bintree{materialiconsSettings_overscanSvg, map[string]*bintree{}},
+		"settings_phone.svg":                              &bintree{materialiconsSettings_phoneSvg, map[string]*bintree{}},
+		"settings_power.svg":                              &bintree{materialiconsSettings_powerSvg, map[string]*bintree{}},
+		"settings_remote.svg":                             &bintree{materialiconsSettings_remoteSvg, map[string]*bintree{}},
+		"settings_system_daydream.svg":                    &bintree{materialiconsSettings_system_daydreamSvg, map[string]*bintree{}},
+		"settings_voice.svg":                              &bintree{materialiconsSettings_voiceSvg, map[string]*bintree{}},
+		"share.svg":                                       &bintree{materialiconsShareSvg, map[string]*bintree{}},
+		"shop.svg":                                        &bintree{materialiconsShopSvg, map[string]*bintree{}},
+		"shop_two.svg":                                    &bintree{materialiconsShop_twoSvg, map[string]*bintree{}},
+		"shopping_basket.svg":                             &bintree{materialiconsShopping_basketSvg, map[string]*bintree{}},
+		"shopping_cart.svg":                               &bintree{materialiconsShopping_cartSvg, map[string]*bintree{}},
+		"shuffle.svg":                                     &bintree{materialiconsShuffleSvg, map[string]*bintree{}},
+		"signal_cellular_0_bar.svg":                       &bintree{materialiconsSignal_cellular_0_barSvg, map[string]*bintree{}},
+		"signal_cellular_1_bar.svg":                       &bintree{materialiconsSignal_cellular_1_barSvg, map[string]*bintree{}},
+		"signal_cellular_2_bar.svg":                       &bintree{materialiconsSignal_cellular_2_barSvg, map[string]*bintree{}},
+		"signal_cellular_3_bar.svg":                       &bintree{materialiconsSignal_cellular_3_barSvg, map[string]*bintree{}},
+		"signal_cellular_4_bar.svg":                       &bintree{materialiconsSignal_cellular_4_barSvg, map[string]*bintree{}},
+		"signal_cellular_connected_no_internet_0_bar.svg": &bintree{materialiconsSignal_cellular_connected_no_internet_0_barSvg, map[string]*bintree{}},
+		"signal_cellular_connected_no_internet_1_bar.svg": &bintree{materialiconsSignal_cellular_connected_no_internet_1_barSvg, map[string]*bintree{}},
+		"signal_cellular_connected_no_internet_2_bar.svg": &bintree{materialiconsSignal_cellular_connected_no_internet_2_barSvg, map[string]*bintree{}},
+		"signal_cellular_connected_no_internet_3_bar.svg": &bintree{materialiconsSignal_cellular_connected_no_internet_3_barSvg, map[string]*bintree{}},
+		"signal_cellular_connected_no_internet_4_bar.svg": &bintree{materialiconsSignal_cellular_connected_no_internet_4_barSvg, map[string]*bintree{}},
+		"signal_cellular_no_sim.svg":                      &bintree{materialiconsSignal_cellular_no_simSvg, map[string]*bintree{}},
+		"signal_cellular_null.svg":                        &bintree{materialiconsSignal_cellular_nullSvg, map[string]*bintree{}},
+		"signal_cellular_off.svg":                         &bintree{materialiconsSignal_cellular_offSvg, map[string]*bintree{}},
+		"signal_wifi_0_bar.svg":                           &bintree{materialiconsSignal_wifi_0_barSvg, map[string]*bintree{}},
+		"signal_wifi_1_bar.svg":                           &bintree{materialiconsSignal_wifi_1_barSvg, map[string]*bintree{}},
+		"signal_wifi_1_bar_lock.svg":                      &bintree{materialiconsSignal_wifi_1_bar_lockSvg, map[string]*bintree{}},
+		"signal_wifi_2_bar.svg":                           &bintree{materialiconsSignal_wifi_2_barSvg, map[string]*bintree{}},
+		"signal_wifi_2_bar_lock.svg":                      &bintree{materialiconsSignal_wifi_2_bar_lockSvg, map[string]*bintree{}},
+		"signal_wifi_3_bar.svg":                           &bintree{materialiconsSignal_wifi_3_barSvg, map[string]*bintree{}},
+		"signal_wifi_3_bar_lock.svg":                      &bintree{materialiconsSignal_wifi_3_bar_lockSvg, map[string]*bintree{}},
+		"signal_wifi_4_bar.svg":                           &bintree{materialiconsSignal_wifi_4_barSvg, map[string]*bintree{}},
+		"signal_wifi_4_bar_lock.svg":                      &bintree{materialiconsSignal_wifi_4_bar_lockSvg, map[string]*bintree{}},
+		"signal_wifi_off.svg":                             &bintree{materialiconsSignal_wifi_offSvg, map[string]*bintree{}},
+		"sim_card.svg":                                    &bintree{materialiconsSim_cardSvg, map[string]*bintree{}},
+		"sim_card_alert.svg":                              &bintree{materialiconsSim_card_alertSvg, map[string]*bintree{}},
+		"skip_next.svg":                                   &bintree{materialiconsSkip_nextSvg, map[string]*bintree{}},
+		"skip_previous.svg":                               &bintree{materialiconsSkip_previousSvg, map[string]*bintree{}},
+		"slideshow.svg":                                   &bintree{materialiconsSlideshowSvg, map[string]*bintree{}},
+		"smartphone.svg":                                  &bintree{materialiconsSmartphoneSvg, map[string]*bintree{}},
+		"sms.svg":                                         &bintree{materialiconsSmsSvg, map[string]*bintree{}},
+		"sms_failed.svg":                                  &bintree{materialiconsSms_failedSvg, map[string]*bintree{}},
+		"snooze.svg":                                      &bintree{materialiconsSnoozeSvg, map[string]*bintree{}},
+		"sort.svg":                                        &bintree{materialiconsSortSvg, map[string]*bintree{}},
+		"space_bar.svg":                                   &bintree{materialiconsSpace_barSvg, map[string]*bintree{}},
+		"speaker.svg":                                     &bintree{materialiconsSpeakerSvg, map[string]*bintree{}},
+		"speaker_group.svg":                               &bintree{materialiconsSpeaker_groupSvg, map[string]*bintree{}},
+		"speaker_notes.svg":                               &bintree{materialiconsSpeaker_notesSvg, map[string]*bintree{}},
+		"speaker_phone.svg":                               &bintree{materialiconsSpeaker_phoneSvg, map[string]*bintree{}},
+		"spellcheck.svg":                                  &bintree{materialiconsSpellcheckSvg, map[string]*bintree{}},
+		"stars.svg":                                       &bintree{materialiconsStarsSvg, map[string]*bintree{}},
+		"stay_current_landscape.svg":                      &bintree{materialiconsStay_current_landscapeSvg, map[string]*bintree{}},
+		"stay_current_portrait.svg":                       &bintree{materialiconsStay_current_portraitSvg, map[string]*bintree{}},
+		"stay_primary_landscape.svg":                      &bintree{materialiconsStay_primary_landscapeSvg, map[string]*bintree{}},
+		"stay_primary_portrait.svg":                       &bintree{materialiconsStay_primary_portraitSvg, map[string]*bintree{}},
+		"stop.svg":                                        &bintree{materialiconsStopSvg, map[string]*bintree{}},
+		"storage.svg":                                     &bintree{materialiconsStorageSvg, map[string]*bintree{}},
+		"store.svg":                                       &bintree{materialiconsStoreSvg, map[string]*bintree{}},
+		"store_mall_directory.svg":                        &bintree{materialiconsStore_mall_directorySvg, map[string]*bintree{}},
+		"straighten.svg":                                  &bintree{materialiconsStraightenSvg, map[string]*bintree{}},
+		"strikethrough_s.svg":                             &bintree{materialiconsStrikethrough_sSvg, map[string]*bintree{}},
+		"style.svg":                                       &bintree{materialiconsStyleSvg, map[string]*bintree{}},
+		"subject.svg":                                     &bintree{materialiconsSubjectSvg, map[string]*bintree{}},
+		"subtitles.svg":                                   &bintree{materialiconsSubtitlesSvg, map[string]*bintree{}},
+		"supervisor_account.svg":                          &bintree{materialiconsSupervisor_accountSvg, map[string]*bintree{}},
+		"surround_sound.svg":                              &bintree{materialiconsSurround_soundSvg, map[string]*bintree{}},
+		"swap_calls.svg":                                  &bintree{materialiconsSwap_callsSvg, map[string]*bintree{}},
+		"swap_horiz.svg":                                  &bintree{materialiconsSwap_horizSvg, map[string]*bintree{}},
+		"swap_vert.svg":                                   &bintree{materialiconsSwap_vertSvg, map[string]*bintree{}},
+		"swap_vertical_circle.svg":                        &bintree{materialiconsSwap_vertical_circleSvg, map[string]*bintree{}},
+		"switch_camera.svg":                               &bintree{materialiconsSwitch_cameraSvg, map[string]*bintree{}},
+		"switch_video.svg":                                &bintree{materialiconsSwitch_videoSvg, map[string]*bintree{}},
+		"sync.svg":                                        &bintree{materialiconsSyncSvg, map[string]*bintree{}},
+		"sync_disabled.svg":                               &bintree{materialiconsSync_disabledSvg, map[string]*bintree{}},
+		"sync_problem.svg":                                &bintree{materialiconsSync_problemSvg, map[string]*bintree{}},
+		"system_update.svg":                               &bintree{materialiconsSystem_updateSvg, map[string]*bintree{}},
+		"system_update_alt.svg":                           &bintree{materialiconsSystem_update_altSvg, map[string]*bintree{}},
+		"tab.svg":                                         &bintree{materialiconsTabSvg, map[string]*bintree{}},
+		"tab_unselected.svg":                              &bintree{materialiconsTab_unselectedSvg, map[string]*bintree{}},
+		"tablet.svg":                                      &bintree{materialiconsTabletSvg, map[string]*bintree{}},
+		"tablet_android.svg":                              &bintree{materialiconsTablet_androidSvg, map[string]*bintree{}},
+		"tablet_mac.svg":                                  &bintree{materialiconsTablet_macSvg, map[string]*bintree{}},
+		"tag_faces.svg":                                   &bintree{materialiconsTag_facesSvg, map[string]*bintree{}},
+		"tap_and_play.svg":                                &bintree{materialiconsTap_and_playSvg, map[string]*bintree{}},
+		"terrain.svg":                                     &bintree{materialiconsTerrainSvg, map[string]*bintree{}},
+		"text_format.svg":                                 &bintree{materialiconsText_formatSvg, map[string]*bintree{}},
+		"textsms.svg":                                     &bintree{materialiconsTextsmsSvg, map[string]*bintree{}},
+		"texture.svg":                                     &bintree{materialiconsTextureSvg, map[string]*bintree{}},
+		"theaters.svg":                                    &bintree{materialiconsTheatersSvg, map[string]*bintree{}},
+		"thumb_down.svg":                                  &bintree{materialiconsThumb_downSvg, map[string]*bintree{}},
+		"thumb_up.svg":                                    &bintree{materialiconsThumb_upSvg, map[string]*bintree{}},
+		"thumbs_up_down.svg":                              &bintree{materialiconsThumbs_up_downSvg, map[string]*bintree{}},
+		"time_to_leave.svg":                               &bintree{materialiconsTime_to_leaveSvg, map[string]*bintree{}},
+		"timelapse.svg":                                   &bintree{materialiconsTimelapseSvg, map[string]*bintree{}},
+		"timer.svg":                                       &bintree{materialiconsTimerSvg, map[string]*bintree{}},
+		"timer_10.svg":                                    &bintree{materialiconsTimer_10Svg, map[string]*bintree{}},
+		"timer_3.svg":                                     &bintree{materialiconsTimer_3Svg, map[string]*bintree{}},
+		"timer_off.svg":                                   &bintree{materialiconsTimer_offSvg, map[string]*bintree{}},
+		"toc.svg":                                         &bintree{materialiconsTocSvg, map[string]*bintree{}},
+		"today.svg":                                       &bintree{materialiconsTodaySvg, map[string]*bintree{}},
+		"toll.svg":                                        &bintree{materialiconsTollSvg, map[string]*bintree{}},
+		"tonality.svg":                                    &bintree{materialiconsTonalitySvg, map[string]*bintree{}},
+		"toys.svg":                                        &bintree{materialiconsToysSvg, map[string]*bintree{}},
+		"track_changes.svg":                               &bintree{materialiconsTrack_changesSvg, map[string]*bintree{}},
+		"traffic.svg":                                     &bintree{materialiconsTrafficSvg, map[string]*bintree{}},
+		"transform.svg":                                   &bintree{materialiconsTransformSvg, map[string]*bintree{}},
+		"translate.svg":                                   &bintree{materialiconsTranslateSvg, map[string]*bintree{}},
+		"trending_down.svg":                               &bintree{materialiconsTrending_downSvg, map[string]*bintree{}},
+		"trending_flat.svg":                               &bintree{materialiconsTrending_flatSvg, map[string]*bintree{}},
+		"trending_up.svg":                                 &bintree{materialiconsTrending_upSvg, map[string]*bintree{}},
+		"tune.svg":                                        &bintree{materialiconsTuneSvg, map[string]*bintree{}},
+		"turned_in.svg":                                   &bintree{materialiconsTurned_inSvg, map[string]*bintree{}},
+		"turned_in_not.svg":                               &bintree{materialiconsTurned_in_notSvg, map[string]*bintree{}},
+		"tv.svg":                                          &bintree{materialiconsTvSvg, map[string]*bintree{}},
+		"undo.svg":                                        &bintree{materialiconsUndoSvg, map[string]*bintree{}},
+		"unfold_less.svg":                                 &bintree{materialiconsUnfold_lessSvg, map[string]*bintree{}},
+		"unfold_more.svg":                                 &bintree{materialiconsUnfold_moreSvg, map[string]*bintree{}},
+		"usb.svg":                                         &bintree{materialiconsUsbSvg, map[string]*bintree{}},
+		"verified_user.svg":                               &bintree{materialiconsVerified_userSvg, map[string]*bintree{}},
+		"vertical_align_bottom.svg":                       &bintree{materialiconsVertical_align_bottomSvg, map[string]*bintree{}},
+		"vertical_align_center.svg":                       &bintree{materialiconsVertical_align_centerSvg, map[string]*bintree{}},
+		"vertical_align_top.svg":                          &bintree{materialiconsVertical_align_topSvg, map[string]*bintree{}},
+		"vibration.svg":                                   &bintree{materialiconsVibrationSvg, map[string]*bintree{}},
+		"video_library.svg":                               &bintree{materialiconsVideo_librarySvg, map[string]*bintree{}},
+		"videocam.svg":                                    &bintree{materialiconsVideocamSvg, map[string]*bintree{}},
+		"videocam_off.svg":                                &bintree{materialiconsVideocam_offSvg, map[string]*bintree{}},
+		"view_agenda.svg":                                 &bintree{materialiconsView_agendaSvg, map[string]*bintree{}},
+		"view_array.svg":                                  &bintree{materialiconsView_arraySvg, map[string]*bintree{}},
+		"view_carousel.svg":                               &bintree{materialiconsView_carouselSvg, map[string]*bintree{}},
+		"view_column.svg":                                 &bintree{materialiconsView_columnSvg, map[string]*bintree{}},
+		"view_comfy.svg":                                  &bintree{materialiconsView_comfySvg, map[string]*bintree{}},
+		"view_compact.svg":                                &bintree{materialiconsView_compactSvg, map[string]*bintree{}},
+		"view_day.svg":                                    &bintree{materialiconsView_daySvg, map[string]*bintree{}},
+		"view_headline.svg":                               &bintree{materialiconsView_headlineSvg, map[string]*bintree{}},
+		"view_list.svg":                                   &bintree{materialiconsView_listSvg, map[string]*bintree{}},
+		"view_module.svg":                                 &bintree{materialiconsView_moduleSvg, map[string]*bintree{}},
+		"view_quilt.svg":                                  &bintree{materialiconsView_quiltSvg, map[string]*bintree{}},
+		"view_stream.svg":                                 &bintree{materialiconsView_streamSvg, map[string]*bintree{}},
+		"view_week.svg":                                   &bintree{materialiconsView_weekSvg, map[string]*bintree{}},
+		"visibility.svg":                                  &bintree{materialiconsVisibilitySvg, map[string]*bintree{}},
+		"visibility_off.svg":                              &bintree{materialiconsVisibility_offSvg, map[string]*bintree{}},
+		"voice_chat.svg":                                  &bintree{materialiconsVoice_chatSvg, map[string]*bintree{}},
+		"voicemail.svg":                                   &bintree{materialiconsVoicemailSvg, map[string]*bintree{}},
+		"volume_down.svg":                                 &bintree{materialiconsVolume_downSvg, map[string]*bintree{}},
+		"volume_mute.svg":                                 &bintree{materialiconsVolume_muteSvg, map[string]*bintree{}},
+		"volume_off.svg":                                  &bintree{materialiconsVolume_offSvg, map[string]*bintree{}},
+		"volume_up.svg":                                   &bintree{materialiconsVolume_upSvg, map[string]*bintree{}},
+		"vpn_key.svg":                                     &bintree{materialiconsVpn_keySvg, map[string]*bintree{}},
+		"vpn_lock.svg":                                    &bintree{materialiconsVpn_lockSvg, map[string]*bintree{}},
+		"wallpaper.svg":                                   &bintree{materialiconsWallpaperSvg, map[string]*bintree{}},
+		"warning.svg":                                     &bintree{materialiconsWarningSvg, map[string]*bintree{}},
+		"watch.svg":                                       &bintree{materialiconsWatchSvg, map[string]*bintree{}},
+		"wb_auto.svg":                                     &bintree{materialiconsWb_autoSvg, map[string]*bintree{}},
+		"wb_cloudy.svg":                                   &bintree{materialiconsWb_cloudySvg, map[string]*bintree{}},
+		"wb_incandescent.svg":                             &bintree{materialiconsWb_incandescentSvg, map[string]*bintree{}},
+		"wb_iridescent.svg":                               &bintree{materialiconsWb_iridescentSvg, map[string]*bintree{}},
+		"wb_sunny.svg":                                    &bintree{materialiconsWb_sunnySvg, map[string]*bintree{}},
+		"wc.svg":                                          &bintree{materialiconsWcSvg, map[string]*bintree{}},
+		"web.svg":                                         &bintree{materialiconsWebSvg, map[string]*bintree{}},
+		"whatshot.svg":                                    &bintree{materialiconsWhatshotSvg, map[string]*bintree{}},
+		"widgets.svg":                                     &bintree{materialiconsWidgetsSvg, map[string]*bintree{}},
+		"wifi.svg":                                        &bintree{materialiconsWifiSvg, map[string]*bintree{}},
+		"wifi_lock.svg":                                   &bintree{materialiconsWifi_lockSvg, map[string]*bintree{}},
+		"wifi_tethering.svg":                              &bintree{materialiconsWifi_tetheringSvg, map[string]*bintree{}},
+		"work.svg":                                        &bintree{materialiconsWorkSvg, map[string]*bintree{}},
+		"wrap_text.svg":                                   &bintree{materialiconsWrap_textSvg, map[string]*bintree{}},
+		"youtube_searched_for.svg":                        &bintree{materialiconsYoutube_searched_forSvg, map[string]*bintree{}},
 	}},
 	"static": &bintree{nil, map[string]*bintree{
-		"breadcrumb.svg": &bintree{staticBreadcrumbSvg, map[string]*bintree{
-		}},
-		"styles.css": &bintree{staticStylesCss, map[string]*bintree{
-		}},
+		"breadcrumb.svg": &bintree{staticBreadcrumbSvg, map[string]*bintree{}},
+		"styles.css":     &bintree{staticStylesCss, map[string]*bintree{}},
 	}},
 	"templates": &bintree{nil, map[string]*bintree{
-		"article.tmpl": &bintree{templatesArticleTmpl, map[string]*bintree{
-		}},
-		"search.tmpl": &bintree{templatesSearchTmpl, map[string]*bintree{
-		}},
+		"article.tmpl": &bintree{templatesArticleTmpl, map[string]*bintree{}},
+		"search.tmpl":  &bintree{templatesSearchTmpl, map[string]*bintree{}},
 	}},
 }}
 
 // RestoreAsset restores an asset under the given directory
 func RestoreAsset(dir, name string) error {
-        data, err := Asset(name)
-        if err != nil {
-                return err
-        }
-        info, err := AssetInfo(name)
-        if err != nil {
-                return err
-        }
-        err = os.MkdirAll(_filePath(dir, filepath.Dir(name)), os.FileMode(0755))
-        if err != nil {
-                return err
-        }
-        err = ioutil.WriteFile(_filePath(dir, name), data, info.Mode())
-        if err != nil {
-                return err
-        }
-        err = os.Chtimes(_filePath(dir, name), info.ModTime(), info.ModTime())
-        if err != nil {
-                return err
-        }
-        return nil
+	data, err := Asset(name)
+	if err != nil {
+		return err
+	}
+	info, err := AssetInfo(name)
+	if err != nil {
+		return err
+	}
+	err = os.MkdirAll(_filePath(dir, filepath.Dir(name)), os.FileMode(0755))
+	if err != nil {
+		return err
+	}
+	err = ioutil.WriteFile(_filePath(dir, name), data, info.Mode())
+	if err != nil {
+		return err
+	}
+	err = os.Chtimes(_filePath(dir, name), info.ModTime(), info.ModTime())
+	if err != nil {
+		return err
+	}
+	return nil
 }
 
 // RestoreAssets restores an asset under the given directory recursively
 func RestoreAssets(dir, name string) error {
-        children, err := AssetDir(name)
-        // File
-        if err != nil {
-                return RestoreAsset(dir, name)
-        }
-        // Dir
-        for _, child := range children {
-                err = RestoreAssets(dir, filepath.Join(name, child))
-                if err != nil {
-                        return err
-                }
-        }
-        return nil
+	children, err := AssetDir(name)
+	// File
+	if err != nil {
+		return RestoreAsset(dir, name)
+	}
+	// Dir
+	for _, child := range children {
+		err = RestoreAssets(dir, filepath.Join(name, child))
+		if err != nil {
+			return err
+		}
+	}
+	return nil
 }
 
 func _filePath(dir, name string) string {
-        cannonicalName := strings.Replace(name, "\\", "/", -1)
-        return filepath.Join(append([]string{dir}, strings.Split(cannonicalName, "/")...)...)
+	cannonicalName := strings.Replace(name, "\\", "/", -1)
+	return filepath.Join(append([]string{dir}, strings.Split(cannonicalName, "/")...)...)
 }
-
