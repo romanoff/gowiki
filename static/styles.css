@@ -42,6 +42,10 @@ body {
     background-color: #00bcd4;
 }
 
+.main-header-wrapper-small {
+    height: 32px;
+}
+
 .main-header {
     width: 856px;
     margin-left: auto;

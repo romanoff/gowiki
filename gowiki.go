@@ -17,6 +17,7 @@ func handler(w http.ResponseWriter, r *http.Request) {
 	pageData := &PageData{}
 	// Search page
 	if r.URL.Path[1:] == "search" {
+		addBreadcrumbs(pageData, nil)
 		query := r.URL.Query().Get("q")
 		if query == "" {
 			http.Redirect(w, r, "/", http.StatusFound)
@@ -29,6 +30,13 @@ func handler(w http.ResponseWriter, r *http.Request) {
 			return
 		}
 		pageData.SearchResults = make([]*Result, 0, 0)
+		if len(results) == 0 {
+			pageData.SearchResults = append(pageData.SearchResults,
+				&Result{
+					Name: "No results found",
+					Path: "",
+				})
+		}
 		for _, r := range results {
 			_, article := wiki.Find(r.Path)
 			if article != nil {
@@ -130,6 +138,10 @@ func handleSection(pageData *PageData, section *Section, currentArticle *Article
 }
 
 func addBreadcrumbs(pageData *PageData, section *Section) {
+	if pageData.Breadcrumbs == nil {
+		pageData.Breadcrumbs = make([]*Link, 0, 0)
+	}
+	pageData.Breadcrumbs = append(pageData.Breadcrumbs, &Link{Name: wiki.Name, Path: ""})
 	if section == nil {
 		return
 	}
@@ -140,10 +152,6 @@ func addBreadcrumbs(pageData *PageData, section *Section) {
 		slugs = append(slugs, loopSection.Parent.Slug)
 	}
 	sort.Reverse(sort.StringSlice(slugs))
-	if pageData.Breadcrumbs == nil {
-		pageData.Breadcrumbs = make([]*Link, 0, 0)
-	}
-	pageData.Breadcrumbs = append(pageData.Breadcrumbs, &Link{Name: wiki.Name, Path: ""})
 	pageData.Breadcrumbs = append(pageData.Breadcrumbs, &Link{Name: section.Name, Path: strings.Join(slugs, "/")})
 	loopSection = section
 	for i := 0; loopSection.Parent != nil; i++ {

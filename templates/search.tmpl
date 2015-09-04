@@ -14,6 +14,15 @@
 	</form>
       </div>
     </div>
+    <div class="main-header-wrapper main-header-wrapper-small">
+      <div class="main-header">
+	<ul class="main-header-breadcrumbs">
+	  {{ range .Breadcrumbs }}
+	  <li class="main-header-breadcrumbs-item"><a class="main-header-breadcrumbs-item-link" href="/{{.Path}}">{{.Name}}</a></li>
+ 	  {{ end }}
+	</ul>	
+      </div>
+    </div>
     <div class="body">
       {{ range .SearchResults }}
       <div class="search-result">
