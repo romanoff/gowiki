@@ -104,6 +104,10 @@ func ParseWiki(dirpath string) (*Wiki, error) {
 					foundSection.Parent = section
 				}
 				section = foundSection
+				err = wiki.IndexSection(section.GetPath(), section)
+				if err != nil {
+					return err
+				}
 			}
 		}
 		return nil

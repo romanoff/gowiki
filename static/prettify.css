@@ -1,0 +1,54 @@
+code,pre {
+  background: #f7f7f7;
+  color: #455a64;
+  font: 400 100%/1 Roboto Mono,monospace;
+  padding: 1px 4px;
+}
+
+pre {
+  font: 14px/20px Roboto Mono,monospace;
+  margin: 16px 0;
+  overflow-x: auto;
+  padding: 8px;
+}
+
+pre code {
+  background: 0;
+  font-size: 14px;
+  padding: 0;
+}
+
+pre.prettyprint {
+  position: relative;
+}
+
+a .atv,a .atn,a .com,a .dec,a .kwd,a .lit,a .str,a .tag,a .typ,.prettyprint a {
+  color: #03a9f4;
+  -moz-osx-font-smoothing: auto;
+  -webkit-font-smoothing: auto;
+  font-weight: 700;
+}
+
+a:hover .atv,a:hover .atn,a:hover .com,a:hover .dec,a:hover .kwd,a:hover .lit,a:hover .str,a:hover .tag,a:hover .typ,.prettyprint a:hover {
+  text-decoration: underline;
+}
+
+pre .lit,pre .dec {
+  color: #ef6c00;
+}
+
+pre .com {
+  color: #d81b60;
+}
+
+pre .kwd,pre .tag {
+  color: #0097a7;
+}
+
+pre .str,pre .atv {
+  color: #689f38;
+}
+
+pre .typ,pre .atn {
+  color: #9c27b0;
+}

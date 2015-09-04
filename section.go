@@ -68,6 +68,11 @@ func (self *Wiki) IndexArticle(path string, article *Article) error {
 	return nil
 }
 
+func (self *Wiki) IndexSection(path string, section *Section) error {
+	self.Index.Index(path, ArticleData{Name: section.Name})
+	return nil
+}
+
 func (self *Wiki) Search(queryString string) ([]*SearchResult, error) {
 	query := bleve.NewMatchQuery(queryString)
 	search := bleve.NewSearchRequest(query)
@@ -78,9 +83,9 @@ func (self *Wiki) Search(queryString string) ([]*SearchResult, error) {
 	}
 	results := []*SearchResult{}
 	for _, result := range searchResult.Hits {
-		_, article := self.Find(result.ID)
-		if article == nil {
-			return nil, fmt.Errorf("%v article not found", result.ID)
+		section, article := self.Find(result.ID)
+		if article == nil && section == nil {
+			return nil, fmt.Errorf("%v section or article not found", result.ID)
 		}
 		text := ""
 		for _, values := range result.Fragments {
@@ -88,7 +93,14 @@ func (self *Wiki) Search(queryString string) ([]*SearchResult, error) {
 				text += value
 			}
 		}
-		results = append(results, &SearchResult{Path: result.ID, Name: article.Name, Text: text})
+		name := ""
+		if section != nil {
+			name = section.Name
+		}
+		if article != nil {
+			name = article.Name
+		}
+		results = append(results, &SearchResult{Path: result.ID, Name: name, Text: text})
 	}
 	return results, nil
 }
