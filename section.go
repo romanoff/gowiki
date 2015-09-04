@@ -165,7 +165,7 @@ type Article struct {
 }
 
 func (self *Article) GetHtml() (string, error) {
-	output := blackfriday.MarkdownBasic(self.Content)
+	output := blackfriday.MarkdownCommon(self.Content)
 	return string(output), nil
 }
 
