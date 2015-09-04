@@ -3,6 +3,7 @@ package main
 import (
 	"fmt"
 	"github.com/blevesearch/bleve"
+	"github.com/jaytaylor/html2text"
 	"github.com/russross/blackfriday"
 	"sort"
 	"strings"
@@ -54,8 +55,17 @@ func (self *Wiki) Sort() {
 	}
 }
 
-func (self *Wiki) IndexArticle(path string, article *Article) {
-	self.Index.Index(path, ArticleData{Name: article.Name, Content: string(article.Content)})
+func (self *Wiki) IndexArticle(path string, article *Article) error {
+	html, err := article.GetHtml()
+	if err != nil {
+		return err
+	}
+	text, err := html2text.FromString(html)
+	if err != nil {
+		return err
+	}
+	self.Index.Index(path, ArticleData{Name: article.Name, Content: text})
+	return nil
 }
 
 func (self *Wiki) Search(queryString string) ([]*SearchResult, error) {

@@ -42,7 +42,7 @@ func TestWikiSearch(t *testing.T) {
 }
 
 func TestParseSlug(t *testing.T) {
-	name, slug, weight := ParseSlug("12_some_article")
+	name, slug, weight, icon := ParseSlug("12_some_article__icon")
 	if name != "Some article" {
 		t.Errorf("Parsed slug name is expected to be 'Some article', but got '%v'", name)
 	}
@@ -51,5 +51,8 @@ func TestParseSlug(t *testing.T) {
 	}
 	if weight != 12 {
 		t.Errorf("Parsed slug weight is expected to be '12', but got '%v'", weight)
+	}
+	if icon != "icon" {
+		t.Errorf("Parsed slug icon is expected to be 'icon', but got '%v'", icon)
 	}
 }

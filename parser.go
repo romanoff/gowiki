@@ -54,7 +54,10 @@ func ParseWiki(dirpath string) (*Wiki, error) {
 				pathParts = append(pathParts, slug)
 				if i == len(parts)-1 {
 					article, err = ParseArticle(path, part)
-					wiki.IndexArticle(strings.Join(pathParts, "/"), article)
+					if err != nil {
+						return err
+					}
+					err = wiki.IndexArticle(strings.Join(pathParts, "/"), article)
 					if err != nil {
 						return err
 					}
