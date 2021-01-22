@@ -18,7 +18,7 @@ func ParseWiki(dirpath string) (*Wiki, error) {
 	wiki := &Wiki{}
 	mapping := bleve.NewIndexMapping()
 	mapping.DefaultAnalyzer = "en"
-	index, err := bleve.New("", mapping)
+	index, err := bleve.NewMemOnly(mapping)
 	if err != nil {
 		return nil, err
 	}
