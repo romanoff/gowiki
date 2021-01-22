@@ -3,8 +3,9 @@ package main
 import (
 	"fmt"
 	"github.com/blevesearch/bleve"
-	"github.com/jaytaylor/html2text"
+	"github.com/microcosm-cc/bluemonday"
 	"github.com/russross/blackfriday"
+	"github.com/writeas/go-strip-markdown"
 	"sort"
 	"strings"
 )
@@ -56,16 +57,8 @@ func (self *Wiki) Sort() {
 }
 
 func (self *Wiki) IndexArticle(path string, article *Article) error {
-	html, err := article.GetHtml()
-	if err != nil {
-		return err
-	}
-	text, err := html2text.FromString(html)
-	if err != nil {
-		return err
-	}
-	self.Index.Index(path, ArticleData{Name: article.Name, Content: text})
-	return nil
+	text := stripmd.Strip(string(article.Content))
+	return self.Index.Index(path, ArticleData{Name: article.Name, Content: text})
 }
 
 func (self *Wiki) IndexSection(path string, section *Section) error {
@@ -74,7 +67,7 @@ func (self *Wiki) IndexSection(path string, section *Section) error {
 }
 
 func (self *Wiki) Search(queryString string) ([]*SearchResult, error) {
-	query := bleve.NewMatchQuery(queryString)
+	query := bleve.NewMatchPhraseQuery(queryString)
 	search := bleve.NewSearchRequest(query)
 	search.Highlight = bleve.NewHighlight()
 	searchResult, err := self.Index.Search(search)
@@ -187,8 +180,9 @@ type Article struct {
 }
 
 func (self *Article) GetHtml() (string, error) {
-	output := blackfriday.MarkdownCommon(self.Content)
-	return string(output), nil
+	unsafe := blackfriday.Run(self.Content)
+	html := bluemonday.UGCPolicy().SanitizeBytes(unsafe)
+	return string(html), nil
 }
 
 func (self *Article) GetPath() string {
